@@ -1,0 +1,73 @@
+/* Palette de couleurs pour le mode clair */
+:root {
+  --ifm-color-primary: #ff5e0f; /* Orange vif */
+  --ifm-color-primary-dark: #e85407; /* Orange légèrement plus foncé */
+  --ifm-color-primary-darker: #cc4a0b; /* Orange foncé */
+  --ifm-color-primary-darkest: #a33c0e; /* Orange très foncé */
+  --ifm-color-primary-light: #ff8c42; /* Orange clair */
+  --ifm-color-primary-lighter: #ffb38a; /* Orange très clair */
+  --ifm-color-primary-lightest: #ffd4b2; /* Orange pastel */
+
+  /* Couleur secondaire (rouge du logo) */
+  --ifm-color-secondary: #d92e2e; /* Rouge du logo */
+  --ifm-color-secondary-dark: #b82929; /* Rouge plus foncé */
+
+  /* Fond des cartes/containers */
+  --ifm-color-card-background: #fef9f5; /* Fond crème */
+
+  /* Couleur du texte */
+  --ifm-font-color-base: #2d2d2d; /* Gris foncé pour le texte */
+}
+
+/* Palette de couleurs pour le mode sombre */
+[data-theme='dark'] {
+  --ifm-color-primary: #ff8c42; /* Orange clair */
+  --ifm-color-primary-dark: #e85407; /* Orange moyen */
+  --ifm-color-primary-darker: #cc4a0b; /* Orange foncé */
+  --ifm-color-primary-darkest: #a33c0e; /* Orange très foncé */
+  --ifm-color-primary-light: #ffb38a; /* Orange pâle */
+  --ifm-color-primary-lighter: #ffd4b2; /* Orange très pâle */
+  --ifm-color-primary-lightest: #fff0eb; /* Presque blanc */
+
+  /* Couleur secondaire */
+  --ifm-color-secondary: #e86a6a; /* Rouge clair */
+  --ifm-color-secondary-dark: #d92e2e; /* Rouge original du logo */
+
+  /* Fond des cartes/containers */
+  --ifm-color-card-background: #2d2d2d; /* Gris foncé */
+
+  /* Couleur du texte */
+  --ifm-font-color-base: #e0e0e0; /* Blanc cassé */
+}
+
+/* Personnalisation des boutons */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: 2px solid var(--ifm-color-primary-dark);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+/* Personnalisation des cartes */
+.card {
+  background-color: var(--ifm-color-card-background);
+  border: 1px solid var(--ifm-color-primary-lightest);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Personnalisation des liens */
+a {
+  color: var(--ifm-color-secondary);
+}
+
+a:hover {
+  color: var(--ifm-color-secondary-dark);
+}
