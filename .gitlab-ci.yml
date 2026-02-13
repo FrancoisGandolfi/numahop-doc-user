@@ -1,5 +1,5 @@
 # Configuration pour déployer un site Docusaurus sur GitLab Pages
-image: node:16
+image: node:20
 
 pages:
   stage: deploy
