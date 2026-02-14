@@ -10,7 +10,7 @@ const config = {
 
   // Configuration pour GitLab Pages
   url: 'https://fgandolfi.gitlab.io', // URL de ton utilisateur GitLab
-  baseUrl: '/numahop-doc-user/', // Nom de ton dépôt
+  baseUrl: '/', // Nom de ton dépôt
 
   // Organisation et nom du projet (optionnel pour GitLab Pages)
   organizationName: 'asso-numahop',
