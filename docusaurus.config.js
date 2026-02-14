@@ -1,45 +1,35 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import { themes as prismThemes } from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  // Champs obligatoires
   title: 'NumaHop',
-  tagline: 'Documentation professionelle',
+  tagline: 'Documentation professionnelle',
   favicon: 'img/numahop-logo.png',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
+  // Configuration pour GitLab Pages
+  url: 'https://fgandolfi.gitlab.io', // URL de ton utilisateur GitLab
+  baseUrl: '/numahop-doc-user/', // Nom de ton dépôt
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // Organisation et nom du projet (optionnel pour GitLab Pages)
+  organizationName: 'asso-numahop',
+  projectName: 'numahop-doc-user',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'asso-numahop', // Usually your GitHub org/user name.
-  projectName: 'numahop-doc-user', // Usually your repo name.
-
+  // Gestion des liens brisés
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Internationalisation (i18n)
   i18n: {
     defaultLocale: 'fr',
-    locales: ['fr'],
+    locales: ['fr', 'en'],
+    localeConfigs: {
+      fr: { label: 'Français', direction: 'ltr' },
+      en: { label: 'English', direction: 'ltr' },
+    },
   },
 
+  // Presets classiques (docs, blog, theme)
   presets: [
     [
       'classic',
@@ -47,25 +37,11 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://gitlab.com/fgandolfi/numahop-doc-user/-/edit/main/', // Lien vers ton dépôt GitLab
         },
         blog: {
           showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          editUrl: 'https://gitlab.com/fgandolfi/numahop-doc-user/-/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -74,96 +50,70 @@ const config = {
     ],
   ],
 
+  // Configuration du thème
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
+      // Image pour les réseaux sociaux
+      image: 'img/numahop-logo.png',
+
+      // Barre de navigation
       navbar: {
-        title: 'Documentation NumaHop',
+        title: 'NumaDoc',
         logo: {
-          alt: 'NumaHop',
+          alt: 'Logo NumaHop',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'adminSidebar', // Correspond à la clé dans sidebars.js
+            sidebarId: 'adminSidebar',
             position: 'left',
-            label: 'Manuel administrateur',
+            label: 'Administrateur',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'userSidebar', // Correspond à la clé dans sidebars.js
+            sidebarId: 'userSidebar',
             position: 'left',
-            label: 'Manuel utilisateur',
+            label: 'Utilisateur',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'prestaSidebar', // Correspond à la clé dans sidebars.js
+            sidebarId: 'prestaSidebar',
             position: 'left',
-            label: 'Manuel prestataire',
+            label: 'Prestataire',
           },
           {
-            href: 'https://github.com/asso-numahop/numahop-doc-user',
-            label: 'GitHub',
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          // Barre de recherche locale (ajoutée ici)
+          {
+            type: 'search',
             position: 'right',
           },
         ],
       },
+
+      // Pied de page
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        copyright: `Copyright © ${new Date().getFullYear()} Association NumaHop`,
       },
     }),
+
+  // Plugins (recherche locale)
+  plugins: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['fr', 'en'],
+      },
+    ],
+  ],
 };
 
-export default config;
+module.exports = config;
+
+

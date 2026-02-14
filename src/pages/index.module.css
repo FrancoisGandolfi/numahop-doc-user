@@ -1,23 +1,87 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* index.module.css */
 .heroBanner {
-  padding: 4rem 0;
+  padding: rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.buttons {
+.logoContainer {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: 500px;
+  height: auto;
+}
+
+.tagline {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary-lightest);
+}
+
+.buttonsContainer {
   display: flex;
-  align-items: center;
+  gap: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  background-color: #ff5e0f; /* Couleur principale */
+  color: white;
+  padding: 0.8rem 2.5rem;
+  border-radius: 4px;
+  font-weight: 800;
+  transition: background-color 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: #fc063b; /* Couleur secondaire au survol */
+}
+
+/* Responsive pour mobile */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem 0;
+  }
+
+  .buttonsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actionButton {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+}
+/* Style pour les icônes Font Awesome */
+.featureIcon {
+  color: #5c2f42; /* Couleur principale de votre thème */
+  margin-bottom: 1rem;
+  display: flex;
   justify-content: center;
 }
+
+/* Style pour les features */
+.features {
+  padding: 4rem 0;
+}
+
+/* Optionnel: effet de survol sur les icônes */
+.col:hover .featureIcon {
+  color: #9d6d7b; /* Couleur secondaire */
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+

@@ -1,45 +1,48 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSitemap, faCode, faBookAtlas } from '@fortawesome/free-solid-svg-icons';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Mutualisation',
+    Icon: faSitemap, // Icône pour Mutualisation
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        NumaHOP est une plateforme mutualisée pour la gestion des chaînes de numérisation, depuis la constitution de lots de documents jusqu'à leur publication dans une bibliothèque numérique ou leur dépôt en archivage pérenne.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Logiciel libre',
+    Icon: faCode, // Icône pour Logiciel libre
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        NumaHop est un logiciel libre permet désormais d'accélérer, de simplifier les projets de numérisation, grâce à un interfaçage largement automatisé entre les différentes étapes de la numérisation et les acteurs concernés (prestataires de numérisation, bibliothèques, diffuseurs, CINES).
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Communauté',
+    Icon: faBookAtlas, // Icône pour Communauté
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        NumaHOP a été financé par le Département de Paris et la Comue Université Sorbonne Paris Cité.
+        Il a été développé par la société Progilone, sous la direction de trois établissements pilotes : la Bibliothèque de Sciences Po, la BULAC et la Bibliothèque Sainte-Geneviève.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Icon, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {/* Remplacez le SVG par l'icône Font Awesome */}
+        <div className={styles.featureIcon}>
+          <FontAwesomeIcon icon={Icon} size="3x" />
+        </div>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
