@@ -66,22 +66,45 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'adminSidebar',
+            to: '/presentation', // Lien vers ta page de présentation
+            label: 'Présentation',
             position: 'left',
-            label: 'Administrateur',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'userSidebar',
-            position: 'left',
-            label: 'Utilisateur',
+            to: '/communaute',
+            sidebarId: 'comuSidebar',
+            label: 'Communauté',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'prestaSidebar',
+            to: 'blog',
+            sidebarId: 'workSidebar',
+            label: 'NumaWork',
+          },
+          {
             position: 'left',
-            label: 'Prestataire',
+            label: 'Manuels d\'utilisation',
+            items: [
+              {
+                to: '/docs/intro',
+                sidebarId: 'comuSidebar',
+                label: 'Introduction',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'adminSidebar',
+                label: 'Administrateur',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'userSidebar',
+                label: 'Utilisateur',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'prestaSidebar',
+                label: 'Prestataire',
+              }
+            ]
           },
           {
             type: 'localeDropdown',

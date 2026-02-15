@@ -30,22 +30,27 @@ function HomepageHeader() {
             {siteConfig.tagline}
           </p>
 
-          {/* Trois boutons sur une ligne */}
+          {/* Quatre boutons sur une ligne */}
           <div className={styles.buttonsContainer}>
             <Link
               className={clsx('button button--primary', styles.actionButton)}
-              to="https://votre-lien-installation.com">
-              Installer <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
+              to="https://github.com/NumaHOP/NumaHOP">
+              🛠️ Installer <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
             </Link>
             <Link
               className={clsx('button button--primary', styles.actionButton)}
               to="https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard">
-              Testez le bac à sable <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
+              📚 Apprendre <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
+            </Link>
+            <Link
+              className={clsx('button button--primary', styles.actionButton)}
+              to="https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard">
+              🎮 Testez <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
             </Link>
             <Link
               className={clsx('button button--primary', styles.actionButton)}
               to="https://votre-lien-contribuez.com">
-              Contribuez <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
+              💡 Contribuez <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
             </Link>
           </div>
         </div>

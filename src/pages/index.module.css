@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -31,13 +31,13 @@
 
 .buttonsContainer {
   display: flex;
-  gap: 5rem;
+  gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .actionButton {
-  background-color: #ff5e0f; /* Couleur principale */
+  background-color: var(--button-sample-color); /* Couleur principale */
   color: white;
   padding: 0.8rem 2.5rem;
   border-radius: 4px;
@@ -46,7 +46,7 @@
 }
 
 .actionButton:hover {
-  background-color: #fc063b; /* Couleur secondaire au survol */
+  background-color: var(--button-hover-color); /* Couleur secondaire au survol */
 }
 
 /* Responsive pour mobile */

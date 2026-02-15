@@ -1,0 +1,247 @@
+/* Couleurs principales */
+:root {
+  --numahop-primary: #6b2c3e; /* Bordeaux */
+  --numahop-secondary: #ff5e0f; /* Orange */
+  --numahop-text: #333333; /* Texte */
+  --numahop-light: #f9f5f6; /* Fond clair */
+  --numahop-dark: #2d2d2d; /* Fond sombre */
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section héroïque */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+  gap: 40px;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 50%;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  color: var(--numahop-primary);
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: var(--numahop-text);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.heroButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.buttonIcon {
+  font-size: 0.9em;
+}
+
+.heroImage {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+}
+
+.heroImage img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section des fonctionnalités */
+.features {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--numahop-primary);
+  margin-bottom: 3rem;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.featureCard {
+  background-color: var(--numahop-light);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.featureIcon {
+  color: var(--numahop-secondary);
+  margin-bottom: 1rem;
+}
+
+.featureTitle {
+  font-size: 1.3rem;
+  color: var(--numahop-primary);
+  margin-bottom: 1rem;
+}
+
+.featureDescription {
+  color: var(--numahop-text);
+  line-height: 1.6;
+}
+
+/* Section de présentation */
+.presentation {
+  padding: 80px 0;
+}
+
+.presentationContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.presentationText {
+  flex: 1;
+  max-width: 50%;
+}
+
+.presentationText p {
+  font-size: 1.1rem;
+  color: var(--numahop-text);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.presentationImage {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+}
+
+.presentationImage img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section des captures d'écran */
+.screenshots {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.screenshotsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.screenshotCard {
+  text-align: center;
+}
+
+.screenshotCard img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.screenshotCard h3 {
+  color: var(--numahop-primary);
+  font-size: 1.2rem;
+}
+
+/* Section d'appel à l'action */
+.cta {
+  padding: 80px 0;
+  text-align: center;
+  background-color: var(--numahop-light);
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  color: var(--numahop-primary);
+  margin-bottom: 1rem;
+}
+
+.ctaSubtitle {
+  font-size: 1.2rem;
+  color: var(--numahop-text);
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .heroContent,
+  .heroImage {
+    max-width: 100%;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .presentationContent {
+    flex-direction: column;
+  }
+
+  .presentationText,
+  .presentationImage {
+    max-width: 100%;
+  }
+
+  .ctaTitle {
+    font-size: 2rem;
+  }
+}

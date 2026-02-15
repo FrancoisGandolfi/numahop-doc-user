@@ -16,6 +16,8 @@
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Open Sans', sans-serif; /* Police de votre appli */
   --ifm-color-text-primary: #58585a; /* Texte principal */
+  --button-sample-color: #ff5e0f;
+  --button-hover-color:  #fc063b;
   --docusaurus-highlighted-code-line-bg: rgba(92, 47, 66, 0.1);
 }
 
@@ -25,3 +27,6 @@
   padding-bottom: 0.2rem; /* Espacement pour éviter que le soulignement touche le texte */
 }
 
+.menu_SIkG {
+  background-color: var(--ifm-color-primary-lightest);
+}
