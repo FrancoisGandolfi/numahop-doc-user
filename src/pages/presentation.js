@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import styles from './presentation.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faCog, faUsers, faFileExport, faScrewdriverWrench, faCheckDouble, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faCog, faUsers, faFileExport, faScrewdriverWrench, faCheckDouble, faLock, faVideo } from '@fortawesome/free-solid-svg-icons';
 import Link from '@docusaurus/Link';
 
 const features = [
@@ -113,14 +113,14 @@ const PresentationPage = () => {
                 href="https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                Essayer NumaHOP <FontAwesomeIcon icon={faLock} className={styles.buttonIcon} />
+              ><FontAwesomeIcon icon={faLock} className={styles.buttonIcon} />
+                Essayer NumaHOP
               </a>
               <a
-                className={clsx('button button--secondary button--lg', styles.heroButton)}
+                className={clsx('button button--primary button--lg', styles.heroButton)}
                 href="/docs/intro"
-              >
-                Documentation <FontAwesomeIcon icon={faBook} className={styles.buttonIcon} />
+              > <FontAwesomeIcon icon={faBook} className={styles.buttonIcon} />
+                Documentation
               </a>
             </div>
           </div>
@@ -131,7 +131,10 @@ const PresentationPage = () => {
 
         {/* Section des fonctionnalités */}
         <section className={styles.features}>
-          <h2 className={styles.sectionTitle}>Fonctionnalités clés</h2>
+          <h2 className={styles.sectionTitle}>
+            <FontAwesomeIcon icon={faCog} className={styles.sectionIcon} />
+            Fonctionnalités clés
+          </h2>
           <div className={styles.featuresGrid}>
             {features.map((feature, index) => (
               <FeatureCard
@@ -144,9 +147,13 @@ const PresentationPage = () => {
             ))}
           </div>
         </section>
+
+
         {/* Section des vidéos de démonstration */}
         <section className={styles.videosSection}>
-          <h2 className={styles.sectionTitle}>NumaHOP en vidéo</h2>
+          <h2 className={styles.sectionTitle}>
+            <FontAwesomeIcon icon={faVideo} className={styles.sectionIcon} />
+            NumaHOP en vidéo</h2>
           <div className={styles.videosGrid}>
             {/* Vidéo 1: Lundis Numériques INHA */}
             <div className={styles.videoCard}>

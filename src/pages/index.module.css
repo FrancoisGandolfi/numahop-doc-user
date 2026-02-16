@@ -1,87 +1,160 @@
-/* index.module.css */
+/* ===== Variables et réinitialisations ===== */
+:root {
+  --numahop-primary: #6b2c3e;       /* Bordeaux */
+  --numahop-secondary: #ff5e0f;     /* Orange */
+  --numahop-text: #333333;          /* Texte */
+  --numahop-light: #f9f5f6;         /* Fond clair */
+  --numahop-dark: #2d2d2d;          /* Fond sombre */
+  --numahop-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --numahop-transition: all 0.3s ease;
+  --max-width: 1200px;
+  --hero-height: 500px;
+}
+
+/* ===== Conteneur principal ===== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 80%;
+}
+
+/* ===== Hero Banner ===== */
 .heroBanner {
-  padding: rem 0;
+  padding: 4rem 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  background: var(--numahop-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heroContent {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.logoContainer {
-  margin-bottom: 1rem;
 }
 
 .logo {
   max-width: 500px;
   height: auto;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .tagline {
-  margin-bottom: 2.5rem;
   font-size: 1.5rem;
-  color: var(--ifm-color-primary-lightest);
+  color: var(--numahop-light);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.6;
 }
 
-.buttonsContainer {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
+/* ===== Boutons (style identique à votre extrait) ===== */
 .actionButton {
-  background-color: var(--button-sample-color); /* Couleur principale */
-  color: white;
-  padding: 0.8rem 2.5rem;
-  border-radius: 4px;
-  font-weight: 800;
-  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: var(--numahop-transition);
 }
 
-.actionButton:hover {
-  background-color: var(--button-hover-color); /* Couleur secondaire au survol */
+.buttonIcon {
+  font-size: 0.9em;
 }
 
-/* Responsive pour mobile */
-@media screen and (max-width: 996px) {
+/* ===== Section Features ===== */
+.features {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.featuresTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--numahop-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.featuresSubtitle {
+  text-align: center;
+  color: var(--numahop-text);
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.featureCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: var(--numahop-transition);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 100%;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--numahop-shadow);
+  border-color: var(--numahop-primary);
+}
+
+.featureIcon {
+  color: var(--numahop-secondary);
+  margin: 0 auto 1rem;
+  font-size: 2rem;
+}
+
+.featureTitle {
+  font-size: 1.2rem;
+  color: var(--numahop-primary);
+  margin-bottom: 1rem;
+}
+
+.featureDescription {
+  color: var(--numahop-text);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  :root {
+    --hero-height: 400px;
+  }
+
   .heroBanner {
     padding: 2rem 0;
   }
 
-  .buttonsContainer {
-    flex-direction: column;
-    align-items: center;
+  .tagline {
+    font-size: 1.2rem;
   }
 
   .actionButton {
-    width: 100%;
-    margin-bottom: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: var(--numahop-transition);
   }
 }
-/* Style pour les icônes Font Awesome */
-.featureIcon {
-  color: #5c2f42; /* Couleur principale de votre thème */
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-/* Style pour les features */
-.features {
-  padding: 4rem 0;
-}
-
-/* Optionnel: effet de survol sur les icônes */
-.col:hover .featureIcon {
-  color: #9d6d7b; /* Couleur secondaire */
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-

@@ -1,58 +1,22 @@
-/* Couleurs principales */
+/* ===== Variables et réinitialisations ===== */
 :root {
-  --numahop-primary: #6b2c3e; /* Bordeaux */
-  --numahop-secondary: #ff5e0f; /* Orange */
-  --numahop-text: #333333; /* Texte */
-  --numahop-light: #f9f5f6; /* Fond clair */
-  --numahop-dark: #2d2d2d; /* Fond sombre */
+  --numahop-primary: #6b2c3e;       /* Bordeaux */
+  --numahop-secondary: #ff5e0f;     /* Orange */
+  --numahop-text: #333333;          /* Texte */
+  --numahop-light: #f9f5f6;         /* Fond clair */
+  --numahop-dark: #2d2d2d;          /* Fond sombre */
+  --numahop-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --numahop-transition: all 0.3s ease;
 }
 
-/* Conteneur principal */
+/* ===== Conteneur principal ===== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Section héroïque */
-.hero {
-  padding: 80px 0;
-  text-align: center;
-  background-color: var(--numahop-light);
-  border-radius: 12px;
-  margin-bottom: 40px;
-}
-
-.heroContent {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.heroTitle {
-  font-size: 2.5rem;
-  color: var(--numahop-primary);
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.heroIcon {
-  color: var(--numahop-secondary);
-}
-
-.heroSubtitle {
-  font-size: 1.2rem;
-  color: var(--numahop-text);
-  line-height: 1.6;
-}
-
-/* Section association */
-.association {
-  padding: 80px 0;
-}
-
+/* ===== Sections générales ===== */
 .sectionTitle {
   font-size: 2rem;
   color: var(--numahop-primary);
@@ -64,6 +28,18 @@
 
 .sectionIcon {
   color: var(--numahop-secondary);
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  color: var(--numahop-text);
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+/* ===== Section "Association" ===== */
+.association {
+  padding: 80px 0;
 }
 
 .associationContent {
@@ -93,7 +69,7 @@
 .associationImage img {
   max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--numahop-shadow);
 }
 
 .associationStats {
@@ -118,37 +94,32 @@
   color: var(--numahop-text);
 }
 
-/* Section membres */
+/* ===== Section "Membres" ===== */
 .membres {
   padding: 80px 0;
 }
 
-.sectionDescription {
-  font-size: 1.1rem;
-  color: var(--numahop-text);
-  margin-bottom: 2rem;
-  max-width: 800px;
-}
-
 .membresGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
 .membreCard {
-  background-color: white;
+  background: white;
+  border-radius: 12px;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: var(--numahop-transition);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .membreCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--numahop-shadow);
+  border-color: var(--numahop-primary);
 }
 
 .membreLogo {
@@ -167,25 +138,33 @@
 .membreNom {
   font-size: 1.3rem;
   color: var(--numahop-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.membreType {
+.membreLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.membreLink {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  color: var(--numahop-text);
-  margin-bottom: 1rem;
+  color: var(--numahop-primary);
+  text-decoration: none;
   font-size: 0.9rem;
+  transition: color var(--numahop-transition);
 }
 
-.membreDescription {
-  color: var(--numahop-text);
-  line-height: 1.6;
+.membreLink:hover {
+  color: var(--numahop-secondary);
+  text-decoration: underline;
 }
 
-/* Section témoignages */
+/* ===== Section "Témoignages" ===== */
 .temoignages {
   padding: 80px 0;
   background-color: var(--numahop-light);
@@ -251,21 +230,15 @@
   border-left: 3px solid var(--numahop-secondary);
 }
 
-/* Section rejoindre */
+/* ===== Section "Rejoindre" ===== */
 .rejoindre {
   padding: 80px 0;
   text-align: center;
 }
 
-.rejoindreContent {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  margin-top: 2rem;
-}
-
 .rejoindreAvantages {
-  flex: 1;
+  margin: 2rem auto;
+  max-width: 600px;
   text-align: left;
 }
 
@@ -293,44 +266,82 @@
   left: 0;
 }
 
-.rejoindreContact {
-  flex: 1;
-  text-align: left;
+/* Cartes d'options */
+.rejoindreOptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.rejoindreContact h3 {
+.optionCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: var(--numahop-transition);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.optionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--numahop-shadow);
+  border-color: var(--numahop-primary);
+}
+
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(107, 44, 62, 0.1);
   color: var(--numahop-primary);
-  margin-bottom: 1rem;
 }
 
-.rejoindreContact p {
+.iconStyle {
+  font-size: 1.5rem;
+}
+
+.cardTitle {
+  margin-bottom: 1rem;
+  color: var(--numahop-primary);
+  font-size: 1.3rem;
+}
+
+.cardDescription {
   color: var(--numahop-text);
   margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
-.contactButton {
+.cardButton {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: var(--numahop-transition);
 }
 
 .buttonIcon {
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
-/* Responsive design */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .heroTitle {
-    font-size: 2rem;
-  }
-
   .associationContent,
   .rejoindreContent {
     flex-direction: column;
   }
 
   .membresGrid,
-  .temoignagesGrid {
+  .temoignagesGrid,
+  .rejoindreOptions {
     grid-template-columns: 1fr;
   }
 
@@ -338,45 +349,8 @@
     flex-direction: column;
     gap: 1rem;
   }
-}
 
-/* Grille pour 4 établissements par ligne */
-.membresGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.membreCard {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Liens vers site internet et bibliothèque numérique */
-.membreLinks {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.membreLink {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  color: var(--numahop-primary);
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
-}
-
-.membreLink:hover {
-  color: var(--numahop-secondary);
-  text-decoration: underline;
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
 }

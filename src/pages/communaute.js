@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import styles from './communaute.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faUniversity, faSchool, faBuilding, faQuoteLeft, faHandshake, faEnvelope, faGlobe, faBook, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faUniversity, faSchool, faBuilding, faQuoteLeft, faHandshake, faEnvelope, faGlobe, faBook, faScrewdriverWrench, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 // Liste des établissements membres
 const membres = [
@@ -176,40 +176,55 @@ const CommunautePage = () => {
         </section>
 
         {/* Appel à rejoindre */}
+        {/* Appel à rejoindre */}
         <section className={styles.rejoindre}>
           <h2 className={styles.sectionTitle}>
             <FontAwesomeIcon icon={faEnvelope} className={styles.sectionIcon} />
             Rejoignez la communauté
           </h2>
-          <p className={styles.sectionDescription}>
-            Vous êtes une bibliothèque, une archive ou une institution culturelle et vous souhaitez rejoindre la communauté NumaHOP ?
-          </p>
-          <div className={styles.rejoindreContent}>
-            <div className={styles.rejoindreAvantages}>
-              <h3>Pourquoi nous rejoindre ?</h3>
-              <ul className={styles.avantagesList}>
-                <li>Accès à une plateforme puissante et open source</li>
-                <li>Participation aux développements futurs</li>
-                <li>Formation et support technique</li>
-                <li>Réseau d'échanges entre professionnels</li>
-                <li>Visibilité dans notre communauté</li>
-              </ul>
-            </div>
-            <div className={styles.rejoindreContact}>
-              <h3>Contactez-nous</h3>
-              <p>
-                Envoyez-nous un message pour discuter de votre projet et des modalités d'adhésion.
+
+          {/* Cartes d'options (2 colonnes) */}
+          <div className={styles.rejoindreOptions}>
+            {/* Carte : Liste de diffusion */}
+            <div className={clsx(styles.optionCard, styles.cardHover)}>
+              <div className={styles.cardIcon}>
+                <FontAwesomeIcon icon={faUsers} className={styles.iconStyle} />
+              </div>
+              <h3 className={styles.cardTitle}>Échangez avec la communauté</h3>
+              <p className={styles.cardDescription}>
+                Partagez vos retours et collaborez avec la communauté.
               </p>
               <a
-                className={clsx('button button--primary button--lg', styles.contactButton)}
-                href="mailto:contact@numahop.fr"
+                className={clsx('button button--primary', styles.cardButton)}
+                href="https://groupes.renater.fr/sympa/info/numahop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faExternalLinkAlt} className={styles.buttonIcon} />
+                Rejoindre la liste Renater
+              </a>
+            </div>
+
+            {/* Carte : Adhésion à l'association */}
+            <div className={clsx(styles.optionCard, styles.cardHover)}>
+              <div className={styles.cardIcon}>
+                <FontAwesomeIcon icon={faHandshake} className={styles.iconStyle} />
+              </div>
+              <h3 className={styles.cardTitle}>Devenez membre de l’association</h3>
+              <p className={styles.cardDescription}>
+                Soutenez le projet en adhérant à l'association NumaHOP.
+              </p>
+              <a
+                className={clsx('button button--primary', styles.cardButton)}
+                href="mailto:association-numahop@sorbonne-nouvelle.fr?subject=Demande%20d%27adhésion%20à%20NumaHOP&body=Bonjour,%0D%0A%0D%0AJe souhaite adhérer à l%27association NumaHOP. Pouvez-vous me transmettre les modalités ?%0D%0A%0D%0ACordialement,%0D%0A"
               >
                 <FontAwesomeIcon icon={faEnvelope} className={styles.buttonIcon} />
-                Nous contacter
+                Conatcter l'association NumaHop
               </a>
             </div>
           </div>
         </section>
+
       </div>
     </Layout>
   );

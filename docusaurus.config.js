@@ -61,6 +61,12 @@ const config = {
       // Image pour les réseaux sociaux
       image: 'img/logo.png',
 
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
+
       // Barre de navigation
       navbar: {
         title: 'NumaDoc',
@@ -78,11 +84,6 @@ const config = {
             to: '/communaute',
             sidebarId: 'comuSidebar',
             label: 'Communauté',
-          },
-          {
-            to: 'blog',
-            sidebarId: 'workSidebar',
-            label: 'NumaWork',
           },
           {
             position: 'left',
@@ -109,43 +110,47 @@ const config = {
                 label: 'Prestataire',
               },
               {
-              type: 'docSidebar',
-              sidebarId: 'glossaireSidebar',
-              label: 'Glossaire',
+                type: 'docSidebar',
+                sidebarId: 'glossaireSidebar',
+                label: 'Glossaire',
               }
-        ]
-      },
+            ]
+          },
           {
-  type: 'localeDropdown',
-    position: 'right',
+            to: 'blog',
+            sidebarId: 'workSidebar',
+            label: 'NumaWork',
+            position: 'right'
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
 
-{
-  type: 'search',
-    position: 'right',
+          {
+            type: 'search',
+            position: 'right',
           },
         ],
       },
 
-// Pied de page
-footer: {
-  style: 'dark',
-    copyright: `Copyright © ${new Date().getFullYear()} Association NumaHop`,
+      // Pied de page
+      footer: {
+        style: 'dark',
+        copyright: `Copyright © ${new Date().getFullYear()} Association NumaHop`,
       },
     }),
 
-// Plugins (recherche locale)
-plugins: [
-  [
-    '@easyops-cn/docusaurus-search-local',
-    {
-      hashed: true,
-      language: ['fr', 'en'],
-    },
+  // Plugins (recherche locale)
+  plugins: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['fr', 'en'],
+      },
+    ],
   ],
-],
 };
 
 module.exports = config;
-
-
