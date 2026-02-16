@@ -7,7 +7,7 @@ import { faSitemap, faCode, faBookAtlas } from '@fortawesome/free-solid-svg-icon
 const FeatureList = [
   {
     title: 'Mutualisation',
-    Icon: faSitemap, // Icône pour Mutualisation
+    Icon: faSitemap,
     description: (
       <>
         NumaHOP est une plateforme mutualisée pour la gestion des chaînes de numérisation, depuis la constitution de lots de documents jusqu'à leur publication dans une bibliothèque numérique ou leur dépôt en archivage pérenne.
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Logiciel libre',
-    Icon: faCode, // Icône pour Logiciel libre
+    Icon: faCode,
     description: (
       <>
         NumaHop est un logiciel libre permet désormais d'accélérer, de simplifier les projets de numérisation, grâce à un interfaçage largement automatisé entre les différentes étapes de la numérisation et les acteurs concernés (prestataires de numérisation, bibliothèques, diffuseurs, CINES).
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Communauté',
-    Icon: faBookAtlas, // Icône pour Communauté
+    Icon: faBookAtlas,
     description: (
       <>
         NumaHOP a été financé par le Département de Paris et la Comue Université Sorbonne Paris Cité.

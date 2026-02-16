@@ -34,23 +34,23 @@ function HomepageHeader() {
           <div className={styles.buttonsContainer}>
             <Link
               className={clsx('button button--primary', styles.actionButton)}
-              to="https://github.com/NumaHOP/NumaHOP">
-              🛠️ Installer <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
+              to="https://github.com/NumaHOP/">
+              Installer <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
+            </Link>
+            <Link
+              className={clsx('button button--primary', styles.actionButton)}
+              to="/docs/intro">
+              Apprendre <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
             </Link>
             <Link
               className={clsx('button button--primary', styles.actionButton)}
               to="https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard">
-              📚 Apprendre <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
-            </Link>
-            <Link
-              className={clsx('button button--primary', styles.actionButton)}
-              to="https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard">
-              🎮 Testez <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
+              Tester <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
             </Link>
             <Link
               className={clsx('button button--primary', styles.actionButton)}
               to="https://votre-lien-contribuez.com">
-              💡 Contribuez <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
+              Contribuer <FontAwesomeIcon icon={faExternalLink} className={styles.buttonIcon} />
             </Link>
           </div>
         </div>

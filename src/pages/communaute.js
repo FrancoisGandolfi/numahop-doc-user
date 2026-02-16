@@ -3,66 +3,78 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import styles from './communaute.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faUniversity, faBuilding, faQuoteLeft, faHandshake, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faUniversity, faSchool, faBuilding, faQuoteLeft, faHandshake, faEnvelope, faGlobe, faBook, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 
 // Liste des établissements membres
 const membres = [
   {
     nom: 'Bibliothèque Sainte Geneviève',
-    type: 'Bibliothèque',
-    description: 'Une des plus grandes bibliothèques municipales de France, engagée dans la numérisation de ses collections.',
     logo: '/img/logos/bsg-logo.png',
+    siteInternet: 'https://www.bsg.univ-paris3.fr/iguana/www.main.cls',
+    bibliothequeNumerique: 'https://genovefa.bsg.univ-paris3.fr/s/genovefa/page/accueil',
   },
   {
-    nom: 'Science Po Paris',
-    type: 'Bibliothèque',
-    description: 'Conservent les archives publiques françaises et participent activement à leur numérisation.',
-    logo: '/img/logos/sciencepo-logo.png',
+    nom: 'Sciences Po Paris',
+    logo: '/img/logos/sciencespo-logo.png',
+    siteInternet: 'hhttps://www.sciencespo.fr/fr/',
+    bibliothequeNumerique: 'https://bibnum.sciencespo.fr/s/catalogue/page/accueil',
   },
   {
     nom: 'Université Paris Saclay',
-    type: 'Université',
-    description: 'Partenaire historique de NumaHOP, la BnF utilise la plateforme pour ses collections numériques.',
     logo: '/img/logos/saclay-logo.png',
+    siteInternet: 'https://www.universite-paris-saclay.fr/',
+    bibliothequeNumerique: 'https://numaclay.universite-paris-saclay.fr/s/numaclay/page/accueil',
   },
   {
     nom: 'Bibliothèque de l\'ENS',
-    type: 'Bibliotheque',
-    description: 'Utilise NumaHOP pour la gestion de ses archives et documents pédagogiques numérisés.',
     logo: '/img/logos/ens-logo.png',
+    siteInternet: 'https://www.ens.psl.eu/',
+    bibliothequeNumerique: 'https://lucienne.ens.psl.eu/s/lucienne/page/welcome',
   },
   {
-    nom: 'Bulac',
-    type: 'Bibliothèque',
-    description: 'Membre actif de la communauté, participant aux développements de nouvelles fonctionnalités.',
+    nom: 'BULAC',
     logo: '/img/logos/bulac-logo.png',
+    siteInternet: 'https://www.bulac.fr/',
+    bibliothequeNumerique: 'https://bina.bulac.fr/s/bina/page/welcome',
   },
   {
     nom: 'Humathèque Condorcet',
-    type: 'Bibliothèque',
-    description: 'Utilise NumaHOP pour la conservation et la diffusion de ses archives numérisées.',
     logo: '/img/logos/humatheque-logo.png',
+    siteInternet: 'https://www.humatheque-condorcet.fr/',
+    bibliothequeNumerique: 'https://bibnum.campus-condorcet.fr/s/bibnum/page/accueil',
+  },
+  {
+    nom: 'Bibliothèque nationale de France',
+    logo: '/img/logos/bnf-logo.png',
+    siteInternet: 'https://www.bnf.fr/fr',
+    bibliothequeNumerique: 'https://gallica.bnf.fr/accueil/fr/html/accueil-fr',
+  },
+  {
+    nom: 'Museum national d\'histoire naturelle',
+    logo: '/img/logos/mnhn-logo.png',
+    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
+    bibliothequeNumerique: '',
   },
 ];
 
-// Témoignages des membres
+// Prestataires
 const temoignages = [
   {
-    auteur: 'Marie Dupont',
-    etablissement: 'Bibliothèque Municipale de Lyon',
-    citation: 'NumaHOP nous a permis de centraliser et de rendre accessible l\'ensemble de nos collections numérisées. L\'interface est intuitive et les fonctionnalités de recherche sont très puissantes.',
-    photo: '/img/testimonials/marie-dupont.jpg',
+    auteur: 'Tech\'Advantage',
+    etablissement: '232 avenue Napoléon Bonaparte\n92500 Rueil-Malmaison',
+    citation: 'Depuis 30 ans, TECH’advantage aide ses clients à saisir les opportunités offertes par les services numériques dans les domaines scientifiques et culturels. Grâce à notre suivi sur-mesure, nous accompagnons des projets innovants dans des secteurs variés, allant de la mobilité à l\'industrialisation des R&D, en passant par l\'intelligence artificielle.',
+    photo: 'https://media.licdn.com/dms/image/v2/C4D0BAQFV28zrEeig-Q/company-logo_200_200/company-logo_200_200/0/1630523069886/techadvantage_logo?e=2147483647&v=beta&t=HBeoc8PZ8YiSG5gqfjJW1m09G7YwTpNdxBBW-xFAB_s',
   },
   {
-    auteur: 'Jean Martin',
-    etablissement: 'Archives Nationales',
-    citation: 'Grâce à NumaHOP, nous avons pu accélérer notre processus de numérisation et offrir un accès en ligne à nos archives. La collaboration avec l\'équipe est excellente.',
-    photo: '/img/testimonials/jean-martin.jpg',
+    auteur: 'BibLibre',
+    etablissement: '23 Rue Fauchier\n13002 Marseille',
+    citation: 'Notre équipe collabore avec des bibliothèques de toutes tailles à travers le monde. Nous fournissons des logiciels libres adaptés à vos besoins et maintenus par des communautés dynamiques. Nos services vous aident à en tirer le meilleur parti afin que vous puissiez vous concentrer sur l\'essentiel : les usagers de votre bibliothèque.',
+    photo: 'https://media.licdn.com/dms/image/v2/C4E0BAQEegkaymyFdtA/company-logo_200_200/company-logo_200_200/0/1630637224690/biblibre_logo?e=2147483647&v=beta&t=y5M9FTYurGPtlD5NfqIoMHiqf2SJB8OxnTeJUuR-quk',
   },
   {
-    auteur: 'Sophie Leroy',
+    auteur: 'Sempiternelia',
     etablissement: 'Université Paris 1 Panthéon-Sorbonne',
-    citation: 'La plateforme est idéale pour gérer nos documents pédagogiques. Les étudiants et les enseignants apprécient particulièrement la facilité d\'accès aux ressources.',
+    citation: 'Services, conseils, développement, hébergement, infogérance et formation en solutions libres pour les humanités numériques et les bibliothèques numériques.',
     photo: '/img/testimonials/sophie-leroy.jpg',
   },
 ];
@@ -71,24 +83,12 @@ const CommunautePage = () => {
   return (
     <Layout title="Communauté NumaHOP" description="Découvrez l'association NumaHOP et ses établissements membres">
       <div className={styles.container}>
-        {/* En-tête */}
-        <header className={styles.hero}>
-          <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>
-              <FontAwesomeIcon icon={faUsers} className={styles.heroIcon} />
-              Communauté NumaHOP
-            </h1>
-            <p className={styles.heroSubtitle}>
-              Découvrez l'association NumaHOP et les établissements qui utilisent notre plateforme pour gérer leurs contenus numérisés.
-            </p>
-          </div>
-        </header>
 
         {/* Présentation de l'association */}
         <section className={styles.association}>
           <h2 className={styles.sectionTitle}>
             <FontAwesomeIcon icon={faHandshake} className={styles.sectionIcon} />
-            L'association NumaHOP
+            Association NumaHOP
           </h2>
           <div className={styles.associationContent}>
             <div className={styles.associationText}>
@@ -117,20 +117,17 @@ const CommunautePage = () => {
               </div>
             </div>
             <div className={styles.associationImage}>
-              <img src="/img/poster.png" alt="Équipe de l'association NumaHOP" />
+              <img src="/img/poster.jpg" alt="Équipe de l'association NumaHOP" />
             </div>
           </div>
         </section>
 
-        {/* Établissements membres */}
         <section className={styles.membres}>
           <h2 className={styles.sectionTitle}>
             <FontAwesomeIcon icon={faUniversity} className={styles.sectionIcon} />
-            Nos établissements membres
+            Établissements membres
           </h2>
-          <p className={styles.sectionDescription}>
-            NumaHOP est utilisé par de nombreux établissements culturels et éducatifs en France et à l'international.
-          </p>
+
           <div className={styles.membresGrid}>
             {membres.map((membre, index) => (
               <div key={index} className={styles.membreCard}>
@@ -138,25 +135,27 @@ const CommunautePage = () => {
                   <img src={membre.logo} alt={`Logo ${membre.nom}`} />
                 </div>
                 <h3 className={styles.membreNom}>{membre.nom}</h3>
-                <div className={styles.membreType}>
-                  <FontAwesomeIcon icon={membre.type === 'Université' ? faUniversity : membre.type === 'Archives' ? faBuilding : faUniversity} />
-                  <span>{membre.type}</span>
+
+                <div className={styles.membreLinks}>
+                  <a href={membre.siteInternet} target="_blank" rel="noopener noreferrer" className={styles.membreLink}>
+                    <FontAwesomeIcon icon={faGlobe} /> Site internet
+                  </a>
+                  <a href={membre.bibliothequeNumerique} target="_blank" rel="noopener noreferrer" className={styles.membreLink}>
+                    <FontAwesomeIcon icon={faBook} /> Bibliothèque numérique
+                  </a>
                 </div>
-                <p className={styles.membreDescription}>{membre.description}</p>
               </div>
             ))}
           </div>
         </section>
 
+
         {/* Témoignages */}
         <section className={styles.temoignages}>
           <h2 className={styles.sectionTitle}>
-            <FontAwesomeIcon icon={faQuoteLeft} className={styles.sectionIcon} />
-            Témoignages
+            <FontAwesomeIcon icon={faScrewdriverWrench} className={styles.sectionIcon} />
+            Prestataires
           </h2>
-          <p className={styles.sectionDescription}>
-            Découvrez ce que nos membres disent de NumaHOP.
-          </p>
           <div className={styles.temoignagesGrid}>
             {temoignages.map((temoignage, index) => (
               <div key={index} className={styles.temoignageCard}>

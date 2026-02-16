@@ -1,32 +1,174 @@
 /**
- * Thème NumaHop pour Docusaurus/Infima
- * Couleurs : #5c2f42, #9d6d7b, #c7abb3, #58585a
- * Basé sur le template Infima original, mais avec couleurs de l'application.
+ * Thème NumaHOP pour Docusaurus/Infima
+ * Couleurs : #5c2f42 (bordeaux), #9d6d7b (rose pâle), #c7abb3 (rose clair), #58585a (gris)
+ * Adapté pour les modes clair et sombre.
  */
 
 :root {
-  /* Remplacement des variables Infima par vos couleurs */
-  --ifm-color-primary: #5c2f42;          /* Remplace le vert par votre marron foncé */
+  /* ===== Couleurs pour le mode clair ===== */
+  --ifm-color-primary: #5c2f42;          /* Bordeaux principal */
   --ifm-color-primary-dark: #4a2535;     /* Nuance plus foncée */
-  --ifm-color-primary-darker: #3a1c2a;   /* Nuance encore plus foncée */
+  --ifm-color-primary-darker: #3a1c2a;   /* Nuance très foncée */
   --ifm-color-primary-darkest: #2a141e;  /* Nuance la plus foncée */
-  --ifm-color-primary-light: #9d6d7b;   /* Votre marron moyen pour les liens/titres */
-  --ifm-color-primary-lighter: #c7abb3;  /* Votre marron clair pour les éléments inactifs */
-  --ifm-color-primary-lightest: #e0d0d3; /* Nuance très claire pour les fonds */
+  --ifm-color-primary-light: #9d6d7b;   /* Rose moyen pour les liens/titres */
+  --ifm-color-primary-lighter: #c7abb3;  /* Rose clair pour les éléments inactifs */
+  --ifm-color-primary-lightest: #e0d0d3; /* Fond très clair */
+
+  /* Couleurs de texte et fond */
+  --ifm-color-text-primary: #58585a;     /* Texte principal (gris foncé) */
+  --ifm-color-text-secondary: #7a7a7a;   /* Texte secondaire */
+  --ifm-background-color: #ffffff;     /* Fond blanc pour le mode clair */
+  --ifm-color-card-background: #ffffff; /* Fond des cartes */
+
+  /* Boutons et accents */
+  --button-sample-color: #ff5e0f;        /* Orange vif (accents) */
+  --button-hover-color: #fc063b;         /* Rouge orangé au survol */
+  --title-color: #982135;                /* Rouge bordeaux pour les titres */
+
+  /* Code et syntax highlighting */
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: 'Open Sans', sans-serif; /* Police de votre appli */
-  --ifm-color-text-primary: #58585a; /* Texte principal */
-  --button-sample-color: #ff5e0f;
-  --button-hover-color:  #fc063b;
-  --docusaurus-highlighted-code-line-bg: rgba(92, 47, 66, 0.1);
+  --ifm-font-family-base: 'Open Sans', sans-serif;
+  --ifm-color-code-background: #f8f8f8; /* Fond clair pour les blocs de code */
+  --docusaurus-highlighted-code-line-bg: rgba(92, 47, 66, 0.1); /* Surbrillance des lignes de code */
+}
+
+/* ===== Mode sombre ===== */
+[data-theme='dark'] {
+  /* Couleurs primaires adaptées au mode sombre */
+  --ifm-color-primary: #c7abb3;          /* Rose clair (meilleur contraste en sombre) */
+  --ifm-color-primary-dark: #9d6d7b;     /* Rose moyen */
+  --ifm-color-primary-darker: #5c2f42;   /* Bordeaux (texte clair) */
+  --ifm-color-primary-darkest: #2a141e;  /* Fond très sombre */
+  --ifm-color-primary-light: #e0d0d3;   /* Clair pour les éléments actifs */
+  --ifm-color-primary-lighter: #f0e8e9;  /* Fond ultra-clair */
+   --ifm-color-primary-lightest: #5c2f42;
+
+  /* Couleurs de texte et fond */
+  --ifm-color-text-primary: #58585a;     /* Texte principal (gris foncé) */
+  --ifm-color-text-secondary: #7a7a7a;   /* Texte secondaire */
+  --ifm-background-color: #ffffff;     /* Fond blanc pour le mode clair */
+  --ifm-color-card-background: #ffffff; /* Fond des cartes */
+
+  /* Boutons et accents (adaptés pour le contraste) */
+  --button-sample-color: #ff8c42;        /* Orange clair (meilleur contraste) */
+  --button-hover-color: #ff5e0f;         /* Orange vif au survol */
+  --title-color: #982135;                /* Orange pour les titres en sombre */
+
+  /* Code et syntax highlighting */
+  --ifm-color-code-background: #282c34; /* Fond sombre pour les blocs de code */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 140, 66, 0.2); /* Surbrillance orange */
+}
+
+/* ===== Personnalisation des éléments ===== */
+
+/* Navbar */
+.navbar {
+  background-color: var(--ifm-background-color);
+  border-bottom: 2px solid rgba(92, 47, 66, 0.1);
 }
 
 .navbar__link--active,
 .navbar__item--active > .navbar__link {
-  border-bottom: 4px solid var(--ifm-color-primary); /* Soulignement clair */
-  padding-bottom: 0.2rem; /* Espacement pour éviter que le soulignement touche le texte */
+  border-bottom: 3px solid var(--ifm-color-primary-light); /* Soulignement clair en mode clair, foncé en sombre */
+  padding-bottom: 0.2rem;
 }
 
+/* Sidebar */
 .menu_SIkG {
+  background-color: var(--ifm-color-primary-lightest); /* Fond bordeaux foncé */
+}
+
+.menu__link {
+  color: var(--ifm-color-primary-darkest); /* Texte clair en sombre, foncé en clair */
+}
+
+.menu__link--active {
+  color: var(--ifm-color-text-primary); /* Rose clair en sombre, bordeaux en clair */
+  color: var(--title-color);
+}
+
+/* Boutons */
+.button--primary {
+  background-color: var(--button-sample-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.button--primary:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Liens */
+a {
+  color: var(--ifm-color-primary-light); /* Rose moyen en clair, clair en sombre */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ifm-color-primary); /* Bordeaux en clair, rose en sombre */
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-color);
+}
+
+
+/* Tableaux */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(92, 47, 66, 0.2);
+}
+
+th {
   background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darker);
+}
+
+/* Alertes et infobulles */
+.alert {
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+
+.alert--info {
+  background-color: rgba(92, 47, 66, 0.1);
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+.alert--warning {
+  background-color: rgba(255, 94, 15, 0.1);
+  border-left: 4px solid var(--button-sample-color);
+}
+
+/* ===== Personnalisation du footer ===== */
+.footer {
+  background-color: var(--ifm-color-text-primary) !important;
+  color: white !important; /* Police blanche */
+  padding: 2rem 0;
+  border-top: 1px solid rgba(92, 47, 66, 0.2);
+}
+
+/* Ajustement des icônes dans la navbar */
+.navbar__item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item svg {
+  width: 16px;
+  height: 16px;
+  color: var(--numahop-primary);
 }

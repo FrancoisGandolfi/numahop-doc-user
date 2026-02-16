@@ -1,5 +1,9 @@
 // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUsers, faBook, faGlobe, faSearch, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -55,7 +59,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Image pour les réseaux sociaux
-      image: 'img/numahop-logo.png',
+      image: 'img/logo.png',
 
       // Barre de navigation
       navbar: {
@@ -66,7 +70,7 @@ const config = {
         },
         items: [
           {
-            to: '/presentation', // Lien vers ta page de présentation
+            to: '/presentation',
             label: 'Présentation',
             position: 'left',
           },
@@ -103,38 +107,43 @@ const config = {
                 type: 'docSidebar',
                 sidebarId: 'prestaSidebar',
                 label: 'Prestataire',
+              },
+              {
+              type: 'docSidebar',
+              sidebarId: 'glossaireSidebar',
+              label: 'Glossaire',
               }
-            ]
-          },
+        ]
+      },
           {
-            type: 'localeDropdown',
-            position: 'right',
+  type: 'localeDropdown',
+    position: 'right',
           },
-          // Barre de recherche locale (ajoutée ici)
-          {
-            type: 'search',
-            position: 'right',
+
+{
+  type: 'search',
+    position: 'right',
           },
         ],
       },
 
-      // Pied de page
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Association NumaHop`,
+// Pied de page
+footer: {
+  style: 'dark',
+    copyright: `Copyright © ${new Date().getFullYear()} Association NumaHop`,
       },
     }),
 
-  // Plugins (recherche locale)
-  plugins: [
-    [
-      '@easyops-cn/docusaurus-search-local',
-      {
-        hashed: true,
-        language: ['fr', 'en'],
-      },
-    ],
+// Plugins (recherche locale)
+plugins: [
+  [
+    '@easyops-cn/docusaurus-search-local',
+    {
+      hashed: true,
+      language: ['fr', 'en'],
+    },
   ],
+],
 };
 
 module.exports = config;
