@@ -24,7 +24,7 @@ const sidebars = {
   workSidebar: [
     {
       type: 'link',
-      label: 'NumaWork',
+      label: '@NumaWork',
       href: 'blog',
     },
   ],

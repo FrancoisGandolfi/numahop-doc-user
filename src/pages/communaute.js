@@ -192,7 +192,7 @@ const CommunautePage = () => {
               </div>
               <h3 className={styles.cardTitle}>Échangez avec la communauté</h3>
               <p className={styles.cardDescription}>
-                Partagez vos retours et collaborez avec la communauté.
+                Partagez vos retours d'experience, et apprenez de la communauté des utilisateurs de NumaHop.
               </p>
               <a
                 className={clsx('button button--primary', styles.cardButton)}
@@ -212,7 +212,7 @@ const CommunautePage = () => {
               </div>
               <h3 className={styles.cardTitle}>Devenez membre de l’association</h3>
               <p className={styles.cardDescription}>
-                Soutenez le projet en adhérant à l'association NumaHOP.
+                Soutenez le projet et ses developpements en adhérant à l'association NumaHop.
               </p>
               <a
                 className={clsx('button button--primary', styles.cardButton)}

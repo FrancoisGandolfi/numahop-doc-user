@@ -1,7 +1,8 @@
 /* ===== Variables et réinitialisations ===== */
 :root {
   --numahop-primary: #6b2c3e;       /* Bordeaux */
-  --numahop-secondary: #ff5e0f;     /* Orange */
+  --numahop-secondary: #ff5e0f; 
+  --numahop-medium: #982135;     /* Orange */
   --numahop-text: #333333;          /* Texte */
   --numahop-light: #f9f5f6;         /* Fond clair */
   --numahop-dark: #2d2d2d;          /* Fond sombre */
@@ -51,7 +52,7 @@
   line-height: 1.6;
 }
 
-/* ===== Boutons (style identique à votre extrait) ===== */
+/* ===== Boutons ===== */
 .actionButton {
   display: inline-flex;
   align-items: center;
@@ -68,8 +69,7 @@
 
 /* ===== Section Features ===== */
 .features {
-  padding: 4rem 0;
-  background-color: white;
+  padding: 2rem 0;
 }
 
 .featuresTitle {
@@ -95,8 +95,8 @@
 
 .featuresGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 .featureCard {
@@ -117,7 +117,7 @@
 }
 
 .featureIcon {
-  color: var(--numahop-secondary);
+  color: var(--numahop-medium);
   margin: 0 auto 1rem;
   font-size: 2rem;
 }

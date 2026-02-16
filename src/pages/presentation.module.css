@@ -2,6 +2,7 @@
 :root {
   --numahop-primary: #6b2c3e;       /* Bordeaux */
   --numahop-secondary: #ff5e0f;     /* Orange */
+  --numahop-medium: #982135; 
   --numahop-text: #333333;          /* Texte */
   --numahop-light: #f9f5f6;         /* Fond clair */
   --numahop-dark: #2d2d2d;          /* Fond sombre */
@@ -54,7 +55,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   border-radius: 6px;
   font-weight: 600;
   transition: var(--numahop-transition);
@@ -89,7 +90,7 @@
 }
 
 .sectionIcon {
-  color: var(--numahop-secondary);
+  color: var(--numahop-medium);
 }
 
 .featuresGrid {
@@ -165,7 +166,6 @@
 .videosSection {
   padding: 4rem 0;
   text-align: center;
-  background-color: var(--numahop-light);
   border-radius: 12px;
   margin: 2rem 0;
 }

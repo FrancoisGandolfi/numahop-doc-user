@@ -4,35 +4,35 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt, faBook, faLock, faDownload, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faBook, faLock, faDownload, faUsers, faCode } from '@fortawesome/free-solid-svg-icons';
 
 // Données pour les cartes de fonctionnalités
 const features = [
   {
-    title: 'Documentation complète',
+    title: 'Documentation',
     icon: faBook,
-    description: 'Guides détaillés pour administrateurs, utilisateurs et prestataires.',
+    description: 'Une documentation complète et détaillée, destinée aux administrateurs, utilisateurs et prestataires de numérisation.',
     link: '/docs/intro',
     isExternal: false,
   },
   {
     title: 'Logiciel libre',
-    icon: faDownload,
-    description: 'Code disponible sur GitHub.',
+    icon: faCode,
+    description: 'Un logiciel libre, placé sous licence MIT, dont le code source est disponible sur GitHub.',
     link: 'https://github.com/NumaHOP/',
     isExternal: true,
   },
   {
-    title: 'Démonstration en ligne',
+    title: 'Bac à sable',
     icon: faLock,
-    description: 'Environnement sécurisé pour tester NumaHOP.',
+    description: 'Une instance de test est mise disposition de la communtauté dans un environnement sécurisé.',
     link: 'https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard',
     isExternal: true,
   },
   {
-    title: 'Communauté active',
+    title: 'Communauté',
     icon: faUsers,
-    description: 'Support collaboratif via notre liste de diffusion.',
+    description: 'Soutien active du logiciel, l\'association assure le partage, l\'échange, et l\'evolution du logiciel.',
     link: '/communaute',
     isExternal: false,
   },

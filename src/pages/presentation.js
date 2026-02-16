@@ -23,7 +23,8 @@ const features = [
     description: 'Travaillez en équipe au sein de votre établissement et avec vos partenaires, en configurant des rôles et permissions spécifiques à chaque utilisateurs.',
     tags: [
       { label: 'Groupes', link: '/docs/intro' },
-      { label: 'Utilisateurs', link: '/docs/intro' }
+      { label: 'Utilisateurs', link: '/docs/intro' },
+      { label: "Livraisons", link: '/docs/intro'}
     ]
   },
   {
@@ -48,7 +49,7 @@ const features = [
   {
     title: 'Contrôle qualité',
     icon: faCheckDouble,
-    description: 'Accédez à vos documents depuis n’importe quel appareil, où que vous soyez.',
+    description: 'Facilitez le travail de contrôle en parametrant les contrôles automatiques et manuels selon vos entreprises de numérisation.',
     tags: [
       { label: 'Contrôles automatiques', link: '/docs/intro' },
       { label: 'Contrôles manuels', link: '/docs/intro' }
@@ -57,7 +58,7 @@ const features = [
   {
     title: 'Export automatisé',
     icon: faFileExport,
-    description: 'Disséminez vos unités documentaires (notices bibliographiques et reproductions numériques) sur différentes plateformes de diffusion et d\'archivage.',
+    description: 'Disséminez vos unités documentaires et leurs dérivées sur différentes plateformes de diffusion et d\'archivage.',
     tags: [
       { label: 'Archivage', link: '/docs/intro' },
       { label: 'Export', link: '/docs/intro' },
