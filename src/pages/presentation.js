@@ -152,39 +152,41 @@ const PresentationPage = () => {
             <div className={styles.videoCard}>
               <div className={styles.videoContainer}>
                 <iframe
-                  src="https://www.youtube.com/live/Dvdf_P-1sjQ?si=XpHqJYAuo6q9CIax"
+                  src="https://www.youtube.com/embed/Dvdf_P-1sjQ?si=XpHqJYAuo6q9CIax"
                   title="Lundis numériques de l'INHA 2022"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className={styles.videoTitle}>Les Lundis Numériques<br/>Institut national d'histoire de l'art</div>
+              <div className={styles.videoTitle}>Les Lundis Numériques<br />Institut national d'histoire de l'art</div>
             </div>
 
-            {/* Vidéo 3: Tableau de bord */}
             <div className={styles.videoCard}>
               <div className={styles.videoContainer}>
                 <iframe
-                  src="https://youtu.be/JRLUKbGO7RE?si=qzwugmBXv_sOcBqp"
+                  src="https://www.youtube.com/embed/JRLUKbGO7RE"
                   title="Journées professionnelles 2022"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className={styles.videoTitle}>Journées professionnelles 2022<br/>Université Paris-Saclay</div>
+              <div className={styles.videoTitle}>
+                Journées professionnelles 2022<br />Université Paris-Saclay
+              </div>
             </div>
 
-            {/* Vidéo 2: Recherche avancée */}
+
+            {/* Vidéo 3: Recherche avancée */}
             <div className={styles.videoCard}>
               <div className={styles.videoContainer}>
                 <iframe
-                  src="https://youtu.be/DbvXiuVewg0?si=Z5ySTJbbJG67_Gl_"
+                  src="https://www.youtube.com/embed/9iVJMFaQ7MA?si=iw58bwqNGtAYNpqy"
                   title="Journées professionnelles 2019"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className={styles.videoTitle}>Journées professionnelles 2019<br/>Bibliothèque universitaire des langues et civilisations</div>
+              <div className={styles.videoTitle}>Journées professionnelles 2019<br />Bibliothèque universitaire des langues et civilisations</div>
             </div>
 
           </div>
