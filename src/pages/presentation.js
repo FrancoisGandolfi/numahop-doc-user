@@ -12,9 +12,9 @@ const features = [
     icon: faBook,
     description: 'Centralisez et organisez vos notices documentaires et vos reproductions numériques en un seul endroit, accessible en ligne.',
     tags: [
-      { label: 'Projets', link: '/docs/intro' },
-      { label: 'Lots', link: '/docs/intro' },
-      { label: 'Trains', link: '/docs/intro' },
+      { label: 'Projets', link: '/docs/introduction/configurer-tableau-bord' },
+      { label: 'Lots', link: '/docs/introduction/configurer-tableau-bord' },
+      { label: 'Trains', link: '/docs/introduction/configurer-tableau-bord' },
     ]
   },
   {
@@ -22,9 +22,9 @@ const features = [
     icon: faUsers,
     description: 'Travaillez en équipe au sein de votre établissement et avec vos partenaires, en configurant des rôles et permissions spécifiques à chaque utilisateurs.',
     tags: [
-      { label: 'Groupes', link: '/docs/intro' },
-      { label: 'Utilisateurs', link: '/docs/intro' },
-      { label: "Livraisons", link: '/docs/intro'}
+      { label: 'Groupes', link: '/docs/introduction/configurer-tableau-bord' },
+      { label: 'Utilisateurs', link: '/docs/introduction/configurer-tableau-bord' },
+      { label: "Livraisons", link: '/docs/introduction/configurer-tableau-bord'}
     ]
   },
   {
@@ -32,9 +32,9 @@ const features = [
     icon: faCog,
     description: 'Adaptez les worflows, les constats d\'état et les contrôles aux besoins spécifiques à votre établissement et à chacun de vos projets de numérisation.',
     tags: [
-      { label: 'Worflows', link: '/docs/intro' },
-      { label: 'Contrôles', link: '/docs/intro' },
-      { label: 'Constat d\'états', link: '/docs/intro' }
+      { label: 'Worflows', link: '/docs/introduction/configurer-tableau-bord' },
+      { label: 'Contrôles', link: '/docs/introduction/configurer-tableau-bord' },
+      { label: 'Constat d\'états', link: '/docs/introduction/configurer-tableau-bord' }
     ]
   },
   {
@@ -42,8 +42,8 @@ const features = [
     icon: faScrewdriverWrench,
     description: 'Importez et dérivez les données natives de vos systèmes d\'information documentaire vers le standard interopérable Dublin Core.',
     tags: [
-      { label: 'Mappings', link: "/docs/intro" },
-      { label: 'Import de notices', link: '/docs/intro' }
+      { label: 'Mappings', link: "/docs/introduction/configurer-tableau-bord" },
+      { label: 'Import de notices', link: '/docs/introduction/configurer-tableau-bord' }
     ]
   },
   {
@@ -51,8 +51,8 @@ const features = [
     icon: faCheckDouble,
     description: 'Facilitez le travail de contrôle en parametrant les contrôles automatiques et manuels selon vos entreprises de numérisation.',
     tags: [
-      { label: 'Contrôles automatiques', link: '/docs/intro' },
-      { label: 'Contrôles manuels', link: '/docs/intro' }
+      { label: 'Contrôles automatiques', link: '/docs/introduction/configurer-tableau-bord' },
+      { label: 'Contrôles manuels', link: '/docs/introduction/configurer-tableau-bord' }
     ]
   },
   {
@@ -60,9 +60,9 @@ const features = [
     icon: faFileExport,
     description: 'Disséminez vos unités documentaires et leurs dérivées sur différentes plateformes de diffusion et d\'archivage.',
     tags: [
-      { label: 'Archivage', link: '/docs/intro' },
-      { label: 'Export', link: '/docs/intro' },
-      { label: 'Fichiers dérivés', link: '/docs/intro' }
+      { label: 'Archivage', link: '/docs/introduction/configurer-tableau-bord' },
+      { label: 'Export', link: '/docs/introduction/configurer-tableau-bord' },
+      { label: 'Fichiers dérivés', link: '/docs/introduction/configurer-tableau-bord' }
     ],
   },
 ];

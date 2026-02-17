@@ -12,7 +12,7 @@ const features = [
     title: 'Documentation',
     icon: faBook,
     description: 'Une documentation complète et détaillée, destinée aux administrateurs et utilisateurs autant qu\'aux prestataires de numérisation.',
-    link: '/docs/introduction/intro',
+    link: '/docs/introduction/configurer-tableau-bord',
     linkTitle: 'La Documentation',
   },
   {
