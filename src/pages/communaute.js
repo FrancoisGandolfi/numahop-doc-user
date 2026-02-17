@@ -4,29 +4,36 @@ import clsx from 'clsx';
 import styles from './communaute.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faUniversity, faSchool, faBuilding, faQuoteLeft, faHandshake, faEnvelope, faGlobe, faBook, faScrewdriverWrench, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
 // Liste des établissements membres
 const membres = [
   {
     nom: 'Bibliothèque Sainte Geneviève',
+    ville: 'Paris',
     logo: '/img/logos/bsg-logo.png',
     siteInternet: 'https://www.bsg.univ-paris3.fr/iguana/www.main.cls',
     bibliothequeNumerique: 'https://genovefa.bsg.univ-paris3.fr/s/genovefa/page/accueil',
   },
   {
     nom: 'Sciences Po Paris',
+    ville: 'Paris',
     logo: '/img/logos/sciencespo-logo.png',
     siteInternet: 'hhttps://www.sciencespo.fr/fr/',
     bibliothequeNumerique: 'https://bibnum.sciencespo.fr/s/catalogue/page/accueil',
   },
   {
     nom: 'Université Paris Saclay',
+    ville: 'Orsay',
     logo: '/img/logos/saclay-logo.png',
     siteInternet: 'https://www.universite-paris-saclay.fr/',
     bibliothequeNumerique: 'https://numaclay.universite-paris-saclay.fr/s/numaclay/page/accueil',
   },
   {
     nom: 'Bibliothèque de l\'ENS',
+    ville: 'Paris',
     logo: '/img/logos/ens-logo.png',
     siteInternet: 'https://www.ens.psl.eu/',
     bibliothequeNumerique: 'https://lucienne.ens.psl.eu/s/lucienne/page/welcome',
@@ -34,74 +41,80 @@ const membres = [
   {
     nom: 'BULAC',
     logo: '/img/logos/bulac-logo.png',
+    ville: 'Paris',
     siteInternet: 'https://www.bulac.fr/',
     bibliothequeNumerique: 'https://bina.bulac.fr/s/bina/page/welcome',
   },
   {
     nom: 'Humathèque Condorcet',
+    ville: 'Aubervilliers',
     logo: '/img/logos/humatheque-logo.png',
     siteInternet: 'https://www.humatheque-condorcet.fr/',
     bibliothequeNumerique: 'https://bibnum.campus-condorcet.fr/s/bibnum/page/accueil',
   },
   {
     nom: 'Bibliothèque nationale de France',
+    ville: 'Paris',
     logo: '/img/logos/bnf-logo.png',
     siteInternet: 'https://www.bnf.fr/fr',
     bibliothequeNumerique: 'https://gallica.bnf.fr/accueil/fr/html/accueil-fr',
   },
   {
     nom: 'Museum national d\'histoire naturelle',
+    ville: 'Paris',
     logo: '/img/logos/mnhn-logo.png',
     siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
-    bibliothequeNumerique: '',
   },
   {
-    nom: 'Sorbonne Universités',
-    logo: '/img/logos/sorbonneuniversites-logo.png',
-    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
-    bibliothequeNumerique: '',
+    nom: 'Sorbonne Université',
+    ville: 'Paris',
+    logo: '/img/logos/sorbonneuniversite-logo.png',
+    siteInternet: 'https://www.sorbonne-universite.fr/',
+    bibliothequeNumerique: 'https://patrimoine.sorbonne-universite.fr/',
   },
   {
     nom: 'Université Claude Bernard Lyon I',
+    ville: 'Lyon',
     logo: '/img/logos/lyon1-logo.png',
-    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
-    bibliothequeNumerique: '',
+    siteInternet: 'https://www.univ-lyon1.fr/',
   },
   {
     nom: 'Médiathèque Simonne Veil',
+    ville: 'Valenciennes',
     logo: '/img/logos/simoneveil-logo.png',
-    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
-    bibliothequeNumerique: '',
+    siteInternet: 'https://mediatheques.agglo-pvm.fr/vos-mediatheques/mediatheque-simone-veil',
   },
   {
     nom: 'Institut national d\'Histoire de l\'art',
+    ville: 'Paris',
     logo: '/img/logos/inha-logo.png',
-    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
-    bibliothequeNumerique: '',
+    siteInternet: 'https://www.inha.fr/',
+    bibliothequeNumerique: 'https://bibliotheque-numerique.inha.fr/',
   },
   {
     nom: 'Archives d\'Alsace',
+    ville: 'Strasbourg',
     logo: '/img/logos/archivesalsace-logo.png',
-    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
-    bibliothequeNumerique: '',
+    siteInternet: 'https://archives.alsace.eu/',
   },
   {
     nom: 'Centre d\'études supérieures de la Renaissance',
+    ville: 'Tours',
     logo: '/img/logos/cesr-logo.png',
-    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
-    bibliothequeNumerique: '',
+    siteInternet: 'https://cesr.univ-tours.fr/',
   },
   {
     nom: 'Bibliothèque interuniversitaire de la Sorbonne',
+    ville: 'Paris',
     logo: '/img/logos/bis-logo.png',
-    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
-    bibliothequeNumerique: '',
+    siteInternet: 'https://www.bis-sorbonne.fr/',
+    bibliothequeNumerique: 'https://nubis.bis-sorbonne.fr/',
   },
   {
     nom: 'Musée du Quai Branly',
+    ville: 'Paris',
     logo: '/img/logos/mqb-logo.png',
-    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
-    bibliothequeNumerique: '',
+    siteInternet: 'https://www.quaibranly.fr/fr/',
   },
 ];
 
@@ -164,9 +177,11 @@ const CommunautePage = () => {
                 </div>
               </div>
             </div>
+
             <div className={styles.associationImage}>
               <img src="/img/poster.jpg" alt="Équipe de l'association NumaHOP" />
             </div>
+
           </div>
         </section>
 
@@ -183,14 +198,17 @@ const CommunautePage = () => {
                   <img src={membre.logo} alt={`Logo ${membre.nom}`} />
                 </div>
                 <h3 className={styles.membreNom}>{membre.nom}</h3>
+                <p>{membre.ville}</p>
 
                 <div className={styles.membreLinks}>
-                  <a href={membre.siteInternet} target="_blank" rel="noopener noreferrer" className={styles.membreLink}>
-                    <FontAwesomeIcon icon={faGlobe} /> Site internet
-                  </a>
-                  <a href={membre.bibliothequeNumerique} target="_blank" rel="noopener noreferrer" className={styles.membreLink}>
-                    <FontAwesomeIcon icon={faBook} /> Bibliothèque numérique
-                  </a>
+                  {membre.siteInternet && (
+                    <a href={membre.siteInternet} target="_blank" rel="noopener noreferrer" className={styles.membreLink}>
+                      <FontAwesomeIcon icon={faGlobe} /> Site internet
+                    </a>)}
+                  {membre.bibliothequeNumerique && (
+                    <a href={membre.bibliothequeNumerique} target="_blank" rel="noopener noreferrer" className={styles.membreLink}>
+                      <FontAwesomeIcon icon={faBook} /> Bibliothèque numérique
+                    </a>)}
                 </div>
               </div>
             ))}

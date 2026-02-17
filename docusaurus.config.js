@@ -119,7 +119,7 @@ const config = {
           {
             to: 'blog',
             sidebarId: 'workSidebar',
-            label: '@NumaWork',
+            label: 'NumaWork',
             position: 'right'
           },
           {
