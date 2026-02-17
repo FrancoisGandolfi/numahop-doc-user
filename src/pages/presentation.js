@@ -108,22 +108,7 @@ const PresentationPage = () => {
             </p><p>Avec NumaHOP, vous pouvez facilement numériser, organiser, rechercher et partager vos collections de documents, tout en bénéficiant d'une interface intuitive et de fonctionnalités avancées.
 
             </p><p>Que vous soyez une petite bibliothèque ou une grande institution, NumaHOP s'adapte à vos besoins et vous accompagne dans votre transition numérique.</p>
-            <div className={styles.heroButtons}>
-              <a
-                className={clsx('button button--primary button--lg', styles.heroButton)}
-                href="https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard"
-                target="_blank"
-                rel="noopener noreferrer"
-              ><FontAwesomeIcon icon={faLock} className={styles.buttonIcon} />
-                Essayer NumaHOP
-              </a>
-              <a
-                className={clsx('button button--primary button--lg', styles.heroButton)}
-                href="/docs/intro"
-              > <FontAwesomeIcon icon={faBook} className={styles.buttonIcon} />
-                Documentation
-              </a>
-            </div>
+            
           </div>
           <div className={styles.heroImage}>
             <img src="/img/poster.jpg" alt="Poster NumaHOP" />
