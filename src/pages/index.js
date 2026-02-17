@@ -11,35 +11,35 @@ const features = [
   {
     title: 'Documentation',
     icon: faBook,
-    description: 'Une documentation complète et détaillée, destinée aux administrateurs, utilisateurs et prestataires de numérisation.',
+    description: 'Une documentation complète et détaillée, destinée aux administrateurs et utilisateurs autant qu\'aux prestataires de numérisation.',
     link: '/docs/intro',
-    isExternal: false,
+    linkTitle: 'Documentation',
   },
   {
     title: 'Logiciel libre',
     icon: faCode,
-    description: 'Un logiciel libre, placé sous licence MIT, dont le code source est disponible sur GitHub.',
+    description: 'NumaHop est un logiciel libre, placé sous licence MIT, dont le code source est disponible sur GitHub.',
     link: 'https://github.com/NumaHOP/',
-    isExternal: true,
+    linkTitle: 'Code source',
   },
   {
     title: 'Bac à sable',
     icon: faLock,
-    description: 'Une instance de test est mise disposition de la communtauté dans un environnement sécurisé.',
+    description: 'Une instance de test est mise à disposition de la communauté dans un environnement sécurisé.',
     link: 'https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard',
-    isExternal: true,
+    linkTitle: 'Bac à sable',
   },
   {
     title: 'Communauté',
     icon: faUsers,
-    description: 'Soutien active du logiciel, l\'association assure le partage, l\'échange, et l\'evolution du logiciel.',
+    description: 'Soutien actif du logiciel, l\'association assure le partage, l\'échange, et l\'évolution du logiciel.',
     link: '/communaute',
-    isExternal: false,
+    linkTitle: 'Association',
   },
 ];
 
 // Composant pour une carte de fonctionnalité
-const FeatureCard = ({ icon, title, description, link, isExternal }) => (
+const FeatureCard = ({ icon, title, description, link, linkTitle, isExternal }) => (
   <div className={styles.featureCard}>
     <div className={styles.featureIcon}>
       <FontAwesomeIcon icon={icon} />
@@ -47,11 +47,11 @@ const FeatureCard = ({ icon, title, description, link, isExternal }) => (
     <h3 className={styles.featureTitle}>{title}</h3>
     <p className={styles.featureDescription}>{description}</p>
     <Link
-      className={clsx('button button--primary',styles.actionButton)}
+      className={clsx('button button--primary', styles.actionButton)}
       to={link}
       {...(isExternal && { target: '_blank', rel: 'noopener noreferrer' })}
     >
-      En savoir plus
+      {linkTitle}
       {isExternal && <FontAwesomeIcon icon={faExternalLinkAlt} className={styles.buttonIcon} />}
     </Link>
   </div>
@@ -93,7 +93,7 @@ export default function Home() {
       <main className={styles.container}>
         <section className={styles.features}>
           <h2 className={styles.featuresSubtitle}>
-            NumaHOP, une plateforme open source de gestions de collections numérisées animée par une communauté active.
+            NumaHOP, une plateforme open source de gestion de collections numérisées animée par une communauté active.
           </h2>
           <div className={styles.featuresGrid}>
             {features.map((feature, index) => (

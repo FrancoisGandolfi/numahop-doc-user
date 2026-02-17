@@ -55,6 +55,54 @@ const membres = [
     siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
     bibliothequeNumerique: '',
   },
+  {
+    nom: 'Sorbonne Universités',
+    logo: '/img/logos/sorbonneuniversites-logo.png',
+    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
+    bibliothequeNumerique: '',
+  },
+  {
+    nom: 'Université Claude Bernard Lyon I',
+    logo: '/img/logos/lyon1-logo.png',
+    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
+    bibliothequeNumerique: '',
+  },
+  {
+    nom: 'Médiathèque Simonne Veil',
+    logo: '/img/logos/simoneveil-logo.png',
+    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
+    bibliothequeNumerique: '',
+  },
+  {
+    nom: 'Institut national d\'Histoire de l\'art',
+    logo: '/img/logos/inha-logo.png',
+    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
+    bibliothequeNumerique: '',
+  },
+  {
+    nom: 'Archives d\'Alsace',
+    logo: '/img/logos/archivesalsace-logo.png',
+    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
+    bibliothequeNumerique: '',
+  },
+  {
+    nom: 'Centre d\'études supérieures de la Renaissance',
+    logo: '/img/logos/cesr-logo.png',
+    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
+    bibliothequeNumerique: '',
+  },
+  {
+    nom: 'Bibliothèque interuniversitaire de la Sorbonne',
+    logo: '/img/logos/bis-logo.png',
+    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
+    bibliothequeNumerique: '',
+  },
+  {
+    nom: 'Musée du Quai Branly',
+    logo: '/img/logos/mqb-logo.png',
+    siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
+    bibliothequeNumerique: '',
+  },
 ];
 
 // Prestataires
@@ -112,7 +160,7 @@ const CommunautePage = () => {
                 </div>
                 <div className={styles.stat}>
                   <div className={styles.statNumber}>10+</div>
-                  <div className={styles.statLabel}>Années d'expérience</div>
+                  <div className={styles.statLabel}>Années d\'expérience</div>
                 </div>
               </div>
             </div>
@@ -183,7 +231,7 @@ const CommunautePage = () => {
             Rejoignez la communauté
           </h2>
 
-          {/* Cartes d'options (2 colonnes) */}
+          {/* Cartes d\'options (2 colonnes) */}
           <div className={styles.rejoindreOptions}>
             {/* Carte : Liste de diffusion */}
             <div className={clsx(styles.optionCard, styles.cardHover)}>
@@ -192,7 +240,7 @@ const CommunautePage = () => {
               </div>
               <h3 className={styles.cardTitle}>Échangez avec la communauté</h3>
               <p className={styles.cardDescription}>
-                Partagez vos retours d'experience, et apprenez de la communauté des utilisateurs de NumaHop.
+                Partagez vos retours d\'experience, et apprenez de la communauté des utilisateurs de NumaHop.
               </p>
               <a
                 className={clsx('button button--primary', styles.cardButton)}
