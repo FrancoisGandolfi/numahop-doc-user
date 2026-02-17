@@ -256,7 +256,7 @@ const CommunautePage = () => {
         <section className={styles.rejoindre}>
           <h2 className={styles.sectionTitle}>
             <FontAwesomeIcon icon={faEnvelope} className={styles.sectionIcon} />
-            Rejoignez la communauté
+            Rejoignez nous
           </h2>
 
           {/* Cartes d\'options (2 colonnes) */}

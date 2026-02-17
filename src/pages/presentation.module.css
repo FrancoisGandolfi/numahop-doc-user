@@ -8,6 +8,7 @@
   --numahop-dark: #2d2d2d;          /* Fond sombre */
   --numahop-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --numahop-transition: all 0.3s ease;
+ --button-hover-color: #fc063b; 
 }
 
 /* ===== Conteneur principal ===== */
@@ -90,7 +91,7 @@
 }
 
 .sectionIcon {
-  color: var(--numahop-medium);
+  color: var(--button-hover-color);
 }
 
 .featuresGrid {

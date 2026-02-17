@@ -1,7 +1,7 @@
 // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUsers, faBook, faGlobe, faSearch, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUsers, faBook, faGlobe, faSearch, faInfoCircle, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -87,27 +87,27 @@ const config = {
           },
           {
             position: 'left',
-            label: 'Manuels d\'utilisation',
+            label: 'Documentation professionnelle',
             items: [
               {
-                to: '/docs/intro',
-                sidebarId: 'comuSidebar',
-                label: 'Introduction',
+                type: 'docSidebar',
+                sidebarId: 'introSidebar',
+                label: 'Présentation de NumaHop',
               },
               {
                 type: 'docSidebar',
                 sidebarId: 'adminSidebar',
-                label: 'Administrateur',
+                label: 'Accès administrateur',
               },
               {
                 type: 'docSidebar',
                 sidebarId: 'userSidebar',
-                label: 'Utilisateur',
+                label: 'Accès utilisateur',
               },
               {
                 type: 'docSidebar',
                 sidebarId: 'prestaSidebar',
-                label: 'Prestataire',
+                label: 'Accès prestataire',
               },
               {
                 type: 'docSidebar',

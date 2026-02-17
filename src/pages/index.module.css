@@ -59,6 +59,7 @@ html, body {
   align-items: center;
   max-width: var(--max-width);
   padding: 0 1.5rem;
+  color: var(--numahop-light);
 }
 
 .logo {
@@ -80,6 +81,7 @@ html, body {
   border-radius: 6px;
   font-weight: 600;
   transition: var(--numahop-transition);
+  margin-top: auto;
 }
 
 .buttonIcon {

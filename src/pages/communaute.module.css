@@ -33,7 +33,7 @@
 }
 
 .sectionIcon {
-  color: var(--numahop-medium);
+  color: var(--button-hover-color);
 }
 
 .sectionDescription {
