@@ -3,13 +3,11 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUsers, faBook, faGlobe, faSearch, faInfoCircle, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
-
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   // Champs obligatoires
   title: 'NumaHop',
-  tagline: 'Documentation professionnelle',
+  tagline: 'Logiciel open source de gestion de collections numérisées portée par une communauté active.',
   favicon: 'img/favicon.ico',
 
   // Configuration pour GitLab Pages
@@ -87,7 +85,7 @@ const config = {
           },
           {
             position: 'left',
-            label: 'Documentation professionnelle',
+            label: 'Documentation',
             items: [
               {
                 type: 'docSidebar',
@@ -129,6 +127,11 @@ const config = {
 
           {
             type: 'search',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/NumaHOP/',
+            className: 'navbar-github-link',
             position: 'right',
           },
         ],

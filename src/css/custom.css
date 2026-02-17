@@ -86,6 +86,24 @@
   color: var(--title-color);
 }
 
+.navbar__item {
+  height: var(--ifm-navbar-item-height, 1.5rem) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Ajuste la hauteur du lien GitHub */
+.navbar-github-link {
+  height: 100% !important;
+}
+
+/* Ajuste la hauteur du lien dans le composant GitHub */
+.navbar-github-link .navbar__link {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
 /* Boutons */
 .button--primary {
   background-color: var(--button-sample-color);

@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt, faBook, faLock, faDownload, faUsers, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 // Données pour les cartes de fonctionnalités
 const features = [
@@ -92,9 +93,6 @@ export default function Home() {
       {/* Contenu principal */}
       <main className={styles.container}>
         <section className={styles.features}>
-          <h2 className={styles.featuresSubtitle}>
-            Plateforme open source de gestion de collections numérisées portée par une communauté active.
-          </h2>
           <div className={styles.featuresGrid}>
             {features.map((feature, index) => (
               <FeatureCard key={index} {...feature} />
