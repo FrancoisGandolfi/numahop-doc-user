@@ -6,7 +6,7 @@ const sidebars = {
   presentationSidebar: [
     {
       type: 'link',
-      label: 'Le logiciel',
+      label: 'Présentation',
       href: '/presentation',
     },
   ],

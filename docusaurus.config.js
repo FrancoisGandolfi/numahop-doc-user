@@ -10,7 +10,7 @@ const config = {
   // Champs obligatoires
   title: 'NumaHop',
   tagline: 'Documentation professionnelle',
-  favicon: 'img/numahop-logo.png',
+  favicon: 'img/favicon.ico',
 
   // Configuration pour GitLab Pages
   url: 'https://fgandolfi.gitlab.io', // URL de ton utilisateur GitLab
@@ -69,7 +69,7 @@ const config = {
 
       // Barre de navigation
       navbar: {
-        title: 'NumaDoc',
+        title: 'NumaHop',
         logo: {
           alt: 'Logo NumaHop',
           src: 'img/logo.svg',

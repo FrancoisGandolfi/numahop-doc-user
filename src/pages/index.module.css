@@ -12,12 +12,32 @@
   --hero-height: 500px;
 }
 
+/* ===== Réinitialisation globale ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* ===== Conteneur principal ===== */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
   width: 80%;
+}
+
+/* ===== Conteneur principal ===== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%; /* Remplace width: 80% pour éviter les marges trop larges sur mobile */
 }
 
 /* ===== Hero Banner ===== */
@@ -28,6 +48,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: var(--hero-height);
+  width: 100%;
 }
 
 .heroContent {
@@ -35,21 +57,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: var(--max-width);
+  padding: 0 1.5rem;
 }
 
 .logo {
-  max-width: 500px;
+  max-width: 100%; /* Limite la largeur du logo à 100% du conteneur */
+  width: auto;
   height: auto;
+  max-height: 200px; /* Limite la hauteur pour éviter le débordement */
   margin-bottom: 1.5rem;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
-}
-
-.tagline {
-  font-size: 1.5rem;
-  color: var(--numahop-light);
-  margin-bottom: 2rem;
-  max-width: 600px;
-  line-height: 1.6;
+  object-fit: contain; /* Garantit que le logo reste proportionnel */
 }
 
 /* ===== Boutons ===== */
@@ -134,27 +153,37 @@
   margin-bottom: 1.5rem;
 }
 
+/* ===== Navbar et Footer ===== */
+.navbar, .footer {
+  width: 100%;
+  padding: 0 1.5rem;
+  max-width: none; /* Permet à la navbar et au footer de s'étendre sur toute la largeur */
+  margin: 0 auto;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   :root {
-    --hero-height: 400px;
+    --hero-height: 350px; /* Réduit la hauteur du hero sur mobile */
   }
 
   .heroBanner {
     padding: 2rem 0;
   }
 
-  .tagline {
-    font-size: 1.2rem;
+  .logo {
+    max-height: 150px; /* Réduit la taille du logo sur mobile */
   }
 
-  .actionButton {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: var(--numahop-transition);
+  .tagline {
+    font-size: 1.1rem; /* Réduit la taille du texte sur mobile */
+  }
+
+  .container {
+    padding: 0 1rem; /* Réduit les marges latérales sur mobile */
+  }
+
+  .navbar, .footer {
+    padding: 0 1rem; /* Réduit les marges latérales sur mobile */
   }
 }

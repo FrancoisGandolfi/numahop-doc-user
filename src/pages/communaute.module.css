@@ -1,13 +1,19 @@
 /* ===== Variables et réinitialisations ===== */
 :root {
-  --numahop-primary: #6b2c3e;       /* Bordeaux */
-  --numahop-medium: #982135;  
-  --numahop-secondary: #ff5e0f;     /* Orange */
-  --numahop-text: #333333;          /* Texte */
-  --numahop-light: #f9f5f6;         /* Fond clair */
-  --numahop-dark: #2d2d2d;          /* Fond sombre */
+  --numahop-primary: #6b2c3e;
+  /* Bordeaux */
+  --numahop-medium: #982135;
+  --numahop-secondary: #ff5e0f;
+  /* Orange */
+  --numahop-text: #333333;
+  /* Texte */
+  --numahop-light: #f9f5f6;
+  /* Fond clair */
+  --numahop-dark: #2d2d2d;
+  /* Fond sombre */
   --numahop-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --numahop-transition: all 0.3s ease;
+  --button-hover-color: #fc063b; 
 }
 
 /* ===== Conteneur principal ===== */
@@ -154,81 +160,114 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  color: var(--numahop-primary);
+  color: var(--numahop-secondary);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color var(--numahop-transition);
 }
 
 .membreLink:hover {
-  color: var(--numahop-secondary);
-  text-decoration: underline;
+  color: var(--button-hover-color);
+  text-decoration: none;
 }
 
-/* ===== Section "Témoignages" ===== */
-.temoignages {
+/* ===== Section "Prestataires" ===== */
+.prestataires {
   padding: 80px 0;
   border-radius: 12px;
   margin: 40px 0;
 }
 
-.temoignagesGrid {
+.prestatairesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.temoignageCard {
-  background-color: white;
+.prestataireCard {
+  background: white;
+  border-radius: 12px;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: var(--numahop-transition);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
 }
 
-.temoignageHeader {
+.prestataireCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--numahop-shadow);
+}
+
+.prestataireHeader {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.temoignagePhoto {
+.prestatairePhoto {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.temoignageAuteur {
+.prestataireTitre {
   font-size: 1.1rem;
-  color: var(--numahop-primary);
   margin: 0;
 }
 
-.temoignageEtablissement {
+.prestataireLien {
+  color: var(--numahop-primary);
+  text-decoration: none;
+  transition: color var(--numahop-transition);
+}
+
+.prestataireLien:hover {
+  color: var(--button-hover-color);
+  text-decoration: none;
+}
+
+.prestataireEtablissement {
   font-size: 0.9rem;
   color: var(--numahop-text);
   margin: 0;
 }
 
-.temoignageContent {
+.prestataireContent {
+  padding: 1rem;
   position: relative;
+}
+
+.prestataireDescription {
+  color: var(--numahop-text);
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+}
+
+.prestataireCitationContainer {
+  position: relative;
+  padding-left: 1rem;
+  border-left: 3px solid var(--numahop-secondary);
 }
 
 .quoteIcon {
   color: var(--numahop-secondary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.temoignageCitation {
+.prestataireCitation {
   font-style: italic;
-  color: var(--numahop-text);
+  color: var(--numahop-text-secondary);
   line-height: 1.6;
   margin: 0;
-  padding-left: 1rem;
-  border-left: 3px solid var(--numahop-secondary);
 }
+
+
 
 /* ===== Section "Rejoindre" ===== */
 .rejoindre {
@@ -308,7 +347,7 @@
 
 .cardTitle {
   margin-bottom: 1rem;
-  color: var(--numahop-primary);
+  color: var(--numahop-secondary);
   font-size: 1.3rem;
 }
 
@@ -334,6 +373,7 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+
   .associationContent,
   .rejoindreContent {
     flex-direction: column;

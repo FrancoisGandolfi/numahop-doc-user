@@ -116,26 +116,33 @@ const membres = [
 ];
 
 // Prestataires
-const temoignages = [
+const prestataires = [
   {
     auteur: 'Tech\'Advantage',
-    etablissement: '232 avenue Napoléon Bonaparte\n92500 Rueil-Malmaison',
-    citation: 'Depuis 30 ans, TECH’advantage aide ses clients à saisir les opportunités offertes par les services numériques dans les domaines scientifiques et culturels. Grâce à notre suivi sur-mesure, nous accompagnons des projets innovants dans des secteurs variés, allant de la mobilité à l\'industrialisation des R&D, en passant par l\'intelligence artificielle.',
-    photo: 'https://media.licdn.com/dms/image/v2/C4D0BAQFV28zrEeig-Q/company-logo_200_200/company-logo_200_200/0/1630523069886/techadvantage_logo?e=2147483647&v=beta&t=HBeoc8PZ8YiSG5gqfjJW1m09G7YwTpNdxBBW-xFAB_s',
+    etablissement: 'Rueil-Malmaison',
+    siteInternet: 'https://www.tech-advantage.com/',
+    citation: "Tech’Advantage a accompagné le développement initial de NumaHop, en capitalisant sur son expertise historique en solutions numériques pour les bibliothèques et les institutions culturelles, héritée de Progilone.",
+    photo: 'https://www.tech-advantage.com/wp-content/uploads/2021/10/Logo-Ico%CC%82ne-Black.png',
+    description: "Prestataire historique, Tech’Advantage a joué un rôle clé dans la conception et le déploiement de NumaHop, en s’appuyant sur son héritage technique et son expérience de plus de 30 ans dans le numérique scientifique et culturel."
   },
   {
     auteur: 'BibLibre',
-    etablissement: '23 Rue Fauchier\n13002 Marseille',
-    citation: 'Notre équipe collabore avec des bibliothèques de toutes tailles à travers le monde. Nous fournissons des logiciels libres adaptés à vos besoins et maintenus par des communautés dynamiques. Nos services vous aident à en tirer le meilleur parti afin que vous puissiez vous concentrer sur l\'essentiel : les usagers de votre bibliothèque.',
-    photo: 'https://media.licdn.com/dms/image/v2/C4E0BAQEegkaymyFdtA/company-logo_200_200/company-logo_200_200/0/1630637224690/biblibre_logo?e=2147483647&v=beta&t=y5M9FTYurGPtlD5NfqIoMHiqf2SJB8OxnTeJUuR-quk',
+    etablissement: 'Marseille',
+    siteInternet: 'https://www.biblibre.com/fr/',
+    citation: "BibLibre contribue activement à Numahop en publiant et en maintenant le code source, renforçant ainsi son engagement pour des solutions libres et ouvertes au service des bibliothèques.",
+    photo: 'https://www.biblibre.com/favicon.ico',
+    description: "Spécialiste des logiciels libres pour les bibliothèques, BibLibre a intégré Numahop à son offre pour proposer une solution clé en main, maintenue et adaptée aux besoins des institutions."
   },
   {
     auteur: 'Sempiternelia',
-    etablissement: 'Université Paris 1 Panthéon-Sorbonne',
-    citation: 'Services, conseils, développement, hébergement, infogérance et formation en solutions libres pour les humanités numériques et les bibliothèques numériques.',
-    photo: '/img/testimonials/sophie-leroy.jpg',
+    etablissement: 'Nanteuil-lès-Meaux',
+    siteInternet: 'https://sempiternelia.net/',
+    citation: "Sempiternelia intègre Numahop à son catalogue de services pour les bibliothèques, en proposant une solution complète incluant développement, hébergement et formation, adaptée aux enjeux des humanités numériques.",
+    photo: 'https://sempiternelia.net/wp-content/uploads/2020/09/logo-sempiternelia.png', // À vérifier si cette URL est correcte
+    description: "Avec une expertise reconnue en humanités numériques, Sempiternelia a enrichi son panel de produits avec Numahop, offrant ainsi aux bibliothèques une solution flexible et intégrée."
   },
 ];
+
 
 const CommunautePage = () => {
   return (
@@ -213,32 +220,38 @@ const CommunautePage = () => {
         </section>
 
 
-        {/* Témoignages */}
-        <section className={styles.temoignages}>
-          <h2 className={styles.sectionTitle}>
-            <FontAwesomeIcon icon={faScrewdriverWrench} className={styles.sectionIcon} />
-            Prestataires
-          </h2>
-          <div className={styles.temoignagesGrid}>
-            {temoignages.map((temoignage, index) => (
-              <div key={index} className={styles.temoignageCard}>
-                <div className={styles.temoignageHeader}>
-                  <img src={temoignage.photo} alt={temoignage.auteur} className={styles.temoignagePhoto} />
-                  <div>
-                    <h3 className={styles.temoignageAuteur}>{temoignage.auteur}</h3>
-                    <p className={styles.temoignageEtablissement}>{temoignage.etablissement}</p>
-                  </div>
-                </div>
-                <div className={styles.temoignageContent}>
-                  <FontAwesomeIcon icon={faQuoteLeft} className={styles.quoteIcon} />
-                  <p className={styles.temoignageCitation}>{temoignage.citation}</p>
-                </div>
-              </div>
-            ))}
+        {/* Prestataires */}
+<section className={styles.prestataires}>
+  <h2 className={styles.sectionTitle}>
+    <FontAwesomeIcon icon={faScrewdriverWrench} className={styles.sectionIcon} />
+    Prestataires
+  </h2>
+  <div className={styles.prestatairesGrid}>
+    {prestataires.map((prestataire, index) => (
+      <div key={index} className={styles.prestataireCard}>
+        <div className={styles.prestataireHeader}>
+          <img src={prestataire.photo} alt={prestataire.auteur} className={styles.prestatairePhoto} />
+          <div>
+            <h3 className={styles.prestataireTitre}>
+              <a href={prestataire.siteInternet} target="_blank" rel="noopener noreferrer" className={styles.prestataireLien}>
+                {prestataire.auteur}
+              </a>
+            </h3>
+            <p className={styles.prestataireEtablissement}>{prestataire.etablissement}</p>
           </div>
-        </section>
+        </div>
+        <div className={styles.prestataireContent}>
+          <p className={styles.prestataireDescription}>{prestataire.description}</p>
+          <div className={styles.prestataireCitationContainer}>
+            <FontAwesomeIcon icon={faQuoteLeft} className={styles.quoteIcon} />
+            <p className={styles.prestataireCitation}>{prestataire.citation}</p>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
-        {/* Appel à rejoindre */}
         {/* Appel à rejoindre */}
         <section className={styles.rejoindre}>
           <h2 className={styles.sectionTitle}>

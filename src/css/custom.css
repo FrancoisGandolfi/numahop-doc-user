@@ -64,13 +64,12 @@
 /* Navbar */
 .navbar {
   background-color: var(--ifm-background-color);
-  border-bottom: 2px solid rgba(92, 47, 66, 0.1);
+  border-bottom: 2px solid var(--ifm-color-primary-lightest);
 }
 
 .navbar__link--active,
 .navbar__item--active > .navbar__link {
-  border-bottom: 3px solid var(--ifm-color-primary-light); /* Soulignement clair en mode clair, foncé en sombre */
-  padding-bottom: 0.2rem;
+  border-bottom: 3px solid var(--ifm-color-primary); /* Soulignement clair en mode clair, foncé en sombre */
 }
 
 /* Sidebar */

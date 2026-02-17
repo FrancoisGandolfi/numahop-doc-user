@@ -66,7 +66,7 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <img
             src="/img/numahop-logo.png"
-            alt="Logo NumaHOP"
+            alt="Logo NumaHop"
             className={styles.logo}
           />
           <p className={styles.tagline}>
@@ -93,7 +93,7 @@ export default function Home() {
       <main className={styles.container}>
         <section className={styles.features}>
           <h2 className={styles.featuresSubtitle}>
-            NumaHOP, une plateforme open source de gestion de collections numérisées animée par une communauté active.
+            Plateforme open source de gestion de collections numérisées portée par une communauté active.
           </h2>
           <div className={styles.featuresGrid}>
             {features.map((feature, index) => (
