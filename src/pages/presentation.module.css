@@ -181,7 +181,7 @@
 .videoCard {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: var(--numahop-transition);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -215,8 +215,7 @@
   padding: 1rem;
   color: var(--numahop-primary);
   font-size: 1.1rem;
-  font-weight: 600;
-  background-color: var(--numahop-light);
+  font-weight: 400;
 }
 
 /* ===== Responsive ===== */

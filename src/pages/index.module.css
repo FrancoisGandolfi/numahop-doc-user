@@ -8,8 +8,8 @@
   --numahop-dark: #2d2d2d;          /* Fond sombre */
   --numahop-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --numahop-transition: all 0.3s ease;
-  --max-width: 1200px;
-  --hero-height: 500px;
+  --max-width: 1000px;
+  --hero-height: 350px;
 }
 
 /* ===== Réinitialisation globale ===== */
@@ -29,20 +29,12 @@ html, body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
-  width: 80%;
-}
-
-/* ===== Conteneur principal ===== */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 1.5rem;
   width: 100%; /* Remplace width: 80% pour éviter les marges trop larges sur mobile */
 }
 
 /* ===== Hero Banner ===== */
 .heroBanner {
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-align: center;
   background: var(--numahop-primary);
   display: flex;
