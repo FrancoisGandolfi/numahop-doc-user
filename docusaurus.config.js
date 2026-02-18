@@ -84,6 +84,12 @@ const config = {
             label: 'Communauté',
           },
           {
+            to: 'blog',
+            sidebarId: 'workSidebar',
+            label: '@NumaWork',
+            position: 'left'
+          },
+          {
             position: 'left',
             label: 'Documentation',
             items: [
@@ -115,18 +121,11 @@ const config = {
             ]
           },
           {
-            to: 'blog',
-            sidebarId: 'workSidebar',
-            label: 'NumaWork',
-            position: 'right'
+            type: 'search',
+            position: 'right',
           },
           {
             type: 'localeDropdown',
-            position: 'right',
-          },
-
-          {
-            type: 'search',
             position: 'right',
           },
           {

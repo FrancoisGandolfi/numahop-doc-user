@@ -36,7 +36,7 @@ const membres = [
     bibliothequeNumerique: 'https://lucienne.ens.psl.eu/s/lucienne/page/welcome',
   },
   {
-    nom: 'BULAC',
+    nom: 'Bibliothèque universitaire des langues et civilisations',
     logo: '/img/logos/bulac-logo.png',
     ville: 'Paris',
     siteInternet: 'https://www.bulac.fr/',
@@ -221,36 +221,36 @@ const CommunautePage = () => {
 
 
         {/* Prestataires */}
-<section className={styles.prestataires}>
-  <h2 className={styles.sectionTitle}>
-    <FontAwesomeIcon icon={faScrewdriverWrench} className={styles.sectionIcon} />
-    Prestataires
-  </h2>
-  <div className={styles.prestatairesGrid}>
-    {prestataires.map((prestataire, index) => (
-      <div key={index} className={styles.prestataireCard}>
-        <div className={styles.prestataireHeader}>
-          <img src={prestataire.photo} alt={prestataire.auteur} className={styles.prestatairePhoto} />
-          <div>
-            <h3 className={styles.prestataireTitre}>
-              <a href={prestataire.siteInternet} target="_blank" rel="noopener noreferrer" className={styles.prestataireLien}>
-                {prestataire.auteur}
-              </a>
-            </h3>
-            <p className={styles.prestataireEtablissement}>{prestataire.etablissement}</p>
+        <section className={styles.prestataires}>
+          <h2 className={styles.sectionTitle}>
+            <FontAwesomeIcon icon={faScrewdriverWrench} className={styles.sectionIcon} />
+            Prestataires
+          </h2>
+          <div className={styles.prestatairesGrid}>
+            {prestataires.map((prestataire, index) => (
+              <div key={index} className={styles.prestataireCard}>
+                <div className={styles.prestataireHeader}>
+                  <img src={prestataire.photo} alt={prestataire.auteur} className={styles.prestatairePhoto} />
+                  <div>
+                    <h3 className={styles.prestataireTitre}>
+                      <a href={prestataire.siteInternet} target="_blank" rel="noopener noreferrer" className={styles.prestataireLien}>
+                        {prestataire.auteur}
+                      </a>
+                    </h3>
+                    <p className={styles.prestataireEtablissement}>{prestataire.etablissement}</p>
+                  </div>
+                </div>
+                <div className={styles.prestataireContent}>
+                  <p className={styles.prestataireDescription}>{prestataire.description}</p>
+                  <div className={styles.prestataireCitationContainer}>
+                    <FontAwesomeIcon icon={faQuoteLeft} className={styles.quoteIcon} />
+                    <p className={styles.prestataireCitation}>{prestataire.citation}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-        <div className={styles.prestataireContent}>
-          <p className={styles.prestataireDescription}>{prestataire.description}</p>
-          <div className={styles.prestataireCitationContainer}>
-            <FontAwesomeIcon icon={faQuoteLeft} className={styles.quoteIcon} />
-            <p className={styles.prestataireCitation}>{prestataire.citation}</p>
-          </div>
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
+        </section>
 
         {/* Appel à rejoindre */}
         <section className={styles.rejoindre}>

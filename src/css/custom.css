@@ -1,108 +1,190 @@
 /**
  * Thème NumaHOP pour Docusaurus/Infima
  * Couleurs : #5c2f42 (bordeaux), #9d6d7b (rose pâle), #c7abb3 (rose clair), #58585a (gris)
- * Adapté pour les modes clair et sombre.
+ * Adapté pour les modes clair/sombre et responsive.
  */
 
 :root {
   /* ===== Couleurs pour le mode clair ===== */
-  --ifm-color-primary: #5c2f42;          /* Bordeaux principal */
-  --ifm-color-primary-dark: #4a2535;     /* Nuance plus foncée */
-  --ifm-color-primary-darker: #3a1c2a;   /* Nuance très foncée */
-  --ifm-color-primary-darkest: #2a141e;  /* Nuance la plus foncée */
-  --ifm-color-primary-light: #9d6d7b;   /* Rose moyen pour les liens/titres */
-  --ifm-color-primary-lighter: #c7abb3;  /* Rose clair pour les éléments inactifs */
-  --ifm-color-primary-lightest: #e0d0d3; /* Fond très clair */
+  --ifm-color-primary: #5c2f42;
+  /* Bordeaux principal */
+  --ifm-color-primary-dark: #4a2535;
+  /* Nuance plus foncée */
+  --ifm-color-primary-darker: #3a1c2a;
+  /* Nuance très foncée */
+  --ifm-color-primary-darkest: #2a141e;
+  /* Nuance la plus foncée */
+  --ifm-color-primary-light: #9d6d7b;
+  /* Rose moyen pour les liens/titres */
+  --ifm-color-primary-lighter: #c7abb3;
+  /* Rose clair pour les éléments inactifs */
+  --ifm-color-primary-lightest: #e0d0d3;
+  /* Fond très clair */
 
   /* Couleurs de texte et fond */
-  --ifm-color-text-primary: #58585a;     /* Texte principal (gris foncé) */
-  --ifm-color-text-secondary: #7a7a7a;   /* Texte secondaire */
-  --ifm-background-color: #ffffff;     /* Fond blanc pour le mode clair */
-  --ifm-color-card-background: #ffffff; /* Fond des cartes */
+  --ifm-color-text-primary: #58585a;
+  /* Texte principal (gris foncé) */
+  --ifm-color-text-secondary: #7a7a7a;
+  /* Texte secondaire */
+  --ifm-background-color: #ffffff;
+  /* Fond blanc pour le mode clair */
+  --ifm-color-card-background: #ffffff;
+  /* Fond des cartes */
 
   /* Boutons et accents */
-  --button-sample-color: #ff5e0f;        /* Orange vif (accents) */
-  --button-hover-color: #fc063b;         /* Rouge orangé au survol */
-  --title-color: #982135;                /* Rouge bordeaux pour les titres */
+  --button-sample-color: #ff5e0f;
+  /* Orange vif (accents) */
+  --button-hover-color: #fc063b;
+  /* Rouge orangé au survol */
+  --title-color: #982135;
+  /* Rouge bordeaux pour les titres */
 
   /* Code et syntax highlighting */
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Open Sans', sans-serif;
-  --ifm-color-code-background: #f8f8f8; /* Fond clair pour les blocs de code */
-  --docusaurus-highlighted-code-line-bg: rgba(92, 47, 66, 0.1); /* Surbrillance des lignes de code */
+  --ifm-color-code-background: #f8f8f8;
+  /* Fond clair pour les blocs de code */
+  --docusaurus-highlighted-code-line-bg: rgba(92, 47, 66, 0.1);
 }
 
 /* ===== Mode sombre ===== */
 [data-theme='dark'] {
   /* Couleurs primaires adaptées au mode sombre */
-  --ifm-color-primary: #c7abb3;          /* Rose clair (meilleur contraste en sombre) */
-  --ifm-color-primary-dark: #9d6d7b;     /* Rose moyen */
-  --ifm-color-primary-darker: #5c2f42;   /* Bordeaux (texte clair) */
-  --ifm-color-primary-darkest: #2a141e;  /* Fond très sombre */
-  --ifm-color-primary-light: #e0d0d3;   /* Clair pour les éléments actifs */
-  --ifm-color-primary-lighter: #f0e8e9;  /* Fond ultra-clair */
-   --ifm-color-primary-lightest: #5c2f42;
+  --ifm-color-primary: #c7abb3;
+  /* Rose clair (meilleur contraste) */
+  --ifm-color-primary-dark: #9d6d7b;
+  /* Rose moyen */
+  --ifm-color-primary-darker: #5c2f42;
+  /* Bordeaux (texte clair) */
+  --ifm-color-primary-darkest: #2a141e;
+  /* Fond très sombre */
+  --ifm-color-primary-light: #e0d0d3;
+  /* Clair pour les éléments actifs */
+  --ifm-color-primary-lighter: #f0e8e9;
+  /* Fond ultra-clair */
+  --ifm-color-primary-lightest: #5c2f42;
 
   /* Couleurs de texte et fond */
-  --ifm-color-text-primary: #58585a;     /* Texte principal (gris foncé) */
-  --ifm-color-text-secondary: #7a7a7a;   /* Texte secondaire */
-  --ifm-background-color: #ffffff;     /* Fond blanc pour le mode clair */
-  --ifm-color-card-background: #ffffff; /* Fond des cartes */
+  --ifm-color-text-primary: #e0e0e0;
+  /* Texte clair en sombre */
+  --ifm-color-text-secondary: #b0b0b0;
+  /* Texte secondaire clair */
+  --ifm-background-color: #1e1e1e;
+  /* Fond sombre */
+  --ifm-color-card-background: #252525;
+  /* Fond des cartes en sombre */
 
-  /* Boutons et accents (adaptés pour le contraste) */
-  --button-sample-color: #ff8c42;        /* Orange clair (meilleur contraste) */
-  --button-hover-color: #ff5e0f;         /* Orange vif au survol */
-  --title-color: #982135;                /* Orange pour les titres en sombre */
+  /* Boutons et accents (contraste amélioré) */
+  --button-sample-color: #ff8c42;
+  /* Orange clair */
+  --button-hover-color: #ff5e0f;
+  /* Orange vif au survol */
+  --title-color: #ff8c42;
+  /* Orange pour les titres en sombre */
 
   /* Code et syntax highlighting */
-  --ifm-color-code-background: #282c34; /* Fond sombre pour les blocs de code */
-  --docusaurus-highlighted-code-line-bg: rgba(255, 140, 66, 0.2); /* Surbrillance orange */
+  --ifm-color-code-background: #282c34;
+  /* Fond sombre pour les blocs de code */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 140, 66, 0.2);
 }
 
-/* ===== Personnalisation des éléments ===== */
+/* ===== Personnalisation des éléments (responsive) ===== */
 
-/* Navbar */
+/* Navbar : Fond et bordure */
 .navbar {
   background-color: var(--ifm-background-color);
   border-bottom: 2px solid var(--ifm-color-primary-lightest);
+  padding: 0.5rem 1rem;
+  /* Espacement interne pour éviter que les éléments touchent les bords */
 }
 
+/* Liens actifs dans la navbar */
 .navbar__link--active,
-.navbar__item--active > .navbar__link {
-  border-bottom: 3px solid var(--ifm-color-primary); /* Soulignement clair en mode clair, foncé en sombre */
+.navbar__item--active>.navbar__link {
+  border-bottom: 3px solid var(--ifm-color-primary);
+}
+
+/* Éléments de la navbar (boutons, liens) */
+.navbar__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centre le contenu horizontalement */
+  height: 100%;
+  /* Prend toute la hauteur disponible */
+  padding: 0.5rem 0.75rem;
+  /* Espacement interne pour éviter le débordement */
+  margin: 0 0.25rem;
+  /* Marge externe pour espacer les éléments */
+  min-width: fit-content;
+  /* Largeur minimale adaptée au contenu */
+}
+
+/* Liens dans la navbar */
+.navbar__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* Prend toute la hauteur de l'élément parent */
+  padding: 0 0.5rem;
+  /* Espacement interne pour le texte */
+  white-space: nowrap;
+  /* Évite le retour à la ligne non désiré */
+}
+
+/* Boutons dans la navbar */
+.navbar__item.button {
+  margin: 0 0.5rem;
+  /* Espacement autour des boutons */
+}
+
+/* Ajustement pour les icônes dans la navbar */
+.navbar__item svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  /* Espacement entre l'icône et le texte */
+}
+
+/* Comportement responsive pour la navbar */
+@media (max-width: 997px) {
+  .navbar__item {
+    padding: 0.5rem;
+    /* Réduit l'espacement sur mobile */
+    margin: 0 0.125rem;
+    /* Réduit la marge sur mobile */
+  }
+
+  .navbar__link {
+    padding: 0 0.25rem;
+    /* Réduit l'espacement interne sur mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__item {
+    padding: 0.375rem;
+    /* Espacement encore réduit pour les petits écrans */
+  }
 }
 
 /* Sidebar */
 .menu_SIkG {
-  background-color: var(--ifm-color-primary-lightest); /* Fond bordeaux foncé */
+  background-color: var(--ifm-color-primary-lightest);
 }
 
 .menu__link {
-  color: var(--ifm-color-primary-darkest); /* Texte clair en sombre, foncé en clair */
+  color: var(--ifm-color-text-primary);
+  font-size: 0.95rem;
+  /* Taille adaptative */
 }
 
 .menu__link--active {
-  color: var(--ifm-color-text-primary); /* Rose clair en sombre, bordeaux en clair */
   color: var(--title-color);
+  font-weight: 600;
 }
 
-.navbar__item {
-  height: var(--ifm-navbar-item-height, 1.5rem) !important;
-  display: flex !important;
-  align-items: center !important;
-}
-
-/* Ajuste la hauteur du lien GitHub */
-.navbar-github-link {
-  height: 100% !important;
-}
-
-/* Ajuste la hauteur du lien dans le composant GitHub */
-.navbar-github-link .navbar__link {
-  height: 100% !important;
-  display: flex !important;
-  align-items: center !important;
-}
 
 /* Boutons */
 .button--primary {
@@ -111,7 +193,11 @@
   border: none;
   border-radius: 4px;
   padding: 0.5rem 1rem;
+  font-size: 1rem;
+  min-width: 120px;
   transition: all 0.2s ease;
+  width: auto;
+  /* Responsive: largeur automatique */
 }
 
 .button--primary:hover {
@@ -120,29 +206,43 @@
 
 /* Liens */
 a {
-  color: var(--ifm-color-primary-light); /* Rose moyen en clair, clair en sombre */
+  color: var(--ifm-color-primary-light);
   text-decoration: none;
+  font-size: inherit;
+  /* Hérite de la taille du parent */
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--ifm-color-primary); /* Bordeaux en clair, rose en sombre */
+  color: var(--ifm-color-primary);
 }
 
 /* Titres */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--title-color);
+  line-height: 1.3;
+  /* Meilleure lisibilité */
 }
 
-
-/* Tableaux */
-table {
-  width: 100%;
-  border-collapse: collapse;
+/* Tableaux (responsive) */
+.table-wrapper {
+  overflow-x: auto;
   margin: 1.5rem 0;
 }
 
-th, td {
+table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
   padding: 0.75rem;
   text-align: left;
   border-bottom: 1px solid rgba(92, 47, 66, 0.2);
@@ -153,7 +253,7 @@ th {
   color: var(--ifm-color-primary-darker);
 }
 
-/* Alertes et infobulles */
+/* Alertes */
 .alert {
   padding: 1rem;
   border-radius: 4px;
@@ -170,30 +270,28 @@ th {
   border-left: 4px solid var(--button-sample-color);
 }
 
-/* ===== Personnalisation du footer ===== */
+/* Footer */
 .footer {
-  background-color: var(--ifm-color-text-primary) !important;
-  color: white !important; /* Police blanche */
+  background-color: var(--ifm-color-primary-darkest) !important;
+  color: white !important;
   padding: 2rem 0;
   border-top: 1px solid rgba(92, 47, 66, 0.2);
 }
 
-/* Ajustement des icônes dans la navbar */
-.navbar__item {
-  display: flex;
-  align-items: center;
-}
-
+/* Ajustement des icônes */
 .navbar__item svg {
-  width: 16px;
-  height: 16px;
-  color: var(--numahop-primary);
+  width: 1.2rem;
+  height: 1.2rem;
+  color: var(--ifm-color-primary);
 }
 
+/* Auteurs et établissements */
 .author-etablissement {
   font-weight: 500;
-  color: #555;
-  margin-top: 4px;
+  color: var(--ifm-color-text-secondary);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  /* Taille adaptative */
 }
 
 .author-etablissement a {
@@ -203,4 +301,48 @@ th {
 
 .author-etablissement a:hover {
   text-decoration: underline;
+}
+
+/* ===== Media Queries pour le responsive ===== */
+@media (max-width: 768px) {
+
+  /* Navbar en mode burger */
+  .navbar__item {
+    padding: 0.75rem;
+  }
+
+  /* Boutons en pleine largeur */
+  .button--primary {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  /* Tableaux : défilement horizontal */
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Défilement fluide sur mobile */
+  }
+
+  /* Titres : taille réduite */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Ajustements pour très petits écrans */
+  .menu__link {
+    font-size: 0.9rem;
+  }
+
+  .button--primary {
+    padding: 0.75rem;
+  }
 }
