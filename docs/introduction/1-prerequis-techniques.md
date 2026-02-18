@@ -21,15 +21,15 @@ title: Exemple avec GitHub
 ---
 
 import Icon from '@site/src/components/Icon';
-import { faGithub, faBook } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faAccusoft } from '@fortawesome/free-brands-svg-icons';
 
 # Icône GitHub
 
 Voici une icône GitHub :
 
 <Icon icon={faGithub} size="2x" color="#fc063b" />
-
-
+<Icon icon={faAccusoft} size="2x" color="#fc063b" />
+<br/>
 <Icon icon={["fa", "pen-to-square"]} />
 <Icon icon={["fa", "gear"]} />
 <Icon icon={["fa", "trash"]} />
@@ -48,5 +48,5 @@ Voici une icône GitHub :
 <Icon icon={["fa", "download"]} />
 <Icon icon={["fa", "plus"]} />
 <Icon icon={["fa", "github"]} />
-<Icon icon={faBook} size="2x" color="#fc063b" />
+
 <Icon icon={["fa", "arrows-up-down-left-right"]} />
