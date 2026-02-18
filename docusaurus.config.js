@@ -52,6 +52,15 @@ const config = {
     ],
   ],
 
+  markdown: {
+    preprocessor: ({ fileContent }) => {
+      return `
+        import Icon from '../src/components/Icon';
+        ${fileContent}
+      `;
+    },
+  },
+
   // Configuration du thème
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
