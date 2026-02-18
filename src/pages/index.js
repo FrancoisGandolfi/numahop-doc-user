@@ -5,7 +5,6 @@ import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt, faBook, faLock, faDownload, faUsers, faCode } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 // Données pour les cartes de fonctionnalités
 const features = [
@@ -13,7 +12,7 @@ const features = [
     title: 'Documentation',
     icon: faBook,
     description: 'Une documentation complète et détaillée, destinée aux administrateurs et utilisateurs autant qu\'aux prestataires de numérisation.',
-    link: '/docs/introduction/configurer-tableau-bord',
+    link: '/docs/introduction/ergonomie',
     linkTitle: 'La Documentation',
   },
   {
@@ -24,18 +23,18 @@ const features = [
     linkTitle: 'Le Code source',
   },
   {
-    title: 'Bac à sable',
-    icon: faLock,
-    description: 'Une instance de test est mise à disposition de la communauté dans un environnement sécurisé.',
-    link: 'https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard',
-    linkTitle: 'Le Bac à sable',
-  },
-  {
     title: 'Communauté',
     icon: faUsers,
     description: 'Soutien actif du logiciel, l\'association assure le partage, l\'échange, et l\'évolution du logiciel.',
     link: '/communaute',
     linkTitle: 'L\'Association',
+  },
+  {
+    title: 'Bac à sable',
+    icon: faLock,
+    description: 'Une instance de test est mise à disposition de la communauté dans un environnement sécurisé.',
+    link: 'https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard',
+    linkTitle: 'Le Bac à sable',
   },
 ];
 

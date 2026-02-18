@@ -96,7 +96,7 @@ const config = {
               {
                 type: 'docSidebar',
                 sidebarId: 'introSidebar',
-                label: 'Présentation de NumaHop',
+                label: 'Présentation du logiciel',
               },
               {
                 type: 'docSidebar',

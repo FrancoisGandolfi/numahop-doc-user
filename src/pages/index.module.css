@@ -1,11 +1,16 @@
 /* ===== Variables et réinitialisations ===== */
 :root {
-  --numahop-primary: #6b2c3e;       /* Bordeaux */
-  --numahop-secondary: #ff5e0f; 
-  --numahop-medium: #982135;     /* Orange */
-  --numahop-text: #333333;          /* Texte */
-  --numahop-light: #f9f5f6;         /* Fond clair */
-  --numahop-dark: #2d2d2d;          /* Fond sombre */
+  --numahop-primary: #6b2c3e;
+  /* Bordeaux */
+  --numahop-secondary: #ff5e0f;
+  --numahop-medium: #982135;
+  /* Orange */
+  --numahop-text: #333333;
+  /* Texte */
+  --numahop-light: #f9f5f6;
+  /* Fond clair */
+  --numahop-dark: #2d2d2d;
+  /* Fond sombre */
   --numahop-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --numahop-transition: all 0.3s ease;
   --max-width: 1000px;
@@ -19,7 +24,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -29,7 +35,8 @@ html, body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
-  width: 100%; /* Remplace width: 80% pour éviter les marges trop larges sur mobile */
+  width: 100%;
+  /* Remplace width: 80% pour éviter les marges trop larges sur mobile */
 }
 
 /* ===== Hero Banner ===== */
@@ -55,21 +62,24 @@ html, body {
 }
 
 .logo {
-  max-width: 100%; /* Limite la largeur du logo à 100% du conteneur */
+  max-width: 100%;
+  /* Limite la largeur du logo à 100% du conteneur */
   width: auto;
   height: auto;
-  max-height: 200px; /* Limite la hauteur pour éviter le débordement */
+  max-height: 200px;
+  /* Limite la hauteur pour éviter le débordement */
   margin-bottom: 1.5rem;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
-  object-fit: contain; /* Garantit que le logo reste proportionnel */
+  object-fit: contain;
+  /* Garantit que le logo reste proportionnel */
 }
 
 /* ===== Boutons ===== */
 .actionButton {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   border-radius: 6px;
   font-weight: 600;
   transition: var(--numahop-transition);
@@ -114,7 +124,7 @@ html, body {
 
 .featureCard {
   background: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: var(--numahop-transition);
@@ -148,10 +158,12 @@ html, body {
 }
 
 /* ===== Navbar et Footer ===== */
-.navbar, .footer {
+.navbar,
+.footer {
   width: 100%;
   padding: 0 1.5rem;
-  max-width: none; /* Permet à la navbar et au footer de s'étendre sur toute la largeur */
+  max-width: none;
+  /* Permet à la navbar et au footer de s'étendre sur toute la largeur */
   margin: 0 auto;
 }
 
