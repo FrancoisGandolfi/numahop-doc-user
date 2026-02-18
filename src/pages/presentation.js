@@ -12,9 +12,9 @@ const features = [
     icon: faBook,
     description: 'Centralisez et organisez vos notices documentaires et vos reproductions numériques en un seul endroit, accessible en ligne.',
     tags: [
-      { label: 'Projets', link: '/docs/introduction/2-ergonomie' },
-      { label: 'Lots', link: '/docs/introduction/2-ergonomie' },
-      { label: 'Trains', link: '/docs/introduction/2-ergonomie' },
+      { label: 'Projets', link: '/docs/introduction/ergonomie' },
+      { label: 'Lots', link: '/docs/introduction/ergonomie' },
+      { label: 'Trains', link: '/docs/introduction/ergonomie' },
     ]
   },
   {
@@ -22,9 +22,9 @@ const features = [
     icon: faUsers,
     description: 'Travaillez en équipe au sein de votre établissement et avec vos partenaires, en configurant des rôles et permissions spécifiques à chaque utilisateurs.',
     tags: [
-      { label: 'Groupes', link: '/docs/introduction/2-ergonomie' },
-      { label: 'Utilisateurs', link: '/docs/introduction/2-ergonomie' },
-      { label: "Livraisons", link: '/docs/introduction/2-ergonomie'}
+      { label: 'Groupes', link: '/docs/introduction/ergonomie' },
+      { label: 'Utilisateurs', link: '/docs/introduction/ergonomie' },
+      { label: "Livraisons", link: '/docs/introduction/ergonomie'}
     ]
   },
   {
@@ -32,9 +32,9 @@ const features = [
     icon: faCog,
     description: 'Adaptez les worflows, les constats d\'état et les contrôles aux besoins spécifiques à votre établissement et à chacun de vos projets de numérisation.',
     tags: [
-      { label: 'Worflows', link: '/docs/introduction/2-ergonomie' },
-      { label: 'Contrôles', link: '/docs/introduction/2-ergonomie' },
-      { label: 'Constat d\'états', link: '/docs/introduction/2-ergonomie' }
+      { label: 'Worflows', link: '/docs/introduction/ergonomie' },
+      { label: 'Contrôles', link: '/docs/introduction/ergonomie' },
+      { label: 'Constat d\'états', link: '/docs/introduction/ergonomie' }
     ]
   },
   {
@@ -42,8 +42,8 @@ const features = [
     icon: faScrewdriverWrench,
     description: 'Importez et dérivez les données natives de vos systèmes d\'information documentaire vers le standard interopérable Dublin Core.',
     tags: [
-      { label: 'Mappings', link: "/docs/introduction/2-ergonomie" },
-      { label: 'Import de notices', link: '/docs/introduction/2-ergonomie' }
+      { label: 'Mappings', link: "/docs/introduction/ergonomie" },
+      { label: 'Import de notices', link: '/docs/introduction/ergonomie' }
     ]
   },
   {
@@ -51,8 +51,8 @@ const features = [
     icon: faCheckDouble,
     description: 'Facilitez le travail de contrôle en parametrant les contrôles automatiques et manuels selon vos entreprises de numérisation.',
     tags: [
-      { label: 'Contrôles automatiques', link: '/docs/introduction/2-ergonomie' },
-      { label: 'Contrôles manuels', link: '/docs/introduction/2-ergonomie' }
+      { label: 'Contrôles automatiques', link: '/docs/introduction/ergonomie' },
+      { label: 'Contrôles manuels', link: '/docs/introduction/ergonomie' }
     ]
   },
   {
@@ -60,9 +60,9 @@ const features = [
     icon: faFileExport,
     description: 'Disséminez vos unités documentaires et leurs dérivées sur différentes plateformes de diffusion et d\'archivage.',
     tags: [
-      { label: 'Archivage', link: '/docs/introduction/2-ergonomie' },
-      { label: 'Export', link: '/docs/introduction/2-ergonomie' },
-      { label: 'Fichiers dérivés', link: '/docs/introduction/2-ergonomie' }
+      { label: 'Archivage', link: '/docs/introduction/ergonomie' },
+      { label: 'Export', link: '/docs/introduction/ergonomie' },
+      { label: 'Fichiers dérivés', link: '/docs/introduction/ergonomie' }
     ],
   },
 ];
