@@ -39,6 +39,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          showLastUpdateTime: true,
           editUrl: 'https://gitlab.com/fgandolfi/numahop-doc-user/-/edit/main/', // Lien vers ton dépôt GitLab
         },
         blog: {
@@ -58,6 +59,10 @@ const config = {
     ({
       // Image pour les réseaux sociaux
       image: 'img/logo.png',
+
+      lastUpdate: {
+        text: 'Dernière mise à jour le {date} par {author}',
+      },
 
       colorMode: {
         defaultMode: 'light',

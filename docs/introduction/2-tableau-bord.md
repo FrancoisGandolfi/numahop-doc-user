@@ -2,6 +2,7 @@
 title: Tableau de bord
 sidebar_label: Tableau de bord
 sidebar_position: 2
+description: Parametrage du tableau de bord
 ---
 
 import Icon from '@site/src/components/Icon';

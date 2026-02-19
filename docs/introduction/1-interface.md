@@ -2,6 +2,7 @@
 title: Interface de NumaHop
 sidebar_label: Interface de NumaHop
 sidebar_position: 1
+description: Aperçu d'ensemble du logiciel
 ---
 
 import Icon from '@site/src/components/Icon';

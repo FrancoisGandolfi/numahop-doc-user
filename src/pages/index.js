@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt, faBook, faLock, faDownload, faUsers, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faBook, faLock, faUsers, faCode } from '@fortawesome/free-solid-svg-icons';
 
 // Données pour les cartes de fonctionnalités
 const features = [

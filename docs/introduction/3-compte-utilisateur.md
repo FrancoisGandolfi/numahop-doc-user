@@ -2,6 +2,7 @@
 title: Compte utilisateur
 sidebar_label: Compte utilisateur
 sidebar_position: 3
+description: Présentation du compte de l'utilisateur.
 ---
 
 import Icon from '@site/src/components/Icon';
