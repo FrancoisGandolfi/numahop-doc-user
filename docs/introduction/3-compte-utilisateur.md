@@ -14,7 +14,7 @@ La connexion nécessite un identifiant, ou _login_, et un mot de passe. L’**id
 
 Les actions possibles sur le compte de l'utilisateur connecté sont accessibles via le menu derroulant du bandeau d'en-tête de Numahop **Prénom** <Icon icon={["fa", "caret-down"]} />.
 
-- <Icon icon={["fa", "wrench"]} /> **Profil**
+- <Icon icon={["fa", "wrench"]} /> **Profil** ;
 - <Icon icon={["fa", "lock"]} /> **Mot de passe** ;
 - <Icon icon={["fa", "arrow-right-from-bracket"]} /> **Déconnexion**.
 
@@ -43,19 +43,17 @@ Le détail du profil de l'utilisateur connecté est accessible via le menu derro
 
 #### Par l'utilisateur
 
-Un utilisateur peut changer lui même son mot de passe directement via le menu derroulant du bandeau d'en-tête de Numahop.
+Un utilisateur peut changer lui-même son mot de passe directement via le menu derroulant du bandeau d'en-tête de Numahop.
 
 - cliquer sur le nom de l'utilisateur **Prénom** <Icon icon={["fa", "caret-down"]} /> ;
 - selectionnez l'option <Icon icon={["fa", "lock"]} /> **Mot de passe**.
 
-#### Mot de passe oublié
-
 En cas d’oubli de son mot de passe, un utilisateur peut le réinitialiser, sans passer par un administrateur, depuis l’écran de connexion, en cliquant sur **"Mot de passe oublié ?"**. L’utilisateur saisit alors son login et le nouveau mot de passe est envoyé à l'email renséigné sur son compte.
 
-#### Perte du mot de passe
+#### Par l'administrateur
 
 En cas de perte, un nouveau mot de passe peut être généré par un administrateur.
 
 - depuis le menu <Icon icon={["fa", "user"]} /> **Utilisateurs**, selectionner l'utilisateur concerné ;
-- dans le menu déroulant <Icon icon={["fa", "bars"]} /> **Autres actions**, choisir "Nouveau mot de passe" ;
-- un nouveau mot de passe est généré et s'affiche dans un volet <Icon icon={["fa", "circle-info"]} /> **Information** à droite.
+- dans le menu déroulant <Icon icon={["fa", "bars"]} /> **Autres actions**, choisir **"Nouveau mot de passe"** ;
+- un nouveau mot de passe est généré et s'affiche dans un volet de droite <Icon icon={["fa", "circle-info"]} /> **Information**.

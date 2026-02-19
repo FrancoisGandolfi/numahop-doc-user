@@ -10,7 +10,7 @@ import Icon from '@site/src/components/Icon';
 
 ## Pré-requis techniques
 
-NumaHOP est certifiée pour fonctionner sur les navigateurs Web suivants :
+NumaHop est certifiée pour fonctionner sur les navigateurs Web suivants :
 
 - **Google Chrome**, version 50 et supérieures ;
 - **Mozilla Firefox**, version 47 et supérieures ;
@@ -21,9 +21,7 @@ Le fonctionnement sur **Microsoft Edge** ou **Internet Explorer** n’est pas ga
 
 ### Boutons d'actions
 
-Dans toutes les interfaces, les différentes actions possibles sont associées à des icônes et une info-bulle. Ils sont cohérents dans tout l’outil.
-
-D’autres icônes de fonctionnalités peuvent exister en fonction des modules sollicités. Ces nouveaux boutons d'action sont généralement situés en haut à droite de la fenetres dans les interfa, en haut à droit de la barre d’en-tête des tables, ou à la suite de la données qu'ils complètent.
+Dans toutes les interfaces, les différentes actions possibles sont associées à des icônes et une info-bulle. Ils sont cohérents sur l'ensemble de la plateforme. D’autres icônes de fonctionnalités peuvent exister en fonction des modules sollicités. Ces nouveaux boutons d'action sont généralement situés en haut à droite de la fenêtre dans les interface, en haut à droit de la barre d’en-tête des tables, ou à la suite de la données qu'ils complètent.
 
 - <Icon icon={["fa", "plus"]} /> **Ajouter** ;
 - <Icon icon={["fa", "trash"]} /> **Supprimer** ;

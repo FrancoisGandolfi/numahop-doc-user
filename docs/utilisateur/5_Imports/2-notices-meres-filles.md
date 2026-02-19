@@ -4,4 +4,6 @@ sidebar_label: Import de notices mères/filles
 sidebar_position: 1
 ---
 
-# Import de notices mères/filles
+import Icon from '@site/src/components/Icon';
+
+# Import de notices mères/filles <Icon icon={["fa", "download"]} />

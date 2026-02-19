@@ -4,4 +4,6 @@ sidebar_label: Gestion des trains
 sidebar_position: 1
 ---
 
-# Gestion des trains
+import Icon from '@site/src/components/Icon';
+
+# Gestion des trains <Icon icon={["fa", "truck-ramp-box"]} />

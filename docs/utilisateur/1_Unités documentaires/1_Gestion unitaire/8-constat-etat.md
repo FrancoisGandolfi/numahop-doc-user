@@ -4,4 +4,6 @@ sidebar_label: Contat d'état
 sidebar_position: 8
 ---
 
-# Contat d'état
+import Icon from '@site/src/components/Icon';
+
+# Constats d'état <Icon icon={["fa", "list-check"]} />

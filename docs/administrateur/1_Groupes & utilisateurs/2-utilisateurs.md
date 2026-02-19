@@ -6,7 +6,6 @@ sidebar_position: 2
 
 import Icon from '@site/src/components/Icon';
 
-
 # Gestion des utilisateurs <Icon icon={["fa", "user-gear"]} />
 
 

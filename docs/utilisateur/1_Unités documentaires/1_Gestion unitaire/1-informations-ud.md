@@ -4,7 +4,9 @@ sidebar_label: Informations
 sidebar_position: 1
 ---
 
-# Informations
+import Icon from '@site/src/components/Icon';
+
+# Informations <Icon icon={["fa", "info"]} />
 
 ## Identifiant PGCN
 

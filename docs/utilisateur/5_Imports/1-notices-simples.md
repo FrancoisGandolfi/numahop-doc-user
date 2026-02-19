@@ -4,7 +4,9 @@ sidebar_label: Import de notices simples
 sidebar_position: 1
 ---
 
-# Import de notices simples
+import Icon from '@site/src/components/Icon';
+
+# Import de notices simples <Icon icon={["fa", "download"]} />
 
 
 ---

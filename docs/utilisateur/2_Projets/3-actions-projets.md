@@ -4,7 +4,9 @@ sidebar_label: Actions sur les projets
 sidebar_position: 3
 ---
 
-# Actions sur les projets
+import Icon from '@site/src/components/Icon';
+
+# Actions sur les projets <Icon icon={["fa", "diagram-project"]} />
 
 
 ---

@@ -4,4 +4,6 @@ sidebar_label: Détails des projets
 sidebar_position: 2
 ---
 
-# Détails des projets
+import Icon from '@site/src/components/Icon';
+
+# Détails des projets <Icon icon={["fa", "diagram-project"]} />

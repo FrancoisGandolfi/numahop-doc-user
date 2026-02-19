@@ -4,4 +4,6 @@ sidebar_label: Import de constat d'état en masse
 sidebar_position: 2
 ---
 
-# Import de constat d'état en masse
+import Icon from '@site/src/components/Icon';
+
+# Import de constat d'état en masse <Icon icon={["fa", "list-check"]} />

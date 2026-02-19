@@ -6,5 +6,5 @@ sidebar_position: 3
 
 import Icon from '@site/src/components/Icon';
 
-# Gestion des profils <Icon icon={["fa", "handshake"]} />
+# Gestion des profils <Icon icon={["fa", "users-rectangle"]} />
 

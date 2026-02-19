@@ -4,7 +4,9 @@ sidebar_label: Constat d'état à l'unité documentaire
 sidebar_position: 1
 ---
 
-# Constat d'état à l'unité documentaire
+import Icon from '@site/src/components/Icon';
+
+# Constat d'état à l'unité documentaire <Icon icon={["fa", "list-check"]} />
 
 
 ---

@@ -4,7 +4,9 @@ sidebar_label: Gestion des livraisons
 sidebar_position: 1
 ---
 
-# Gestion des livraisons
+import Icon from '@site/src/components/Icon';
+
+# Gestion des livraisons <Icon icon={["fa", "dolly"]} />
 
 
 ---

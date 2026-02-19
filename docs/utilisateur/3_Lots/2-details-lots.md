@@ -4,4 +4,6 @@ sidebar_label: Détails des lots
 sidebar_position: 2
 ---
 
-# Détails des lots
+import Icon from '@site/src/components/Icon';
+
+# Détails des lots <Icon icon={["fa", "cart-flatbed-suitcase"]} />

@@ -4,7 +4,9 @@ sidebar_label: Gestion des lots
 sidebar_position: 1
 ---
 
-# Gestion des lots
+import Icon from '@site/src/components/Icon';
+
+# Gestion des lots <Icon icon={["fa", "cart-flatbed-suitcase"]} />
 
 
 ---

@@ -4,7 +4,9 @@ sidebar_label: Créer un projet
 sidebar_position: 24
 ---
 
-# Créer un projet
+import Icon from '@site/src/components/Icon';
+
+# Créer un projet <Icon icon={["fa", "folder-tree"]} />
 
 Un projet de numérisation correspond à un ensemble de documents
 physiques (répartis dans des lots et des trains) pouvant être numérisés

@@ -4,4 +4,6 @@ sidebar_label: Détails des livraisons
 sidebar_position: 2
 ---
 
-# Détails des livraisons
+import Icon from '@site/src/components/Icon';
+
+# Détails des livraisons <Icon icon={["fa", "dolly"]} />

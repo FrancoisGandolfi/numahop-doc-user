@@ -4,4 +4,6 @@ sidebar_label: Détails des trains
 sidebar_position: 2
 ---
 
-# Détails des trains
+import Icon from '@site/src/components/Icon';
+
+# Détails des trains <Icon icon={["fa", "truck-ramp-box"]} />

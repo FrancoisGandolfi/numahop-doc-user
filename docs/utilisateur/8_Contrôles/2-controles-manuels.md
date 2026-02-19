@@ -4,7 +4,9 @@ sidebar_label: Contrôles manuels
 sidebar_position: 2
 ---
 
-# Contrôles manuels
+import Icon from '@site/src/components/Icon';
+
+# Contrôles manuels <Icon icon={["fa", "eye"]} />
 
 
 ---

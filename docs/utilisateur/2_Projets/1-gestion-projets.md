@@ -4,7 +4,9 @@ sidebar_label: Gestion des projets
 sidebar_position: 1
 ---
 
-# Gestion des projets
+import Icon from '@site/src/components/Icon';
+
+# Gestion des projets <Icon icon={["fa", "diagram-project"]} />
 
 ---
 title: Module Projets
