@@ -3,13 +3,13 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import styles from './presentation.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faCog, faUsers, faFileExport, faScrewdriverWrench, faCheckDouble, faLock, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsToCircle, faCog, faUsers, faFileExport, faSliders, faScrewdriverWrench, faCheckDouble, faVideo } from '@fortawesome/free-solid-svg-icons';
 import Link from '@docusaurus/Link';
 
 const features = [
   {
     title: 'Gestion centralisée',
-    icon: faBook,
+    icon: faArrowsToCircle,
     description: 'Centralisez et organisez vos notices documentaires et vos reproductions numériques en un seul endroit, accessible en ligne.',
     tags: [
       { label: 'Projets', link: '/docs/introduction/interface' },
@@ -29,7 +29,7 @@ const features = [
   },
   {
     title: 'Configuration flexible',
-    icon: faCog,
+    icon: faSliders,
     description: 'Adaptez les worflows, les constats d\'état et les contrôles aux besoins spécifiques à votre établissement et à chacun de vos projets de numérisation.',
     tags: [
       { label: 'Worflows', link: '/docs/introduction/interface' },
