@@ -12,7 +12,7 @@ const features = [
     title: 'Documentation',
     icon: faBook,
     description: 'Une documentation complète et détaillée, destinée aux administrateurs et utilisateurs autant qu\'aux prestataires de numérisation.',
-    link: '/docs/introduction/ergonomie',
+    link: '/docs/introduction/interface',
     linkTitle: 'La Documentation',
   },
   {

@@ -4,7 +4,9 @@ sidebar_label: Configuration Omeka
 sidebar_position: 6
 ---
 
-# Configuration Omeka
+import Icon from '@site/src/components/Icon';
+
+# Configuration Omeka <Icon icon={["fa", "laptop-file"]} />
 
 ---
 title: Configurer une sortie Omeka

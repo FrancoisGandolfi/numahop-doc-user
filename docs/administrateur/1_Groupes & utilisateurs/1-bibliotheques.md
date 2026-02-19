@@ -4,7 +4,9 @@ sidebar_label: Gestion des bibliothèques
 sidebar_position: 1
 ---
 
-# Gestion des bibliothèques
+import Icon from '@site/src/components/Icon';
+
+# Gestion des bibliothèques <Icon icon={["fa", "building-columns"]} />
 
 
 ---

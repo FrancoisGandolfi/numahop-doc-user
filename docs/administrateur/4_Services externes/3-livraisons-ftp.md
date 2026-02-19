@@ -4,7 +4,9 @@ sidebar_label: Configuration du serveur de livraison
 sidebar_position: 3
 ---
 
-# Configuration du serveur de livraison
+import Icon from '@site/src/components/Icon';
+
+# Configuration du serveur de livraison <Icon icon={["fa", "server"]} />
 
 ---
 title: Configuration du FTP de dépôt des fichiers à livrer dans NumaHOP

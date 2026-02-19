@@ -4,9 +4,10 @@ sidebar_label: Gestion des groupes
 sidebar_position: 3
 ---
 
-# Gestion des groupes
+import Icon from '@site/src/components/Icon';
 
 
+# Gestion des groupes  <Icon icon={["fa", "users-gear"]} />
 
 ---
 title: Créer des groupes

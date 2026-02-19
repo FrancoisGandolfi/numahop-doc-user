@@ -4,7 +4,9 @@ sidebar_label: Workflows
 sidebar_position: 3
 ---
 
-# Workflows
+import Icon from '@site/src/components/Icon';
+
+# Workflows <Icon icon={["fa", "chart-diagram"]} />
 
 
 ---

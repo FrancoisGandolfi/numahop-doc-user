@@ -3,8 +3,9 @@ title: Mappings EAD
 sidebar_label: Mappings EAD
 sidebar_position: 3
 ---
+import Icon from '@site/src/components/Icon';
 
-# Mappings EAD
+# Mappings EAD <Icon icon={["fa", "file-code"]} />
 
 
 ---

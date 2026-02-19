@@ -4,4 +4,6 @@ sidebar_label: Métadonnées embarquées
 sidebar_position: 3
 ---
 
-# Métadonnées embarquées
+import Icon from '@site/src/components/Icon';
+
+# Métadonnées embarquées <Icon icon={["fa", "hashtag"]} />

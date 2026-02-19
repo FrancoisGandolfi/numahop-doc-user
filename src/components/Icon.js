@@ -9,7 +9,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // Ajoutez les icônes à la bibliothèque
 library.add(fas, fab);
 
-const Icon = ({ icon, size = '2x', color = '#fc063b' }) => {
+const Icon = ({ icon, size = '1x', color = '#fc063b' }) => {
   return <FontAwesomeIcon icon={icon} size={size} color={color} />;
 };
 

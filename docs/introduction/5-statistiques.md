@@ -4,4 +4,6 @@ sidebar_label: Statistiques
 sidebar_position: 5
 ---
 
-# Statistiques
+import Icon from '@site/src/components/Icon';
+
+# Statistiques <Icon icon={["fa", "chart-pie"]} />

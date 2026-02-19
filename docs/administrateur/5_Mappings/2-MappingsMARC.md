@@ -3,8 +3,9 @@ title: Mappings MARC
 sidebar_label: Mappings MARC
 sidebar_position: 2
 ---
+import Icon from '@site/src/components/Icon';
 
-# Mappings MARC
+# Mappings MARC <Icon icon={["fa", "file-word"]} />
 
 
 ---

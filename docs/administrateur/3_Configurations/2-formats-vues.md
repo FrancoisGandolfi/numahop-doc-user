@@ -4,4 +4,6 @@ sidebar_label: Formats des vues
 sidebar_position: 2
 ---
 
-# Formats des vues
+import Icon from '@site/src/components/Icon';
+
+# Formats des vues <Icon icon={["fa", "expand"]} />
