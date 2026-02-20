@@ -13,7 +13,7 @@ import Icon from '@site/src/components/Icon';
 
 La connexion nécessite un identifiant, ou _login_, et un mot de passe. L’**identifiant** est fonction des règles de nommage adoptées par l'administrateur. Le **mot de passe** est transmis lors de l’inscription à l'application.
 
-:::info
+:::warning
 Le mot de passe doit contenir _a minima_ douze caractères, dont une majuscule, une minuscule, un chiffre, et un caratère spécial.
 :::
 
@@ -31,18 +31,18 @@ Le détail du profil de l'utilisateur connecté est accessible via le menu derro
 - selectionnez l'option <Icon icon={["fa", "wrench"]} /> **Profil**.
 - modifier les champs disponibles.
 
-|      Champ       | Statut      | Détails                   |                                                                     _Voir aussi_ |
-| :--------------: | :---------- | :------------------------ | -------------------------------------------------------------------------------: |
-|    **Login**     | Obligatoire | Texte libre               |                                                                                  |
-|     **Nom**      | Obligatoire | Texte libre               |                                                                                  |
-|    **Prénom**    | Obligatoire | Texte libre               |                                                                                  |
-|    **Actif**     | Par défaut  | Oui / Non                 |                                                                                  |
-|   **Fonction**   | Facultatif  | Texte libre               |                                                                                  |
-|  **Téléphone**   | Facultatif  | Texte libre               |                                                                                  |
-|   **Courriel**   | Obligatoire | Email @                   |                                                                                  |
-|  **Catégorie**   | Facultatif  | Utilisateur / Prestataire |  _Gestion des Utilisateurs_ <Icon icon={["fa", "arrow-up-right-from-square"]} /> |
-| **Bibliothèque** | Obligatoire | Liste fermée              | _Gestion des Bibliothèques_ <Icon icon={["fa", "arrow-up-right-from-square"]} /> |
-|    **Profil**    | Obligatoire | Liste fermée              |       _Gestion des Profils_ <Icon icon={["fa", "arrow-up-right-from-square"]} /> |
+|      Champ       | Statut         | Détails                   |                                                                     _Voir aussi_ |
+| :--------------: | :------------- | :------------------------ | -------------------------------------------------------------------------------: |
+|    **Login**     | 🔴 Obligatoire | Texte libre               |                                                                                  |
+|     **Nom**      | 🔴 Obligatoire | Texte libre               |                                                                                  |
+|    **Prénom**    | 🔴 Obligatoire | Texte libre               |                                                                                  |
+|    **Actif**     | ⚪ Par défaut  | Oui / Non                 |                                                                                  |
+|   **Fonction**   | 🔵 Facultatif  | Texte libre               |                                                                                  |
+|  **Téléphone**   | 🔵 Facultatif  | Texte libre               |                                                                                  |
+|   **Courriel**   | 🔴 Obligatoire | Email @                   |                                                                                  |
+|  **Catégorie**   | 🔵 Facultatif  | Utilisateur / Prestataire |  _Gestion des Utilisateurs_ <Icon icon={["fa", "arrow-up-right-from-square"]} /> |
+| **Bibliothèque** | 🔴 Obligatoire | Liste fermée              | _Gestion des Bibliothèques_ <Icon icon={["fa", "arrow-up-right-from-square"]} /> |
+|    **Profil**    | 🔴 Obligatoire | Liste fermée              |       _Gestion des Profils_ <Icon icon={["fa", "arrow-up-right-from-square"]} /> |
 
 ### Modification du mot de passe
 

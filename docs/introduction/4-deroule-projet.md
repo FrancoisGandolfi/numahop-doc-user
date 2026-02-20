@@ -9,54 +9,68 @@ import Icon from '@site/src/components/Icon';
 
 # Déroulé d'un projet <Icon icon={["fa", "diagram-project"]} />
 
+On distingue deux principaux types de projets.
+- les **projets standards**, qui couvrant l’intégralité du cycle de vie des documents, de la sélection des documents physiques et de leur signalement, jusqu’à la diffusion et à l'archivage des reproductions numériques ;
+- les **reprises de passif**, qui visent à intégrer des documents déjà numérisés dans NumaHop, sans passer par une phase de numérisation physique, pour permettre une structuration, un contrôle, une diffusion et le cas échant un archivage, pour en faire un ensemble cohérent.
+
 :::warning
-Les étapes de configurations détaillées ci-dessous peuvent être effectuées dans n'importe quel ordre, à condition que le _workflow_ n’ait pas été démarré au niveau d'un lot. Le démarrage d'un _worflow_ impose le respect strict des étapes successives qu'il définit.
+Le déroulé de ces projets types détaillé ci-dessous reposent d'abord sur le parametrage des configurations de NumaHop, puis sur l'enchaînement des étapes d'un _worflow_.
+- les étapes de configuration peuvent être **effectuées dans n'importe quel ordre**, à condition que le _workflow_ n’ait pas été démarré au niveau d'un lot ;
+- le démarrage d'un _worflow_ impose le **respect strict des étapes successives** qu'il définit.
 :::
 
-## Projet standard
+:::danger
+La différence fondamentale entre les projets standards et les projets de reprise de passif concerne les unités documentaires :
+- dans le cas de projets standards, **les unités documentaires sont importées et rattachées à un lot** ;
+- dans le cas de reprise de passif, **les unités documentaires sont générées automatiquement à la livraison**, à partir de lots vides.
+:::
 
-### Parametrages préalables
+## Projets standards
 
-- Workflow
-  - Créer les groupes de workflow nécessaires
-  - Affecter les utilisateurs concernés
+### Configurations préalables
 
-- Controles automatiques
-  - Créer une configuration de contrôle automatiques
-  - paramétrer les contrôles à effectuer, les taux d’erreur acceptés et le mode d’échantillonnage
+Les configurations préalables doivent être réalisées par un **administrateur**. Elles sont identiques à celles d'un projet de reprise de passif.
 
-### Projet et lot
-- Créer un projet
+- Configurations d'un _workflow_ dédié : [_Workflows_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+  - Création des **utilisateurs** impliqués dans le projet : [_Gestion des Utilisateurs_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+  - Création des **groupes** de _workflow_ réunissants les différents acteurs du projet : [_Gestion des Groupes_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
 
-- Créer un lot de numérisation
-  - Type de lot : « Physique »
-  - Format demandé
-  - Type de compression attendu
-  - Si nécessaire (en fonction des contrôles automatiques activés) : taux de compression, résolution, profil colorimétrique
+:::danger
+L'administrateur doit s'assurer que l'affectation de l'utilisateur à un groupe de _workflow_ soit cohérente avec son profil d'utilisateur [_Gestion des Profils_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]().
+:::
 
-- Rattacher le lot au projet de numérisation (soit au moment de la création du lot, soit à posteriori si le projet est créé après le lot)
+- Configuration des **contrôles** : [_Configuration des contrôles_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]().
 
-- Si nécessaire, redéfinir au niveau du lot les composants hérités du projet et nécessaires au bon déroulement de celui-ci (en fonction des besoins) :
-  - Prestataire
-  - Workflow
-  - Configuration FTP
-  - Configuration des contrôles automatiques
-  - Collection Internet Archive
-  - Plan de classement PAC
-  - Collection Omeka
-  - Type d’item Omeka
+### Parametrages des projets et lots
 
-### Unités documentaires
-- Importer les notices afin de créer les unités documentaires Si le projet et le lot existent au moment de l’import, il est possible de les importer directement dans le lot concerné
--  Ou créer les notices et les unités documentaires
-- Associer les unités documentaires dans le lot si cela n’a pas été effectué au moment de l’import
+Les parametrages des projets et lots peuvent être réalisés aussi bien par les **administrateurs** que par les **utilisateurs**.
+
+- Création du **projet** de numérisation : [_Projets_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+
+- Création du **lot** de numérisation: [_Lots_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]().
+  - Le type de lot d'un projet standard sera **_Physique_**.
+
+Le rattachement du lot au projet de numérisation peut se faire soit au moment de la création du lot, soit _a posteriori_ si le projet est créé après le lot. Il est possible de redéfinir au niveau du lot les informations qui n'ont pas été ou qui ne doivent pas être hérités du projet, et nécessaires au bon déroulement du lot en question.
+
+:::info
+Si le projet le permet, il est préférable de créer le projet avant le lot, pour garantir l'héritage des informations renseignées dans le projet au niveau du lot, parmi lesquelles ont trouve les mentions du prestataire de numérisation, du _workflow_, du serveur de livraison, des contrôles, et des configuration de diffusion et d'archivage.
+:::
+
+### Import des unités documentaires
+
+- Import des notices et création des unités documentaires : [_Imports_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+- Association des unités documentaires aux lots le cas échéant [_Unités documentaires_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+
+:::info
+Dans la mesure du possible, il est conseillé d'importer ou de créer les unités documentaires après la création des lots et des projets, pour faciliter le rattachement des unités documentaires aux dits projets et lots au moment de l'import, et ainsi éviter une étape de rattachement manuelle.
+:::
 
 
 
-## Etapes du workflow
+### Etapes du workflow
 
 
-| Étape                                      | Type               | Description                                                                                                                                                                                                                     | Validation                                                                                     |
+| Étape                                      | Type               | Description                                                                                                                                                                                                                     | Validation de l'étape                                                                                    |
 |--------------------------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | **Génération du bordereau**               | 🔵 Facultatif               | À définir.                                                                                                                                                                                                                     |                                                                                                |
 | **Validation des constats d'état**        | 🔵 Facultatif               | Réalisation du constat d'état initial (hors workflow) et validation de ce constat d'état.                                                                                                                                   | <Icon icon={["fa", "square-check"]} /> en haut à droite dans le constat d'état.                |
@@ -79,6 +93,43 @@ Les étapes de configurations détaillées ci-dessous peuvent être effectuées 
 
 
 ## Projet de reprise de passif
+
+### Configurations préalables
+
+Les configurations préalables doivent être réalisées par un **administrateur**. Elles sont identiques à celles d'un projet standard.
+
+- Configurations d'un _workflow_ dédié : [_Workflows_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+  - Création des **utilisateurs** impliqués dans le projet : [_Gestion des Utilisateurs_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+  - Création des **groupes** de _workflow_ réunissants les différents acteurs du projet : [_Gestion des Groupes_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+
+:::danger
+L'administrateur doit s'assurer que l'affcetations de l'utilisateur à un groupe de _workflow_ soit cohérente avec sont profil d'utilisateur [_Gestion des Profils_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]().
+:::
+
+- Configuration des **contrôles** : [_Configuration des contrôles_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]().
+
+### Parametrages des projets et lots
+
+Les parametrages des projets et lots peuvent être réalisés aussi bien par les **administrateurs** que par les **utilisateurs**.
+
+- Création du **projet** de numérisation : [_Projets_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+
+- Création du **lot** de numérisation: [_Lots_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]().
+  - Le type de lot d'un projet standard sera **_Numérique_**.
+
+Le rattachement du lot au projet de numérisation peut se faire soit au moment de la création du lot, soit _a posteriori_ si le projet est créé après le lot. Il est possible de redéfinir au niveau du lot les informations qui n'ont pas été ou qui ne doivent pas être hérités du projet, et nécessaires au bon déroulement du lot en question.
+
+### Livraison des documents numériques
+
+:::danger
+Pour un projet de reprise de passif, on ne rattache pas d'unités documentaire aux lots. La première étape d'un projet de reprise de passif est donc la livraison des documents, qui entraine la création des unités documentaires.
+:::
+
+- Création d'une **livraison** rattachée à un lot vide : [_Livraisons_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+- **Livraison** des documents numériques : [_Livraison_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
+
+
+
 
 
 
