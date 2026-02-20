@@ -11,7 +11,11 @@ import Icon from '@site/src/components/Icon';
 
 ## Connexion & deconnexion
 
-La connexion nécessite un identifiant, ou _login_, et un mot de passe. L’**identifiant** est fonction des règles de nommage adoptées par l'administrateur. Le **mot de passe** est transmis lors de l’inscription à l'application. Le mot de passe doit contenir _a minima_ douze caractères, dont une majuscule, une minuscule, un chiffre, et un caratère spécial.
+La connexion nécessite un identifiant, ou _login_, et un mot de passe. L’**identifiant** est fonction des règles de nommage adoptées par l'administrateur. Le **mot de passe** est transmis lors de l’inscription à l'application.
+
+:::info
+Le mot de passe doit contenir _a minima_ douze caractères, dont une majuscule, une minuscule, un chiffre, et un caratère spécial.
+:::
 
 Les actions possibles sur le compte de l'utilisateur connecté sont accessibles via le menu derroulant du bandeau d'en-tête de Numahop **Prénom** <Icon icon={["fa", "caret-down"]} />.
 

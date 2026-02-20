@@ -16,7 +16,9 @@ NumaHop est certifiée pour fonctionner sur les navigateurs Web suivants :
 - **Google Chrome**, version 50 et supérieures ;
 - **Mozilla Firefox**, version 47 et supérieures ;
 
+:::warning
 Le fonctionnement sur **Microsoft Edge** ou **Internet Explorer** n’est pas garanti, du fait du mauvais affichage des langues sinistroverses sur ces navigateurs et de la non prise en charge de la visionneuse _Mirador_.
+:::
 
 ## Ergonomie générale de l'application
 

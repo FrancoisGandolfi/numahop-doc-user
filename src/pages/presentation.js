@@ -12,9 +12,9 @@ const features = [
     icon: faArrowsToCircle,
     description: 'Centralisez et organisez vos notices documentaires et vos reproductions numériques en un seul endroit, accessible en ligne.',
     tags: [
-      { label: 'Projets', link: '/docs/introduction/interface' },
-      { label: 'Lots', link: '/docs/introduction/interface' },
-      { label: 'Trains', link: '/docs/introduction/interface' },
+      { label: 'Projets', link: '/docs/introduction' },
+      { label: 'Lots', link: '/docs/introduction' },
+      { label: 'Trains', link: '/docs/introduction' },
     ]
   },
   {
@@ -22,9 +22,9 @@ const features = [
     icon: faUsers,
     description: 'Travaillez en équipe au sein de votre établissement et avec vos partenaires, en configurant des rôles et permissions spécifiques à chaque utilisateurs.',
     tags: [
-      { label: 'Groupes', link: '/docs/introduction/interface' },
-      { label: 'Utilisateurs', link: '/docs/introduction/interface' },
-      { label: "Livraisons", link: '/docs/introduction/interface'}
+      { label: 'Groupes', link: '/docs/introduction' },
+      { label: 'Utilisateurs', link: '/docs/introduction' },
+      { label: "Livraisons", link: '/docs/introduction'}
     ]
   },
   {
@@ -32,9 +32,9 @@ const features = [
     icon: faSliders,
     description: 'Adaptez les worflows, les constats d\'état et les contrôles aux besoins spécifiques à votre établissement et à chacun de vos projets de numérisation.',
     tags: [
-      { label: 'Worflows', link: '/docs/introduction/interface' },
-      { label: 'Contrôles', link: '/docs/introduction/interface' },
-      { label: 'Constat d\'états', link: '/docs/introduction/interface' }
+      { label: 'Worflows', link: '/docs/introduction' },
+      { label: 'Contrôles', link: '/docs/introduction' },
+      { label: 'Constat d\'états', link: '/docs/introduction' }
     ]
   },
   {
@@ -42,8 +42,8 @@ const features = [
     icon: faScrewdriverWrench,
     description: 'Importez et dérivez les données natives de vos systèmes d\'information documentaire vers le standard interopérable Dublin Core.',
     tags: [
-      { label: 'Mappings', link: "/docs/introduction/interface" },
-      { label: 'Import de notices', link: '/docs/introduction/interface' }
+      { label: 'Mappings', link: "/docs/introduction" },
+      { label: 'Import de notices', link: '/docs/introduction' }
     ]
   },
   {
@@ -51,8 +51,8 @@ const features = [
     icon: faCheckDouble,
     description: 'Facilitez le travail de contrôle en parametrant les contrôles automatiques et manuels selon vos entreprises de numérisation.',
     tags: [
-      { label: 'Contrôles automatiques', link: '/docs/introduction/interface' },
-      { label: 'Contrôles manuels', link: '/docs/introduction/interface' }
+      { label: 'Contrôles automatiques', link: '/docs/introduction' },
+      { label: 'Contrôles manuels', link: '/docs/introduction' }
     ]
   },
   {
@@ -60,9 +60,9 @@ const features = [
     icon: faFileExport,
     description: 'Disséminez vos unités documentaires et leurs dérivées sur différentes plateformes de diffusion et d\'archivage.',
     tags: [
-      { label: 'Archivage', link: '/docs/introduction/interface' },
-      { label: 'Export', link: '/docs/introduction/interface' },
-      { label: 'Fichiers dérivés', link: '/docs/introduction/interface' }
+      { label: 'Archivage', link: '/docs/introduction' },
+      { label: 'Export', link: '/docs/introduction' },
+      { label: 'Fichiers dérivés', link: '/docs/introduction' }
     ],
   },
 ];

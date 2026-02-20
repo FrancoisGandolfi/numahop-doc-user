@@ -9,7 +9,7 @@ import Icon from '@site/src/components/Icon';
 
 # Déroulé d'un projet <Icon icon={["fa", "diagram-project"]} />
 
-:::info
+:::warning
 Les étapes de configurations détaillées ci-dessous peuvent être effectuées dans n'importe quel ordre, à condition que le _workflow_ n’ait pas été démarré au niveau d'un lot. Le démarrage d'un _worflow_ impose le respect strict des étapes successives qu'il définit.
 :::
 
