@@ -1,14 +1,19 @@
 /* ===== Variables et réinitialisations ===== */
 :root {
-  --numahop-primary: #6b2c3e;       /* Bordeaux */
-  --numahop-secondary: #ff5e0f;     /* Orange */
-  --numahop-medium: #982135; 
-  --numahop-text: #333333;          /* Texte */
-  --numahop-light: #f9f5f6;         /* Fond clair */
-  --numahop-dark: #2d2d2d;          /* Fond sombre */
+  --numahop-primary: #6b2c3e;
+  /* Bordeaux */
+  --numahop-secondary: #ff5e0f;
+  /* Orange */
+  --numahop-medium: #982135;
+  --numahop-text: #333333;
+  /* Texte */
+  --numahop-light: #f9f5f6;
+  /* Fond clair */
+  --numahop-dark: #2d2d2d;
+  /* Fond sombre */
   --numahop-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --numahop-transition: all 0.3s ease;
- --button-hover-color: #fc063b; 
+  --button-hover-color: #fc063b;
 }
 
 /* ===== Conteneur principal ===== */
@@ -66,12 +71,43 @@
   flex: 1;
   max-width: 50%;
   text-align: center;
+  position: relative;
+  /* Ajout pour positionner le lien */
 }
 
 .heroImage img {
   max-width: 100%;
   border-radius: 8px;
   box-shadow: var(--numahop-shadow);
+}
+
+.downloadLink {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--numahop-secondary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  /* Désactive les interactions quand invisible */
+}
+
+.heroImage:hover .downloadLink {
+  opacity: 1;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.downloadLink:hover {
+  background-color: var(--button-hover-color);
+  text-decoration: none;
+
 }
 
 /* ===== Section des fonctionnalités ===== */
@@ -196,7 +232,8 @@
 
 .videoContainer {
   position: relative;
-  padding-bottom: 56.25%; /* Ratio 16:9 */
+  padding-bottom: 56.25%;
+  /* Ratio 16:9 */
   height: 0;
   overflow: hidden;
   background-color: #000;

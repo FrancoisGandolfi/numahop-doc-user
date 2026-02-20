@@ -22,6 +22,13 @@ const membres = [
     bibliothequeNumerique: 'https://bibnum.sciencespo.fr/s/catalogue/page/accueil',
   },
   {
+    nom: 'Bibliothèque universitaire des langues et civilisations',
+    logo: '/img/logos/bulac-logo.png',
+    ville: 'Paris',
+    siteInternet: 'https://www.bulac.fr/',
+    bibliothequeNumerique: 'https://bina.bulac.fr/s/bina/page/welcome',
+  },
+  {
     nom: 'Université Paris Saclay',
     ville: 'Orsay',
     logo: '/img/logos/saclay-logo.png',
@@ -36,18 +43,18 @@ const membres = [
     bibliothequeNumerique: 'https://lucienne.ens.psl.eu/s/lucienne/page/welcome',
   },
   {
-    nom: 'Bibliothèque universitaire des langues et civilisations',
-    logo: '/img/logos/bulac-logo.png',
-    ville: 'Paris',
-    siteInternet: 'https://www.bulac.fr/',
-    bibliothequeNumerique: 'https://bina.bulac.fr/s/bina/page/welcome',
-  },
-  {
     nom: 'Humathèque Condorcet',
     ville: 'Aubervilliers',
     logo: '/img/logos/humatheque-logo.png',
     siteInternet: 'https://www.humatheque-condorcet.fr/',
     bibliothequeNumerique: 'https://bibnum.campus-condorcet.fr/s/bibnum/page/accueil',
+  },
+  {
+    nom: 'Sorbonne Université',
+    ville: 'Paris',
+    logo: '/img/logos/sorbonneuniversite-logo.png',
+    siteInternet: 'https://www.sorbonne-universite.fr/',
+    bibliothequeNumerique: 'https://patrimoine.sorbonne-universite.fr/',
   },
   {
     nom: 'Bibliothèque nationale de France',
@@ -63,13 +70,6 @@ const membres = [
     siteInternet: 'https://www.mnhn.fr/fr/bibliotheques-du-museum',
   },
   {
-    nom: 'Sorbonne Université',
-    ville: 'Paris',
-    logo: '/img/logos/sorbonneuniversite-logo.png',
-    siteInternet: 'https://www.sorbonne-universite.fr/',
-    bibliothequeNumerique: 'https://patrimoine.sorbonne-universite.fr/',
-  },
-  {
     nom: 'Université Claude Bernard Lyon I',
     ville: 'Lyon',
     logo: '/img/logos/lyon1-logo.png',
@@ -82,7 +82,7 @@ const membres = [
     siteInternet: 'https://mediatheques.agglo-pvm.fr/vos-mediatheques/mediatheque-simone-veil',
   },
   {
-    nom: 'Institut national d\'Histoire de l\'art',
+    nom: 'Institut national d\'histoire de l\'art',
     ville: 'Paris',
     logo: '/img/logos/inha-logo.png',
     siteInternet: 'https://www.inha.fr/',
@@ -148,46 +148,67 @@ const CommunautePage = () => {
   return (
     <Layout title="Communauté NumaHOP" description="Découvrez l'association NumaHOP et ses établissements membres">
       <div className={styles.container}>
-
-        {/* Présentation de l'association */}
-        <section className={styles.association}>
-          <h2 className={styles.sectionTitle}>
-            <FontAwesomeIcon icon={faHandshake} className={styles.sectionIcon} />
-            Association NumaHOP
-          </h2>
-          <div className={styles.associationContent}>
-            <div className={styles.associationText}>
-              <p>
-                L'association NumaHOP a été créée en 2018 avec pour mission de développer et promouvoir une plateforme open source de gestion de contenus numérisés pour les bibliothèques, archives et institutions culturelles.
-              </p>
-              <p>
-                Notre objectif est de fournir un outil puissant, flexible et accessible pour la numérisation, l'organisation et la diffusion des collections documentaires.
-              </p>
-              <p>
-                L'association est composée de membres institutionnels et individuels, tous engagés dans la préservation et la valorisation du patrimoine culturel numérique.
-              </p>
-              <div className={styles.associationStats}>
-                <div className={styles.stat}>
-                  <div className={styles.statNumber}>20+</div>
-                  <div className={styles.statLabel}>Établissements membres</div>
-                </div>
-                <div className={styles.stat}>
-                  <div className={styles.statNumber}>500K+</div>
-                  <div className={styles.statLabel}>Documents numérisés</div>
-                </div>
-                <div className={styles.stat}>
-                  <div className={styles.statNumber}>10+</div>
-                  <div className={styles.statLabel}>Années d\'expérience</div>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.associationImage}>
-              <img src="/img/poster.jpg" alt="Équipe de l'association NumaHOP" />
-            </div>
+        {/* En-tête */}
+        <header className={styles.hero}>
+          <div className={styles.heroContent}>
+            <h1 className={styles.heroTitle}>Association NumaHOP</h1>
+            <p className={styles.heroSubtitle}>
+              Fondée en 2023, l’Association des utilisateurs NumaHOP
+              affirme l’importance de croiser les
+              expertises autour de la numérisation, de la
+              gestion des contenus et de
+              l’interopérabilité des données.
+            </p>
+            <p>Elle œuvre à partager les pratiques et à
+              renforcer les dynamiques de mutualisation,
+              en menant des actions de formation, de
+              traduction, et de documentation, ainsi que
+              de développement de nouvelles
+              fonctionnalités au sein du logiciel libre
+              NumaHop.</p>
+            <p>Elle œuvre à partager les pratiques et à
+              renforcer les dynamiques de mutualisation,
+              en menant des actions de formation, de
+              traduction, et de documentation, ainsi que
+              de développement de nouvelles
+              fonctionnalités au sein du logiciel libre
+              NumaHop.</p>
+            <p>L'association est composée de membres institutionnels
+              et de prestataires privés, tous engagés dans la
+              préservation et la valorisation du patrimoine culturel numérique.</p>
 
           </div>
-        </section>
+
+          <div className={styles.heroImage}>
+            <img src="/img/numahop-schema.jpg" alt="Schema NumaHOP" />
+            <a
+              href="#rejoindre"
+              className={styles.downloadLink}
+            >
+              Rejoindre & Contribuer
+            </a>
+          </div>
+
+        </header>
+
+        {/*
+<div className={styles.associationStats}>
+  <div className={styles.stat}>
+    <div className={styles.statNumber}>20+</div>
+    <div className={styles.statLabel}>Établissements membres</div>
+  </div>
+  <div className={styles.stat}>
+    <div className={styles.statNumber}>500K+</div>
+    <div className={styles.statLabel}>Documents numérisés</div>
+  </div>
+  <div className={styles.stat}>
+    <div className={styles.statNumber}>10+</div>
+    <div className={styles.statLabel}>Années d'expérience</div>
+  </div>
+</div>
+*/}
+
+
 
         <section className={styles.membres}>
           <h2 className={styles.sectionTitle}>
@@ -253,7 +274,7 @@ const CommunautePage = () => {
         </section>
 
         {/* Appel à rejoindre */}
-        <section className={styles.rejoindre}>
+        <section id="rejoindre" className={styles.rejoindre}>
           <h2 className={styles.sectionTitle}>
             <FontAwesomeIcon icon={faEnvelope} className={styles.sectionIcon} />
             Rejoignez nous

@@ -24,7 +24,7 @@ const features = [
     tags: [
       { label: 'Groupes', link: '/docs/introduction' },
       { label: 'Utilisateurs', link: '/docs/introduction' },
-      { label: "Livraisons", link: '/docs/introduction'}
+      { label: "Livraisons", link: '/docs/introduction' }
     ]
   },
   {
@@ -49,7 +49,7 @@ const features = [
   {
     title: 'Contrôle qualité',
     icon: faCheckDouble,
-    description: 'Facilitez le travail de contrôle en parametrant les contrôles automatiques et manuels selon vos entreprises de numérisation.',
+    description: 'Facilitez le travail de contrôle en parametrant les contrôles automatiques et manuels en fonction vos entreprises de numérisation.',
     tags: [
       { label: 'Contrôles automatiques', link: '/docs/introduction' },
       { label: 'Contrôles manuels', link: '/docs/introduction' }
@@ -99,20 +99,43 @@ const PresentationPage = () => {
         {/* En-tête */}
         <header className={styles.hero}>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>NumaHOP</h1>
+            <h1 className={styles.heroTitle}>NumaHop</h1>
             <p className={styles.heroSubtitle}>
-              La plateforme de gestion de contenus numérisés pour les bibliothèques, centres d'archives, et les institutions culturelles.
+              Une plateforme de gestion des chaînes de numérisation
+              automatisée et modulable destinée aux bibliothèques, centres
+              d'archives, et les institutions culturelles.
             </p>
-            <p>NumaHOP est une solution complète pour la gestion de contenus numérisés, spécialement conçue pour les bibliothèques, les archives et les institutions culturelles.
+            <p>NumaHop est une solution complète pour la gestion de contenus
+              numérisés, spécialement conçue pour les bibliothèques,
+              les archives et les institutions culturelles. NumaHop facilite la numérisation, l'organisation,
+              et la dissémination de vos collections.</p>
+            <ul>
+              <li>Un gain de temps : outil intégré unique,
+                pas d’outils tiers et multiples.</li>
+              <li>Une plus grande fiabilité et qualité sur toutes
+                les étapes de la chaîne : contrôles automatisés,
+                conversions automatisées.</li>
+              <li>Une prise en main facilitée par les équipes : outil
+                intégré pour toutes les étapes, confort de travail
+                et ergonomie.</li>
+              <li>Des coûts limités : fichiers dérivés et OCR produits
+                directement dans la plate-forme.</li></ul>
+            <p>Que vous soyez une petite bibliothèque ou une grande
+              institution, NumaHop s'adapte à vos besoins et vous
+              accompagne dans votre transition numérique.</p>
 
-            </p><p>Avec NumaHOP, vous pouvez facilement numériser, organiser, rechercher et partager vos collections de documents, tout en bénéficiant d'une interface intuitive et de fonctionnalités avancées.
-
-            </p><p>Que vous soyez une petite bibliothèque ou une grande institution, NumaHOP s'adapte à vos besoins et vous accompagne dans votre transition numérique.</p>
-            
           </div>
           <div className={styles.heroImage}>
-            <img src="/img/poster.jpg" alt="Poster NumaHOP" />
+            <img src="/img/numahop-schema.jpg" alt="Schema NumaHOP" />
+            <a
+              href="/img/numahop-poster.jpg"
+              download="numahop-poster.jpg"
+              className={styles.downloadLink}
+            >
+              Télécharger le poster
+            </a>
           </div>
+
         </header>
 
         {/* Section des fonctionnalités */}
@@ -186,8 +209,8 @@ const PresentationPage = () => {
         </section>
 
 
-      </div>
-    </Layout>
+      </div >
+    </Layout >
   );
 };
 

@@ -1,19 +1,14 @@
 /* ===== Variables et réinitialisations ===== */
 :root {
-  --numahop-primary: #6b2c3e;
-  /* Bordeaux */
-  --numahop-medium: #982135;
-  --numahop-secondary: #ff5e0f;
-  /* Orange */
-  --numahop-text: #333333;
-  /* Texte */
-  --numahop-light: #f9f5f6;
-  /* Fond clair */
-  --numahop-dark: #2d2d2d;
-  /* Fond sombre */
+  --numahop-primary: #6b2c3e;       /* Bordeaux */
+  --numahop-secondary: #ff5e0f;     /* Orange */
+  --numahop-medium: #982135; 
+  --numahop-text: #333333;          /* Texte */
+  --numahop-light: #f9f5f6;         /* Fond clair */
+  --numahop-dark: #2d2d2d;          /* Fond sombre */
   --numahop-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --numahop-transition: all 0.3s ease;
-  --button-hover-color: #fc063b; 
+ --button-hover-color: #fc063b; 
 }
 
 /* ===== Conteneur principal ===== */
@@ -23,12 +18,103 @@
   padding: 0 20px;
 }
 
-/* ===== Sections générales ===== */
-.sectionTitle {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+/* ===== Section héroïque ===== */
+.hero {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+  gap: 2rem;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 50%;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  color: var(--numahop-primary);
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: var(--numahop-text);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.heroDescription {
+  font-size: 1rem;
+  color: var(--numahop-text);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.heroButtons {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: var(--numahop-transition);
+}
+
+.heroImage {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+  position: relative; /* Ajout pour positionner le lien */
+}
+
+.heroImage img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--numahop-shadow);
+}
+
+.downloadLink {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--numahop-secondary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none; /* Désactive les interactions quand invisible */
+}
+
+.heroImage:hover .downloadLink {
+  opacity: 1;
+  pointer-events: auto; /* Réactive au survol */
+  text-decoration: none;
+}
+
+.downloadLink:hover {
+  background-color: var(--button-hover-color);
+  text-decoration: none;
+}
+
+/* ===== Section des fonctionnalités ===== */
+.features {
+  padding: 4rem 0;
+  text-align: left;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: var(--numahop-primary);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: left;
+  justify-content: left;
   gap: 1rem;
 }
 
@@ -36,10 +122,46 @@
   color: var(--button-hover-color);
 }
 
-.sectionDescription {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  max-width: 800px;
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.featureCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: var(--numahop-transition);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 100%;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--numahop-shadow);
+  border-color: var(--numahop-primary);
+}
+
+.featureIcon {
+  color: var(--numahop-secondary);
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.featureTitle {
+  font-size: 1.3rem;
+  color: var(--numahop-primary);
+  margin-bottom: 1rem;
+}
+
+.featureDescription {
+  color: var(--numahop-text);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 /* ===== Section "Association" ===== */
@@ -80,12 +202,18 @@
 .associationStats {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  width: fit-content; /* Prend 50% de la largeur */
+  margin-top: 0rem;
+  margin-left: 0; /* Aligné à gauche */
   gap: 2rem;
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
 }
 
+/* Pour centrer les stats dans leur espace de 50% */
 .stat {
   text-align: center;
+  flex: 1;
+  min-width: 120px; /* Évite que les stats soient trop étroites */
 }
 
 .statNumber {
