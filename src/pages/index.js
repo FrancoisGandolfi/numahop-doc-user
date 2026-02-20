@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt, faBook, faLock, faUsers, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faBook, faLock, faUsers, faCode, faRss } from '@fortawesome/free-solid-svg-icons';
 
 // Données pour les cartes de fonctionnalités
 const features = [
@@ -25,9 +25,16 @@ const features = [
   {
     title: 'Communauté',
     icon: faUsers,
-    description: 'Soutien actif du logiciel, l\'association assure le partage et l\'échange, en menant des actions de formation, de traduction, de documentation, et de développement ',
+    description: 'Soutien actif du logiciel, l\'association assure le partage et l\'échange, en menant des actions de formation et de développement ',
     link: '/communaute',
     linkTitle: 'L\'Association',
+  },
+    {
+    title: 'Actualités',
+    icon: faRss,
+    description: 'Suivez l\'actualité de NumaHOP : évolutions du logiciel, développements en cours, journées professionnelles et ateliers.  ',
+    link: '/blog',
+    linkTitle: '@NumaWork',
   },
   {
     title: 'Bac à sable',
