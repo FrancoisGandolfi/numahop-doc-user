@@ -7,7 +7,7 @@ description: Aperçu d'ensemble du logiciel
 
 import Icon from '@site/src/components/Icon';
 
-# Interface de NumaHop <Icon icon={["fa", "display"]} />
+# <Icon icon={["fa", "display"]} /> Interface de NumaHop
 
 ## Pré-requis techniques
 

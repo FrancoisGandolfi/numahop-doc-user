@@ -7,7 +7,7 @@ description: Exemples fonctionnels de projets types
 
 import Icon from '@site/src/components/Icon';
 
-# Déroulé d'un projet <Icon icon={["fa", "diagram-project"]} />
+# <Icon icon={["fa", "diagram-project"]} /> Déroulé d'un projet
 
 On distingue deux principaux types de projets.
 

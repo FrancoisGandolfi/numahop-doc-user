@@ -122,6 +122,11 @@ const config = {
                 type: 'docSidebar',
                 sidebarId: 'glossaireSidebar',
                 label: 'Glossaire',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'pratiquesSidebar',
+                label: 'Cas pratiques',
               }
             ]
           },

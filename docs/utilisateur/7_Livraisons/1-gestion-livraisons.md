@@ -9,12 +9,6 @@ import Icon from '@site/src/components/Icon';
 # Gestion des livraisons <Icon icon={["fa", "dolly"]} />
 
 
----
-title: Guide de livraison
-sidebar_label: Guide de livraison
-sidebar_position: 10
----
-
 # Guide de livraison
 
 ### Créer une livraison
@@ -145,3 +139,67 @@ l’écran
 
 Lorsque l’opération est terminée, la liste doit être la même sur les
 deux parties de l’écran.
+
+
+Guide pratique créer et lancer une livraison
+
+(numérisation interne)
+
+Une livraison est toujours rattaché à un lot, lui-même rattaché à un projet.
+Un lot peut donc contenir plusieurs livraisons.
+Le choix du lot dépend de la nature des documents à livrer : Jean Longuet ; Archelec ; Thèses, etc.
+
+Cliquer sur l’icône bibliothèque puis sur « Livraisons ».
+
+Créer une livraison
+
+Cliquer sur l’icône « + » et remplir le formulaire de livraison.
+Rattacher la livraison au bon lot.
+Il est très important de remplir correctement le champ « Dossier de livraison » : c’est là qu’est indiqué
+le chemin vers le (S)FTP pour accéder aux documents que vous souhaitez livrer.
+
+Créer une livraison
+
+Dans les paramétrages de NumaHOP, une partie du chemin vers le (S)FTP est déjà enregistré.
+
+Créer une livraison
+
+Ainsi, dans le champs « dossier de livraison », c’est la suite qu’il convient d’indiquer.
+Ce chemin se trouve dans la barre supérieure du (S)FTP :
+
+Créer une livraison
+
+Partie du chemin à indiquer dans
+« Dossier de livraison »
+
+Partie du chemin déjà enregistrée
+dans NumaHOP
+
+Attention : les fichiers à livrer doivent se trouver dans un dossier nommé suivant l'identifiant du document
+
+Une fois les champs remplis, cliquer sur « enregistrer ».
+
+Créer une livraison
+
+Cliquer sur le bouton « Livrer » en haut à droite.
+
+Créer une livraison
+
+Dans un premier temps, NumaHOP va repérer tous les documents se trouvant au niveau du chemin indiqué précédemment.
+Par défaut, tous les documents trouvés sont inclus dans la livraison, pour en exclure un ou plusieurs, cliquer sur le bouton « Livrer » pour
+qu’il bascule sur « exclure ».
+La plateforme va également indiqué si elle trouve des documents qu’elle n’attendaient pas : des documents en format JPEG2000 ont été
+déclarés au moment de créer le lot et NumaHOP trouvent aussi dans cette livraison des .xml ou des .xsl. Il est possible d’indiquer que ces
+mets correspondent aux métadonnées et ces .xsl aux tables des matières.
+
+Créer une livraison
+
+Une fois la livraison lancée, il est possible de suivre son avancement grâce à la diode.
+Attention toutefois, celle-ci n’est pas forcément fiable en cours de livraison.
+
+Créer une livraison
+
+La livraison est terminée lorsque le statut indique « A contrôler » et que l’icône permettant d’accéder
+au contrôle du document est accessible sous l’onglet « Action ».
+Le chargement du rapport est possible, il est notamment utile lorsque la livraison ou certains
+documents de la livraison n’ont pas pu aboutir.

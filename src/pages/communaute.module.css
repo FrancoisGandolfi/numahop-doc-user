@@ -487,7 +487,7 @@
 
 .cardTitle {
   margin-bottom: 1rem;
-  color: var(--numahop-secondary);
+  color: var(--numahop-primary);
   font-size: 1.3rem;
 }
 
@@ -505,6 +505,33 @@
   border-radius: 6px;
   font-weight: 600;
   transition: var(--numahop-transition);
+}
+
+/* ===== Conteneur des tags ===== */
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--numahop-secondary) !important;
+  background-color: rgba(107, 44, 62, 0.1);
+  transition: var(--numahop-medium);
+  text-decoration: none !important;
+}
+
+.tag:hover {
+  background-color: var(--button-hover-color);
+  color: white !important;
+  transform: translateY(-2px);
 }
 
 .buttonIcon {

@@ -227,11 +227,11 @@ const CommunautePage = () => {
 
                 <div className={styles.membreLinks}>
                   {membre.siteInternet && (
-                    <a href={membre.siteInternet} target="_blank" rel="noopener noreferrer" className={styles.membreLink}>
+                    <a href={membre.siteInternet} target="_blank" rel="noopener noreferrer" className={styles.tag}>
                       <FontAwesomeIcon icon={faGlobe} /> Site internet
                     </a>)}
                   {membre.bibliothequeNumerique && (
-                    <a href={membre.bibliothequeNumerique} target="_blank" rel="noopener noreferrer" className={styles.membreLink}>
+                    <a href={membre.bibliothequeNumerique} target="_blank" rel="noopener noreferrer" className={styles.tag}>
                       <FontAwesomeIcon icon={faBook} /> Bibliothèque numérique
                     </a>)}
                 </div>

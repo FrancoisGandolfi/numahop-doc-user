@@ -7,7 +7,7 @@ description: Parametrage du tableau de bord
 
 import Icon from '@site/src/components/Icon';
 
-# Tableau de bord <Icon icon={["fa", "chalkboard-user"]} />
+# <Icon icon={["fa", "chalkboard-user"]} /> Tableau de bord
 
 Le logo NumaHOP situé en haut à droite lpermet d'acceder directement au tableau de bord (_Dashbord_).
 Il présente à l’utilisateur connecté les **actions à effectuer** et les **données de l'insatnce**.

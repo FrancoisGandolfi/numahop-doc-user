@@ -168,3 +168,69 @@ srcset="https://www.numahop.fr/wp-content/uploads/2022/11/Template-constat-etat-
 sizes="(max-width: 300px) 100vw, 300px" width="300" height="100" />](https://www.numahop.fr/wp-content/uploads/2022/11/Template-constat-etat-13.png)
 
 La propriété disparait de la liste.
+
+
+---
+
+---
+title: Gestion des champs des constats d’état
+---
+
+# Gestion des champs des constats d’état par bibliothèque
+
+Il est possible de gérer les champs des constats d’état par bibliothèque. Les champs sont classés par catégorie.
+
+---
+
+## Catégories et champs disponibles
+
+### Description du document
+- Cahiers
+- Conditionnement de conservation
+- Corps d’ouvrage
+- Dimensions du document (H/L/P, mm)
+- État général
+- Format
+- Papier
+- Planches hors-format (H/l)
+- Sens de lecture
+- Type de documents
+
+### Numérotation
+- Numérotation
+- Autres pièces
+
+### Reliure
+- État de la reliure
+  - Angles d’ouvertures
+  - Autres informations
+  - Charnières
+  - Coiffe de queue
+  - Coiffe de tête
+  - Dos
+  - Déformations
+  - Griffures, éraflures
+  - Lacunes
+  - Manques
+  - Mors
+  - Mors fendus
+  - Plat inférieur
+  - Plat supérieur
+  - Titrage des tranches
+  - Traces de réparations / restauration
+  - Éléments détachés
+  - Éléments mobiles
+  - État général
+  - Points de vigilance
+
+---
+
+## Paramétrage des champs par bibliothèque
+
+Chaque bibliothèque peut décider pour chaque champ s’il :
+- Est **obligatoire** ou non.
+- Nécessite l’affichage d’une **zone de commentaires complémentaire** ou non.
+- S’affiche **par défaut** à la création d’un constat d’état ou non.
+- Est affiché pour les types de constat d’état suivants :
+  - Multifeuillet
+  - Monofeuillet

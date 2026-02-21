@@ -359,3 +359,88 @@ les deux états : initial et de retour.
 
 Le constat d’état est charté NumaHop et comporte le template de la
 signature d’un membre de la direction.
+
+---
+title: Rédaction et gestion des constats d’état dans NumaHOP
+sidebar_label: Rédaction des constats d’état
+---
+
+# Rédaction d’un constat d’état dans NumaHOP
+
+## Création d’un constat d’état
+
+Si aucun constat d’état n’a été créé pour l’unité documentaire, seul le bouton de création est visible.
+
+- À la création, seuls les champs paramétrés comme devant être visibles par défaut sont affichés.
+- Les autres champs peuvent être ajoutés en cliquant sur **"Ajouter une nouvelle description"** dans la section correspondante.
+
+:::caution Attention
+Au moins un champ doit être renseigné dans la section **« Description du document »**. Le champ **« Synthèse »** étant obligatoirement présent, si rien n’est à signaler, renseignez ce champ avec **« RAS »** par exemple.
+:::
+
+Une fois enregistré, le constat d’état s’affiche de manière détaillée.
+
+- La zone **« CONTACTS »** peut être dépliée pour être renseignée.
+- La zone sous le constat d’état peut également être dépliée pour être renseignée.
+
+---
+
+## Création de nouveaux constats d’état
+
+Si besoin, de nouveaux constats d’état peuvent être créés en cliquant sur l’icône dédiée et en choisissant le type de constat à créer.
+
+- Le nouveau constat créé reprend alors les informations du constat précédent.
+- La liste de tous les constats d’état créés pour l’unité documentaire est visible avec le nombre de constats existants.
+
+:::info
+Par défaut, seuls le constat initial et le dernier constat créé sont affichés. Pour voir un constat antérieur, il suffit de cliquer dessus dans la liste pour qu’il soit affiché à la place du dernier constat.
+:::
+
+---
+
+## Téléchargement d’un fichier Excel depuis NumaHOP
+
+### Réaliser les constats hors ligne
+
+1. **Télécharger le fichier de rédaction des constats hors ligne**.
+2. **Accéder aux unités documentaires des opérations groupées**.
+3. **Sélectionner les unités documentaires** pour lesquelles vous voulez réaliser le constat.
+4. **Sélectionner le modèle d’import de constats d’état** dans les **« Actions sur la sélection »**.
+5. Le fichier Excel généré comporte autant d’onglets que d’unités documentaires sélectionnées.
+6. **Remplir le constat** sur votre poste informatique, champ par champ et onglet par onglet.
+
+---
+
+## Import des constats d’état dans NumaHOP
+
+1. **Accéder aux unités documentaires des opérations groupées**.
+2. **Sélectionner les unités documentaires** pour lesquelles vous voulez réaliser le constat.
+3. **Sélectionner **« Importer des constats d’état »****.
+
+---
+
+## Téléchargement des constats d’état en version papier
+
+1. Aller dans l’onglet **« Constat d’état »** de l’unité documentaire.
+2. Cliquer sur l’icône **« Constat d’état »** en haut à droite.
+3. Sélectionner le format souhaité.
+
+---
+
+## Gestion en masse des constats d’état
+
+Il est possible de gérer en masse les unités documentaires à travers leur dernier constat d’état.
+
+- Des filtres peuvent être appliqués à l’ensemble des constats d’état pour n’afficher que ceux ayant des points communs.
+  - Par exemple : tous les constats d’état dont la longueur est supérieure à 200 mm.
+
+---
+
+## Synchronisation avec le workflow
+
+La réalisation et la validation des constats d’état est une étape intégrée (obligatoire ou non) dans le workflow de numérisation des documents.
+
+### Ordre à respecter
+1. Réalisation des constats d’état.
+2. Lancement du workflow sur le lot.
+3. Validation des constats d’état.

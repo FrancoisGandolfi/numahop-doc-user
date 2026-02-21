@@ -155,7 +155,7 @@
 }
 
 .featureIcon {
-  color: var(--numahop-secondary);
+  color: var(--numahop-primary);
   margin-bottom: 0.8rem;
   font-size: 1rem;
 }
@@ -187,14 +187,14 @@
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--numahop-primary) !important;
+  color: var(--numahop-secondary) !important;
   background-color: rgba(107, 44, 62, 0.1);
-  transition: var(--numahop-transition);
+  transition: var(--numahop-medium);
   text-decoration: none !important;
 }
 
 .tag:hover {
-  background-color: var(--numahop-primary);
+  background-color: var(--button-hover-color);
   color: white !important;
   transform: translateY(-2px);
 }

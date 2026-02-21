@@ -30,11 +30,11 @@ const features = [
     linkTitle: 'L\'Association',
   },
     {
-    title: 'Actualités',
+    title: '@NumaWork',
     icon: faRss,
     description: 'Suivez l\'actualité de NumaHOP : évolutions du logiciel, développements en cours, journées professionnelles et ateliers.  ',
     link: '/blog',
-    linkTitle: '@NumaWork',
+    linkTitle: 'Les actualités',
   },
   {
     title: 'Bac à sable',

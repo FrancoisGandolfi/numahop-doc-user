@@ -7,7 +7,7 @@ description: Présentation du compte de l'utilisateur.
 
 import Icon from '@site/src/components/Icon';
 
-# Compte utilisateur <Icon icon={["fa", "user"]} />
+# <Icon icon={["fa", "user"]} /> Compte utilisateur
 
 ## Connexion & deconnexion
 

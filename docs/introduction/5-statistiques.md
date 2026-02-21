@@ -7,4 +7,4 @@ description: Présentation du module de statistiques
 
 import Icon from '@site/src/components/Icon';
 
-# Statistiques <Icon icon={["fa", "chart-pie"]} />
+# <Icon icon={["fa", "chart-pie"]} /> Statistiques

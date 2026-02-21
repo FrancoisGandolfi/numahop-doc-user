@@ -383,3 +383,306 @@ Dans le cas où le contrôle qualité est effectué en deux étapes avec
 pré-rejet/pré-validation, les documents parviennent sur le tableau de
 bord des personnes figurant dans le groupe de workflow assigné à la
 validation définitive des documents.
+
+---
+
+---
+title: Contrôle qualité des images et des tables des matières - Livraison intermédiaire
+sidebar_label: Contrôle qualité
+---
+
+# Contrôle qualité des images et des tables des matières - Livraison intermédiaire
+
+---
+
+## 1. Préconisations du CCTP
+
+### 1.1. Ordre de numérisation du document
+
+Chaque document est numérisé dans son intégralité (reliure, gardes, feuilles volantes, etc.). Les fichiers images doivent être restitués dans cet ordre exact :
+
+- Dos
+- Plat supérieur (déterminé par le sens de lecture)
+- Contre-plat supérieur
+- Gardes (y compris les pages vierges, numérotées ou non)
+- Intégralité des feuillets (pages blanches comprises)
+- Contre-plat inférieur
+- Plat inférieur
+- Tête
+- Gouttière
+- Queue
+- Feuillets volants insérés dans le document (à numériser impérativement en recto/verso même s’il n’y a aucune information au verso)
+- Défauts
+
+Les demandes de vues supplémentaires liées à des particularités de conditionnement (boîtes, étuis d’origine), de reliure, ou de pliage de certains éléments des documents doivent être indiquées dans les constats d’état.
+
+---
+
+#### Reliures à rabat
+
+Pour les reliures à rabat, les spécificités suivantes s’appliquent :
+
+- Dos
+- Plat supérieur
+- Contre-plat supérieur
+- Rabat replié sur la première garde ou, en l’absence de garde, sur la première page
+- Gardes (y compris les pages vierges, numérotées ou non)
+- Intégralité des feuillets (pages blanches comprises)
+- Contre-plat inférieur avec rabat déplié
+- Plat inférieur avec rabat déplié
+- Tête
+- Gouttière
+- Queue
+- Feuillets volants insérés dans le document (à numériser impérativement en recto/verso même s’il n’y a aucune information au verso)
+- Défauts
+
+---
+
+#### Documents non reliés
+
+Les documents non reliés, constitués de feuilles, sont classés selon le sens de lecture dans l’ordre de leur numérisation. Ces feuilles sont foliotées. Par défaut, on ne numérise pas l’épaisseur des côtés de ces liasses de feuilles. Si la numérisation de ces tranches est souhaitée, cela doit être mentionné dans le constat d’état.
+
+---
+
+### 1.2. Spécifications de numérisation
+
+- Le titulaire numérise en une image par page, sauf exception indiquée dans le constat d’état.
+- L’intégralité de la page doit être visible sur l’image (cadrage au bord extérieur de la page, début de la page qui fait face visible, fond de cahier visible).
+- La prise de vue doit intégrer la totalité du fond du cahier et au-delà, sans vitre visible et sans ombre portée.
+- Un cache blanc doit systématiquement être utilisé pour toutes les pages présentant des lacunes, des trous, des déchirures ou pour masquer les écritures parasites dues à la transparence du papier.
+- La présence des mains ou des doigts de l’opérateur ou de tout autre objet sur l’image est exclue.
+- La numérisation ne doit pas engendrer de zone floue, de mauvaise répartition d’éclairage ou de variation de densité non justifiée sur l’image.
+- Aucune déformation n’est autorisée sur les pages.
+- Un fond neutre noir doit être visible lors de la numérisation de la reliure.
+- La charte colorimétrique (mire colorimétrique) doit être visible sur la dernière vue de chaque document (vue doublée : une avec mire colorimétrique et une sans).
+
+---
+
+## 2. Déroulement du contrôle qualité des fichiers images et des tables de correspondance
+
+### 2.1. Consignes pour le stockage et la lecture des fichiers
+
+- Les fichiers sont livrés sur un serveur sFTP et livrés par le pôle F&D sur la plateforme NumaHOP.
+- Le contrôle qualité s'effectue directement sur NumaHop avec votre profil.
+- La liste des documents à contrôler se trouve dans les Actions du tableau de bord, dans la fenêtre "Documents à contrôler ou en cours de contrôle" ([https://app.numahop.fr/#/login](https://app.numahop.fr/#/login)) ou en cliquant sur l’onglet "Contrôles".
+
+---
+
+#### Statuts des documents
+
+Les documents à contrôler peuvent avoir deux statuts :
+- **À contrôler** : Le contrôle qualité du document n’a pas encore commencé.
+- **En cours de contrôle** : Le contrôle qualité a commencé et a été interrompu.
+
+---
+
+#### Table de correspondance
+
+La table de correspondance folios/vues ou table des matières simplifiée est visible directement lors du contrôle qualité du document.
+
+---
+
+### 2.2. Étapes à ne pas oublier et points de vigilance
+
+Le contrôle des images s’effectue en plusieurs étapes :
+
+- Vérification de l’exhaustivité du nombre de vues (présence de tous les folios, pas de page manquante) avec l’aide de la vue en mosaïque et du feuilletage rapide en tenant compte de la foliotation.
+- Vérification de la qualité de la numérisation en faisant défiler l’ensemble des images et en zoomant régulièrement pour vérifier les flous, le rendu des couleurs, l’absence de distorsion, etc.
+- Vérification régulière de la correspondance entre les folios et les vues indiqués sur la table des matières remise par le prestataire (début, milieu et fin du document).
+
+---
+
+#### Enregistrement des erreurs
+
+Chaque erreur constatée sur une image doit être enregistrée au moyen du menu déroulant accessible sur la droite de l’écran **"Erreurs"**.
+
+---
+
+#### Vérification des tables de correspondance
+
+Chaque document doit disposer d’une table de correspondance folios/vues ou d’une table des matières simplifiée lors de la livraison. Le type de table attendu pour chaque document est indiqué sur le tableur.
+
+La vérification des tables de correspondance folios/vues se fait directement sur NumaHop en regardant si les folios indiqués correspondent bien sur l’ensemble du document. Pour les tables des matières simplifiées, vérifier systématiquement que l’indication du début de chaque composant du document est bien mentionnée au bon folio/vue dans la table des matières.
+
+---
+
+#### Modification des tables
+
+La table de correspondance folios/vues ou la table des matières simplifiée peut être modifiée directement sur la plateforme en cas d’erreur du prestataire.
+
+---
+
+#### Points de vigilance
+
+- Sens de lecture (pas de confusion du plat supérieur et du plat inférieur lors d’une numérisation dans le sens oriental).
+- Utilisation d’un fond noir pour les vues reliures (dos, plats supérieurs et inférieurs, contreplats et garde faisant face au contreplat, gouttière, tête, queue, conditionnement le cas échéant).
+- Utilisation d’un cache blanc pour faciliter la lisibilité dans certains cas (visibilité de l’encre par transparence, feuillets de différents formats au sein d’un même volume relié, trous…).
+- Pas de courbure de la page ni de distorsion de l’image (la courbure ne doit pas être excessive, y compris pour les volumes épais). La vue doit être "à plat".
+- Pas de troncature de l’information : l’ensemble de la page doit être visible jusqu’au fond de cahier, + un demi-centimètre/un centimètre de la page qui fait face.
+- Rendu satisfaisant de l’image : pas de flou, pas de surexposition ou de rendu trop sombre.
+- Rendu satisfaisant des couleurs et en particulier de l’or : ni trop brillant (risque de limiter la lisibilité du texte), ni trop terne.
+
+---
+
+## 3. Erreurs mineures / Erreurs majeures
+
+Afin de déterminer si un document doit être rejeté ou validé, les erreurs sont réparties en plusieurs catégories :
+
+---
+
+### 3.1. Erreurs conduisant à un rejet automatique du document
+
+- Fichier illisible ou corrompu : le fichier ne s’ouvre pas.
+- Format de fichier image non respecté : le prestataire n’a pas livré un fichier jpeg, jpeg2000 ou pdf conforme.
+- Format de métadonnées non respecté : le prestataire n’a pas livré un fichier METS conforme.
+- Non-conformité du nommage : exemple : `MS.TURC.45.0001.jpg` au lieu de `MS_TURC_45_00001.jpg`.
+- Non-conformité de l’organisation des fichiers / Ordre des vues non respecté : exemple : non-respect de la numérisation dans le sens oriental.
+- Page manquante à la numérisation.
+- Présence de corps étrangers sur l’image.
+
+---
+
+### 3.2. Erreurs majeures : aucune erreur tolérée
+
+- Troncature d’information (si la troncature concerne par exemple le bord de la page faisant face à la page numérisée, sinon, renvoi automatique au prestataire pour reprise).
+- Lisibilité du contenu (flou...) : si la lisibilité est légèrement altérée uniquement. Si la lisibilité est totalement compromise, renvoi automatique au prestataire.
+- Non-respect de la résolution.
+- Non-respect du seuil.
+- Incohérence entre les métadonnées et les fichiers concernés : la correspondance folios/vues ou l’indication de début des composants du document n’est pas correctement renseignée dans la table des matières.
+
+---
+
+### 3.3. Erreurs mineures : 2 erreurs tolérées
+
+- Mauvais rendu de la luminosité : ombre portée, halo lumineux sur l’image / surexposition / sous-exposition : l’image est trop claire ou trop sombre.
+- Flou léger, problème de réglage du capteur : l’image "bave" sur les côtés.
+- Dérive de la chromie : mauvais rendu des couleurs, mauvais rendu de l’or.
+- Distorsions géométriques par rapport à l’original (courbure, la vue n’est pas suffisamment "à plat").
+- Cadrage inadapté ou non homogène sur l’ensemble des vues.
+- Absence de cache alors que son utilisation aurait été nécessaire.
+
+---
+
+### 3.4. Cumul des erreurs
+
+Les erreurs majeures et mineures peuvent se cumuler sur une même page.
+
+Les pages sont identifiées de la façon suivante :
+- **Marque-page rouge** : la page a été rejetée.
+- **Marque-page vert** : la page a été validée.
+
+---
+
+### 3.5. Validation ou rejet du document
+
+À la fin du contrôle de la dernière vue du document, une icône apparaît. Celle-ci permet de mettre fin au contrôle en validant ou rejetant le document.
+
+NumaHop prend en compte le nombre d’erreurs signalées lors du contrôle du document en fonction du seuil toléré renseigné dans les paramétrages. Lorsque le seuil est atteint durant le contrôle, une alerte apparaît pour le signaler au contrôleur.
+
+Différents messages de confirmation peuvent apparaître au moment de terminer le contrôle du document, tenant compte du nombre d’erreurs signalées :
+- **Validation du document** : Aucune erreur n’a été reportée sur le document.
+- **Validation du document** : Des erreurs ont été reportées mais le taux reste acceptable pour valider le document.
+- **Rejet du document** : Des erreurs ont été reportées et le taux d’erreurs majeures et/ou mineures acceptable a été dépassé.
+
+
+Le rejet ou la validation du document peut également être effectué depuis l’affichage en mosaïque des vues.
+
+---
+
+---
+title: Mémo Contrôle Qualité NumaHOP
+sidebar_label: Mémo Contrôle Qualité
+---
+
+# Mémo Contrôle Qualité NumaHOP
+
+---
+
+## Sommaire
+
+1. [Étape 1 : Connexion](#étape-1--connexion)
+2. [Étape 2 : Sélectionner le document à contrôler](#étape-2--sélectionner-le-document-à-contrôler)
+3. [Étape 3 : Contrôle global du document](#étape-3--contrôle-global-du-document)
+4. [Étape 4 : Interface contrôle page à page du document](#étape-4--interface-contrôle-page-à-page-du-document)
+5. [Étape 5 : Contrôle visuel](#étape-5--contrôle-visuel)
+6. [Étape 6 : Contrôle table des matières](#étape-6--contrôle-table-des-matières)
+7. [Étape 7 : Notification des erreurs détectées](#étape-7--notification-des-erreurs-détectées)
+
+---
+
+## Étape 1 : Connexion
+
+1. Aller sur le site [https://app.numahop.fr/#/login](https://app.numahop.fr/#/login).
+2. Se connecter avec vos identifiants.
+
+---
+
+## Étape 2 : Sélectionner le document à contrôler
+
+1. Vous arrivez sur votre tableau de bord.
+2. Vous pouvez filtrer vos documents par projet et/ou par lot pour ne voir apparaître que les données que vous avez à traiter.
+3. Pour le contrôle qualité, cliquez sur la case dédiée.
+4. Une fois que vous avez cliqué dessus, un menu déroulant des documents à contrôler apparaît.
+5. Pour contrôler un document, cliquez sur le document souhaité.
+
+---
+
+## Étape 3 : Contrôle global du document
+
+1. L’interface suivante apparaît. Cette interface permet un contrôle visuel global du document.
+2. Cette interface permet de rejeter un document globalement (ex : problème de couleurs etc.) sans avoir à noter toutes les pages.
+3. Pour cela, sélectionnez l’erreur dans **"Erreurs globales"**.
+
+### Informations disponibles
+- Les informations du constat d’état (si le constat a été réalisé dans NumaHOP).
+- Les notes de livraison du prestataire.
+- Les informations de contrôle (si le document est livré une deuxième fois).
+
+4. Si le contrôle global vous semble correct, vous pouvez passer en contrôles pages en cliquant sur le bouton correspondant.
+
+---
+
+## Étape 4 : Interface contrôle page à page du document
+
+L’écran suivant apparaît :
+
+### Éléments visibles
+- Les images à contrôler.
+- Les données techniques (accessibles en cliquant sur **"Données techniques"**).
+- La table des matières avec les indications de Type, Page et Titre.
+- Un écran permettant de noter les informations relatives au contrôle qualité.
+
+### Actions possibles
+- Télécharger l’original livré.
+- Sélectionner des erreurs dans un menu déroulant en cliquant sur **"Erreurs"**.
+- Commenter les erreurs dans **"Notes de contrôles"** ou ajouter d’autres erreurs.
+
+---
+
+## Étape 5 : Contrôle visuel
+
+Pour effectuer le contrôle visuel, passez en mode pleine page.
+
+### Ordre de numérisation des pages
+La numérisation se fait de manière intégrale (sauf mention contraire), pages blanches comprises. L’ordre de numérisation des pages est le suivant :
+
+- Dos
+- Gouttière
+- Plat supérieur
+- Contreplat supérieur
+- Pages blanches éventuelles
+- Page de titre (de l’ouvrage ou de la pièce numérisée)
+- Numérisation intégrale du document ou de la pièce
+- Pages blanches éventuelles
+- Contreplat inférieur
+- Plat inférieur
+- Tranche de tête
+- Tranche de queue
+
+Pour les brochures, le dos, la gouttière et les tranches ne doivent pas être numérisés (cf workflow musique en cas de doute).
+
+---
+
+### Récapitulatif des consignes de base
+
+| Actions demandées                     | Oui/Non | Détails                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
