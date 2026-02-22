@@ -1,7 +1,7 @@
 ---
 title: Configuration des langues OCR
 sidebar_label: Configuration des langues OCR
-sidebar_position: 5
+sidebar_position: 6
 description: Configuration des langues OCR
 ---
 

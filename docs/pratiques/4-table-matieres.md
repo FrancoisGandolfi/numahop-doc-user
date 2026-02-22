@@ -19,9 +19,7 @@ Il s’agit d’une table des matières ainsi que d’une table de correspondanc
 - La colonne D renseigne sur le numéro du chapitre correspondant.
 - La colonne E permet de mettre le titre du document, des chapitres, ou de renseigner la présence de table des matières, bibliographie, etc.
 
----
-
-La colonne B : Type
+## La colonne B : Type
 
 La reliure
 On trouve deux types d’ouvrage différents dans les fonds numérisés nécessitant un traitement distinct dans la table des matières.
@@ -46,7 +44,7 @@ L’ordre de numérisation est le suivant :
 
 Exemple de cote : Ms. 120
 
-La brochure
+### La brochure
 Pour les brochures, les éléments de reliure ne sont pas numérisés (dos, gouttière, tranches). Les autres éléments sont traités comme suit :
 - Le plat supérieur devient la couverture.
 - Le plat inférieur devient la 4e de couverture.
@@ -54,9 +52,7 @@ Pour les brochures, les éléments de reliure ne sont pas numérisés (dos, gout
 
 Exemple de cote : 4 SC SUP 3256 NOR
 
----
-
-Les titres de départ et faux titres
+### Les titres de départ et faux titres
 
 Titre de départ
 Lorsqu’il n’y a pas de page de titre distincte mais qu’un titre apparaît au début du texte, on indique « Titre de départ » dans la table des matières.
@@ -68,9 +64,7 @@ Il s’agit d’un titre souvent abrégé, imprimé sur un feuillet précédant 
 
 Exemple de cote : 8 BB SUP 72
 
----
-
-Type de numérotation
+### Type de numérotation
 
 La pagination
 En cas de pagination apparente, on indique « page chiffrée ». La pagination est généralement visible :
@@ -80,25 +74,22 @@ En cas de pagination apparente, on indique « page chiffrée ». La pagination e
 
 Exemple de cote : DELTA 16645 RES, DELTA 72672 RES (P.1)
 
-La foliotation
+### La foliotation
 En cas de foliotation apparente, on indique « page chiffrée ». La foliotation est visible en marge supérieure droite du recto des pages.
 
 Exemple de cote : VM 103 RES
 
-Les signatures
+### Les signatures
 En cas de signature apparente, on indique « page chiffrée ». Les signatures sont visibles en marge inférieure droite du recto des pages.
 
 Exemple de cote : VM 19 RES
 
----
-
-Cas particuliers divers et variés
+### Cas particuliers divers et variés
 - Page non chiffrée (exemple : FOL V SUP 16 (1) RES (P.18), 4 V SUP 1784)
 - Page blanche non chiffrée (exemple : 8 V 1172 INV 4072 RES, DELTA 65154 RES (P.2), 8 V SUP 582, 4 SC SUP 4991 NOR)
 
----
 
-La colonne C : Page
+## La colonne C : Page
 
 Les types de relevés
 Si un livre contient des signatures, de la foliotation ou de la pagination, on privilégie toujours le relevé des signatures.
@@ -116,9 +107,7 @@ Exemple de cote : 4 V SUP 2088 RES
 Particularité pour le relevé de la foliotation
 Même principe que pour la pagination : indiquer le début de la foliotation même si elle n’apparaît pas dès la première image.
 
----
-
-La colonne E : Titre
+## La colonne E : Titre
 
 Titres de chapitre
 Les titres de chapitres doivent être pris sur la page correspondant à la bonne image. Deux cas particuliers :
@@ -127,7 +116,6 @@ Les titres de chapitres doivent être pris sur la page correspondant à la bonne
 
 Exemple de cote : DELTA 72672 RES
 
----
 
 Usage moderne des majuscules pour la transcription
 Pour respecter l’usage moderne des majuscules :

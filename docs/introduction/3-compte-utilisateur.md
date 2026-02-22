@@ -17,7 +17,7 @@ La connexion nécessite un identifiant, ou _login_, et un mot de passe. L’**id
 Le mot de passe doit contenir _a minima_ douze caractères, dont une majuscule, une minuscule, un chiffre, et un caratère spécial.
 :::
 
-Les actions possibles sur le compte de l'utilisateur connecté sont accessibles via le menu derroulant du bandeau d'en-tête de Numahop **Prénom** <Icon icon={["fa", "caret-down"]} />.
+Les actions possibles sur le compte de l'utilisateur connecté sont accessibles via le menu dérroulant du bandeau d'en-tête de Numahop **Prénom** <Icon icon={["fa", "caret-down"]} />.
 
 - <Icon icon={["fa", "wrench"]} /> **Profil** ;
 - <Icon icon={["fa", "lock"]} /> **Mot de passe** ;
@@ -27,9 +27,9 @@ Les actions possibles sur le compte de l'utilisateur connecté sont accessibles 
 
 Le détail du profil de l'utilisateur connecté est accessible via le menu derroulant du bandeau d'en-tête de Numahop. L'utilisateur peut modifier certaines informations le concernant en fonction de ses habilitations.
 
-- cliquer sur le nom de l'utilisateur **Prénom** <Icon icon={["fa", "caret-down"]} /> ;
-- selectionnez l'option <Icon icon={["fa", "wrench"]} /> **Profil**.
-- modifier les champs disponibles.
+- Cliquer sur le nom de l'utilisateur **Prénom** <Icon icon={["fa", "caret-down"]} /> ;
+- Selectionnez l'option <Icon icon={["fa", "wrench"]} /> **Profil**.
+- Modifier les champs disponibles.
 
 |      Champ       | Statut         | Détails                   |                                                                     _Voir aussi_ |
 | :--------------: | :------------- | :------------------------ | -------------------------------------------------------------------------------: |
@@ -61,4 +61,4 @@ En cas de perte, un nouveau mot de passe peut être généré par un administrat
 
 - depuis le menu <Icon icon={["fa", "user"]} /> **Utilisateurs**, selectionner l'utilisateur concerné ;
 - dans le menu déroulant <Icon icon={["fa", "bars"]} /> **Autres actions**, choisir **"Nouveau mot de passe"** ;
-- un nouveau mot de passe est généré et s'affiche dans un volet de droite <Icon icon={["fa", "circle-info"]} /> **Information**.
+- un nouveau mot de passe est généré et s'affiche dans un volet à droite <Icon icon={["fa", "circle-info"]} /> **Information**.

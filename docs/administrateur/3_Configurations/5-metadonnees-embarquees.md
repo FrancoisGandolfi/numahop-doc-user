@@ -1,7 +1,7 @@
 ---
 title: Configuration des métadonnées embarquées
 sidebar_label: Configuration des métadonnées embarquées
-sidebar_position: 3
+sidebar_position: 5
 description: Configuration des métadonnées embarquées
 ---
 

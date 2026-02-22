@@ -9,7 +9,7 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "circle-xmark"]} /> Erreurs et anomalies
 
-# Introduction
+## Introduction
 
 Ce document a pour but d'éclairer la qualification des fiches support saisies sous la plateforme dédiée à cet usage, OpenProject.
 
@@ -18,9 +18,9 @@ Il explicite et illustre d'exemples les cas de maintenance corrective, objet du 
 - Anomalies graves (non prioritaires)
 - Anomalies mineures (non prioritaires)
 
-# Anomalies bloquantes
+## Anomalies bloquantes
 
-## Définition
+### Définition
 
 Les anomalies bloquantes concernent les dysfonctionnements empêchant la poursuite du workflow nominal de traitement du flux de numérisation de NumaHOP.
 
@@ -55,7 +55,7 @@ Ces anomalies, selon leur cause, seront traitées et résolues en priorité soit
 
 Dans l'attente de la résolution totale de l'anomalie bloquante, une solution temporaire de contournement peut éventuellement être proposée par les équipes support.
 
-## Exemples
+### Exemples
 
 | Fiche | Intitulé | Explication |
 |-------|----------|-------------|
@@ -65,9 +65,9 @@ Dans l'attente de la résolution totale de l'anomalie bloquante, une solution te
 | #10578 | Pas d'export CINES ces 2 derniers jours | L'impossibilité d'effectuer l'archivage au CINES relève d'une anomalie bloquante empêchant la poursuite des travaux. Un patch correctif (hotfix) a été déployé pour corriger le dysfonctionnement révélé par la fiche. |
 
 
-# Anomalies graves
+## Anomalies graves
 
-## Définition
+### Définition
 
 Les anomalies graves concernent les dysfonctionnements n'empêchant pas la poursuite du workflow nominal de traitement du flux de numérisation de NumaHOP, mais impactant des fonctionnalités importantes dans la gestion des travaux.
 
@@ -77,7 +77,7 @@ Ces anomalies, selon leur cause, seront traitées et résolues dans les meilleur
 
 Dans l'attente de la résolution totale de l'anomalie grave, une solution temporaire de contournement peut éventuellement être proposée par les équipes support.
 
-## Exemples
+### Exemples
 
 | Fiche | Intitulé | Explication |
 |-------|----------|-------------|
@@ -85,9 +85,9 @@ Dans l'attente de la résolution totale de l'anomalie grave, une solution tempor
 | #10156 | PDF généré trop faible en qualité (compression trop importante) | Cette anomalie n'empêche pas le déroulement du workflow nominal de NumaHOP. Son correctif fut inclus dans le déploiement d'une version majeure. |
 | #9288 | Export CSV des UD groupées ne fonctionne pas | Cette anomalie n'empêche pas le déroulement du workflow nominal de NumaHOP. Son correctif fut inclus dans le déploiement d'une version mineure. |
 
-# Anomalies mineures
+## Anomalies mineures
 
-## Définition
+### Définition
 
 Les anomalies mineures concernent les dysfonctionnements n'empêchant pas la poursuite du workflow nominal de traitement du flux de numérisation de NumaHOP, et n'impactant que des fonctionnalités périphériques dans la gestion des travaux.
 
@@ -97,7 +97,7 @@ Ces anomalies, selon leur cause, seront traitées et résolues dans le cadre de 
 
 Dans l'attente de la résolution totale de l'anomalie mineure, une solution temporaire de contournement peut éventuellement être proposée par les équipes support.
 
-## Exemples
+### Exemples
 
 | Fiche | Intitulé | Explication |
 |-------|----------|-------------|

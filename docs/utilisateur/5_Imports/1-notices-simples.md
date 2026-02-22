@@ -6,16 +6,9 @@ sidebar_position: 1
 
 import Icon from '@site/src/components/Icon';
 
-# Import de notices simples <Icon icon={["fa", "download"]} />
+# <Icon icon={["fa", "download"]} /> Import de notices simples
 
-
----
-title: Import de notice bibliographique à partir d’un fichier MARC XML
-sidebar_label: Import de notice bibliographique à partir d’un fichier MARC XML
-sidebar_position: 16
----
-
-# Import de notice bibliographique à partir d’un fichier MARC XML
+## Import de notice bibliographique à partir d’un fichier MARC XML
 
 #### Mapping d'import dans NumaHOP
 

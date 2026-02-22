@@ -6,14 +6,7 @@ sidebar_position: 2
 
 import Icon from '@site/src/components/Icon';
 
-# Contrôles manuels <Icon icon={["fa", "eye"]} />
-
-
----
-title: Guide pratique du contrôle qualité
-sidebar_label: Guide pratique du contrôle qualité
-sidebar_position: 7
----
+# <Icon icon={["fa", "eye"]} /> Contrôles manuels
 
 # Guide pratique du contrôle qualité
 

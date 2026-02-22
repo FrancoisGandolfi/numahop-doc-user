@@ -6,4 +6,4 @@ sidebar_position: 1
 
 import Icon from '@site/src/components/Icon';
 
-# Import de notices mères/filles <Icon icon={["fa", "download"]} />
+# <Icon icon={["fa", "download"]} /> Import de notices mères/filles

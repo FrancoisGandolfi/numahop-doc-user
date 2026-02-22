@@ -1,7 +1,7 @@
 ---
 title: Configuration des formats des vues
 sidebar_label: Configuration des formats des vues
-sidebar_position: 2
+sidebar_position: 3
 description: Configuration des formats des vues
 ---
 

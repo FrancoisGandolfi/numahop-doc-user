@@ -1,21 +1,15 @@
 ---
-title: Constat d'état à l'unité documentaire
-sidebar_label: Constat d'état à l'unité documentaire
+title: Gestion des constats d'état
+sidebar_label: Gestion des constats d'état
 sidebar_position: 1
+description: Gestion des constats d'état
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# Constat d'état à l'unité documentaire <Icon icon={["fa", "list-check"]} />
+# <Icon icon={["fa", "list-check"]} /> Gestion des constat d'état
 
-
----
-title: Guide pratique des constats d’état
-sidebar_label: Guide pratique des constats d’état
-sidebar_position: 5
----
-
-# Guide pratique des constats d’état
+## Constat d'état à l'unité documentaire
 
 #### Utilité du constat d'état
 
@@ -444,3 +438,5 @@ La réalisation et la validation des constats d’état est une étape intégré
 1. Réalisation des constats d’état.
 2. Lancement du workflow sur le lot.
 3. Validation des constats d’état.
+
+## Import de constat d'état en masse

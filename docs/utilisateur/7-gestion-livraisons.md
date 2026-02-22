@@ -6,7 +6,7 @@ sidebar_position: 1
 
 import Icon from '@site/src/components/Icon';
 
-# Gestion des livraisons <Icon icon={["fa", "dolly"]} />
+# <Icon icon={["fa", "dolly"]} /> Gestion des livraisons
 
 
 # Guide de livraison

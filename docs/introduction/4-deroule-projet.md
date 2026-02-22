@@ -11,7 +11,7 @@ import Icon from '@site/src/components/Icon';
 
 On distingue deux principaux types de projets.
 
-- les **projets standards**, qui couvrant l’intégralité du cycle de vie des documents, de la sélection des documents physiques et de leur signalement, jusqu’à la diffusion et à l'archivage des reproductions numériques ;
+- les **projets standards**, qui couvrent l’intégralité du cycle de vie des documents, de la sélection des documents physiques et de leur signalement, jusqu’à la diffusion et à l'archivage des reproductions numériques ;
 - les **reprises de passif**, qui visent à intégrer des documents déjà numérisés dans NumaHop, sans passer par une phase de numérisation physique, pour permettre une structuration, un contrôle, une diffusion et le cas échant un archivage, pour en faire un ensemble cohérent.
 
 :::warning
@@ -19,7 +19,7 @@ Le déroulé de ces projets types détaillé ci-dessous reposent d'abord sur le 
 
 - les étapes de configuration peuvent être **effectuées dans n'importe quel ordre**, à condition que le _workflow_ n’ait pas été démarré au niveau d'un lot ;
 - le démarrage d'un _worflow_ impose le **respect strict des étapes successives** qu'il définit.
-  :::
+:::
 
 :::danger
 La différence fondamentale entre les projets standards et les projets de reprise de passif concerne les unités documentaires, et se configure dans la selection du type de lot (**Physique** ou **Numérique**).
@@ -46,7 +46,7 @@ L'administrateur doit s'assurer que l'affectation de l'utilisateur à un groupe 
 
 ### Parametrages des projets et lots
 
-Les parametrages des projets et lots peuvent être réalisés aussi bien par les **administrateurs** que par les **utilisateurs**.
+Les parametrages des projets et lots peuvent être réalisés aussi bien par un **administrateurs** que par un **utilisateur**.
 
 - Création du **projet** de numérisation : [_Projets_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
 
@@ -56,7 +56,7 @@ Les parametrages des projets et lots peuvent être réalisés aussi bien par les
 Le rattachement du lot au projet de numérisation peut se faire soit au moment de la création du lot, soit _a posteriori_ si le projet est créé après le lot. Il est possible de redéfinir au niveau du lot les informations qui n'ont pas été ou qui ne doivent pas être hérités du projet, et nécessaires au bon déroulement du lot en question.
 
 :::info
-Si le projet le permet, il est préférable de créer le projet avant le lot, pour garantir l'héritage des informations renseignées dans le projet au niveau du lot, parmi lesquelles ont trouve les mentions du prestataire de numérisation, du _workflow_, du serveur de livraison, des contrôles, et des configuration de diffusion et d'archivage.
+Si le projet le permet, il est préférable de créer le projet avant le lot, pour garantir l'héritage des informations renseignées dans le projet au niveau du lot, parmi lesquelles ont trouve les mentions du prestataire de numérisation, du _workflow_, du serveur de livraison, des contrôles, et des configurations de diffusion et d'archivage.
 :::
 
 ### Import des unités documentaires
@@ -70,7 +70,7 @@ Dans la mesure du possible, il est conseillé d'importer ou de créer les unité
 
 ### Etapes du workflow
 
-Après le parametrage des configurations, du projet et du lots, et de l'import des unités documentaires, le **workflow doit être démarrer depuis le lot**.
+Après le parametrage des configurations, du projet et du lot, et de l'import des unités documentaires, le **workflow doit être démarré depuis le lot**.
 
 :::danger
 Tant que le workflow d'un lot n'est pas démaré, il sera impossible de lui attribuer une livraison.
@@ -107,14 +107,14 @@ Les configurations préalables doivent être réalisées par un **administrateur
   - Création des **groupes** de _workflow_ réunissants les différents acteurs du projet : [_Gestion des Groupes_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
 
 :::danger
-L'administrateur doit s'assurer que l'affcetations de l'utilisateur à un groupe de _workflow_ soit cohérente avec sont profil d'utilisateur [_Gestion des Profils_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]().
+L'administrateur doit s'assurer que l'affcetation de l'utilisateur à un groupe de _workflow_ soit cohérente avec sont profil d'utilisateur [_Gestion des Profils_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]().
 :::
 
 - Configuration des **contrôles** : [_Configuration des contrôles_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]().
 
 ### Parametrages des projets et lots
 
-Les parametrages des projets et lots peuvent être réalisés aussi bien par les **administrateurs** que par les **utilisateurs**.
+Les parametrages des projets et lots peuvent être réalisés aussi bien par un **administrateur** que par un **utilisateur**.
 
 - Création du **projet** de numérisation : [_Projets_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() ;
 

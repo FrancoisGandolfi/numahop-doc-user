@@ -1,33 +1,28 @@
 ---
-title: Informations
-sidebar_label: Informations
+title: Gestion unitaire des unités documentaires
+sidebar_label: Gestion unitaire des unités documentaires
 sidebar_position: 1
+description: Gestion unitaire des unités documentaires
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# Informations <Icon icon={["fa", "info"]} />
+## <Icon icon={["fa", "info"]} /> Informations
 
-## Identifiant PGCN
+### Identifiant PGCN
 
-## Radical
+### Radical
 
-## Langue OCR
+### Langue OCR
 
-## Archivage
+### Archivage
 
-## Diffusion
+### Diffusion
 
-## Contrôles
+### Contrôles
 
 
----
-title: Unité documentaire
-sidebar_label: Unité documentaire
-sidebar_position: 25
----
-
-# Unité documentaire
+## Unité documentaire
 
 Les unités documentaires sont accessibles depuis <img
 src="http://www.numahop.fr/wp-content/uploads/2022/10/documents-numaHOP.png"
@@ -43,12 +38,6 @@ src="http://www.numahop.fr/wp-content/uploads/2022/10/autres-actions.png"
 class="wp-image-144 alignnone" loading="lazy" decoding="async"
 width="35" height="34" />  Le détail des informations est présenté sous
 forme d’onglets.
-
----
-title: Créer une unité documentaire
-sidebar_label: Créer une unité documentaire
-sidebar_position: 21
----
 
 # Créer une unité documentaire
 
@@ -91,3 +80,21 @@ Si cela est le cas, renseigner le nom des collections d’Internet Archive
 et d’Omeka dans lesquels le document doit être placé après traitement.
 
 Une fois la fiche remplie, cliquez sur Enregistrer.
+
+## Onglets
+
+### <Icon icon={["fa", "id-card"]} /> Notice
+
+### <Icon icon={["fa", "tachograph-digital"]} /> Métadonnées embarquées
+
+### <Icon icon={["fa", "photo-film"]} /> Document numérique
+
+### <Icon icon={["fa", "tower-broadcast"]} /> Diffusion
+
+### <Icon icon={["fa", "box-archive"]} /> Archivage
+
+### <Icon icon={["fa", "circle-nodes"]} /> Relation
+
+### <Icon icon={["fa", "list-check"]} /> Constats d'état
+
+### <Icon icon={["fa", "chart-diagram"]} /> Workflows

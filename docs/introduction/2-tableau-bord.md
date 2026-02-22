@@ -9,11 +9,9 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "chalkboard-user"]} /> Tableau de bord
 
-Le logo NumaHOP situé en haut à droite lpermet d'acceder directement au tableau de bord (_Dashbord_).
-Il présente à l’utilisateur connecté les **actions à effectuer** et les **données de l'insatnce**.
+Le logo NumaHop situé en haut à droite de la page permet d'acceder directement au tableau de bord (_Dashbord_). Il présente à l’utilisateur connecté les **actions à effectuer** et les **données de l'insatnce**.
 
-- les **actions à effectuer** et pour lesquelles il est habilité : elles sont affichées automatiquement en fonction des contrôles réalisés et des étapes du
-  workflow ;
+- les **actions à effectuer**, et pour lesquelles il est habilité, sont affichées automatiquement en fonction des contrôles réalisés et des étapes du workflow ;
 - les **indicateurs** préalablement organisés par l'utilisateur, qui définit les **_widgets_** de son propre tableau de bord.
 
 ## Actions
@@ -25,9 +23,9 @@ connecté et sont regroupées par étape de workflow. En cliquant sur un des ban
 
 ### Ajouter un _widget_
 
-Les widgets sont paramétrables pour chaque utilisateur, par l’utilisateur lui-même afin que chacun puisse bénéficier des informations qu’il juge pertinentes. Ils n'impactent donc pas le tableau de bord des autres utilisateurs.
+Les widgets sont paramétrables pour chaque utilisateur, par l’utilisateur lui-même, afin que chacun puisse bénéficier des informations qu’il juge pertinentes. Ils n'impactent donc pas le tableau de bord des autres utilisateurs.
 
-La personalisation des widgets du tableau de bord se fait grâce au bouton le bouton <Icon icon={["fa", "pen-to-square"]} /> **Editer** situé en haut à droite de l’écran d’accueil. Plusieurs actions sont possibles.
+La personalisation des widgets du tableau de bord se fait grâce au bouton <Icon icon={["fa", "pen-to-square"]} /> **Editer** situé en haut à droite de l’écran d’accueil. Plusieurs actions sont possibles.
 
 - ajouter un _widget_ avec l'icône <Icon icon={["fa", "plus"]} /> ;
 - sauvegarder les modifications avec l'icone <Icon icon={["fa", "floppy-disk"]} /> ;
@@ -39,18 +37,18 @@ Le widget à intégrer s’implémente dans le tableau de bord.
 - l'icone <Icon icon={["fa", "x"]} /> permet de supprimer un _widget_ du tableau de bord.
 
 :::tip
-Selon les habilitations de l’utilisateur dans le workflow, certains _widgets_ seront plus utiles que d’autres. Par exemple, "Espace disque disponible" pour un pilote des projets, "Activité des contrôles" pour un contrôleur qualité.
+Selon les habilitations de l’utilisateur dans le workflow, certains _widgets_ seront plus utiles que d’autres. Par exemple, "Espace disque disponible" s'adresse à un chef de projet, tandis que les "Activités des contrôles" sont déstinées à un contrôleur qualité.
 ::::
 
 ### Paramétrer un _widget_
 
-Pour indiquer les données à afficher, le parametrage du _widget_ s'effectue depuis l'icone <Icon icon={["fa", "gear"]} />. Le modal propose différents champs à renseigner selon les données voulues.
+Pour indiquer les données à afficher, le parametrage du _widget_ s'effectue depuis l'icone <Icon icon={["fa", "gear"]} /> **Configurer le widget**. Le modal propose différents champs à renseigner selon les données voulues.
 
-- renommer le _widget_ ;
-- choisir la bibliothèque concernée (_liste déroulante_);
-- selectionner un projet, un lot, ou un train (_liste déroulante_);
-- définir le statut de l'élément selectionné (_liste déroulante_);
-- le nombre de jours à partir desquels recuperer des données.
+- Renommer le _widget_ ;
+- Choisir la bibliothèque concernée (_liste déroulante_);
+- Selectionner un projet, un lot, ou un train (_liste déroulante_);
+- Définir le statut de l'élément selectionné (_liste déroulante_);
+- Définir le nombre de jours à partir desquels récuperer des données.
 
 ### _Widgets_ disponibles
 

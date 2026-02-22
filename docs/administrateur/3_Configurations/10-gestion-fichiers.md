@@ -1,7 +1,7 @@
 ---
 title: Configuration de la gestion des fichiers
 sidebar_label: Configuration de la gestion des fichiers
-sidebar_position: 9
+sidebar_position: 10
 description: Configuration de la gestion des fichiers
 ---
 

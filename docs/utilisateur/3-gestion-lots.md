@@ -6,16 +6,7 @@ sidebar_position: 1
 
 import Icon from '@site/src/components/Icon';
 
-# Gestion des lots <Icon icon={["fa", "cart-flatbed-suitcase"]} />
-
-
----
-title: Créer un lot
-sidebar_label: Créer un lot
-sidebar_position: 23
----
-
-# Créer un lot
+# <Icon icon={["fa", "cart-flatbed-suitcase"]} /> Gestion des lots
 
 Un lot est associé à un seul projet et permet une répartition
 intellectuelle des unités documentaires d’un projet.

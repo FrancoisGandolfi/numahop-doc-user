@@ -9,8 +9,6 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "arrow-up-from-bracket"]} /> Export CALAMES
 
-## Export Calames
-
 ### Se connecter à Calames Production
 
 1. Repérez le fichier où se trouve votre cote et cliquez dessus (exemple : pour la cote 2205, allez sur le fichier 2001-2500).
@@ -31,8 +29,9 @@ import Icon from '@site/src/components/Icon';
 3. Une fenêtre apparaît vous demandant de choisir un modèle. Choisissez **Natif-C**.
 4. Une nouvelle fenêtre apparaît. Collez votre identifiant de la notice à exporter entre les guillemets, comme dans le modèle ci-dessous :
 
-   ```xml
-   <c id="votre_identifiant">
+```xml
+<c id="votre_identifiant">
+```
 
 5. Une fenêtre d’enregistrement apparaît. Enregistrez votre fichier sur votre ordinateur en ajoutant une extension au format .xml.
 
