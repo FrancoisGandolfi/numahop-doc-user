@@ -355,3 +355,64 @@ src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-21.png"
 class="alignnone wp-image-682" loading="lazy" decoding="async"
 srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-21.png 556w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-21-300x93.png 300w"
 sizes="(max-width: 488px) 100vw, 488px" width="488" height="151" />](https://www.numahop.fr/wp-content/uploads/2022/11/workflow-21.png)
+
+
+```mermaid
+flowchart TD
+    %% Styles
+    classDef init fill:#2ECC71,stroke:#27AE60,color:#fff;
+    classDef blue fill:#3498DB,stroke:#2980B9,color:#fff;
+    classDef grey fill:#95A5A6,stroke:#7F8C8D,color:#fff;
+    classDef orange fill:#F39C12,stroke:#D35400,color:#fff;
+    classDef endFlow fill:#E74C3C,stroke:#C0392B,color:#fff;
+
+    %% Nodes
+    A[Initialisation]:::init
+    B[Génération du bordereau]:::blue
+    C[Réalisation et validation du constat d'état par la bibliothèque]:::blue
+    D[Validation bordereau et constat d'état par le prestataire]:::blue
+    E[Réalisation d'un constat d'état avant numérisation par le prestataire]:::blue
+    F[En attente de numérisation]:::grey
+    G[Réalisation d'un constat d'état après numérisation par le prestataire]:::blue
+    H[Livraison des documents numérisés]:::orange
+    I[Contrôles automatiques]:::grey
+    J[Contrôles qualité]:::orange
+    K[Pré-rejet du document]:::orange
+    L[Pré-validation du document]:::orange
+    M[Validation du document]:::orange
+    N[Validation de la notice du document]:::orange
+    O[Rapport de contrôles pour le prestataire]:::grey
+    P["Archivage du document (export CINES)"]:::blue
+    Q[Diffusion IA du document]:::blue
+    R[Diffusion Omeka du document]:::orange
+    S[Diffusion du document sur une bibliothèque numérique]:::blue
+    T[Diffusion locale du document]:::orange
+    U[Fin]:::endFlow
+
+    %% Connections
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+    J --> L
+    K --> M
+    L --> M
+    M --> N
+    N --> O
+    O --> P
+    O --> Q
+    O --> R
+    O --> S
+    O --> T
+    P --> U
+    Q --> U
+    R --> U
+    S --> U
+    T --> U
+```

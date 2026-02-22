@@ -11,10 +11,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Configuration pour GitLab Pages
-  url: 'https://fgandolfi.gitlab.io', // URL de ton utilisateur GitLab
-  baseUrl: '/', // Nom de ton dépôt
+  url: 'https://fgandolfi.gitlab.io',
+  baseUrl: '/',
 
-  // Organisation et nom du projet (optionnel pour GitLab Pages)
+  // Organisation et nom du projet
   organizationName: 'asso-numahop',
   projectName: 'numahop-doc-user',
 
@@ -31,6 +31,13 @@ const config = {
     },
   },
 
+  // Configuration pour Mermaid
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: ['@docusaurus/theme-mermaid'],
+
   // Presets classiques (docs, blog, theme)
   presets: [
     [
@@ -40,7 +47,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           showLastUpdateTime: true,
-          editUrl: 'https://gitlab.com/fgandolfi/numahop-doc-user/-/edit/main/', // Lien vers ton dépôt GitLab
+          editUrl: 'https://gitlab.com/fgandolfi/numahop-doc-user/-/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -78,7 +85,7 @@ const config = {
       navbar: {
         title: 'NumaHop',
         logo: {
-          alt: 'Logo NumaHop',
+          alt: 'Logo NumaHOP',
           src: 'img/logo.svg',
         },
         items: [
