@@ -3,9 +3,10 @@ title: 'Mappings : généralités'
 sidebar_label: 'Mappings : généralités'
 sidebar_position: 1
 ---
+
 import Icon from '@site/src/components/Icon';
 
-# Mappings: généralités <Icon icon={["fa", "shuffle"]} />
+# <Icon icon={["fa", "shuffle"]} /> Mappings: généralités
 
 ---
 title: Créer un mapping

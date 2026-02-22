@@ -35,11 +35,11 @@ Dans toutes les interfaces, les différentes actions possibles sont associées �
 - <Icon icon={["fa", "eye"]} /> **Contrôler** ;
 - <Icon icon={["fa", "share"]} /> **Télécharger** ;
 - <Icon icon={["fa", "bars"]} /> **Autres actions** ;
-- <Icon icon={["fa", "filter"]} /> **Filtrer**
+- <Icon icon={["fa", "filter"]} /> **Filtrer** ;
 - <Icon icon={["fa", "arrows-up-down-left-right"]} /> **Déplacer** ;
 - <Icon icon={["fa", "gear"]} /> **Parametrer** ;
-- <Icon icon={["fa", "x"]} /> **Supprimer** ;
-- <Icon icon={["fa", "handshake"]} /> ;
+- <Icon icon={["fa", "square-xmark"]} /> **Supprimer** ;
+- <Icon icon={["fa", "handshake"]} /> .
 
 ### Menus applicatifs
 

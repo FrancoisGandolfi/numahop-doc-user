@@ -1,9 +1,10 @@
 ---
-title: Formats des vues
-sidebar_label: Formats des vues
+title: Configuration des formats des vues
+sidebar_label: Configuration des formats des vues
 sidebar_position: 2
+description: Configuration des formats des vues
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# Formats des vues <Icon icon={["fa", "expand"]} />
+# <Icon icon={["fa", "expand"]} /> Configuration des formats des vues

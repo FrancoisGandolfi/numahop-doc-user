@@ -6,16 +6,7 @@ sidebar_position: 3
 
 import Icon from '@site/src/components/Icon';
 
-
-# Gestion des groupes  <Icon icon={["fa", "users-gear"]} />
-
----
-title: Créer des groupes
-sidebar_label: Créer des groupes
-sidebar_position: 22
----
-
-# Créer des groupes
+# <Icon icon={["fa", "users-gear"]} /> Gestion des groupes
 
 Les groupes sont un moyen de rassembler plusieurs utilisateurs de
 NumaHOP qui sont mobilisés sur les mêmes tâches.

@@ -1,8 +1,10 @@
 ---
-title: Templates
-sidebar_label: Templates
+title: Configuration des templates
+sidebar_label: Configuration des templates
 sidebar_position: 6
+description: Configuration des templates
 ---
+
 import Icon from '@site/src/components/Icon';
 
-# Templates <Icon icon={["fa", "file"]} />
+# <Icon icon={["fa", "file"]} /> Configuration des templates

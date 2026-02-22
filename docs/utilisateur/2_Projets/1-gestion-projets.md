@@ -8,13 +8,6 @@ import Icon from '@site/src/components/Icon';
 
 # Gestion des projets <Icon icon={["fa", "diagram-project"]} />
 
----
-title: Module Projets
-sidebar_label: Module Projets
-sidebar_position: 26
----
-
-# Module Projets
 
 Vous pouvez créer des trains associés aux projets et y associer des
 documents physiques dans le menu  &gt; Projets.
@@ -46,12 +39,6 @@ appartenant au projet passeront au statut Annulé.
 
 Le détail d’un projet permet de visualiser :
 
-
----
-title: Créer un projet
-sidebar_label: Créer un projet
-sidebar_position: 24
----
 
 # Créer un projet
 

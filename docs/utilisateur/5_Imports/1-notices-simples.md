@@ -289,3 +289,41 @@ unités documentaires ne sont pas encore
 importées
 
 Le pré import est fait, on peut visualiser les erreurs :
+
+## Import CSV
+
+### Construction du fichier CSV
+
+- **Logiciel recommandé** : Utilisez **Calc d’OpenOffice** pour créer le fichier et enregistrez-le avec l’extension **.CSV**.
+- **Format des colonnes** :
+  - Pour les propriétés **Dublin Core** (exemple : `dc:title`, `dc:coverage`, `dc:publisher`), le nom de la colonne doit être `dc:nom_de_la_propriete_dc`.
+  - Pour les propriétés **hors Dublin Core** (comme le PGCN Id, le radical, le titre, les droits), elles doivent être spécifiées dans le mapping d’import.
+- **Paramètres d’enregistrement** :
+  - Séparateur de données : **virgule (,)**
+  - Encadrez les données avec des **guillemets ("")**.
+
+---
+
+### Import du fichier CSV dans NumaHOP
+
+1. **Accéder à la section d’import**
+   - Sélectionnez l’icône correspondante dans le menu de gauche.
+   - Choisissez **Imports** dans le menu qui apparaît.
+
+2. **Configurer le formulaire d’import**
+   - **Zone Paramétrage** :
+     - **Type d’import** : Simple
+     - **Format de fichier** : CSV
+     - **Mapping CSV** : Sélectionnez le nom de votre fichier CSV à importer
+   - **Zone Import** :
+     - **Projet** : Indiquez le nom du projet
+
+3. **Pré-import et validation**
+   - Si la vérification des unités documentaires ou la recherche de doublons est activée, NumaHOP effectue un **pré-import**.
+   - À la fin du pré-import, l’utilisateur peut visualiser les **erreurs éventuelles** et les **doublons** trouvés.
+   - L’import passe au statut **Validation utilisateur** : les unités documentaires ne sont pas encore importées.
+
+---
+
+### Visualisation des erreurs
+- Une fois le pré-import terminé, les erreurs éventuelles peuvent être visualisées.

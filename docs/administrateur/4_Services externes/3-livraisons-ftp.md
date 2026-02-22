@@ -6,15 +6,9 @@ sidebar_position: 3
 
 import Icon from '@site/src/components/Icon';
 
-# Configuration du serveur de livraison <Icon icon={["fa", "server"]} />
+# <Icon icon={["fa", "server"]} /> Configuration du serveur de livraison
 
----
-title: Configuration du FTP de dépôt des fichiers à livrer dans NumaHOP
-sidebar_label: Configuration du FTP de dépôt des fichiers à livrer dans NumaHOP
-sidebar_position: 17
----
 
-# Configuration du FTP de dépôt des fichiers à livrer dans NumaHOP
 
 Pour entrer l’adresse d’un serveur FTP pour le dépôt des fichiers à
 livrer, aller dans Administration <img

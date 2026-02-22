@@ -1,9 +1,10 @@
 ---
-title: Métadonnées embarquées
-sidebar_label: Métadonnées embarquées
+title: Configuration des métadonnées embarquées
+sidebar_label: Configuration des métadonnées embarquées
 sidebar_position: 3
+description: Configuration des métadonnées embarquées
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# Métadonnées embarquées <Icon icon={["fa", "hashtag"]} />
+# <Icon icon={["fa", "hashtag"]} /> Configuration des métadonnées embarquées

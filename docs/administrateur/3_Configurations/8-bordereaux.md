@@ -1,8 +1,10 @@
 ---
-title: Bordereaux
-sidebar_label: Bordereaux
+title: Configuration des bordereaux
+sidebar_label: Configuration des bordereaux
 sidebar_position: 8
+description: Configuration des bordereaux
 ---
+
 import Icon from '@site/src/components/Icon';
 
-# Bordereaux <Icon icon={["fa", "signature"]} />
+# <Icon icon={["fa", "signature"]} /> Configuration des bordereaux

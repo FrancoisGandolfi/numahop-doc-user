@@ -1,22 +1,13 @@
 ---
-title: Constats d'état
-sidebar_label: Constats d'état
+title: Configuration des constats d'état
+sidebar_label: Configuration des constats d'état
 sidebar_position: 1
+description: Configuration des constats d'état
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# Constats d'état <Icon icon={["fa", "list-check"]} />
-
-
-
----
-title: Configurer un modèle de constat d’état
-sidebar_label: Configurer un modèle de constat d’état
-sidebar_position: 4
----
-
-# Configurer un modèle de constat d’état
+# <Icon icon={["fa", "list-check"]} /> Configuration des constats d'état
 
 #### Le template de constat d'état dans NumaHOP
 

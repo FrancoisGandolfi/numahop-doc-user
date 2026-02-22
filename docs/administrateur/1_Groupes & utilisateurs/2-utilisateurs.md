@@ -6,16 +6,7 @@ sidebar_position: 2
 
 import Icon from '@site/src/components/Icon';
 
-# Gestion des utilisateurs <Icon icon={["fa", "user-gear"]} />
-
-
----
-title: Créer des utilisateurs
-sidebar_label: Créer des utilisateurs
-sidebar_position: 20
----
-
-# Créer des utilisateurs
+# <Icon icon={["fa", "user-gear"]} /> Gestion des utilisateurs
 
 Pour pouvoir créer des utilisateurs, il est nécessaire de disposer de
 l’habilitation USER-HAB1 (Gestion des utilisateurs : création).

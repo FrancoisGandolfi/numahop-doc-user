@@ -1,8 +1,10 @@
 ---
-title: Gestion des fichiers
-sidebar_label: Gestion des fichiers
+title: Configuration de la gestion des fichiers
+sidebar_label: Configuration de la gestion des fichiers
 sidebar_position: 9
+description: Configuration de la gestion des fichiers
 ---
+
 import Icon from '@site/src/components/Icon';
 
-# Gestion des fichiers <Icon icon={["fa", "box-archive"]} />
+# <Icon icon={["fa", "box-archive"]} /> Configuration de la gestion des fichiers

@@ -40,9 +40,9 @@ Le détail du profil de l'utilisateur connecté est accessible via le menu derro
 |   **Fonction**   | 🔵 Facultatif  | Texte libre               |                                                                                  |
 |  **Téléphone**   | 🔵 Facultatif  | Texte libre               |                                                                                  |
 |   **Courriel**   | 🔴 Obligatoire | Email @                   |                                                                                  |
-|  **Catégorie**   | 🔵 Facultatif  | Utilisateur / Prestataire |  _Gestion des Utilisateurs_ <Icon icon={["fa", "arrow-up-right-from-square"]} /> |
-| **Bibliothèque** | 🔴 Obligatoire | Liste fermée              | _Gestion des Bibliothèques_ <Icon icon={["fa", "arrow-up-right-from-square"]} /> |
-|    **Profil**    | 🔴 Obligatoire | Liste fermée              |       _Gestion des Profils_ <Icon icon={["fa", "arrow-up-right-from-square"]} /> |
+|  **Catégorie**   | 🔵 Facultatif  | Utilisateur / Prestataire |  [_Gestion des Utilisateurs_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() |
+| **Bibliothèque** | 🔴 Obligatoire | Liste fermée              | [_Gestion des Bibliothèques_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() |
+|    **Profil**    | 🔴 Obligatoire | Liste fermée              |       [_Gestion des Profils_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() |
 
 ### Modification du mot de passe
 

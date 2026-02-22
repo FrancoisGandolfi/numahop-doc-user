@@ -6,16 +6,7 @@ sidebar_position: 1
 
 import Icon from '@site/src/components/Icon';
 
-# Gestion des bibliothèques <Icon icon={["fa", "building-columns"]} />
-
-
----
-title: Créer une bibliothèque
-sidebar_label: Créer une bibliothèque
-sidebar_position: 2
----
-
-# Créer une bibliothèque
+# <Icon icon={["fa", "building-columns"]} /> Gestion des bibliothèques
 
 Dans l’onglet « Utilisateurs »
 <img src="https://www.numahop.fr/wp-content/uploads/2022/10/Profils.png"

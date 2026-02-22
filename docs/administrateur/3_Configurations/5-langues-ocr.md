@@ -1,8 +1,10 @@
 ---
-title: Langues OCR
-sidebar_label: Langues OCR
+title: Configuration des langues OCR
+sidebar_label: Configuration des langues OCR
 sidebar_position: 5
+description: Configuration des langues OCR
 ---
+
 import Icon from '@site/src/components/Icon';
 
-# Langues OCR <Icon icon={["fa", "barcode"]} />
+# <Icon icon={["fa", "barcode"]} /> Configuration des langues OCR

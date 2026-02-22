@@ -1,21 +1,13 @@
 ---
-title: Workflows
-sidebar_label: Workflows
+title: Configuration des workflows
+sidebar_label: Configuration des workflows
 sidebar_position: 3
+description: Configuration des worflows
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# Workflows <Icon icon={["fa", "chart-diagram"]} />
-
-
----
-title: Guide du workflow
-sidebar_label: Guide du workflow
-sidebar_position: 6
----
-
-# Guide du workflow
+# <Icon icon={["fa", "chart-diagram"]} /> Configuration des workflows
 
 #### Le déroulé d'un projet dans NumaHOP
 
@@ -377,16 +369,16 @@ flowchart TD
     H[Livraison des documents numérisés]:::orange
     I[Contrôles automatiques]:::grey
     J[Contrôles qualité]:::orange
-    K[Pré-rejet du document]:::orange
-    L[Pré-validation du document]:::orange
+    K[Pré-rejet du document]:::blue
+    L[Pré-validation du document]:::blue
     M[Validation du document]:::orange
     N[Validation de la notice du document]:::orange
     O[Rapport de contrôles pour le prestataire]:::grey
     P["Archivage du document (export CINES)"]:::blue
     Q[Diffusion IA du document]:::blue
-    R[Diffusion Omeka du document]:::orange
+    R[Diffusion Omeka du document]:::blue
     S[Diffusion du document sur une bibliothèque numérique]:::blue
-    T[Diffusion locale du document]:::orange
+    T[Diffusion locale du document]:::blue
     U[Fin]:::endFlow
 
     %% Connections
