@@ -13,7 +13,7 @@ const features = [
     icon: faBook,
     description: 'Une documentation complète et détaillée, destinée aux administrateurs et utilisateurs autant qu\'aux prestataires de numérisation.',
     link: '/docs/introduction',
-    linkTitle: 'La Documentation',
+    linkTitle: 'La documentation',
   },
   {
     title: 'Logiciel libre',
@@ -27,7 +27,7 @@ const features = [
     icon: faUsers,
     description: 'Soutien actif du logiciel, l\'association assure le partage et l\'échange autour de NumaHop, en menant des actions de formation et de développement ',
     link: '/communaute',
-    linkTitle: 'L\'Association',
+    linkTitle: 'L\'association',
   },
     {
     title: '@NumaWork',
@@ -41,7 +41,7 @@ const features = [
     icon: faLock,
     description: 'Une instance de test, offrant les dernières évolution du logiciel est mise à disposition de la communauté pour découvrir toutes les étapes du workflow.',
     link: 'https://standard-231-numahop.support.biblibre.eu/#/login?redirect=%2Fdashboard',
-    linkTitle: 'Le Bac à sable',
+    linkTitle: 'Le bac à sable',
   },
 ];
 
