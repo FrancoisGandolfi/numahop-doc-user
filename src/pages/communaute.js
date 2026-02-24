@@ -36,7 +36,7 @@ const membres = [
     bibliothequeNumerique: 'https://numaclay.universite-paris-saclay.fr/s/numaclay/page/accueil',
   },
   {
-    nom: 'Bibliothèque de l\'ENS',
+    nom: 'Ecole Normale Supérieure de Paris',
     ville: 'Paris',
     logo: '/img/logos/ens-logo.png',
     siteInternet: 'https://www.ens.psl.eu/',
@@ -176,6 +176,7 @@ const CommunautePage = () => {
             <p>L'association est composée de membres institutionnels
               et de prestataires privés, tous engagés dans la
               préservation et la valorisation du patrimoine culturel numérique.</p>
+            <a href="/docs/statuts">Les statuts de l'association NumaHop <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
 
           </div>
 

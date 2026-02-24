@@ -9,6 +9,8 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "diagram-project"]} /> Déroulé d'un projet
 
+![Kikou](/img/numahop-objets.png)
+
 On distingue deux principaux types de projets.
 
 - les **projets standards**, qui couvrent l’intégralité du cycle de vie des documents, de la sélection des documents physiques et de leur signalement, jusqu’à la diffusion et à l'archivage des reproductions numériques ;

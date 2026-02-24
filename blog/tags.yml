@@ -3,3 +3,21 @@ journeespro:
 
 humatheque:
   label: Humathèque Condorcet
+
+enslyon:
+  label: ENS de Lyon
+
+saclay:
+  label: Université Paris Saclay
+
+bsg:
+  label: Bibliothèque Sainte Geneviève
+
+collex:
+  label: CollEx-Persée
+
+sciencespo:
+  label: Sciences Po Paris
+
+article:
+  label: Publication

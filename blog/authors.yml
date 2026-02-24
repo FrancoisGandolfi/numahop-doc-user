@@ -1,5 +1,42 @@
 fgandolfi:
   name: François Gandolfi
-  title: Administrateur logiciel
-  etablissement: Humathèque Condorcet
-  image_url: 'https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/533411177_10235530306693296_3712875045860963417_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qKenQTRUlpQQ7kNvwFZt6np&_nc_oc=AdlRxlNA-c-OdTV02Sf6JqAyIvqTAgs6u1t6O6ywgd2DMTRwE34d0c5sGHZYnWcp-AN3v_U6HUs3AYubWtheyiCG&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=b3wqQQAYkegzYxcCk3NFpQ&oh=00_AfuvuaGPGEgqN2jfEMefDbZYBSqAq7aJfGzqtKyoQEsGIg&oe=69998F9B'
+  title: 'Humathèque Condorcet'
+  image_url: /img/photos/fgandolfi.jpg
+  page: true
+
+priviere:
+  name: Pauline Rivière
+  title: Bibliothèque Sainte Geneviève
+  image_url: /img/logos/bsg-logo.png
+  page: true
+
+odubois:
+  name: Olesea Dubois
+  title: Sciences Po Paris
+  image_url: /img/logos/sciencespo-logo.png
+  page: true
+
+npilet:
+  name: Nathalie Pilet
+  title: Bibliothèque universitaire des langues et civilisations
+  image_url: /img/logos/bulac-logo.png
+  page: true
+
+vtardif:
+  name: Vincent Tardif
+  title: Bibliothèque de l'ENS
+  image_url: /img/logos/ens-logo.png
+  page: true
+
+oboissel:
+  name: Oriane Boissel
+  title: Université Paris Saclay
+  image_url: /img/logos/saclay-logo.png
+  page: true
+
+sgauthe:
+  name: Sarah Gauthé
+  title: UAR Persée
+  image_url: /img/logos/persee-logo.png
+  page: true
+
