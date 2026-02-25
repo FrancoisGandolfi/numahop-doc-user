@@ -7,31 +7,31 @@ fgandolfi:
 priviere:
   name: Pauline Rivière
   title: Bibliothèque Sainte Geneviève
-  image_url: /img/logos/bsg-logo.png
+  image_url: /img/photos/priviere.jpg
   page: true
 
 odubois:
   name: Olesea Dubois
   title: Sciences Po Paris
-  image_url: /img/logos/sciencespo-logo.png
+  image_url: /img/photos/odubois.jpg
   page: true
 
 npilet:
   name: Nathalie Pilet
   title: Bibliothèque universitaire des langues et civilisations
-  image_url: /img/logos/bulac-logo.png
+  image_url: /img/photos/npilet.jpg
   page: true
 
 vtardif:
   name: Vincent Tardif
   title: Bibliothèque de l'ENS
-  image_url: /img/logos/ens-logo.png
+  image_url: /img/photos/vtardif.jpg
   page: true
 
 oboissel:
   name: Oriane Boissel
   title: Université Paris Saclay
-  image_url: /img/logos/saclay-logo.png
+  image_url: /img/photos/oboissel.jpg
   page: true
 
 sgauthe:

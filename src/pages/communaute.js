@@ -122,7 +122,7 @@ const prestataires = [
     etablissement: 'Rueil-Malmaison',
     siteInternet: 'https://www.tech-advantage.com/',
     citation: "Tech’Advantage a accompagné le développement initial de NumaHop, en capitalisant sur son expertise historique en solutions numériques pour les bibliothèques et les institutions culturelles, héritée de Progilone.",
-    photo: 'https://www.tech-advantage.com/wp-content/uploads/2021/10/Logo-Ico%CC%82ne-Black.png',
+    photo: 'img/photos/techadvantage.jpg',
     description: "Prestataire historique, Tech’Advantage a joué un rôle clé dans la conception et le déploiement de NumaHop, en s’appuyant sur son héritage technique et son expérience de plus de 30 ans dans le numérique scientifique et culturel."
   },
   {
@@ -130,7 +130,7 @@ const prestataires = [
     etablissement: 'Marseille',
     siteInternet: 'https://www.biblibre.com/fr/',
     citation: "BibLibre contribue activement à Numahop en publiant et en maintenant le code source, renforçant ainsi son engagement pour des solutions libres et ouvertes au service des bibliothèques.",
-    photo: 'https://www.biblibre.com/favicon.ico',
+    photo: '/img/photos/biblibre.jpg',
     description: "Spécialiste des logiciels libres pour les bibliothèques, BibLibre a intégré Numahop à son offre pour proposer une solution clé en main, maintenue et adaptée aux besoins des institutions."
   },
   {

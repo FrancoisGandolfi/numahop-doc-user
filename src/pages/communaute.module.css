@@ -339,6 +339,7 @@
 .prestataireCard:hover {
   transform: translateY(-5px);
   box-shadow: var(--numahop-shadow);
+  border-color: var(--numahop-primary);
 }
 
 .prestataireHeader {
@@ -406,8 +407,6 @@
   line-height: 1.6;
   margin: 0;
 }
-
-
 
 /* ===== Section "Rejoindre" ===== */
 .rejoindre {
