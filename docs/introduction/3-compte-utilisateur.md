@@ -32,7 +32,7 @@ Le détail du profil de l'utilisateur connecté est accessible via le menu derro
 - Modifier les champs disponibles.
 
 |      Champ       | Statut         | Détails                   |                                                                     _Voir aussi_ |
-| :--------------: | :------------- | :------------------------ | -------------------------------------------------------------------------------: |
+| :--------------- | :------------- | :------------------------ | -------------------------------------------------------------------------------: |
 |    **Login**     | 🔴 Obligatoire | Texte libre               |                                                                                  |
 |     **Nom**      | 🔴 Obligatoire | Texte libre               |                                                                                  |
 |    **Prénom**    | 🔴 Obligatoire | Texte libre               |                                                                                  |

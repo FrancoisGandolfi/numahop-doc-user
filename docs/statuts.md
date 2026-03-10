@@ -3,6 +3,7 @@ title: Status de l'association NumaHop
 sidebar_label: Status de l'association NumaHop
 sidebar_position: 0
 description: Status de l'association NumaHop
+custom_edit_url: null
 ---
 
 # Status de l'association NumaHop
@@ -109,4 +110,4 @@ Un règlement intérieur peut être établi par le bureau, et auquel cas il est 
 
 En cas de dissolution de l’association, l’assemblée générale désigne un ou plusieurs liquidateurs chargés de la liquidation des biens de l’association. L’actif net de l’association sera attribué conformément à la loi.
 
-_Date de validation des présents statuts : Assemblée générale du 28 novembre 2023._
+_Date de validation des présents statuts : Assemblée générale du 22 janvier 2026._

@@ -33,13 +33,14 @@ Dans toutes les interfaces, les différentes actions possibles sont associées �
 - <Icon icon={["fa", "square-poll-horizontal"]} /> **Détails** ;
 - <Icon icon={["fa", "up-right-from-square"]} /> **Ouvrir** ;
 - <Icon icon={["fa", "eye"]} /> **Contrôler** ;
+- <Icon icon={["fa", "download"]} /> **Télécharger** ;
 - <Icon icon={["fa", "share"]} /> **Télécharger** ;
 - <Icon icon={["fa", "bars"]} /> **Autres actions** ;
 - <Icon icon={["fa", "filter"]} /> **Filtrer** ;
+- <Icon icon={["fa", "rotate"]} /> **Réinitialiser**
 - <Icon icon={["fa", "arrows-up-down-left-right"]} /> **Déplacer** ;
 - <Icon icon={["fa", "gear"]} /> **Parametrer** ;
-- <Icon icon={["fa", "square-xmark"]} /> **Supprimer** ;
-- <Icon icon={["fa", "handshake"]} /> .
+- <Icon icon={["fa", "square-xmark"]} /> **Supprimer** .
 
 ### Menus applicatifs
 

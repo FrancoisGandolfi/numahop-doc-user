@@ -346,3 +346,24 @@ th {
     padding: 0.75rem;
   }
 }
+
+/* Personnalisation des blocs d'info */
+.admonition.admonition-info {
+  --ifm-color-info: #00a8e6; /* Couleur de fond claire */
+  --ifm-color-info-dark: #0077b6; /* Couleur de fond en mode sombre */
+  --ifm-color-info-contrast: #ffffff; /* Couleur du texte */
+  border-left: 4px solid var(--ifm-color-info); /* Bordure gauche */
+}
+
+/* Optionnel : Personnaliser d'autres types de blocs */
+.admonition.admonition-tip {
+  --ifm-color-tip: #2ecc71;
+  --ifm-color-tip-dark: #27ae60;
+  --ifm-color-tip-contrast: #ffffff;
+}
+
+.admonition.admonition-danger {
+  --ifm-color-danger: #e74c3c;
+  --ifm-color-danger-dark: #c0392b;
+  --ifm-color-danger-contrast: #ffffff;
+}
