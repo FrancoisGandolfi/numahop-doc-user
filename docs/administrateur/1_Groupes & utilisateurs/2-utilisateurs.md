@@ -13,8 +13,7 @@ l’habilitation USER-HAB1 (Gestion des utilisateurs : création).
 
 ## Créer un utlisateur
 
-Pour créer des utilisateurs dans NumaHOP, cliquer sur l'icône <Icon icon={["fa", "user"]} /> **
-Utilisateurs** dans le menu latéral de gauche, puis choisir **Utilisateurs** dans le sous-menu.
+Pour créer des utilisateurs dans NumaHOP, cliquer sur l'icône <Icon icon={["fa", "user"]} /> **Utilisateurs** dans le menu latéral de gauche, puis choisir **Utilisateurs** dans le sous-menu.
 
 Cliquer ensuite sur le bouton <Icon icon={["fa", "plus"]} /> situé à droite de la fenêtre de recherche. Un
 formulaire de création d’utilisateur s’affiche dans la partie droite de
@@ -28,7 +27,7 @@ Remplir le formulaire. Les champs obligatoires sont :
 - Le mot de passe : il sert à la 1ère connexion et pourra ensuite être modifié par l’utilisateur
 - Le courriel
 - La bibliothèque : à partir de la liste des [bibliothèques créées dans Numahop](docs/administrateur/1_Groupes%20&%20utilisateurs/1-bibliotheques.md)
--Le profil : dans la liste [des profils créés dans Numahop](docs/administrateur/1_Groupes%20&%20utilisateurs/4-profils.md)
+- Le profil : dans la liste [des profils créés dans Numahop](docs/administrateur/1_Groupes%20&%20utilisateurs/4-profils.md)
 
 Pour le champ **Actif**, cocher le bouton **oui** pour permettre à
 l’utilisateur créé de pouvoir agir dans Numahop.
