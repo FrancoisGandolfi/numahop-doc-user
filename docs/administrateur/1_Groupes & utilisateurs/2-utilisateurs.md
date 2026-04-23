@@ -13,9 +13,8 @@ l’habilitation USER-HAB1 (Gestion des utilisateurs : création).
 
 ## Créer un utlisateur
 
-Pour créer des utilisateurs dans NumaHOP, cliquer sur l'icône <Icon icon={["fa", "user"]} /> «
-Utilisateurs » dans le menu latéral de gauche, puis choisir «
-Utilisateurs » dans le sous-menu.
+Pour créer des utilisateurs dans NumaHOP, cliquer sur l'icône <Icon icon={["fa", "user"]} /> **
+Utilisateurs** dans le menu latéral de gauche, puis choisir **Utilisateurs** dans le sous-menu.
 
 Cliquer ensuite sur le bouton <Icon icon={["fa", "plus"]} /> situé à droite de la fenêtre de recherche. Un
 formulaire de création d’utilisateur s’affiche dans la partie droite de
@@ -28,22 +27,21 @@ Remplir le formulaire. Les champs obligatoires sont :
 - Le prénom de l’utilisateur
 - Le mot de passe : il sert à la 1ère connexion et pourra ensuite être modifié par l’utilisateur
 - Le courriel
-- La bibliothèque : à partir de la liste des [bibliothèques créées dans Numahop](docs/administrateur/1_Groupes-&-utilisateurs/1-bibliotheques.md)
--Le profil : dans la liste [des profils créés dans Numahop](docs/administrateur/1_Groupes-&-utilisateurs/4-profils.md)
+- La bibliothèque : à partir de la liste des [bibliothèques créées dans Numahop](docs/administrateur/1_Groupes%20&%20utilisateurs/1-bibliotheques.md)
+-Le profil : dans la liste [des profils créés dans Numahop](docs/administrateur/1_Groupes%20&%20utilisateurs/4-profils.md)
 
-Pour le champ « Actif », cocher le bouton « oui » pour permettre à
+Pour le champ **Actif**, cocher le bouton **oui** pour permettre à
 l’utilisateur créé de pouvoir agir dans Numahop.
 
-Cliquer ensuite sur le bouton « Enregistrer ». Le nouvel utilisateur est
+Cliquer ensuite sur le bouton **Enregistrer**. Le nouvel utilisateur est
 créé et reçoit un mail l’informant de la création de son compte et lui
 indiquant ses identifiant et mot de passe de connexion à NumaHOP.
 
 ## Rattacher l'utilisateur à un groupe
 
-Pour compléter la création de l’utilisateur,il est nécessaire de l'[ajouter à un/des groupe(s) de
-workflows](docs/administrateur/1_Groupes-&-utilisateurs/3-groupes.md).
+Pour compléter la création de l’utilisateur,il est nécessaire de l'[ajouter à un/des groupe(s) de workflows](docs/administrateur/1_Groupes%20&%20utilisateurs/3-groupes.md).
 
-La rubrique « Utilisateurs » donne aussi accès à la liste des
+La rubrique **Utilisateurs** donne aussi accès à la liste des
 utilisateurs créés avec des possibilités de recherche et de filtrage (<Icon icon={["fa", "filter"]} />).
 
 ## Modifier ou supprimer un utilisateur
