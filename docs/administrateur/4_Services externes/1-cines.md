@@ -10,7 +10,7 @@ import Icon from '@site/src/components/Icon';
 
 ## Présentation
 
-Cette interface permet de régler les paramatrages du cines :
+Cette interface permet de régler les paramatrages du CINES :
 - Serveur SFTP
 - Plans de classement PAC
 - Paramètres Cines: valeurs par défaut
@@ -41,9 +41,9 @@ Vous pouvez soit :
 - charger directement votre PPDI pour implémenter votre plan de classement en le récupérant à l'aide du bouton parcourir.
 
 
-## Paramètres Cines: valeurs par défaut
+## Paramètres CINES: valeurs par défaut
 
-Au Cines les champs suivants sont obligatoires lors du versement de vos données :
+Au CINES les champs suivants sont obligatoires lors du versement de vos données :
 - Language 	
 - Format 	
 - Type 	
