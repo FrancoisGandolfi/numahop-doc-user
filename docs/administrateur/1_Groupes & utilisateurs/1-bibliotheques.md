@@ -8,14 +8,12 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "building-columns"]} /> Gestion des bibliothèques
 
-Dans l’onglet  <Icon icon={["fa", "users"]} /> **Utilisateurs**, l’un des sous-onglets permet de gérer les **Bibliothèques**. Elles servent à gérer les informations liées à la ou aux bibliothèques intégrées à vos projets de numérisation. Les bibliothèques sont un des éléments prioritaires à configurer pour mettre en place des projets de numérisation.
+Dans l’onglet  <Icon icon={["fa", "user"]} /> **Utilisateurs**, l’un des sous-onglets permet de gérer les **Bibliothèques**. Les bibliothèques sont un des éléments prioritaires à configurer pour mettre en place des projets de numérisation.
 
 
 ## Créer une bibliothèque
-Dans l’onglet **Utilisateurs**, l’un des sous-onglets permet de gérer les **Bibliothèques**. Cela permet de gérer les informations liées à la ou aux bibliothèques intégrées à vos projets de numérisatio
 
-Lorsqu’une bibliothèque est créée, renseigner les informations de sa
-fiche. Celle-ci est divisée en plusieurs parties :
+Renseigner les informations la fiche de bibliothèque divisées en plusieurs parties :
 - La première contient des informations d’identification et de paramétrages techniques.
 - Les trois suivantes portent sur des renseignements plus concrets : l’adresse, les coordonnées du responsable de la bibliothèque et le logo.
 
