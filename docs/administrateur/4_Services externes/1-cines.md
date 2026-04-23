@@ -29,7 +29,7 @@ Pour verser au CINES, il convient de renseigner les champs suivants en cliquant 
 | Port                      | Port d'accès au serveur VITAM                   |   🔵 Facultatif       |
 | Répertoire de destination | Répertoire de versement dans VITAM              |   🔵 Facultatif      |
 | Active                    | Statut de la configuration : active ou inactive |   🔵 Facultatif      |
-| Bibliothèque *            | Nom de l'établissement versant                  |   🔴 Obligatoire       |
+| Bibliothèque             | Nom de l'établissement versant                  |   🔴 Obligatoire       |
 
 
 ## Plans de classement PAC
@@ -42,7 +42,7 @@ Vous pouvez soit :
 
 ## Paramètres Cines: valeurs par défaut
 
-Au Cines les champs suivants sont obligatoires pour verser dans la PAC :
+Au Cines les champs suivants sont obligatoires lors du versement de vos données :
 - Language 	
 - Format 	
 - Type 	
@@ -52,12 +52,13 @@ Au Cines les champs suivants sont obligatoires pour verser dans la PAC :
 - Créateur 	
 - Titre 	
 - Droit
-Vous devez donc associer à chacun de ces champs une valeur par défaut à remplir automatiquement si jamais cette information n'était pas renseignée dans la notice bibliographique afin d'archiver au CINES.
+
+Vous devez donc associer à chacun de ces champs une valeur par défaut qui sera remplie automatiquement, lors du versement au CINES, si jamais cette information n'était pas renseignée dans la notice bibliographique de l'unité documentaire.
 
 
 ## Codes langues à transposer (commun à l'ensemble des bibliothèques)
 
-:::Pour les instances mutualisées de NumaHOP
+:::danger Pour les instances mutualisées de NumaHOP
 Les modifications de code de langue s'appliquent à tous les établissements utilisant NumaHOP présent dans votre instance
 :::
 
