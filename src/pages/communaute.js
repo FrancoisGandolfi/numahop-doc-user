@@ -317,7 +317,7 @@ const CommunautePage = () => {
                 href="mailto:association-numahop@sorbonne-nouvelle.fr?subject=Demande%20d%27adhésion%20à%20NumaHOP&body=Bonjour,%0D%0A%0D%0AJe souhaite adhérer à l%27association NumaHOP. Pouvez-vous me transmettre les modalités ?%0D%0A%0D%0ACordialement,%0D%0A"
               >
                 <FontAwesomeIcon icon={faEnvelope} className={styles.buttonIcon} />
-                Conatcter l'association NumaHop
+                Contacter l'association NumaHop
               </a>
             </div>
           </div>
