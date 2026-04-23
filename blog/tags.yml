@@ -21,3 +21,9 @@ sciencespo:
 
 article:
   label: Publication
+
+release:
+  label: Release
+
+biblibre:
+  label: Biblibre
