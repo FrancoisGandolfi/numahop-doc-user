@@ -39,4 +39,6 @@ Pour créer un groupe, remplir les champs de sa fiche :
 Puis, choisir les utilisateurs en tapant les premières lettres du nom dans la barre de recherche.
 
 Les groupes sont ensuite utilisés dans les modèles de
-[**Workflow**](docs/administrateur/3_Configurations/1_workflows.md)
+[**Workflow**](docs/administrateur/Configurations/workflows#la-gestion-des-groupes-utilisateurs)
+
+
