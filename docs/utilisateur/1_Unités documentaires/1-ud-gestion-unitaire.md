@@ -1,6 +1,6 @@
 ---
 title: Gestion unitaire des unités documentaires
-sidebar_label: Gestion unitaire des unités documentaires
+sidebar_label: Gestion unitaire
 sidebar_position: 1
 description: Gestion unitaire des unités documentaires
 ---

@@ -2,6 +2,7 @@
 title: 'Mappings : généralités'
 sidebar_label: 'Mappings : généralités'
 sidebar_position: 1
+description: Paramatrage des fichiers de conversion de données bibliographiques en Dublin Core.
 ---
 
 import Icon from '@site/src/components/Icon';
