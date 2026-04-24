@@ -10,7 +10,15 @@ import Icon from '@site/src/components/Icon';
 
 ## Présentation
 
-Cette page permet de configurer la diffusion automatique vers Internet Archive.
+Cette page permet de configurer la diffusion automatique vers Internet Archive :
+- liaison vers Internet Archive à l'aide d'une clé S3
+- configuration des collections d'Internet Archive
+- ajout de champs personnalisé vers Intenet Archive
+
+Elle explique également comment :
+- diffuser automatiquement les données sur Internet Archive
+- diffuser manuellement les données sur Internet Archive
+- voir les résultats de la diffusion sur Internet Archive
 
 :::info Pré-requis
 Avant de configurer NumaHOP, réalisez ces étapes sur Internet Archive :

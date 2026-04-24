@@ -10,7 +10,10 @@ import Icon from '@site/src/components/Icon';
 
 ## Présentation
 
-Cette page permet de configurer l’adresse du serveur FTP local où NumaHOP enverra les fichiers traités à la clôture du lot ou du projet.
+Cette page permet de configurer :
+- l’adresse du serveur FTP local où NumaHOP enverra les fichiers traités à la clôture du lot ou du projet.
+- les fichiers à exporter à la clôture du lot ou du projet
+- le dossier de livraison de ces fichiers
 
 ## Configuration
 

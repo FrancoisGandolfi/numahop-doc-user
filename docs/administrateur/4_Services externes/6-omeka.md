@@ -14,12 +14,16 @@ sidebar_label: Configurer une sortie Omeka
 sidebar_position: 11
 ---
 
-# Configurer une sortie Omeka
+# Présentation
 
-Pour pouvoir configurer une sortie Omeka, il est nécessaire de disposer
-de droits de type « Administrateur » avec l’habilitation
-CONF-DIFFUSION-OMEKA-HAB1 (Administration – gestion des configurations
-Omeka: création/modification).
+Cette interface permet de régler les paramatrages vers Omeka :
+
+
+:::info Pré-requis 
+
+Pour pouvoir configurer une sortie Omeka, il est nécessaire de disposer de droits de type « Administrateur » avec l’habilitation CONF-DIFFUSION-OMEKA-HAB1 (Administration – gestion des configurations Omeka: création/modification). 
+Se référer à [Gestion des profils](docs/administrateur/1_Groupes%20&%20utilisateurs/4-profils.md)
+:::
 
 Pour configurer une sortie Omeka Classic ou Omeka S dans Numahop,
 sélectionner la rubrique « Administration » (<img
