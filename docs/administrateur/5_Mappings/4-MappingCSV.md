@@ -58,3 +58,20 @@ Pour garantir un import correct, respectez les règles suivantes :
 ### Correspondance des propriétés
 
 La propriété à renseigner dans le mapping correspond **au nom de la colonne du fichier CSV**.
+
+
+VIII.2.4 
+MAPPING CSV 
+Les données Dublin Core contenues dans le fichier CSV seront automatiquement insérées dans 
+les champs Dublin Core correspondants dans la notice. 
+Attention au format du fichier CSV : 
+• Les noms des colonnes correspondant à des données Dublin Core doivent être préfixées par dc: (Par 
+ex. : « dc:title », « dc:identifier »…) 
+• Le nom des colonnes correspondant à la définition de l’image doit être préfixé par def: (Par ex : « 
+def:imagewidth ») 
+• Les champs doivent entourés de guillemets 
+• Le nom des colonnes correspondant à des métadonnées de l’image (IPTC, XMP) doit être préfixé par 
+meta: (Par ex : « meta:headline ») 
+• Le séparateur de champs doit être une virgule. 
+La propriété à renseigner correspond au nom de la colonne du fichier CSV. 
+Les propriétés de constat d’état mappées servent à créer le constat d’état initial uniquement.

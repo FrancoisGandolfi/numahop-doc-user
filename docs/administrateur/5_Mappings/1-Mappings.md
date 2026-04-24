@@ -106,3 +106,57 @@ traitée.
 #### Fonctions standard
 
 Les fonctions standard Groovy peuvent être utilisées.
+
+
+### Champs à valeur spécifique
+   Champ de l’unité documentaire | Valeurs                          | Description                                      |
+ |--------------------------------|----------------------------------|--------------------------------------------------|
+ | Droits                          | `TO_CHECK`                       | Droits à vérifier                                |
+ |                                 | `FREE`                           | Libre de droits                                  |
+ |                                 | `RESTRICTED`                     | Sous droits                                      |
+ |                                 | `RESTRICTED_WITH_AUTHORIZATION`  | Sous droits avec l’accord de l’auteur            |
+ | Archivable                      | `TRUE`                           |                                                  |
+ |                                 | `FALSE`                          |                                                  |
+ | Type de constat d’état          | `MONO_PAGE`                      | Constat d’état mono-feuillet                     |
+ |                                 | `MULTI_PAGE`                     | Constat d’état multi-feuillets                   |
+
+---
+
+### Syntaxe des expressions
+
+#### Syntaxe de base
+ | Syntaxe | Description                                                                                     | Exemples                                                                 |
+ |---------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+ | `" "`   | Chaînes de caractères                                                                           | R / C `1 "texte"` ou `'texte'`                                          |
+ | `+`     | Concaténation de plusieurs chaînes de caractères ou de champs / sous-champs avec des chaînes de caractères | R / C `"a " + "b"`<br />`"source, " + \930$a`<br />`"source, $\930$a"` |
+ | `==`    | "égal"                                                                                           | C `\607$2 == 'rameau'`                                                  |
+ | `>`     | "supérieur"                                                                                     |                                                                          |
+ | `<`     | "inférieur"                                                                                     |                                                                          |
+ | `>=`    | "supérieur ou égal"                                                                             |                                                                          |
+ | `<=`    | "inférieur ou égal"                                                                             |                                                                          |
+ | `&&`    | ET                                                                                              | C `\200 && \210`                                                        |
+ | `\|\|`  | OU                                                                                              | `\200 \|\| \210`                                                       |
+ | `!`     | NON (négation)                                                                                 | `\607$2 != 'rameau'`<br />`!\410`                                        |
+
+---
+
+#### Collections
+ | Syntaxe                          | Description                                                                                     | Exemples                                                                 |
+ |----------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+ | `[ , ]`                          | Collection d’éléments                                                                          | R / C `[\600$x, \600$y, \600$z]`                                        |
+ | `grep().join('chaîne')`          | Parcours des éléments d'une collection et concaténation des éléments d'une collection dans une chaîne de caractères | R `[\600$x, \600$y, \600$z].grep().join(' - ')`                        |
+ | `in`                             | Recherche dans une collection                                                                  | C `\702$4 in ['160', '610', '650'] : 704$4 = '160' ou '610' ou '650'` |
+
+---
+
+#### Fonctions standard
+ | Syntaxe                          | Description                                                                                     | Exemple                                                                 |
+ |----------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+ | `capitalize()` / `uncapitalize()` | Majuscule / minuscule le 1er caractère d'une chaîne.                                           | R `"texte".capitalize()`<br />`"Texte".uncapitalize()`                   |
+ | `toUpperCase()` / `toLowerCase()` | Majuscules / minuscules toute la chaîne de caractères.                                         | R `"texte".toUpperCase()`<br />`"TeXTe".toLowerCase()`                   |
+ | `padLeft(nbDeCaractères)` / `padRight(nbDeCaractères)` | Ajoute des blancs au début ou à la fin de la chaîne de caractère. | R `"texte".padLeft(5)`<br />`"texte".padRight(5)`                        |
+ | `trim()`                         | Supprime les espaces au début et à la fin d'une chaîne de caractères.                          | R / C `"     texte     ".trim()`                                |
+ | `substring(posDébut, posFin)`    | Sous-chaîne de la chaîne de caractère                                                          | R / C `"texte".substring(2,4) : "xt"`                           |
+ | `replaceAll(recherche, remplacement)` | Remplace une partie d'une chaîne de caractères par une autre.                          | R `\035$a.replaceAll('^ppn', '')`                               |
+ | `length()`                       | Longueur de la chaîne de caractères                                                            | C `"texte".length()`<br />`\100$a.length()`                        |
+ | `startsWith(prefixe)` / `endsWith(suffixe)` | Vrai ou faux selon si la chaîne de caractère commence / se termine par le préfixe / suffixe mentionné | C `\035$a.startsWith('ppn')`                                   |
