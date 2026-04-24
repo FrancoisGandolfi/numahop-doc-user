@@ -11,7 +11,12 @@ import Icon from '@site/src/components/Icon';
 
 ## Présentation
 
-Cette interface permet de régler les paramatrages vers Omeka :
+Cette interface permet de régler les paramétrages vers Omeka :
+- configuration de la connexion au serveur Omeka
+- configuration des collections Omeka auquelles liées les unités documentaires
+- configuration des types d'items auxquels liés les unités documentaires
+- configuration des champs personnalisés Omeka. 
+- diffusion des documents sur Omeka 
 
 
 :::info Pré-requis 
@@ -55,100 +60,37 @@ Les champs suivants sont à remplir :
 
 
 ### Ajout de collection Omeka 
-Dans la rubrique du formulaire « Collections Omeka », cliquer sur le
-bouton + (plus) pour ajouter les collections dans lesquelles seront
-versées les unités documentaires provenant de Numahop.
+Dans la rubrique du formulaire **Collections Omeka**, cliquer sur le bouton <Icon icon={["fa", "plus"]} />  pour ajouter les collections dans lesquelles seront
+versées les unités documentaires provenant de NumaHOP
 
-Dans la rubrique « Types d’items Omeka », cliquer sur le bouton +  
-(<img src="https://www.numahop.fr/wp-content/uploads/2022/10/Ajouter.png"
-class="alignnone wp-image-202" loading="lazy" decoding="async"
-width="24" height="21" />) pour ajouter modèle de ressource
-correspondant dans Omeka.
+### Ajout de types d'items dans Omeka 
 
-Cliquer ensuite sur le bouton « Enregistrer ».
+Dans la rubrique du formulaire **Types d'items**, cliquer sur le bouton <Icon icon={["fa", "plus"]} />  pour ajouter modèle de ressource correspondant aux inités documentaires dans Omeka.
 
-Le menu « Configuration OMEKA » donne aussi accès à la liste des sorties
-Omeka créées avec des possibilités de recherche et de filtrage par
-bibliothèque.
 
-Pour modifier une sortie Omeka, cliquer sur le libellé de la
-configuration à modifier puis sur le bouton « Modifier »
-(<img src="https://www.numahop.fr/wp-content/uploads/2022/10/editer.png"
-class="alignnone wp-image-132" loading="lazy" decoding="async"
-width="27" height="25" />) en haut à droite. Enregistrer les
-modifications.
+### Ajout de champs personnalisés
 
- 
+Pour exporter des champs personnalisés vers Omeka  :  
+Allez dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configuration** > **Types de propriété personnalisés** > <Icon icon={["fa", "plus"]} />.
 
- 
+*Exemple : Ajouter le champ "Format" s'il n'existe pas.*
 
-A noter :
 
-Configuration d’une sortie Omeka
+### Diffusion des documents
 
-**Pré-requis** : Disposer de droits de type « administrateur » avec l’habilitation **CONF-DIFFUSION-OMEKA-HAB1** (Administration - gestion des configurations Omeka : création/modification).
+**Export automatique** : Chaque nuit, un cron lance l'exports des images en attente vers le serveur Omeka  et l'envoi du mail lié pour importer les images.
 
----
 
-### Accéder à la configuration
+**Export manuel** :
+  - Lancez un export manuel vers Omeka depuis votre unité documentaire
+  - Une page s’ouvre pour modifier les métadonnées si nécessaire.
+  - Cliquez sur **Enregistrer les données du formulaire**, puis sur **Exporter vers Omeka** si des modifications ont été apportées. Sinon, cliquez directement sur **Exporter vers Omeka**
 
-1. Allez dans **Administration** (roue dentée).
-2. Dans l’encadré **Services externes**, cliquez sur **Configurations OMEKA**.
-3. Cliquez sur le bouton **+** (plus) situé à droite de la fenêtre de recherche pour afficher le formulaire de configuration.
 
----
+  :::caution Pour finaliser l'import aller dans Omeka 
 
-### Remplir le formulaire
+Une fois le transfert des fichiers réalisés et le mail reçu, il est nécessaire de se rendre dans Omeka pour finaliser l'import manuellement. Vous pouvez alors utiliser le moduel *csv import* par exemple pour importer les données dans Omeka.  
+:::
 
-#### Champs obligatoires
-- **Libellé** : Permet de distinguer les différentes configurations (exemple : configuration pour une base de test et une base en production).
-- **Configuration vers un Omeka S** : Choisissez « oui » pour Omeka S ou « non » pour Omeka Classic.
-- **Bibliothèque** : Sélectionnez la bibliothèque concernée dans la liste des bibliothèques créées dans NumaHOP.
-- **Serveur de stockage** : Indiquez l’adresse du serveur de l’instance Omeka.
-- **Port du serveur** : Indiquez le port du serveur.
 
-#### Champs optionnels
-- **Adresse de dépôt** : Spécifiez le dossier où seront déposés les fichiers exportés depuis NumaHOP sur le serveur Omeka.
-- **Login et mot de passe** : Identifiants de connexion au serveur NumaHOP pour le dépôt des fichiers sur le serveur Omeka.
-- **Connexion SFTP** : Choisissez « oui » ou « non ».
-- **URL d’accès au logiciel Omeka** : L’adresse pour accéder à Omeka.
-- **Adresse mail** : Adresse qui recevra les fichiers de données CSV générés par NumaHOP pour l’importation des unités documentaires dans Omeka.
-
----
-
-### Configurer les collections et types d’items
-
-1. Dans la rubrique **Collections Omeka**, cliquez sur **+** pour ajouter les collections où seront versées les unités documentaires provenant de NumaHOP.
-2. Dans la rubrique **Types d’items Omeka**, cliquez sur **+** pour ajouter le modèle de ressource correspondant dans Omeka.
-
----
-
-### Enregistrer et gérer les configurations
-
-1. Cliquez sur **Enregistrer** pour sauvegarder la configuration.
-2. Le menu **Configuration OMEKA** permet d’accéder à la liste des sorties Omeka créées, avec des options de recherche et de filtrage par bibliothèque.
-
----
-
-### Modifier une configuration
-
-1. Cliquez sur le libellé de la configuration à modifier.
-2. Cliquez sur le bouton **Modifier** (crayon) en haut à droite.
-3. Enregistrez les modifications.
-
-**Pré-requis** : Habilitation **CONF-DIFFUSION-OMEKA-HAB2** (Administration - gestion des configurations Omeka : suppression).
-
----
-
-### Supprimer une configuration
-
-1. Cliquez sur le libellé de la configuration à supprimer.
-2. Cliquez sur le bouton **Supprimer** (poubelle).
-3. Confirmez la suppression en cliquant de nouveau sur **Supprimer**.
-
----
-
-### Choisir la configuration de sortie Omeka
-
-La configuration de la sortie Omeka pour la diffusion se fait au niveau de chaque **projet**, **lot** ou **unité documentaire**, dans la rubrique **Configurations Omeka**.
 
