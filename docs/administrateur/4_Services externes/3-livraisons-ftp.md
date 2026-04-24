@@ -9,28 +9,33 @@ import Icon from '@site/src/components/Icon';
 # <Icon icon={["fa", "server"]} /> Configuration du serveur de livraison
 
 
+## Présentation
 
-Pour entrer l’adresse d’un serveur FTP pour le dépôt des fichiers à
-livrer, aller dans Administration <img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/administration-NumaHOP.png"
-class="alignnone wp-image-138" decoding="async" width="31"
-height="32" /> puis dans Configurations exports FTP :
+Cette page permet de configurer le serveur FTP de livraison des fichiers numérisés à livrer. C'est l'adresse sur laquelle livre le prestataire de numérisation ou votre service de numérisation interne livre les données. 
 
-La page suivante s’ouvre, cliquer sur l’icône +
-<img src="https://www.numahop.fr/wp-content/uploads/2022/10/Ajouter.png"
-class="alignnone wp-image-202" loading="lazy" decoding="async"
-width="33" height="29" /> pour ajouter une nouvelle adresse de serveur
-FTP pour la livraison des fichiers à livrer :
+## Configuration**
 
-La page suivante s’ouvre :
+:::danger Configuration à réaliser uniquement sur les premières versions de NumaHOP
 
-Indiquer dans :
+A partir de la version 2.3 de NumaHOP, l'authentification se fait par clé d'authentification. Les clés d'authentification sont à fournir à votre DSI ou à votre prestataire de service pour NumaHOP qui se chargera de réaliser directement les paramétrages de connexion sur le serveur SFTP. 
+:::
 
-[<img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/config-ftp-4.png"
-class="alignnone wp-image-429 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/10/config-ftp-4.png 513w, https://www.numahop.fr/wp-content/uploads/2022/10/config-ftp-4-300x48.png 300w"
-sizes="(max-width: 513px) 100vw, 513px" width="513" height="82" />](https://www.numahop.fr/wp-content/uploads/2022/10/config-ftp-4.png)
 
-Une fois la configuration faite, l’écran rempli ressemble à cela et peut
-ensuite être lancée :
+Pour entrer l’adresse d’un serveur FTP pour le dépôt des fichiers numérisés à livrer, aller dans Administration <Icon icon={["fa", "gear"]} /> puis dans Configurations exports FTP.
+
+Cliquer sur l’icône <Icon icon={["fa", "plus"]}> pour ajouter une nouvelle adresse de serveur FTP pour la livraison des fichiers à livrer.
+
+Remplir les configurations suivantes : 
+
+| **Libellé**          | **Commentaire**                                       | **Détails** |
+|----------------------|-------------------------------------------------------|-------------|
+| Libellé              | Nom de votre serveur SFTP                             | 🔴 Obligatoire            |
+| Adresse              | Adresse de votre serveur SFTP                         | 🔵 Facultatif            |
+| Login                | Identifiant de votre serveur SFTP                     | 🔵 Facultatif             |
+| Mot de passe         | Mot de passe de votre serveur SFTP                    | 🔵 Facultatif             |
+| Dossier de livraison | Dossier de livraison de votre serveur SFTP            | 🔵 Facultatif             |
+| Bibliothèque         | Etablissement auquel rattaché ce serveur de livraison | 🔴 Obligatoire             |
+
+Une fois la configuration faite, les livraisons peuvent être réalisées sur le serveur FTP. 
+
+
