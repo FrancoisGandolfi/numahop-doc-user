@@ -62,7 +62,7 @@ Allez dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configuration**
 **Diffusion manuelle** :
   - Lancez un export manuel vers Internet Archive depuis votre unité documentaire
   - Une page s’ouvre pour modifier les métadonnées si nécessaire.
-  - Cliquez sur **Enregistrer les données du formulaire**, puis sur **Exporter vers Internet Archive** si des modifications ont été apportées. Sinon, cliquez directement sur **Exporter vers Internet Archive
+  - Cliquez sur **Enregistrer les données du formulaire**, puis sur **Exporter vers Internet Archive** si des modifications ont été apportées. Sinon, cliquez directement sur **Exporter vers Internet Archive**
 
 
 ### Résultat de la diffusion
