@@ -23,7 +23,7 @@ A partir de la version 2.3 de NumaHOP, l'authentification se fait par clé d'aut
 
 Pour entrer l’adresse d’un serveur FTP pour le dépôt des fichiers numérisés à livrer, aller dans Administration <Icon icon={["fa", "gear"]} /> puis dans Configurations exports FTP.
 
-Cliquer sur l’icône <Icon icon={["fa", "plus"]}> pour ajouter une nouvelle adresse de serveur FTP pour la livraison des fichiers à livrer.
+Cliquer sur l’icône <Icon icon={["fa", "plus"]} /> pour ajouter une nouvelle adresse de serveur FTP pour la livraison des fichiers à livrer.
 
 Remplir les configurations suivantes : 
 
