@@ -71,20 +71,21 @@ Dans la rubrique du formulaire **Types d'items**, cliquer sur le bouton <Icon ic
 ### Ajout de champs personnalisés
 
 Pour exporter des champs personnalisés vers Omeka  :  
-Allez dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configuration** > **Types de propriété personnalisés** > <Icon icon={["fa", "plus"]} />.
+Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configuration** > **Types de propriété personnalisés** > <Icon icon={["fa", "plus"]} />.
 
 *Exemple : Ajouter le champ "Format" s'il n'existe pas.*
 
 
-### Diffusion des documents
+## Diffusion des documents
 
-**Export automatique** : Chaque nuit, un cron lance l'exports des images en attente vers le serveur Omeka  et l'envoi du mail lié pour importer les images.
+### Export automatique
+ Chaque nuit, un cron lance l'exports des images en attente vers le serveur Omeka  et l'envoi du mail lié pour importer les images.
 
 
-**Export manuel** :
-  - Lancez un export manuel vers Omeka depuis votre unité documentaire
+### Export manuel
+  - Lancer un export manuel vers Omeka depuis votre unité documentaire
   - Une page s’ouvre pour modifier les métadonnées si nécessaire.
-  - Cliquez sur **Enregistrer les données du formulaire**, puis sur **Exporter vers Omeka** si des modifications ont été apportées. Sinon, cliquez directement sur **Exporter vers Omeka**
+  - Cliquer sur **Enregistrer les données du formulaire**, puis sur **Exporter vers Omeka** si des modifications ont été apportées. Sinon, cliquer directement sur **Exporter vers Omeka**
 
 
   :::caution Pour finaliser l'import aller dans Omeka 

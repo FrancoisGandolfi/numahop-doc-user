@@ -10,18 +10,18 @@ import Icon from '@site/src/components/Icon';
 
 ## Présentation
 
-Cette page permet de configurer :
-- l’adresse du serveur FTP local où NumaHOP enverra les fichiers traités à la clôture du lot ou du projet.
-- les fichiers à exporter à la clôture du lot ou du projet
-- le dossier de livraison de ces fichiers
+Cette page permet de :
+- configurer l’adresse du serveur FTP local où NumaHOP enverra les fichiers traités à la clôture du lot ou du projet.
+- choisir les fichiers à exporter à la clôture du lot ou du projet
+- indiquer le dossier de livraison de ces fichiers
 
 ## Configuration
 
 ### Déclaration du serveur FTP
 
-Pour configurer l’adresse d’export des fichiers à la clôture du lot ou du projet, allez dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configurations FTP**.
+Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** >  **Configurations exports FTP**.
 
-**Ajouter un nouveau serveur FTP** : Cliquez sur le bouton <Icon icon={["fa", "plus"]} /> pour créer un nouveau serveur FTP de livraison.
+Cliquer sur le bouton <Icon icon={["fa", "plus"]} /> pour créer un **nouveau serveur FTP de livraison**.
 
 **Remplir les informations du serveur** :
 
@@ -37,7 +37,7 @@ Pour configurer l’adresse d’export des fichiers à la clôture du lot ou du 
 Une fois la configuration réalisée, l’export des fichiers vers le serveur FTP sera disponible à la clôture des lots ou projets.
 
 ### Choix des fichiers à exporter
-Cocher les fichiers à exporter sur votre serveur local à la clôture du lot parmi les suivants :
+**Cocher les fichiers à exporter** sur votre serveur local à la clôture du lot parmi les suivants :
 - METS
 - AIP/SIP
 - Masters
@@ -48,7 +48,7 @@ Cocher les fichiers à exporter sur votre serveur local à la clôture du lot pa
 
 ### Configuration du dossier de livraison des fichiers 
 
-A l'aide du bouton <Icon icon={["fa", "plus"]} /> entrer l'adresse correspondant au dossier où vous souhaitez récupérer vos données sur votre serveur local.
+A l'aide du bouton <Icon icon={["fa", "plus"]} /> **entrer l'adresse du dossier** où vous souhaitez récupérer vos données sur votre serveur local.
 
 
 

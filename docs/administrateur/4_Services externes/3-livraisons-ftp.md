@@ -11,19 +11,20 @@ import Icon from '@site/src/components/Icon';
 
 ## Présentation
 
-Cette page permet de configurer le serveur FTP de livraison des fichiers numérisés à livrer. C'est l'adresse sur laquelle livre le prestataire de numérisation ou votre service de numérisation interne livre les données. 
+Cette page permet de configurer le serveur FTP de livraison des fichiers numérisés à livrer. 
+
+C'est l'adresse sur laquelle livre le prestataire de numérisation ou votre service de numérisation interne livre les données (Masters, table des matières etc). 
 
 ## Configuration
 
 :::danger Configuration à réaliser uniquement sur les premières versions de NumaHOP
 
-A partir de la version 2.3 de NumaHOP, l'authentification se fait par clé d'authentification. Les clés d'authentification sont à fournir à votre DSI ou à votre prestataire de service pour NumaHOP qui se chargera de réaliser directement les paramétrages de connexion sur le serveur SFTP. 
+A partir de la version 2.3 de NumaHOP, l'authentification se fait par clé d'authentification. Les clés d'authentification sont à fournir à votre DSI ou à votre prestataire de service qui gère NumaHOP. Ils se chargeront de réaliser directement les paramétrages de connexion sur le serveur SFTP. 
 :::
 
+Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** >  **Configurations exports FTP**.
 
-Pour entrer l’adresse d’un serveur FTP pour le dépôt des fichiers numérisés à livrer, aller dans Administration <Icon icon={["fa", "gear"]} /> puis dans Configurations exports FTP.
-
-Cliquer sur l’icône <Icon icon={["fa", "plus"]} /> pour ajouter une nouvelle adresse de serveur FTP pour la livraison des fichiers à livrer.
+Cliquer sur l’icône <Icon icon={["fa", "plus"]} /> pour ajouter une nouvelle adresse de serveur FTP pour la livraison.
 
 Remplir les configurations suivantes : 
 

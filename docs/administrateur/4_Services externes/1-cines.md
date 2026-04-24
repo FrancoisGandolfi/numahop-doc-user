@@ -10,13 +10,15 @@ import Icon from '@site/src/components/Icon';
 
 ## Présentation
 
-Cette interface permet de régler les paramatrages du CINES :
+Cette interface permet de régler les paramétrages du CINES :
 - Serveur SFTP
-- Plans de classement PAC
+- Plan de classement PAC
 - Paramètres Cines: valeurs par défaut
 - Codes langues à transposer 
 
 ## Renseignements globaux
+
+AlleR dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** >  **Configurations CINES**.
 
 Pour verser au CINES, il convient de renseigner les champs suivants en cliquant sur <Icon icon={["fa", "pen-to-square"]} /> :  
 
@@ -60,10 +62,10 @@ Vous devez donc associer à chacun de ces champs une valeur par défaut qui sera
 ## Codes langues à transposer 
 
 :::danger Pour les instances mutualisées de NumaHOP
-Les modifications de code de langue s'appliquent à tous les établissements utilisant NumaHOP présents dans votre instance
+Les modifications de code de langue s'appliquent à tous les établissements de votre instance mutualisée.
 :::
 
-Les codes de langue au CINES doivent être expérimées dans la norme ISO 639-3.
+Les codes de langue au CINES doivent être expérimés dans la norme ISO 639-3.
 Dans cette partie, vous pouvez faire un mapping entre votre code de langue utilisé dans NumaHOP pour votre Dublin Core (ex : ISO 639-2) et le code attendu par le CINES exprimé en ISO 639-3. 
 
 Ajouter autant de correspondance que nécessaire à l'aide de l'icône <Icon icon={["fa", "plus"]} />

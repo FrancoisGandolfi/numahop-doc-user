@@ -18,6 +18,8 @@ Cette section permet de configurer le serveur de messagerie destiné à recevoir
 
 ## Configuration
 
+Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** >  **Comptes courriels**.
+
 Ajouter un compte courriel à l'aide de l'icône <Icon icon={["fa", "plus"]} />.
 
 Remplir les informations suivantes avec votre DSI ou votre fournisseur d'hébergement de NumaHOP :
