@@ -44,3 +44,10 @@ squeune:
   name: Séverine Queune
   title: BibLibre
   image_url: /img/photos/biblibre.jpg
+  page: true
+
+aderobert:
+  name: Adrien Derobert-Mazure
+  title: biblibre
+  image_url: /img/photos/biblibre.jpg
+  page: true
