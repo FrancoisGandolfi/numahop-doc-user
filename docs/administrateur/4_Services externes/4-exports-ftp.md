@@ -6,39 +6,40 @@ sidebar_position: 4
 
 import Icon from '@site/src/components/Icon';
 
-# <Icon icon={["fa", "server"]} /> Configuration du serveur d'export
+# <Icon icon={["fa", "server"]} /> Configuration du serveur d'export FTP
 
 ## Présentation
 
-Il s'agit de configurer dans cette partie l'adresse du serveur FTP local où seront envoyés les fichiers traités par  NumaHOP à la clôture du lot ou du projet.
-
+Cette page permet de configurer l’adresse du serveur FTP local où NumaHOP enverra les fichiers traités à la clôture du lot ou du projet.
 
 ## Configuration
 
-**Accéder à la page de configuration** : pour configurer l’adresse d’export des fichiers à la clôture du lot ou du projet, Allez dans <Icon icon={["fa", "gear"]} /> **Administration**, puis dans **Configurations FTP**.
+### Déclaration du serveur FTP
 
-**Ajouter un nouveau serveur FTP** : 
-   - Sur la page qui s’ouvre, cliquez sur le bouton d’ajout pour créer un nouveau serveur FTP de livraison.
+Pour configurer l’adresse d’export des fichiers à la clôture du lot ou du projet, allez dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configurations FTP**.
 
-3. **Remplir les informations du serveur**
-   Une nouvelle page s’affiche. Renseignez les champs suivants :
-   - **Libellé** : Le nom de votre serveur FTP local de stockage. Ce nom apparaîtra dans la définition du projet et du lot.
-   - **Serveur de stockage** : L’adresse du serveur FTP, fournie par votre DSI.
-   - **Port** : Le port du serveur FTP, fourni par votre DSI.
-   - **Login** : L’identifiant de connexion au serveur FTP, fourni par votre DSI.
-   - **Mot de passe** : Le mot de passe de connexion au serveur FTP, fourni par votre DSI ou votre prestataire en charge de l’hébergement de NumaHOP.
-   - **Bibliothèque** : La bibliothèque concernée par la livraison.
+**Ajouter un nouveau serveur FTP** : Cliquez sur le bouton <Icon icon={["fa", "plus"]} /> pour créer un nouveau serveur FTP de livraison.
 
-4. **Sélectionner les types de fichiers à exporter**
-   - Cochez les types de fichiers à exporter sur votre serveur local.
-   - Pour la définition des formats (vignettes, vues, master), reportez-vous à la procédure « Configuration du format des vues ».
+**Remplir les informations du serveur** :
 
-5. **Configurer les dossiers de livraison**
-   - Dans **Configurations des dossiers de livraison**, indiquez le nom (ou les noms) du ou des dossiers sur le FTP où seront déposés les fichiers à exporter.
+| Libellé | Commentaires | Détails |
+|---------|--------------|---------|
+| Libellé | Le nom de votre serveur FTP local de stockage. Ce nom apparaîtra dans la définition du projet et du lot. | 🔴 Obligatoire |
+| Serveur de stockage | L’adresse du serveur FTP, fournie par votre DSI. | 🔴 Obligatoire |
+| Port | Le port du serveur FTP, fourni par votre DSI. | 🔴 Obligatoire |
+| Login | L’identifiant de connexion au serveur FTP, fourni par votre DSI. | 🔵 Facultatif |
+| Mot de passe | Le mot de passe de connexion au serveur FTP, fourni par votre DSI ou prestataire. | 🔵 Facultatif |
+| Bibliothèque | La bibliothèque concernée par la livraison. | 🔴 Obligatoire |
 
----
+Une fois la configuration réalisée, l’export des fichiers vers le serveur FTP sera disponible à la clôture des lots ou projets.
 
-### Exemple de configuration remplie
+### Choix des fichiers à exporter
 
-Une fois la configuration terminée, l’écran rempli peut ressembler à ceci :
-*(Insérer ici une capture d’écran ou une description visuelle si nécessaire.)*
+
+### Confuguration du dossier de livraison des fichiers 
+
+
+
+
+
+
