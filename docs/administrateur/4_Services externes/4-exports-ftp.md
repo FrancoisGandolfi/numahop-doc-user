@@ -34,10 +34,18 @@ Pour configurer l’adresse d’export des fichiers à la clôture du lot ou du 
 Une fois la configuration réalisée, l’export des fichiers vers le serveur FTP sera disponible à la clôture des lots ou projets.
 
 ### Choix des fichiers à exporter
+Cocher les fichiers à exporter sur votre serveur local à la clôture du lot parmi les suivants :
+- METS
+- AIP/SIP
+- Masters
+- Views
+- Vignettes
+- PDF
+- Alto
 
+### Configuration du dossier de livraison des fichiers 
 
-### Confuguration du dossier de livraison des fichiers 
-
+A l'aide du bouton <Icon icon={["fa", "plus"]} /> entrer l'adresse correspondant au dossier où vous souhaitez récupérer vos données sur votre serveur local.
 
 
 
