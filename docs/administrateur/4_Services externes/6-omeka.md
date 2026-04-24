@@ -8,13 +8,8 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "laptop-file"]} /> Configuration Omeka
 
----
-title: Configurer une sortie Omeka
-sidebar_label: Configurer une sortie Omeka
-sidebar_position: 11
----
 
-# Présentation
+## Présentation
 
 Cette interface permet de régler les paramatrages vers Omeka :
 
@@ -22,29 +17,44 @@ Cette interface permet de régler les paramatrages vers Omeka :
 :::info Pré-requis 
 
 Pour pouvoir configurer une sortie Omeka, il est nécessaire de disposer de droits de type « Administrateur » avec l’habilitation CONF-DIFFUSION-OMEKA-HAB1 (Administration – gestion des configurations Omeka: création/modification). 
+
 Se référer à [Gestion des profils](docs/administrateur/1_Groupes%20&%20utilisateurs/4-profils.md)
 :::
 
-Pour configurer une sortie Omeka Classic ou Omeka S dans Numahop,
-sélectionner la rubrique « Administration » (<img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/administration-NumaHOP.png"
-class="alignnone wp-image-138" decoding="async" width="25"
-height="26" />). Dans l’encadré « Services externes », cliquer sur «
-Configurations OMEKA ».
 
- 
+## Paramétrage de la sortie vers Omeka 
 
-Cliquer ensuite sur le bouton Ajouter
-(<img src="https://www.numahop.fr/wp-content/uploads/2022/10/Ajouter.png"
-class="alignnone wp-image-202" decoding="async" width="28"
-height="26" />) situé à droite de la fenêtre de recherche. Un formulaire
-de configuration pour Omeka s’affiche dans la partie droite de l’écran.
+### Choix de la version d'Omeka
 
-Remplir le formulaire qui permet de configurer (champs obligatoires) :
+Pour configurer une sortie Omeka Classic ou Omeka S dans Numahop, aller dans <Icon icon={["fa", "plus"]} />  **Administration** > **Services externes** > **Configurations Omeka**
 
-Il est également possible de configurer (champs du formulaire non
-obligatoires) :
+Dans la partie de gauche cochez la case correspondante à votre Omeka :
+- Omeka pour Omeka Classic
+- Omeka S pour Omeka S
 
+### Ajout d'une configuration Omeka 
+
+
+Cliquer ensuite sur le bouton <Icon icon={["fa", "plus"]} /> pour accéder au formulaire de configuration d'Omeka 
+
+Les champs suivants sont à remplir :
+| Libellé | Commentaires | Détails |
+|---------|--------------|---------|
+|Libellé         |  Permet de de distinguer les différentes configurations si nécessaire (par exemple pour distinguer une configuration de l’export vers une base de test et une base en production)             |🔴 Obligatoire         |
+|OmekaS         |Choisir le bouton *oui* pour un Omeka S et *non* pour un Omeka Classic              |🔵 Facultatif         |
+|Active         | oui/non             | 🔵 Facultatif        |
+|Bibliothèque         |L'établissement auquel est rattaché la sortie Omeka à partir de la liste des bibliothèques créées dans Numahop              | 🔴 Obligatoire        |
+|Serveur de stockage         |l’adresse du serveur de l’instance Omeka              |🔴 Obligatoire         |
+|Port         |              |Le port du serveur         |🔴 Obligatoire
+|Adresse de dépôt         | Indiquer le dossier dans lequel devront être déposés les fichiers exportés depuis NumaHOP sur le serveur Omeka.             | 🔵 Facultatif        |
+|Login         | identifiant pour se connecter au serveur d'Omeka pour déposer les fichiers             |🔵 Facultatif         |
+|Mot de passe         | mot de passerpour se connecter au serveur d'Omeka pour déposer les fichiers               | 🔵 Facultatif        |
+|Connexion SFTP         | choisir le bouton *oui* pour une connexion SFTP et *non* pour une connexion FTP            | 🔵 Facultatif        |
+|Url d'accès Omeka         | L’URL d’accès au logiciel Omeka             | 🔵 Facultatif        |
+|Email         |Indiquer l’adresse mail qui recevra les fichiers de données CSV générés par NumaHOP et nécessaires à l’importation des unités documentaires dans Omeka             |🔵 Facultatif         |
+
+
+### Ajout de collection Omeka 
 Dans la rubrique du formulaire « Collections Omeka », cliquer sur le
 bouton + (plus) pour ajouter les collections dans lesquelles seront
 versées les unités documentaires provenant de Numahop.
