@@ -13,7 +13,7 @@ import Icon from '@site/src/components/Icon';
 
 Cette page permet de configurer le serveur FTP de livraison des fichiers numérisés à livrer. C'est l'adresse sur laquelle livre le prestataire de numérisation ou votre service de numérisation interne livre les données. 
 
-## Configuration**
+## Configuration
 
 :::danger Configuration à réaliser uniquement sur les premières versions de NumaHOP
 
@@ -34,7 +34,7 @@ Remplir les configurations suivantes :
 | Login                | Identifiant de votre serveur SFTP                     | 🔵 Facultatif             |
 | Mot de passe         | Mot de passe de votre serveur SFTP                    | 🔵 Facultatif             |
 | Dossier de livraison | Dossier de livraison de votre serveur SFTP            | 🔵 Facultatif             |
-| Bibliothèque         | Etablissement auquel rattaché ce serveur de livraison | 🔴 Obligatoire             |
+| Bibliothèque         | Etablissement auquel est rattaché ce serveur de livraison | 🔴 Obligatoire             |
 
 Une fois la configuration faite, les livraisons peuvent être réalisées sur le serveur FTP. 
 

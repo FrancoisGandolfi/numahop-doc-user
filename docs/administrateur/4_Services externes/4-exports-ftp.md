@@ -8,17 +8,16 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "server"]} /> Configuration du serveur d'export
 
-**Objectif** : Entrer sur NumaHOP l’adresse du serveur FTP local où seront envoyés les fichiers à la clôture du lot ou du projet.
+## Présentation
 
----
+Il s'agit de configurer dans cette partie l'adresse du serveur FTP local où seront envoyés les fichiers traités par  NumaHOP à la clôture du lot ou du projet.
 
-### Étapes de configuration
 
-1. **Accéder à la page de configuration**
-   Pour configurer l’adresse d’export des fichiers à la clôture du lot ou du projet :
-   - Allez dans **Administration**, puis dans **Configurations FTP**.
+## Configuration
 
-2. **Ajouter un nouveau serveur FTP**
+**Accéder à la page de configuration** : pour configurer l’adresse d’export des fichiers à la clôture du lot ou du projet, Allez dans <Icon icon={["fa", "gear"]} /> **Administration**, puis dans **Configurations FTP**.
+
+**Ajouter un nouveau serveur FTP** : 
    - Sur la page qui s’ouvre, cliquez sur le bouton d’ajout pour créer un nouveau serveur FTP de livraison.
 
 3. **Remplir les informations du serveur**
