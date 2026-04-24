@@ -1,74 +1,74 @@
 ---
-title: Configuration Internet Archives
-sidebar_label: Configuration Internet Archives
+title: Configuration Internet Archive
+sidebar_label: Configuration Internet Archive
 sidebar_position: 5
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# <Icon icon={["fa", "boxes-stacked"]} /> Configuration Internet Archives
+# <Icon icon={["fa", "boxes-stacked"]} /> Configuration Internet Archive
 
-Configuration de la diffusion vers Internet Archive
+## Présentation
 
-**Objectif** : Configurer la diffusion automatique vers Internet Archive.
+Cette page permet de configurer la diffusion automatique vers Internet Archive.
 
----
+:::info Pré-requis
+Avant de configurer NumaHOP, réalisez ces étapes sur Internet Archive :
+- Créer un compte sur Internet Archive
+- Téléverser 50 documents sur votre compte
+- Demander la création d'une collection auprès des administrateurs
+- Activer la diffusion vers Internet Archive dans le workflow NumaHOP
+:::
 
-### Pré-requis
+## Étapes de configuration
 
-- Création d’un compte sur Internet Archive.
-- Uploader 50 documents sur votre compte.
-- Demander la création d’une collection auprès des administrateurs d’Internet Archive.
-- Dans NumaHOP, activer la diffusion vers Internet Archive dans le workflow.
+### Configuration de la liaison vers Internet Archive
 
----
+Allez dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configurations Internet Archive**.  
 
-### Étapes de configuration
+Cliquez sur <Icon icon={["fa", "plus"]} /> pour créer une nouvelle configuration.
 
-1. **Accéder à la page de configuration**
-   Pour configurer la diffusion des fichiers sur Internet Archive :
-   - Allez dans **Administration**, puis dans **Configurations Internet Archive**.
-   - Cliquez sur le bouton pour créer une nouvelle configuration.
+**Renseignez les informations suivantes :**
 
-2. **Remplir les informations de configuration**
-   Renseignez les champs suivants :
-   - **Libellé** : Le nom de votre bibliothèque numérique.
-   - **Clé d’accès S3** : La clé d’accès de connexion à votre compte Internet Archive. À récupérer après vous être connecté à votre compte IA.
-   - **Clé secrète S3** : La clé secrète de connexion à votre compte. À récupérer après vous être connecté à votre compte IA.
-   - **Active** : Oui.
-   - **Bibliothèque** : La bibliothèque concernée par la livraison.
-   - **Collections Internet Archive** : Ajoutez toutes vos collections.
+| **Libellé** | **Commentaires** | **Détails** |
+|-------------|------------------|-------------|
+| Libellé | Nom de votre bibliothèque numérique | 🔴 Obligatoire |
+| Clé d'accès S3 | Clé d'accès de votre compte Internet Archive (voir astuce) | 🔵 Facultatif |
+| Clé secrète S3 | Clé secrète de votre compte Internet Archive (voir astuce) | 🔵 Facultatif |
+| Active | oui/non | 🔵 Facultatif |
+| Bibliothèque | Établissement concerné par le dépôt | 🔴 Obligatoire |
 
-3. **Sélectionner les collections**
-   Une fois la configuration enregistrée, vous pouvez sélectionner la collection sur Internet Archive au niveau du projet, du lot ou de l’unité documentaire.
+:::tip Récupération des clés S3
+Connectez-vous à Internet Archive puis allez sur : [https://archive.org/account/s3.php](https://archive.org/account/s3.php)
+:::
 
----
+### Configuration des collections
 
-### Ajout des champs personnalisés
+Ajoutez vos collections Internet Archive via le bouton <Icon icon={["fa", "plus"]} />.  
+Sélectionnez la collection au niveau du projet, lot ou unité documentaire une fois la configuration réalisée.
 
-Pour ajouter des champs personnalisés afin qu’ils soient exportés vers Internet Archive :
-- Allez dans **Administration > Configuration > Types de propriété personnalisés**.
-- Cliquez sur **+** pour ajouter un nouveau champ personnalisé.
+### Ajout de champs personnalisés
 
-**Exemple** : Si le champ *Format* n’existe pas dans Internet Archive, ajoutez-le dans les champs personnalisés pour qu’il apparaisse dans les métadonnées de la bibliothèque numérique.
+Pour exporter des champs personnalisés vers Internet Archive :  
+Allez dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configuration** > **Types de propriété personnalisés** > <Icon icon={["fa", "plus"]} />.
 
----
+*Exemple : Ajouter le champ "Format" s'il n'existe pas sur Internet Archive.*
 
 ### Diffusion des documents
 
-- **Diffusion automatique** : Chaque nuit, un cron lance la diffusion des documents en attente vers Internet Archive.
-- **Diffusion manuelle** :
-  - Lancez un export manuel vers Internet Archive.
-  - Une page s’ouvre pour modifier les métadonnées si nécessaire.
-  - Cliquez sur **Enregistrer les données du formulaire**, puis sur **Exporter vers Internet Archive** si des modifications ont été apportées. Sinon, cliquez directement sur **Exporter vers Internet Archive**.
+**Diffusion automatique** : Chaque nuit, un cron lance la diffusion des documents en attente vers Internet Archive.
 
----
+
+**Diffusion manuelle** :
+  - Lancez un export manuel vers Internet Archive depuis votre unité documentaire
+  - Une page s’ouvre pour modifier les métadonnées si nécessaire.
+  - Cliquez sur **Enregistrer les données du formulaire**, puis sur **Exporter vers Internet Archive** si des modifications ont été apportées. Sinon, cliquez directement sur **Exporter vers Internet Archive
+
 
 ### Résultat de la diffusion
 
-Une fois le document diffusé sur Internet Archive :
-- L’onglet **Diffusion** de chaque unité documentaire est mis à jour.
-- Vous pouvez récupérer :
+Une fois le document diffusé sur Internet Archive, l’onglet **Diffusion** de chaque unité documentaire est mis à jour. Vous pouvez récupérer :
   - Le lien du document sur Internet Archive.
   - L’URL ARK.
   - L’historique de diffusion.
+
