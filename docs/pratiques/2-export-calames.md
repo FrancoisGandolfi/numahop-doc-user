@@ -40,5 +40,5 @@ Cette page décrit comment faire un export EAd.xml depuis Calames.
 
 ## Chargement dans NumaHOP
 
-Vous pouvez maintenant charger vos notices à l'aide de la procédure d'import [des notice simples](docs/utilisateur/5_Imports/1-notices-simples.md)ou des [notices mères filles](docs/utilisateur/5_Imports/1-notices-meres-filles.md) selon le niveau exportée depuis Calames. 
+Vous pouvez maintenant charger vos notices à l'aide de la procédure d'import [des notice simples](/docs/utilisateur/5_Imports/1-notices-simples.md)ou des [notices mères filles](/docs/utilisateur/5_Imports/2-notices-meres-filles.md) selon le niveau exportée depuis Calames. 
 
