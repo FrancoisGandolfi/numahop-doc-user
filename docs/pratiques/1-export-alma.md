@@ -14,9 +14,9 @@ import Icon from '@site/src/components/Icon';
  Cette interface permet de savoir comment réaliser un export de données au format Marc.xml depuis Alma.
  
  Pour se faire, elle décrit les étapes suivantes :
-- Création d’un Jeu de données dans Alma	
-- Export du jeu de données dans ALMA	
-- Récuparation du fichier marc.xml	
+- Création d’un Jeu de données dans Alma	2
+- Export du jeu de données dans ALMA	5
+- Récuparation du fichier marc.xml	6
 
 
  ## Création d'un jeu de données dans Alma
@@ -65,7 +65,7 @@ Cliquer sur **Enregistrer**  > **Executer**
 **Aller sur votre serveur Alma** > **Récupérer votre fichier Marc.xml** 
 
 
-## Chargement dans NumaHOP
+### Chargement dans NumaHOP
 
 Vous pouvez maintenant charger vos notices à l'aide de la [procédure d'import des notice simples](docs/utilisateur/5_Imports/1-notices-simples.md)
 
