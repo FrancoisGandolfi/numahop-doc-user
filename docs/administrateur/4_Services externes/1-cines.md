@@ -39,7 +39,7 @@ Pour verser au CINES, il convient de renseigner les champs suivants en cliquant 
 Cette section sert à entrer votre Plans de classement dans VITAM.
 
 Vous pouvez soit :
-- entrer chaque branche de votre plan de classement manuellement à l'aide de l'icône <Icon icon={["fa", "plus"]} />
+- entrer chaque branche de votre plan de classement manuellement à l'aide de l'icône <Icon icon={["fa", "square-plus"]} />
 - charger directement votre PPDI pour implémenter votre plan de classement en le récupérant à l'aide du bouton parcourir.
 
 
@@ -68,7 +68,7 @@ Les modifications de code de langue s'appliquent à tous les établissements de 
 Les codes de langue au CINES doivent être expérimés dans la norme ISO 639-3.
 Dans cette partie, vous pouvez faire un mapping entre votre code de langue utilisé dans NumaHOP pour votre Dublin Core (ex : ISO 639-2) et le code attendu par le CINES exprimé en ISO 639-3. 
 
-Ajouter autant de correspondance que nécessaire à l'aide de l'icône <Icon icon={["fa", "plus"]} />
+Ajouter autant de correspondance que nécessaire à l'aide de l'icône <Icon icon={["fa", "square-plus"]} />
 
 Ce qui donne par exemple :
 | Language DC | Code CINES |

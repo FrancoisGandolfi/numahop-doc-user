@@ -15,7 +15,7 @@ l’habilitation USER-HAB1 (Gestion des utilisateurs : création).
 
 Pour créer des utilisateurs dans NumaHOP, cliquer sur l'icône <Icon icon={["fa", "user"]} /> **Utilisateurs** dans le menu latéral de gauche, puis choisir **Utilisateurs** dans le sous-menu.
 
-Cliquer ensuite sur le bouton <Icon icon={["fa", "plus"]} /> situé à droite de la fenêtre de recherche. Un
+Cliquer ensuite sur le bouton <Icon icon={["fa", "square-plus"]} /> situé à droite de la fenêtre de recherche. Un
 formulaire de création d’utilisateur s’affiche dans la partie droite de
 l’écran.
 

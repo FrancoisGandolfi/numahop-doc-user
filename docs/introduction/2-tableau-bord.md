@@ -32,7 +32,7 @@ Les widgets sont paramétrables pour chaque utilisateur, par l’utilisateur lui
 
 La personalisation des widgets du tableau de bord se fait grâce au bouton <Icon icon={["fa", "pen-to-square"]} /> **Editer** situé en haut à droite de l’écran d’accueil. Plusieurs actions sont possibles.
 
-- ajouter un _widget_ avec l'icône <Icon icon={["fa", "plus"]} /> ;
+- ajouter un _widget_ avec l'icône <Icon icon={["fa", "square-plus"]} /> ;
 - sauvegarder les modifications avec l'icone <Icon icon={["fa", "floppy-disk"]} /> ;
 - annuler les modifications avec l'icone <Icon icon={["fa", "left-long"]} /> ;
 

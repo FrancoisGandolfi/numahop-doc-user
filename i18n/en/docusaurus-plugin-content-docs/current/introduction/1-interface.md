@@ -26,7 +26,7 @@ Operation on **Microsoft Edge** or **Internet Explorer** is not guaranteed due t
 
 In all interfaces, the various possible actions are associated with icons and tooltips. They are consistent across the platform. Additional feature icons may exist depending on the modules used. These new action buttons are generally located at the top right of the window in interfaces, at the top right of the table header bar, or next to the data they complement.
 
-- <Icon icon={["fa", "plus"]} /> **Add**;
+- <Icon icon={["fa", "square-plus"]} /> **Add**;
 - <Icon icon={["fa", "trash"]} /> **Delete**;
 - <Icon icon={["fa", "pen-to-square"]} /> **Edit**;
 - <Icon icon={["fa", "floppy-disk"]} /> **Save**;

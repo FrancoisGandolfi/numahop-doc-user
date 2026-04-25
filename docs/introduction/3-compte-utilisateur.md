@@ -23,7 +23,7 @@ Les actions possibles sur le compte de l'utilisateur connecté sont accessibles 
 - <Icon icon={["fa", "lock"]} /> **Mot de passe** ;
 - <Icon icon={["fa", "arrow-right-from-bracket"]} /> **Déconnexion**.
 
-### Profil de l'utilisateur
+## Profil de l'utilisateur
 
 Le détail du profil de l'utilisateur connecté est accessible via le menu derroulant du bandeau d'en-tête de Numahop. L'utilisateur peut modifier certaines informations le concernant en fonction de ses habilitations.
 
@@ -44,9 +44,9 @@ Le détail du profil de l'utilisateur connecté est accessible via le menu derro
 | **Bibliothèque** | 🔴 Obligatoire | Liste fermée              | [_Gestion des Bibliothèques_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() |
 |    **Profil**    | 🔴 Obligatoire | Liste fermée              |       [_Gestion des Profils_ <Icon icon={["fa", "arrow-up-right-from-square"]} />]() |
 
-### Modification du mot de passe
+## Modification du mot de passe
 
-#### Par l'utilisateur
+### Par l'utilisateur
 
 Un utilisateur peut changer lui-même son mot de passe directement via le menu derroulant du bandeau d'en-tête de Numahop.
 
@@ -55,7 +55,7 @@ Un utilisateur peut changer lui-même son mot de passe directement via le menu d
 
 En cas d’oubli de son mot de passe, un utilisateur peut le réinitialiser, sans passer par un administrateur, depuis l’écran de connexion, en cliquant sur **"Mot de passe oublié ?"**. L’utilisateur saisit alors son login et le nouveau mot de passe est envoyé à l'email renséigné sur son compte.
 
-#### Par l'administrateur
+### Par l'administrateur
 
 En cas de perte, un nouveau mot de passe peut être généré par un administrateur.
 

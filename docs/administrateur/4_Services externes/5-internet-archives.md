@@ -34,7 +34,7 @@ Avant de configurer NumaHOP, réalisez ces étapes sur Internet Archive :
 
 Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configurations Internet Archive**.  
 
-Cliquer sur <Icon icon={["fa", "plus"]} /> pour créer une **nouvelle configuration**.
+Cliquer sur <Icon icon={["fa", "square-plus"]} /> pour créer une **nouvelle configuration**.
 
 **Renseignez les informations suivantes :**
 
@@ -52,7 +52,7 @@ Se connecter à Internet Archive puis aller sur : [https://archive.org/account/s
 
 ### Configuration des collections
 
-**Ajouter vos collections** Internet Archive via le bouton <Icon icon={["fa", "plus"]} />.  
+**Ajouter vos collections** Internet Archive via le bouton <Icon icon={["fa", "square-plus"]} />.  
 
 Sélectionner la collection au niveau du projet, lot ou unité documentaire une fois la configuration réalisée.
 
@@ -60,7 +60,7 @@ Sélectionner la collection au niveau du projet, lot ou unité documentaire une 
 
 Pour exporter des champs personnalisés vers Internet Archive :  
 
-Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configuration** > **Types de propriété personnalisés** > <Icon icon={["fa", "plus"]} />.
+Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configuration** > **Types de propriété personnalisés** > <Icon icon={["fa", "square-plus"]} />.
 
 *Exemple : Ajouter le champ "Format" s'il n'existe pas sur Internet Archive.*
 

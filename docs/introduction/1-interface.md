@@ -26,9 +26,11 @@ Le fonctionnement sur **Microsoft Edge** ou **Internet Explorer** n’est pas ga
 
 Dans toutes les interfaces, les différentes actions possibles sont associées à des icônes et une info-bulle. Ils sont cohérents sur l'ensemble de la plateforme. D’autres icônes de fonctionnalités peuvent exister en fonction des modules sollicités. Ces nouveaux boutons d'action sont généralement situés en haut à droite de la fenêtre dans les interfaces, en haut à droite de la barre d’en-tête des tables, ou à la suite de la données qu'ils complètent.
 
-- <Icon icon={["fa", "plus"]} /> **Ajouter** ;
+- <Icon icon={["fa", "square-plus"]} /> **Ajouter** ;
 - <Icon icon={["fa", "trash"]} /> **Supprimer** ;
+- <Icon icon={["fa", "square-xmark"]} /> **Supprimer** ;
 - <Icon icon={["fa", "pen-to-square"]} /> **Modifier** ;
+- <Icon icon={["fa", "reply"]} /> **Annuler** ;
 - <Icon icon={["fa", "floppy-disk"]} /> **Sauvegarder** ;
 - <Icon icon={["fa", "square-poll-horizontal"]} /> **Détails** ;
 - <Icon icon={["fa", "up-right-from-square"]} /> **Ouvrir** ;
@@ -37,10 +39,10 @@ Dans toutes les interfaces, les différentes actions possibles sont associées �
 - <Icon icon={["fa", "share"]} /> **Télécharger** ;
 - <Icon icon={["fa", "bars"]} /> **Autres actions** ;
 - <Icon icon={["fa", "filter"]} /> **Filtrer** ;
-- <Icon icon={["fa", "rotate"]} /> **Réinitialiser**
+- <Icon icon={["fa", "rotate"]} /> **Réinitialiser** ;
 - <Icon icon={["fa", "arrows-up-down-left-right"]} /> **Déplacer** ;
 - <Icon icon={["fa", "gear"]} /> **Parametrer** ;
-- <Icon icon={["fa", "square-xmark"]} /> **Supprimer** .
+- <Icon icon={["fa", "clock-rotate-left"]} /> **Restaurer**.
 
 ### Menus applicatifs
 

@@ -31,7 +31,7 @@ Widgets are customizable for each user, allowing everyone to benefit from the in
 
 Customization of dashboard widgets is done using the <Icon icon={["fa", "pen-to-square"]} /> **Edit** button located at the top right of the home screen. Several actions are possible:
 
-- Add a widget with the <Icon icon={["fa", "plus"]} /> icon;
+- Add a widget with the <Icon icon={["fa", "square-plus"]} /> icon;
 - Save changes with the <Icon icon={["fa", "floppy-disk"]} /> icon;
 - Cancel changes with the <Icon icon={["fa", "left-long"]} /> icon.
 

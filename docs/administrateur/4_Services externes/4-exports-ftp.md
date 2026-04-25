@@ -21,7 +21,7 @@ Cette page permet de :
 
 Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** >  **Configurations exports FTP**.
 
-Cliquer sur le bouton <Icon icon={["fa", "plus"]} /> pour créer un **nouveau serveur FTP de livraison**.
+Cliquer sur le bouton <Icon icon={["fa", "square-plus"]} /> pour créer un **nouveau serveur FTP de livraison**.
 
 **Remplir les informations du serveur** :
 
@@ -48,7 +48,7 @@ Une fois la configuration réalisée, l’export des fichiers vers le serveur FT
 
 ### Configuration du dossier de livraison des fichiers 
 
-A l'aide du bouton <Icon icon={["fa", "plus"]} /> **entrer l'adresse du dossier** où vous souhaitez récupérer vos données sur votre serveur local.
+A l'aide du bouton <Icon icon={["fa", "square-plus"]} /> **entrer l'adresse du dossier** où vous souhaitez récupérer vos données sur votre serveur local.
 
 
 

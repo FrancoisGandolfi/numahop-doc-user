@@ -31,7 +31,7 @@ Se référer à [Gestion des profils](docs/administrateur/1_Groupes%20&%20utilis
 
 ### Choix de la version d'Omeka
 
-Pour configurer une sortie Omeka Classic ou Omeka S dans Numahop, aller dans <Icon icon={["fa", "plus"]} />  **Administration** > **Services externes** > **Configurations Omeka**
+Pour configurer une sortie Omeka Classic ou Omeka S dans Numahop, aller dans <Icon icon={["fa", "square-plus"]} />  **Administration** > **Services externes** > **Configurations Omeka**
 
 Dans la partie de gauche cochez la case correspondante à votre Omeka :
 - Omeka pour Omeka Classic
@@ -40,7 +40,7 @@ Dans la partie de gauche cochez la case correspondante à votre Omeka :
 ### Ajout d'une configuration Omeka 
 
 
-Cliquer ensuite sur le bouton <Icon icon={["fa", "plus"]} /> pour accéder au formulaire de configuration d'Omeka 
+Cliquer ensuite sur le bouton <Icon icon={["fa", "square-plus"]} /> pour accéder au formulaire de configuration d'Omeka 
 
 Les champs suivants sont à remplir :
 | Libellé | Commentaires | Détails |
@@ -60,18 +60,18 @@ Les champs suivants sont à remplir :
 
 
 ### Ajout de collection Omeka 
-Dans la rubrique du formulaire **Collections Omeka**, cliquer sur le bouton <Icon icon={["fa", "plus"]} />  pour ajouter les collections dans lesquelles seront
+Dans la rubrique du formulaire **Collections Omeka**, cliquer sur le bouton <Icon icon={["fa", "square-plus"]} />  pour ajouter les collections dans lesquelles seront
 versées les unités documentaires provenant de NumaHOP
 
 ### Ajout de types d'items dans Omeka 
 
-Dans la rubrique du formulaire **Types d'items**, cliquer sur le bouton <Icon icon={["fa", "plus"]} />  pour ajouter modèle de ressource correspondant aux inités documentaires dans Omeka.
+Dans la rubrique du formulaire **Types d'items**, cliquer sur le bouton <Icon icon={["fa", "square-plus"]} />  pour ajouter modèle de ressource correspondant aux inités documentaires dans Omeka.
 
 
 ### Ajout de champs personnalisés
 
 Pour exporter des champs personnalisés vers Omeka  :  
-Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configuration** > **Types de propriété personnalisés** > <Icon icon={["fa", "plus"]} />.
+Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configuration** > **Types de propriété personnalisés** > <Icon icon={["fa", "square-plus"]} />.
 
 *Exemple : Ajouter le champ "Format" s'il n'existe pas.*
 

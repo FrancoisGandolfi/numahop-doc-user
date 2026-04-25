@@ -24,7 +24,7 @@ A partir de la version 2.3 de NumaHOP, l'authentification se fait par clé d'aut
 
 Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** >  **Configurations exports FTP**.
 
-Cliquer sur l’icône <Icon icon={["fa", "plus"]} /> pour ajouter une nouvelle adresse de serveur FTP pour la livraison.
+Cliquer sur l’icône <Icon icon={["fa", "square-plus"]} /> pour ajouter une nouvelle adresse de serveur FTP pour la livraison.
 
 Remplir les configurations suivantes : 
 

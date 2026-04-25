@@ -20,7 +20,7 @@ Cette section permet de configurer le serveur de messagerie destiné à recevoir
 
 Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** >  **Comptes courriels**.
 
-Ajouter un compte courriel à l'aide de l'icône <Icon icon={["fa", "plus"]} />.
+Ajouter un compte courriel à l'aide de l'icône <Icon icon={["fa", "square-plus"]} />.
 
 Remplir les informations suivantes avec votre DSI ou votre fournisseur d'hébergement de NumaHOP :
 
@@ -34,7 +34,7 @@ Remplir les informations suivantes avec votre DSI ou votre fournisseur d'héberg
 | Utilisateur                  | Mail de réception                                                                      |🔵 Facultatif             |
 | Mot de passe                 | Mot de passe messagerie                                                                |🔵 Facultatif             |
 | Bibliothèque                 | Nom de l'établissement recevant les certificats d'archivage                            |🔴 Obligatoire           |
-| **_Configuration JavaMail_** | Ajouter à l'aide de l'icône <Icon icon={["fa", "plus"]} />  les propriétés et valeurs de votre serveur de messagerie |🔵 Facultatif             |
+| **_Configuration JavaMail_** | Ajouter à l'aide de l'icône < Icon icon={["fa", "square-plus"]} />  les propriétés et valeurs de votre serveur de messagerie |🔵 Facultatif             |
 
 
 

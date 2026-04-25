@@ -2,38 +2,53 @@
 title: 'Mappings : généralités'
 sidebar_label: 'Mappings : généralités'
 sidebar_position: 1
-description: Paramatrage des fichiers de conversion de données bibliographiques en Dublin Core.
+description: Paramatrage des conversion des données bibliographiques vers le standard Dublin Core.
 ---
 
 import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "shuffle"]} /> Mappings: généralités
 
----
-title: Créer un mapping
-sidebar_label: Créer un mapping
-sidebar_position: 13
----
+Les _mappings_ sont des **fichiers de configuration des correspondances** entre et les notices bibliographiques issues des systèmes d'information documentaire (SIGB) et de systèmes d'information archivistique (SIA) et les unités documentaires de l'application Numahop.
 
-# Créer un mapping
+Ils sont employés au moement de l’**import de notices** dans l’application NumaHop, et permettent leur conversion vers le standard interopérable **Dublin Core**.
 
-L’import des notices des différents SIGB dans l’application s’effectue
-via des règles pré-définies.
+Trois types de mappings sont proposés :
+- Mapping des **notices MARC** ;
+- Mapping des **notices EAD** ;
+- Mapping des **notices CSV**.
 
-Pour définir ces règles, aller dans « Administration » <img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/administration-NumaHOP.png"
-class="alignnone wp-image-138" decoding="async" width="27"
-height="28" /> &gt; Mapping.
+## Edition des _mappings_
 
-Les mappings sont créés par bibliothèque. Il est possible d’en avoir
-plusieurs par bibliothèque. Lors de l’import, l’utilisateur choisit le
-mapping à appliquer selon les notices à importer (y compris pour un
-import de notices Z39.50).
+L'édition des _mappings_ s’effectue depuis le menu applicatif <Icon icon={["fa", "gear"]} /> **Administration**, puis dans l'encard consacré. L'utilisateur peut configurer autant de _mappings_ que necessaire pour chaque bibliothèque.
 
-Pour créer un mapping, cliquer sur
-:<img src="https://www.numahop.fr/wp-content/uploads/2022/10/mapping.png"
-class="alignnone size-full wp-image-351" decoding="async" width="247"
-height="98" />
+Pour chaque type de mapping, il est possible de :
+- <Icon icon={["fa", "square-plus"]} /> **Créer** un nouveau mapping personnalisé ;
+- <Icon icon={["fa", "upload"]} /> **Importer** un nouveau mapping (uniquement pour les mappings MARC et EAD) ;
+- <Icon icon={["fa", "floppy-disk"]} /> **Sauvegarder** un _mapping_ en cours d'édition ;
+- <Icon icon={["fa", "clock-rotate-left"]} /> **Restaurer** la version antérieure d'un _mapping_ existant ;
+- <Icon icon={["fa", "download"]} /> **Exporter** au format `json` un _mapping_ existant ;
+- <Icon icon={["fa", "copy"]} /> **Dupliquer** un _mapping_ existant ;
+- <Icon icon={["fa", "trash"]} /> **Supprimer** un _mapping_ existant.
+
+## Créer un _mapping_
+
+La création d'un _mappings_ s’effectue <Icon icon={["fa", "square-plus"]} /> **Créer** situé en haut à gauche de d'écran. L'utilisateur est invité à renseigner plusieurs champs.
+
+- le **titre** du _mapping_ ;
+- la **bibliothèque** à laquelle le _mapping_ est attribué ;
+- l'**identifiant du parent** (uniquement pour les _mappings_ MARC et CSV).
+
+Après avoir selectionné le type de correspondances, la création d'un nouveau _mapping_ se fait grâce au bouton <Icon icon={["fa", "square-plus"]} /> **Créer** situé en haut à gauche de d'écran. 
+
+
+
+
+## Modifier un _mapping_
+
+La modification ou l'édition d'un _mappings_ s’effectue depuis le menu applicatif <Icon icon={["fa", "gear"]} /> **Administration**, puis dans l'encard consacré.
+
+Après avoir selectionné le type de correspondances, la modification d'un _mapping_ existant se fait grâce au bouton <Icon icon={["fa", "edit"]} /> **Modifier** situé en haut à gauche de d'écran.
 
 Selon l’option choisie, un nouveau mapping sera créé ou le mapping
 affiché sera remplacé. Pour ajouter des règles, cliquez sur + Ajouter
@@ -79,7 +94,7 @@ src="https://www.numahop.fr/wp-content/uploads/2022/10/supprimer.png"
 class="alignnone wp-image-200" loading="lazy" decoding="async"
 width="33" height="32" />).
 
-### Editer les règles d'un mapping
+## Editer les règles d'un mapping
 
 Il est possible d’avoir plusieurs lignes d’instruction dans les
 différentes zones. Elles seront alors interprétées dans l’ordre

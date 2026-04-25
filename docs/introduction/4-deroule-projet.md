@@ -9,7 +9,7 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "diagram-project"]} /> Déroulé d'un projet
 
-![Kikou](/img/numahop-objets.png)
+![Déroulé des projets NumaHop](/img/numahop-objets.png)
 
 On distingue deux principaux types de projets.
 
