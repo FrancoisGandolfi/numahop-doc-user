@@ -20,9 +20,9 @@ Les actions apparaissent uniquement si elles existent. Par défaut, les actions 
 connecté, et sont regroupées par étape de workflow. En cliquant sur un des bandeaux d’étape, celui-ci se déplie et affiche les éléments concernés.
 
 Les listes d'actions possibles permettent d'acceder directement aux unités docuemntaires à traiter.
-- Documents en **attente de livraison** : [_Gestion des livraisons_](docs/utilisateur/gestion-livraisons) <Icon icon={["fa", "arrow-up-right-from-square"]} /> ;
-- Documents **à contrôler** ou **en cours de contrôle** : [_Contrôles manuels_](docs/utilisateur/Contrôles/controles-manuels) <Icon icon={["fa", "arrow-up-right-from-square"]} /> ;
-- Vérification des **pré-rejets/pré-validations** : [_Validation ou rejet des documents_](docs/utilisateur/Contrôles/controles-manuels#35-validation-ou-rejet-du-document) <Icon icon={["fa", "arrow-up-right-from-square"]} />.
+- Documents en **attente de livraison** : [_Gestion des livraisons_](docs/utilisateur/gestion-livraisons.md) <Icon icon={["fa", "arrow-up-right-from-square"]} /> ;
+- Documents **à contrôler** ou **en cours de contrôle** : [_Contrôles manuels_](docs/utilisateur/Contrôles/controles-manuels.md) <Icon icon={["fa", "arrow-up-right-from-square"]} /> ;
+- Vérification des **pré-rejets/pré-validations** : [_Validation ou rejet des documents_](docs/utilisateur/Contrôles/controles-manuels#35-validation-ou-rejet-du-document.md) <Icon icon={["fa", "arrow-up-right-from-square"]} />.
 
 ## _Widgets_
 
