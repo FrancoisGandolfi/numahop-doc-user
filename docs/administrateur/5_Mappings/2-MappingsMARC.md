@@ -8,24 +8,11 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "file-word"]} /> Mappings MARC
 
-
----
-title: Créer un mapping MARC
-sidebar_label: Créer un mapping MARC
-sidebar_position: 14
----
-
-# Créer un mapping MARC
-
-#### Syntaxe de base
-
-#### Expression spécifique
-
 Les fonctions spécifiques sont accessibles dans le menu contextuel de
 chaque zone concernée (clic droit avec la souris) :
 
 
-### Syntaxe de base - Format UNIMARC
+### Syntaxe de base
    Élément de menu         | Syntaxe                     | Description                                                                                     | Exemple       |
  |-------------------------|-----------------------------|-------------------------------------------------------------------------------------------------|---------------|
  | Détection des champs MARC | `\`                        | Il est possible de récupérer tous les champs d'une zone en remplaçant les chiffres souhaités par "x" | R / C         |
@@ -33,7 +20,6 @@ chaque zone concernée (clic droit avec la souris) :
  | Détection des champs MARC | `\6xx`                     | Récupère les champs `6xx`.                                                                      |               |
  | Détection des sous-champs MARC | `$`                     | R / C                                                                                           | `\200$a`      |
 
----
 
 ### Collections
  | Élément de menu         | Syntaxe                     | Description                                                                                     | Exemple       |
@@ -45,20 +31,20 @@ chaque zone concernée (clic droit avec la souris) :
 ---
 
 ### Corporations
+
  | Élément de menu         | Syntaxe                     | Description                                                                                     | Exemple       |
  |-------------------------|-----------------------------|-------------------------------------------------------------------------------------------------|---------------|
  | corporateFilter(code)    | `corporateFilter('a')`      | Filtrage des sous-champs IR                                                                     |               |
  | corporate(champMarc)     | `corporate(\710)`           | Met en forme selon la syntaxe utilisée pour les collectivités par l'ISBD :<br />• `$a` (Nom) : Début de la zone<br />• `$b` (Subdivisions) : `.`<br />• `$c` (Qualificatif) : `( )`, si plusieurs `$c`, séparés par `;`<br />• `$d` (Numéro) : `( `<br />• `$e` (Lieu) : `;` et `)` après le dernier élément<br />• `$f` (Dates) : `;` après `$d` sinon `( `; après `$e` sinon `( )`<br />• `$4` (Code fonction) : `.` | R |
 
----
 
 ### Personnes
+
  | Élément de menu         | Syntaxe                     | Description                                                                                     | Exemple       |
  |-------------------------|-----------------------------|-------------------------------------------------------------------------------------------------|---------------|
  | personFilter(code)      | `personFilter('a')`         | Filtrage des sous-champs IR                                                                     |               |
  | person(champMarc)       | `person(\702)`              | Met en forme selon la syntaxe utilisée pour les personnes par l'ISBD :<br />• `$a` (Nom) : Début de zone<br />• `$b` (Prénom) : `,`<br />• `$c` (Qualificatif) : `)` après `$f` sinon `( `; avant `$f` sinon `( )`<br />• `$d` (Numéro en chiffres romains) : pas de ponctuation<br />• `$f` (Date de naissance - Date de mort) : `)` après `$c` sinon `( `; avant `$c` sinon `( )`<br />• `$D` (Numéro en chiffres arabes) : pas de ponctuation<br />• `$4` (Code fonction) : `.` | R |
 
----
 
 ### Titres
  | Élément de menu         | Syntaxe                     | Description                                                                                     | Exemple       |
@@ -78,7 +64,6 @@ chaque zone concernée (clic droit avec la souris) :
  | subfieldsAddGroup(préfixeGroupe, suffixeGroupe, PréfixeOuCode) | `subfieldsAddGroup('(', ')', '; ', 't', ' / ', 'u')` | Ajoute un groupe de sous-champs répétables préfixé et suffixé par les valeurs spécifiées |               |
  | subfields(champMarc)    | `subfields(\6xx)`           | Concatène les sous-champs de la zone en ajoutant `" - "` entre chaque sous-champ                | R             |
 
----
 
 ### Leader
  | Élément de menu         | Syntaxe                     | Description                                                                                     |

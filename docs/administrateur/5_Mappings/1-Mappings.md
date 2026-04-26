@@ -26,14 +26,19 @@ Pour chaque type de mapping, il est possible de :
 - <Icon icon={["fa", "square-plus"]} /> **Créer** un nouveau mapping personnalisé ;
 - <Icon icon={["fa", "upload"]} /> **Importer** un nouveau mapping (uniquement pour les mappings MARC et EAD) ;
 - <Icon icon={["fa", "floppy-disk"]} /> **Sauvegarder** un _mapping_ en cours d'édition ;
+- <Icon icon={["fa", "reply"]} /> **Annuler** les dernières modifications apportées à un _mapping_ ;
 - <Icon icon={["fa", "clock-rotate-left"]} /> **Restaurer** la version antérieure d'un _mapping_ existant ;
 - <Icon icon={["fa", "download"]} /> **Exporter** au format `json` un _mapping_ existant ;
 - <Icon icon={["fa", "copy"]} /> **Dupliquer** un _mapping_ existant ;
 - <Icon icon={["fa", "trash"]} /> **Supprimer** un _mapping_ existant.
 
+:::warning Sauvegarde
+Lorsqu’une règle est modifiée, la ligne apparaît en jaune tant que le _mapping_ n’a pas été enregistré. L'enregistrement du _mapping_ et des modifications s'effectue depuis l'icône <Icon icon={["fa", "floppy-disk"]} /> **Sauvegarder**, située en haut à droite de l'écran. Tant que le mapping n’a pas été enregistré, il est possible d'annuler les dernières modifications grâce au bouton <Icon icon={["fa", "reply"]} /> **Annuler** ; lorsque le _mapping_ a été enregistré, il est possible de restaurer une version antérieure grâce à l'icône <Icon icon={["fa", "clock-rotate-left"]} /> **Restaurer**, en choisissant la version souhaitée (date et heure).
+:::
+
 ### Créer un _mapping_
 
-Après la selection du type, la création d'un nouveau _mapping_ s’effectue depuis l'icône <Icon icon={["fa", "square-plus"]} /> **Créer** situé en haut à gauche de d'écran. L'utilisateur est invité à renseigner plusieurs champs.
+Après la selection du type de notices, la création d'un nouveau _mapping_ s’effectue depuis l'icône <Icon icon={["fa", "square-plus"]} /> **Créer** situé en haut à gauche de d'écran. L'utilisateur est invité à renseigner plusieurs champs.
 
 - le **titre** du _mapping_ ;
 - la **bibliothèque** à laquelle le _mapping_ est attribué ;
@@ -44,7 +49,7 @@ L'utilisateur ajoute autant de **Règles de _mapping_** que necessaire depuis le
 
 ### Modifier un _mapping_
 
-Après la selection du type et du _mapping_ à modifier, l'utilisateur peut ajouter une nouvelle règle depuis le bouton <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle** située en fin de tableau, ou éditer une règle existante.
+Après la selection du type de notice et du _mapping_ à modifier, l'utilisateur peut ajouter une nouvelle règle depuis l'icône <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle** située en fin de tableau, ou éditer une règle existante.
 
 - <Icon icon={["fa", "pen-to-square"]} /> **Modifier** une règle de _mapping_ ;
 - <Icon icon={["fa", "copy"]} /> **Dupliquer** une règle de _mapping_ ;
@@ -57,7 +62,7 @@ Après la selection du type et du _mapping_ à modifier, l'utilisateur peut ajou
 L'import de _mappings_ n'est possible que pour les types de notices MARC et EAD.
 :::
 
-L'import s’effectue depuis l'icône <Icon icon={["fa", "upload"]} /> **Importer un mapping (JSON)**, situé en haut à gauche de l'écran. Il est possible d'**importer un nouveau _mapping_**, ou de **remplacer un _mapping_** existant préalablement selectionné.
+Après la selection du type de notice, l'import s’effectue depuis l'icône <Icon icon={["fa", "upload"]} /> **Importer un mapping (JSON)**, situé en haut à gauche de l'écran. Il est possible d'**importer un nouveau _mapping_**, ou de **remplacer un _mapping_** existant préalablement selectionné.
 
 L'import d'un _mapping_ ouvre une boîte de dialogue qui propose à l'utilisateur de selectionner un **Fichier à téléverser**.
 
@@ -77,63 +82,26 @@ Sollicitez les membres de la communauté NumaHop pour le partage des _mappings_ 
 L'export de _mappings_ n'est possible que pour les types de notices MARC et EAD.
 :::
 
-Après la selection du type et du _mapping_, l'export s’effectue depuis l'icône  <Icon icon={["fa", "download"]} /> **Exporter (JSON)**, située en haut à droite de l'écran.
+Après la selection du type de notice et du _mapping_, l'export s’effectue depuis l'icône  <Icon icon={["fa", "download"]} /> **Exporter (JSON)**, située en haut à droite de l'écran. Un fichier `json` est téléchargé.
 
-modifier chacun des règlesle type de correspondances, la modification d'un _mapping_ existant se fait grâce au bouton <Icon icon={["fa", "edit"]} /> **Modifier** situé en haut à gauche de d'écran.
-
-Selon l’option choisie, un nouveau mapping sera créé ou le mapping
-affiché sera remplacé. Pour ajouter des règles, cliquez sur + Ajouter
-une règle en bas de la page, sous le tableau. Les règles peuvent
-également être éditées
-<img src="https://www.numahop.fr/wp-content/uploads/2022/10/editer.png"
-class="alignnone wp-image-132" loading="lazy" decoding="async"
-width="32" height="30" />, dupliquées <img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/duppliquer-2.png"
-class="alignnone wp-image-352" loading="lazy" decoding="async"
-width="28" height="25" />   ou supprimées
-<img src="https://www.numahop.fr/wp-content/uploads/2022/10/suppr.png"
-class="alignnone wp-image-353" loading="lazy" decoding="async"
-width="25" height="24" />.
-
-L’ordre de prise en compte des règles et d’affichage des éléments dans
-la notice importée peut être modifié à l’aide des flèches situées à
-gauche des lignes. Lorsqu’une règle est modifiée, elle apparaît en jaune
-tant que le mapping n’a pas été enregistrée :
-
- 
-
-Tant que le mapping n’a pas été enregistré, il est possible de restaurer
-la dernière version enregistrée grâce au bouton restaurer <img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/restaurer.png"
-class="alignnone wp-image-354" loading="lazy" decoding="async"
-width="32" height="28" />    situé dans le bandeau supérieur (ie.
-annuler toutes les dernières modifications). Une fois le mapping créé ou
-modifié, il faut l’enregistrer grâce au bouton sauvegarder <img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/sauvegarder.png"
-class="alignnone wp-image-355" loading="lazy" decoding="async"
-width="39" height="37" />  situé dans le bandeau supérieur. Même lorsque
-le mapping a été enregistré, il est possible de restaurer une version
-antérieure en choisissant la version souhaitée (date et heure). Vous
-pouvez également possible exporter un mapping (<img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/exporter.png"
-class="alignnone wp-image-131" loading="lazy" decoding="async"
-width="30" height="31" />), le dupliquer (<img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/duppliquer.png"
-class="alignnone wp-image-133" loading="lazy" decoding="async"
-width="33" height="34" />) ou le supprimer (<img
-src="https://www.numahop.fr/wp-content/uploads/2022/10/supprimer.png"
-class="alignnone wp-image-200" loading="lazy" decoding="async"
-width="33" height="32" />).
 
 ## Edition des les règles d'un _mapping_
 
-Il est possible d’avoir plusieurs lignes d’instruction dans les
-différentes zones. Elles seront alors interprétées dans l’ordre
-d’écriture.
+La création ou l'édition d'une règle de _mapping_ s'effectue depuis une boîte de dialogue accessible depuis les icônes <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle**, située en fin de tableau, ou <Icon icon={["fa", "pen-to-square"]} /> **Modifier**, située sur la ligne de la règle de _mapping_.
 
-Certaines données de l’unité documentaire contiennent des valeurs
-spécifiques à renseigner dans les règles de mapping (texte à indiquer en
-tant que chaîne de caractères) :
+| Champ | Description | Exemple de valeur | Statut |
+| --- | --- | --- | --- |
+| **Unité documentaire** | Type d'unité documentaire concernée par la règle. | Livre, Article, Thèse | Facultatif |
+| Règle par défaut | Indique si cette règle est appliquée par défaut. | Oui / Non | Obligatoire |
+| Règle | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | Obligatoire |
+| Notice bibl. | Type de notice bibliographique concernée par la règle. | Monographie, Périodique | Facultatif |
+| Dublin Core | Type de métadonnée Dublin Core à laquelle la règle s'applique. | dc:title, dc:creator | Obligatoire |
+| Condition d'application | Condition spécifique pour déclencher l'application de la règle. | Si le champ est vide, Si la date > 2020 | Facultatif |
+
+L’ordre des règles est celle de leur prise en compte lors de l'import dans NumaHop, et peut être modifié à l’aide des flèches <Icon icon={["fa", "angle-down"]} /> et <Icon icon={["fa", "angle-up"]} /> situées à gauche de chaque règle de _mapping_.
+
+
+
 
 ### Syntaxe des expressions
 
