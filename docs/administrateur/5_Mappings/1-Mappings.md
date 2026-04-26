@@ -11,7 +11,7 @@ import Icon from '@site/src/components/Icon';
 
 Les _mappings_ sont des **fichiers de configuration des correspondances** entre et les notices bibliographiques issues des systèmes d'information documentaire (SIGB) et de systèmes d'information archivistique (SIA) et les unités documentaires de l'application Numahop.
 
-Ils sont employés au moement de l’**import de notices** dans l’application NumaHop, et permettent leur conversion vers le standard interopérable **Dublin Core**.
+Ils sont employés au moment de l’**import de notices** dans l’application NumaHop, et permettent leur conversion vers le standard interopérable **Dublin Core**.
 
 Trois types de mappings sont proposés :
 - Mapping des **notices MARC** ;
@@ -31,24 +31,55 @@ Pour chaque type de mapping, il est possible de :
 - <Icon icon={["fa", "copy"]} /> **Dupliquer** un _mapping_ existant ;
 - <Icon icon={["fa", "trash"]} /> **Supprimer** un _mapping_ existant.
 
-## Créer un _mapping_
+### Créer un _mapping_
 
-La création d'un _mappings_ s’effectue <Icon icon={["fa", "square-plus"]} /> **Créer** situé en haut à gauche de d'écran. L'utilisateur est invité à renseigner plusieurs champs.
+Après la selection du type, la création d'un nouveau _mapping_ s’effectue depuis l'icône <Icon icon={["fa", "square-plus"]} /> **Créer** situé en haut à gauche de d'écran. L'utilisateur est invité à renseigner plusieurs champs.
 
 - le **titre** du _mapping_ ;
 - la **bibliothèque** à laquelle le _mapping_ est attribué ;
 - l'**identifiant du parent** (uniquement pour les _mappings_ MARC et CSV).
 
-Après avoir selectionné le type de correspondances, la création d'un nouveau _mapping_ se fait grâce au bouton <Icon icon={["fa", "square-plus"]} /> **Créer** situé en haut à gauche de d'écran. 
+L'utilisateur ajoute autant de **Règles de _mapping_** que necessaire depuis le bouton <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle** située en fin de tableau.
 
 
+### Modifier un _mapping_
+
+Après la selection du type et du _mapping_ à modifier, l'utilisateur peut ajouter une nouvelle règle depuis le bouton <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle** située en fin de tableau, ou éditer une règle existante.
+
+- <Icon icon={["fa", "pen-to-square"]} /> **Modifier** une règle de _mapping_ ;
+- <Icon icon={["fa", "copy"]} /> **Dupliquer** une règle de _mapping_ ;
+- <Icon icon={["fa", "trash"]} /> **Supprimer** une règle du _mapping_.
 
 
-## Modifier un _mapping_
+### Importer un _mapping_
 
-La modification ou l'édition d'un _mappings_ s’effectue depuis le menu applicatif <Icon icon={["fa", "gear"]} /> **Administration**, puis dans l'encard consacré.
+:::info
+L'import de _mappings_ n'est possible que pour les types de notices MARC et EAD.
+:::
 
-Après avoir selectionné le type de correspondances, la modification d'un _mapping_ existant se fait grâce au bouton <Icon icon={["fa", "edit"]} /> **Modifier** situé en haut à gauche de d'écran.
+L'import s’effectue depuis l'icône <Icon icon={["fa", "upload"]} /> **Importer un mapping (JSON)**, situé en haut à gauche de l'écran. Il est possible d'**importer un nouveau _mapping_**, ou de **remplacer un _mapping_** existant préalablement selectionné.
+
+L'import d'un _mapping_ ouvre une boîte de dialogue qui propose à l'utilisateur de selectionner un **Fichier à téléverser**.
+
+:::warning Format des _mappings_
+Les _mappings_ à importer doivent être dans un format `json` valide, et ne contenir que des propriétés renseignées dans les **Types de propriétés personnalisées**, parametrables depuis le menu applicatif <Icon icon={["fa", "gear"]} /> **Administration**.
+
+[**Configuration des propriétés personalisées**](/docs/administrateur/Configurations/proprietes) <Icon icon={["fa", "arrow-up-right-from-square"]} />.
+:::
+
+:::tip Communauté NumaHop
+Sollicitez les membres de la communauté NumaHop pour le partage des _mappings_ au format `json` !
+:::
+
+### Exporter un _mapping_
+
+:::info
+L'export de _mappings_ n'est possible que pour les types de notices MARC et EAD.
+:::
+
+Après la selection du type et du _mapping_, l'export s’effectue depuis l'icône  <Icon icon={["fa", "download"]} /> **Exporter (JSON)**, située en haut à droite de l'écran.
+
+modifier chacun des règlesle type de correspondances, la modification d'un _mapping_ existant se fait grâce au bouton <Icon icon={["fa", "edit"]} /> **Modifier** situé en haut à gauche de d'écran.
 
 Selon l’option choisie, un nouveau mapping sera créé ou le mapping
 affiché sera remplacé. Pour ajouter des règles, cliquez sur + Ajouter
@@ -94,7 +125,7 @@ src="https://www.numahop.fr/wp-content/uploads/2022/10/supprimer.png"
 class="alignnone wp-image-200" loading="lazy" decoding="async"
 width="33" height="32" />).
 
-## Editer les règles d'un mapping
+## Edition des les règles d'un _mapping_
 
 Il est possible d’avoir plusieurs lignes d’instruction dans les
 différentes zones. Elles seront alors interprétées dans l’ordre
@@ -175,3 +206,15 @@ Les fonctions standard Groovy peuvent être utilisées.
  | `replaceAll(recherche, remplacement)` | Remplace une partie d'une chaîne de caractères par une autre.                          | R `\035$a.replaceAll('^ppn', '')`                               |
  | `length()`                       | Longueur de la chaîne de caractères                                                            | C `"texte".length()`<br />`\100$a.length()`                        |
  | `startsWith(prefixe)` / `endsWith(suffixe)` | Vrai ou faux selon si la chaîne de caractère commence / se termine par le préfixe / suffixe mentionné | C `\035$a.startsWith('ppn')`                                   |
+## Export des notices depuis les systèmes d'information documentaire
+
+:::tip Export EAD
+Exporter des instruments de recherche et des notices au format XML/EAD
+- depuis le SIA CALAMES <Icon icon={["fa", "arrow-up-right-from-square"]} /> ;
+- depuis le SIA LIGEO <Icon icon={["fa", "arrow-up-right-from-square"]} />.
+:::
+
+:::tip Export MARC
+Exporter des notices au format MARC
+- depuis le SIGB ALMA <Icon icon={["fa", "arrow-up-right-from-square"]} />.
+:::
