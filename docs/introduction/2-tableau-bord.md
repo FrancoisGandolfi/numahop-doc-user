@@ -17,12 +17,12 @@ Le logo NumaHop situé en haut à droite de la page permet d'acceder directement
 ## Actions
 
 Les actions apparaissent uniquement si elles existent. Par défaut, les actions sont listées en indiquant le nombre de documents accessibles à l’utilisateur
-connecté et sont regroupées par étape de workflow. En cliquant sur un des bandeaux d’étape, celui-ci se déplie et affiche les éléments concernés.
+connecté, et sont regroupées par étape de workflow. En cliquant sur un des bandeaux d’étape, celui-ci se déplie et affiche les éléments concernés.
 
 Les listes d'actions possibles permettent d'acceder directement aux unités docuemntaires à traiter.
-- Documents en attente de livraison
-- Documents à contrôler ou en cours de contrôle
-- Vérification des pré-rejets/pré-validations
+- Documents en **attente de livraison** : [_Gestion des livraisons_](docs/utilisateur/gestion-livraisons) <Icon icon={["fa", "arrow-up-right-from-square"]} /> ;
+- Documents **à contrôler** ou **en cours de contrôle** : [_Contrôles manuels_](docs/utilisateur/Contrôles/controles-manuels) <Icon icon={["fa", "arrow-up-right-from-square"]} /> ;
+- Vérification des **pré-rejets/pré-validations** : [_Validation ou rejet des documents_](docs/utilisateur/Contrôles/controles-manuels#35-validation-ou-rejet-du-document) <Icon icon={["fa", "arrow-up-right-from-square"]} />.
 
 ## _Widgets_
 
@@ -32,14 +32,14 @@ Les widgets sont paramétrables pour chaque utilisateur, par l’utilisateur lui
 
 La personalisation des widgets du tableau de bord se fait grâce au bouton <Icon icon={["fa", "pen-to-square"]} /> **Editer** situé en haut à droite de l’écran d’accueil. Plusieurs actions sont possibles.
 
-- ajouter un _widget_ avec l'icône <Icon icon={["fa", "square-plus"]} /> ;
-- sauvegarder les modifications avec l'icone <Icon icon={["fa", "floppy-disk"]} /> ;
-- annuler les modifications avec l'icone <Icon icon={["fa", "left-long"]} /> ;
+- <Icon icon={["fa", "square-plus"]} /> **Ajouter** un _widget_ ;
+- <Icon icon={["fa", "floppy-disk"]} /> **Sauvegarder** les modifications ;
+- <Icon icon={["fa", "reply"]} /> **Annuler** les modifications;
 
-Le widget à intégrer s’implémente dans le tableau de bord.
+Après avoir <Icon icon={["fa", "square-plus"]} /> **Ajouter** un _widget_, il s'intègre au tableau de bord. Il est alors possible de :
 
-- l'icone <Icon icon={["fa", "arrows-up-down-left-right"]} /> permet de déplacer le _widget_ sur la grille ;
-- l'icone <Icon icon={["fa", "x"]} /> permet de supprimer un _widget_ du tableau de bord.
+- <Icon icon={["fa", "arrows-up-down-left-right"]} />  **Déplacer** le _widget_ sur la grille ;
+- <Icon icon={["fa", "square-xmark"]} />  **Supprimer** un _widget_ du tableau de bord.
 
 :::tip
 Selon les habilitations de l’utilisateur dans le workflow, certains _widgets_ seront plus utiles que d’autres. Par exemple, "Espace disque disponible" s'adresse à un chef de projet, tandis que les "Activités des contrôles" sont déstinées à un contrôleur qualité.
@@ -47,13 +47,13 @@ Selon les habilitations de l’utilisateur dans le workflow, certains _widgets_ 
 
 ### Paramétrer un _widget_
 
-Pour indiquer les données à afficher, le parametrage du _widget_ s'effectue depuis l'icone <Icon icon={["fa", "gear"]} /> **Configurer le widget**. Le modal propose différents champs à renseigner selon les données voulues.
+Pour indiquer les données à afficher, le parametrage du _widget_ s'effectue depuis l'icone <Icon icon={["fa", "gear"]} /> **Configurer le widget**. La boîte de dialogue propose différents champs à renseigner selon les données voulues.
 
-- Renommer le _widget_ ;
-- Choisir la bibliothèque concernée (_liste déroulante_);
-- Selectionner un projet, un lot, ou un train (_liste déroulante_);
-- Définir le statut de l'élément selectionné (_liste déroulante_);
-- Définir le nombre de jours à partir desquels récuperer des données.
+- **Renommer** le _widget_ ;
+- **Choisir la bibliothèque** concernée (_liste déroulante_);
+- **Selectionner un projet, un lot, ou un train** (_liste déroulante_);
+- **Définir le statut** de l'élément selectionné (_liste déroulante_);
+- **Définir le nombre de jours** à partir desquels récuperer des données.
 
 ### _Widgets_ disponibles
 

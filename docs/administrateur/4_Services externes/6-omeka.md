@@ -1,7 +1,8 @@
 ---
-title: Configuration Omeka
-sidebar_label: Configuration Omeka
+title: Omeka
+sidebar_label: Omeka
 sidebar_position: 6
+description: Configuration Omeka
 ---
 
 import Icon from '@site/src/components/Icon';

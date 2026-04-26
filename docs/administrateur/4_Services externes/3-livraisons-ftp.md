@@ -1,7 +1,8 @@
 ---
-title: Configuration du serveur de livraison
-sidebar_label: Configuration du serveur de livraison
+title: Serveur de livraison
+sidebar_label: Serveur de livraison
 sidebar_position: 3
+description: Configuration du serveur de livraison
 ---
 
 import Icon from '@site/src/components/Icon';

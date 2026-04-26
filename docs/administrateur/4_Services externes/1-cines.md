@@ -1,7 +1,8 @@
 ---
-title: Configuration CINES
-sidebar_label: Configuration CINES
+title: CINES
+sidebar_label: CINES
 sidebar_position: 1
+description: Configuration CINES
 ---
 
 import Icon from '@site/src/components/Icon';

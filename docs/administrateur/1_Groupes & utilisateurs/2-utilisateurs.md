@@ -1,7 +1,8 @@
 ---
-title: Gestion des utilisateurs
-sidebar_label: Gestion des utilisateurs
+title: Utilisateurs
+sidebar_label: Utilisateurs
 sidebar_position: 2
+description: Gestion des utilisateurs
 ---
 
 import Icon from '@site/src/components/Icon';

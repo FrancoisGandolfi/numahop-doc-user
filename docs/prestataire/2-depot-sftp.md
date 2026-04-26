@@ -2,6 +2,7 @@
 title: Guide de dépôt sur un FTP
 sidebar_label: Guide de dépôt sur un FTP
 sidebar_position: 27
+description: Guide de dépôt sur un FTP à l'attention des prestataires de numérisation
 ---
 
 # Guide de dépôt sur un FTP

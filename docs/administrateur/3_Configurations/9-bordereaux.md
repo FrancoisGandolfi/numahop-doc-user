@@ -1,6 +1,6 @@
 ---
-title: Configuration des bordereaux
-sidebar_label: Configuration des bordereaux
+title: Bordereaux
+sidebar_label: Bordereaux
 sidebar_position: 9
 description: Configuration des bordereaux
 ---

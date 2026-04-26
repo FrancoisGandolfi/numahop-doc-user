@@ -1,6 +1,6 @@
 ---
-title: Configuration des templates
-sidebar_label: Configuration des templates
+title: Templates
+sidebar_label:  Templates
 sidebar_position: 8
 description: Configuration des templates
 ---

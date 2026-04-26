@@ -1,8 +1,8 @@
 ---
-title: Configuration de la gestion des fichiers
-sidebar_label: Configuration de la gestion des fichiers
+title: Gestion des fichiers après archivage
+sidebar_label: Gestion des fichiers après archivage
 sidebar_position: 10
-description: Configuration de la gestion des fichiers
+description: Configuration de la gestion des fichiers après archivage
 ---
 
 import Icon from '@site/src/components/Icon';

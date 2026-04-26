@@ -1,6 +1,6 @@
 ---
-title: Configuration des contrôles qualité
-sidebar_label: Configuration des contrôles qualité
+title: Contrôles qualité
+sidebar_label: Contrôles qualité
 sidebar_position: 4
 description: Configuration des contrôles qualité
 ---

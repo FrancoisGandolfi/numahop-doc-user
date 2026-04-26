@@ -24,7 +24,7 @@ Le fonctionnement sur **Microsoft Edge** ou **Internet Explorer** n’est pas ga
 
 ### Boutons d'actions
 
-Dans toutes les interfaces, les différentes actions possibles sont associées à des icônes et une info-bulle. Ils sont cohérents sur l'ensemble de la plateforme. D’autres icônes de fonctionnalités peuvent exister en fonction des modules sollicités. Ces nouveaux boutons d'action sont généralement situés en haut à droite de la fenêtre dans les interfaces, en haut à droite de la barre d’en-tête des tables, ou à la suite de la données qu'ils complètent.
+Dans toutes les interfaces, les **différentes actions possibles sont associées à des icônes et une info-bulle**. Ils sont cohérents sur l'ensemble de la plateforme. D’autres icônes de fonctionnalités peuvent exister en fonction des modules sollicités. Ces nouveaux boutons d'action sont généralement situés en haut à droite de la fenêtre dans les interfaces, en haut à droite de la barre d’en-tête des tables, ou à la suite de la donnée qu'ils complètent.
 
 - <Icon icon={["fa", "square-plus"]} /> **Ajouter** ;
 - <Icon icon={["fa", "trash"]} /> **Supprimer** ;
@@ -61,7 +61,7 @@ Le menu lateral permet d’accéder aux libellés complets des menus et sous-men
 
 ### Informations NumaHop
 
-NumaHOP propose sur l’ensemble de ses interfaces une colonne "Informations" dépliable sur la droite de chaque interface. Elle correspond à la zone de communication entre NumaHop et l'utilisateur : tous les messages émis par la plateforme s’y afficheront.
+NumaHOP propose sur l’ensemble de ses interfaces une colonne **Informations** dépliable sur la droite de chaque interface. Elle correspond à la zone de communication entre NumaHop et l'utilisateur : tous les messages émis par la plateforme s’y afficheront.
 
 La gestion des messages applicatifs a été conçue pour interpeller immédiatement et visuellement l'utilisateur avec une apparition d'un message associé à un code couleur par niveau d’alerte, et un positionnement différent dans la colonne d’information.
 

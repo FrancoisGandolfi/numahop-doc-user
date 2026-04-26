@@ -1,7 +1,8 @@
 ---
-title: Configurations couriels
-sidebar_label: Configurations couriels
+title: Couriels
+sidebar_label: Couriels
 sidebar_position: 2
+description: COnfiguration des couriels CINES
 ---
 
 import Icon from '@site/src/components/Icon';

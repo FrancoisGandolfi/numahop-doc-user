@@ -1,7 +1,8 @@
 ---
-title: Gestion des groupes
-sidebar_label: Gestion des groupes
+title: Groupes
+sidebar_label: Groupes
 sidebar_position: 3
+description: Gestion des groupes
 ---
 
 import Icon from '@site/src/components/Icon';

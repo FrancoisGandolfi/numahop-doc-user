@@ -1,6 +1,6 @@
 ---
-title: Configuration des propriétés personnalisées
-sidebar_label: Configuration des propriétés personnalisées
+title: Propriétés personnalisées
+sidebar_label: Propriétés personnalisées
 sidebar_position: 7
 description: Configuration des propriétés personnalisées
 ---

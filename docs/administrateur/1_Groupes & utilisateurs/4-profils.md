@@ -1,7 +1,8 @@
 ---
-title: Gestion des profils
-sidebar_label: Gestion des profils
+title: Profils
+sidebar_label: Profils
 sidebar_position: 3
+description: Gestion des profils utilisateur
 ---
 
 import Icon from '@site/src/components/Icon';

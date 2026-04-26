@@ -1,6 +1,6 @@
 ---
-title: Configuration des workflows
-sidebar_label: Configuration des workflows
+title: Workflows
+sidebar_label: Workflows
 sidebar_position: 3
 description: Configuration des worflows
 ---

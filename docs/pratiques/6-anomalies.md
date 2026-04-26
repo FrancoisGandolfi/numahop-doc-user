@@ -1,8 +1,8 @@
 ---
 title: Erreurs et anomalies
 sidebar_label: Erreurs et anomalies
-sidebar_position: 5
-description: Comment interpreter et resoudre les erreurs et anomalies rencontrées?
+sidebar_position: 6
+description: Comment interpreter et resoudre les erreurs et anomalies rencontrées ?
 ---
 
 import Icon from '@site/src/components/Icon';

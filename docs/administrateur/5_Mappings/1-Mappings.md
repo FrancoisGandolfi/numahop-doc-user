@@ -1,8 +1,8 @@
 ---
-title: 'Mappings : généralités'
-sidebar_label: 'Mappings : généralités'
+title: Mappings
+sidebar_label: Mappings
 sidebar_position: 1
-description: Paramatrage des conversion des données bibliographiques vers le standard Dublin Core.
+description: Gestion des mappings
 ---
 
 import Icon from '@site/src/components/Icon';

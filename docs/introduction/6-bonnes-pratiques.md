@@ -1,5 +1,5 @@
 ---
-title: Volumétrie et bonnes pratiques pour NumaHop
+title: Bonnes pratiques
 sidebar_label: Bonnes pratiques
 sidebar_position: 6
 description: Volumétrie et bonnes pratiques pour NumaHop

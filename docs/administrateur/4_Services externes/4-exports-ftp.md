@@ -1,7 +1,8 @@
 ---
-title: Configuration du serveur d'export
-sidebar_label: Configuration du serveur d'export
+title: Serveur d'export
+sidebar_label: Serveur d'export
 sidebar_position: 4
+description: Configuration du serveur d'export
 ---
 
 import Icon from '@site/src/components/Icon';

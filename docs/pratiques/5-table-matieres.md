@@ -1,8 +1,8 @@
 ---
 title: Table des matières
 sidebar_label: Table des matières
-sidebar_position: 4
-description: Méthodologie pour la redaction de tables des mathières
+sidebar_position: 5
+description: Méthodologie pour la redaction des fichiers de tables des mathières 
 ---
 
 import Icon from '@site/src/components/Icon';

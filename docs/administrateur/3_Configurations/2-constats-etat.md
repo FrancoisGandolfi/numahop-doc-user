@@ -1,6 +1,6 @@
 ---
-title: Configuration des constats d'état
-sidebar_label: Configuration des constats d'état
+title: Constats d'état
+sidebar_label: Constats d'état
 sidebar_position: 2
 description: Configuration des constats d'état
 ---

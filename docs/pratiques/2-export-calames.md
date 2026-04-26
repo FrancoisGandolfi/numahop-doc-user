@@ -1,7 +1,7 @@
 ---
 title: Export CALAMES
 sidebar_label: Export CALAMES
-sidebar_position: 1
+sidebar_position: 2
 description: Exporter un instrument de recherche depuis CALAMES
 ---
 

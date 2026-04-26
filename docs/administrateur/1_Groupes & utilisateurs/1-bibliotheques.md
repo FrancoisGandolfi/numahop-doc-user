@@ -1,7 +1,8 @@
 ---
-title: Gestion des bibliothèques
-sidebar_label: Gestion des bibliothèques
+title: Bibliothèques
+sidebar_label: Bibliothèques
 sidebar_position: 1
+description: Gestion des bibliothèques
 ---
 
 import Icon from '@site/src/components/Icon';

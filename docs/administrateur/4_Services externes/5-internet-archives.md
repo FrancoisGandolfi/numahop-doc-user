@@ -1,7 +1,8 @@
 ---
-title: Configuration Internet Archive
-sidebar_label: Configuration Internet Archive
+title: Internet Archive
+sidebar_label: Internet Archive
 sidebar_position: 5
+description: Configuration Internet Archive
 ---
 
 import Icon from '@site/src/components/Icon';
