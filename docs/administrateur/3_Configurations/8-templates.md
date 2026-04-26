@@ -8,3 +8,6 @@ description: Configuration des templates
 import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "file"]} /> Configuration des templates
+
+:::warning Page en cours de rédaction
+:::

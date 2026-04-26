@@ -2,6 +2,7 @@
 title: Gestion des livraisons
 sidebar_label: Gestion des livraisons
 sidebar_position: 1
+description: Gestion des livraisons
 ---
 
 import Icon from '@site/src/components/Icon';

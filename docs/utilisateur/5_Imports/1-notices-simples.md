@@ -2,6 +2,7 @@
 title: Import de notices simples
 sidebar_label: Import de notices simples
 sidebar_position: 1
+description: Import de notices simples
 ---
 
 import Icon from '@site/src/components/Icon';

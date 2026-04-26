@@ -2,6 +2,7 @@
 title: Gestion des lots
 sidebar_label: Gestion des lots
 sidebar_position: 1
+description: Gestion des lots
 ---
 
 import Icon from '@site/src/components/Icon';

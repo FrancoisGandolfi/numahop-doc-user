@@ -2,6 +2,7 @@
 title: Contrôles manuels
 sidebar_label: Contrôles manuels
 sidebar_position: 2
+description: Contrôles manuels
 ---
 
 import Icon from '@site/src/components/Icon';

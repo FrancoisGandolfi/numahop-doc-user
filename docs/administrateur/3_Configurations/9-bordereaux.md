@@ -8,3 +8,6 @@ description: Configuration des bordereaux
 import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "signature"]} /> Configuration des bordereaux
+
+:::warning Page en cours de rédaction
+:::

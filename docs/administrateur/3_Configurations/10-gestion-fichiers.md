@@ -8,3 +8,6 @@ description: Configuration de la gestion des fichiers après archivage
 import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "box-archive"]} /> Configuration de la gestion des fichiers
+
+:::warning Page en cours de rédaction
+:::

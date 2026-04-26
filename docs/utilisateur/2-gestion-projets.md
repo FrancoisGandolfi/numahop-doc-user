@@ -2,6 +2,7 @@
 title: Gestion des projets
 sidebar_label: Gestion des projets
 sidebar_position: 1
+description: Gestion des projets
 ---
 
 import Icon from '@site/src/components/Icon';

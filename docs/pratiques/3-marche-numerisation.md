@@ -8,3 +8,6 @@ description: Conseils pour la rédaction de marchés de numérisation
 import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "file-contract"]} /> Marché de numérisation
+
+:::warning Page en cours de rédaction
+:::

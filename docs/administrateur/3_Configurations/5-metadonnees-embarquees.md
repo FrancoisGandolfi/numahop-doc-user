@@ -8,3 +8,6 @@ description: Configuration des métadonnées embarquées
 import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "hashtag"]} /> Configuration des métadonnées embarquées
+
+:::warning Page en cours de rédaction
+:::
