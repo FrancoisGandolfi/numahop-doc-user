@@ -1,13 +1,13 @@
 ---
-title: Serveur d'export
-sidebar_label: Serveur d'export
+title: Serveurs d'export
+sidebar_label: Serveurs d'export
 sidebar_position: 4
-description: Configuration du serveur d'export
+description: Configurations des serveur d'export
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# <Icon icon={["fa", "server"]} /> Configuration du serveur d'export FTP
+# <Icon icon={["fa", "server"]} /> Configurations des serveurs d'export FTP
 
 ## Présentation
 

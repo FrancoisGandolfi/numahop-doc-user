@@ -2,12 +2,12 @@
 title: CINES
 sidebar_label: CINES
 sidebar_position: 1
-description: Configuration CINES
+description: Configurations CINES
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# <Icon icon={["fa", "folder-tree"]} /> Configuration CINES
+# <Icon icon={["fa", "folder-tree"]} /> Configurations CINES
 
 ## Présentation
 

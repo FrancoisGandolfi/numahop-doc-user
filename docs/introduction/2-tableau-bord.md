@@ -16,8 +16,8 @@ Le logo NumaHop situé en haut à droite de la page permet d'acceder directement
 
 ## Actions
 
-Les actions apparaissent uniquement si elles existent. Par défaut, les actions sont listées en indiquant le nombre de documents accessibles à l’utilisateur
-connecté, et sont regroupées par étape de workflow. En cliquant sur un des bandeaux d’étape, celui-ci se déplie et affiche les éléments concernés.
+Les actions apparaissent uniquement si elles existent. Par défaut, les actions sont listées en indiquant le **nombre de documents** accessibles à l’utilisateur
+connecté, et sont **regroupées par étape de workflow**. En cliquant sur un des bandeaux d’étape, celui-ci se déplie et affiche les éléments concernés.
 
 Les listes d'actions possibles permettent d'acceder directement aux unités docuemntaires à traiter.
 - Documents en **attente de livraison** : [_Gestion des livraisons_](/docs/utilisateur/gestion-livraisons) <Icon icon={["fa", "arrow-up-right-from-square"]} /> ;
@@ -42,7 +42,9 @@ Après avoir <Icon icon={["fa", "square-plus"]} /> **Ajouter** un _widget_, il s
 - <Icon icon={["fa", "square-xmark"]} />  **Supprimer** un _widget_ du tableau de bord.
 
 :::tip
-Selon les habilitations de l’utilisateur dans le workflow, certains _widgets_ seront plus utiles que d’autres. Par exemple, "Espace disque disponible" s'adresse à un chef de projet, tandis que les "Activités des contrôles" sont déstinées à un contrôleur qualité.
+Selon les habilitations de l’utilisateur dans le workflow, certains _widgets_ seront plus utiles que d’autres.
+- l'**espace disque disponible** s'adresse à un chef de projet ;
+- les **activités des contrôles** sont déstinées à un contrôleur qualité.
 ::::
 
 ### Paramétrer un _widget_

@@ -11,7 +11,9 @@ import Icon from '@site/src/components/Icon';
 
 ## Connexion & deconnexion
 
-La connexion nécessite un identifiant, ou _login_, et un mot de passe. L’**identifiant** est fonction des règles de nommage adoptées par l'administrateur. Le **mot de passe** est transmis lors de l’inscription à l'application.
+La connexion nécessite un identifiant, ou _login_, et un mot de passe.
+- l’**identifiant** est fonction des règles de nommage adoptées par l'administrateur ;
+- le **mot de passe** est transmis lors de l’inscription à l'application.
 
 :::warning
 Le mot de passe doit contenir _a minima_ douze caractères, dont une majuscule, une minuscule, un chiffre, et un caratère spécial.
@@ -25,7 +27,9 @@ Les actions possibles sur le compte de l'utilisateur connecté sont accessibles 
 
 ## Profil de l'utilisateur
 
-Le détail du profil de l'utilisateur connecté est accessible via le menu derroulant du bandeau d'en-tête de Numahop. L'utilisateur peut modifier certaines informations le concernant en fonction de ses habilitations irectement depuis le menu derroulant du bandeau d'en-tête de Numahop, en cliquant sur le compte utilisateur **Prénom** <Icon icon={["fa", "caret-down"]} />, puis en selectionnant l'option <Icon icon={["fa", "wrench"]} /> **Profil**. Il est alors possible de modifier les champs disponibles.
+Le détail du profil de l'utilisateur connecté est accessible via le menu derroulant du bandeau d'en-tête de Numahop **Prénom** <Icon icon={["fa", "caret-down"]} />.
+
+L'utilisateur peut modifier certaines informations le concernant en fonction de ses habilitations directement depuis le menu derroulant du bandeau d'en-tête de Numahop, en cliquant sur le compte utilisateur **Prénom** <Icon icon={["fa", "caret-down"]} />, puis en selectionnant l'option <Icon icon={["fa", "wrench"]} /> **Profil**. Il est alors possible de modifier les champs disponibles.
 
 |      Champ       | Statut         | Détails                   |                                                                     _Voir aussi_ |
 | :--------------- | :------------- | :------------------------ | -------------------------------------------------------------------------------: |

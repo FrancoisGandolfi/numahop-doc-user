@@ -2,12 +2,12 @@
 title: Couriels
 sidebar_label: Couriels
 sidebar_position: 2
-description: COnfiguration des couriels CINES
+description: COnfigurations des couriels CINES
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# <Icon icon={["fa", "at"]} /> Configurations couriels
+# <Icon icon={["fa", "at"]} /> Configurations des couriels
 
 
 ## Présentation

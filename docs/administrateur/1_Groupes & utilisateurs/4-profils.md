@@ -9,3 +9,6 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "users-rectangle"]} /> Gestion des profils
 
+:::warning Page en cours de rédaction
+:::
+

@@ -2,12 +2,12 @@
 title: Omeka
 sidebar_label: Omeka
 sidebar_position: 6
-description: Configuration Omeka
+description: Configurations Omeka
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# <Icon icon={["fa", "laptop-file"]} /> Configuration Omeka
+# <Icon icon={["fa", "laptop-file"]} /> Configurations Omeka
 
 
 ## Présentation

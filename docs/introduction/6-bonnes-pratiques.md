@@ -9,6 +9,9 @@ import Icon from '@site/src/components/Icon';
 
 # <Icon icon={["fa", "thumbs-up"]} /> Bonnes pratiques
 
+:::warning Page en cours de rédaction
+:::
+
 La question de la **volumétrie** concernant une application logicielle reste une problématique complexe, car elle implique la prise en compte de nombreux paramètres variés et interdépendants. Parmi ceux-ci, on peut citer :
 - Le nombre d'utilisateurs
 - Les caractéristiques du serveur

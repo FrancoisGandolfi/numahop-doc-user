@@ -11,10 +11,10 @@ import Icon from '@site/src/components/Icon';
 
 Le module Statistiques est accessible via l'icône <Icon icon={["fa", "chart-pie"]} /> **Statistiques** du menu applicatif. Il permet d'obtenir différents tableaux de données.
 
-- tableaux de suivi ;
-- états d'avancement ;
-- moyennes ;
-- tableaux de bord.
+- **Tableaux de suivi** : nombre et statuts des documents des projets;
+- **Etats d'avancement** : n de documents dans chaque étape de _workflow_ ;
+- **Moyennes** de l'instance ;
+- **Tableaux de bord** : détail des actions effectuées.
 
 Pour chaque tableau, l'îcone <Icon icon={["fa", "rotate"]} /> **Réinitialiser les filtres de la recherche** permet de rafraichir et d'actualiser les données affichées, et l'icône <Icon icon={["fa", "download"]} /> **Export** permet d'exporter les tableaux au format CSV.
 
@@ -36,7 +36,7 @@ _A documenter_
 
 _A documenter_
 
-## Tableaux des états d'avancement
+## Etats d'avancement
 
 ### Etats d'avancement des livraisons
 
@@ -62,7 +62,7 @@ Les données peuvent être filtrées par **bibliothèque**, **projet**, **lot**,
 Le filtre par bibliothèque n'est accessible qu'aux administrateurs.
 :::
 
-## Tableaux des moyennes
+## Moyennes
 
 ### Moyennes générales
 

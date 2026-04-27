@@ -2,12 +2,12 @@
 title: Internet Archive
 sidebar_label: Internet Archive
 sidebar_position: 5
-description: Configuration Internet Archive
+description: Configurations Internet Archive
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# <Icon icon={["fa", "boxes-stacked"]} /> Configuration Internet Archive
+# <Icon icon={["fa", "boxes-stacked"]} /> Configurations Internet Archive
 
 ## Présentation
 

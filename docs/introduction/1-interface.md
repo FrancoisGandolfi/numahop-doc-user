@@ -11,7 +11,7 @@ import Icon from '@site/src/components/Icon';
 
 ## Pré-requis techniques
 
-NumaHop est certifiée pour fonctionner sur les navigateurs Web suivants :
+NumaHop est certifié pour fonctionner sur les navigateurs Web suivants :
 
 - **Google Chrome**, version 50 et supérieures ;
 - **Mozilla Firefox**, version 47 et supérieures ;
@@ -46,12 +46,12 @@ Dans toutes les interfaces, les **différentes actions possibles sont associées
 
 ### Menus applicatifs
 
-Le menu lateral permet d’accéder aux libellés complets des menus et sous-menus. La liste des menus disponibles est fonction des habilitations de l’utilisateur connecté.
+Le **menu lateral** permet d’accéder aux libellés complets des menus et sous-menus. La liste des menus disponibles est fonction des habilitations de l’utilisateur connecté.
 
 | Menus / Modules                                          | Description                                                          | _Voir aussi_ |
 | :------------------------------------------------------- | -------------------------------------------------------------------- | -----------: |
 | <Icon icon={["fa", "lines-leaning"]} /> **Documents**             | Gestion des Unités documentaires, Notices, Constats d'état, Imports. |              |
-| <Icon icon={["fa", "magnifying-glass"]} /> **Recherche** | Recherche avancée dans l'instance                                    |              |
+| <Icon icon={["fa", "magnifying-glass"]} /> **Recherche** | Recherche avancée dans l'instance NumaHop                                    |              |
 | <Icon icon={["fa", "user"]} /> **Utilisateurs**          | Gestion des Bibliothèques, Profils, Utilisateurs                     |              |
 | <Icon icon={["fa", "book"]} /> **Projets**               | Gestion des Projets, Lots, Trains, Livraisons                        |              |
 | <Icon icon={["fa", "square-check"]} /> **Contrôles**     | Contrôle des documents numériques                                    |              |

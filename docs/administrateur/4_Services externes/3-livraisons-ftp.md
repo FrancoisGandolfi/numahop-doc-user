@@ -1,13 +1,13 @@
 ---
-title: Serveur de livraison
-sidebar_label: Serveur de livraison
+title: Serveurs de livraison
+sidebar_label: Serveurs de livraison
 sidebar_position: 3
-description: Configuration du serveur de livraison
+description: Configurations des serveurs de livraison
 ---
 
 import Icon from '@site/src/components/Icon';
 
-# <Icon icon={["fa", "server"]} /> Configuration du serveur de livraison
+# <Icon icon={["fa", "server"]} /> Configurations des serveurs de livraison
 
 
 ## Présentation

@@ -33,7 +33,9 @@ Pour chaque type de mapping, il est possible de :
 - <Icon icon={["fa", "trash"]} /> **Supprimer** un _mapping_ existant.
 
 :::warning Sauvegarde
-Lorsqu’une règle est modifiée, la ligne apparaît en jaune tant que le _mapping_ n’a pas été enregistré. L'enregistrement du _mapping_ et des modifications s'effectue depuis l'icône <Icon icon={["fa", "floppy-disk"]} /> **Sauvegarder**, située en haut à droite de l'écran. Tant que le mapping n’a pas été enregistré, il est possible d'annuler les dernières modifications grâce au bouton <Icon icon={["fa", "reply"]} /> **Annuler** ; lorsque le _mapping_ a été enregistré, il est possible de restaurer une version antérieure grâce à l'icône <Icon icon={["fa", "clock-rotate-left"]} /> **Restaurer**, en choisissant la version souhaitée (date et heure).
+Lorsqu’une règle est modifiée, la ligne apparaît en jaune tant que le _mapping_ n’a pas été enregistré. L'enregistrement du _mapping_ et des modifications s'effectue depuis l'icône <Icon icon={["fa", "floppy-disk"]} /> **Sauvegarder**, située en haut à droite de l'écran.
+- Tant que le mapping n’a pas été enregistré, il est possible d'annuler les dernières modifications grâce au bouton <Icon icon={["fa", "reply"]} /> **Annuler** ;
+- lorsque le _mapping_ a été enregistré, il est possible de restaurer une version antérieure grâce à l'icône <Icon icon={["fa", "clock-rotate-left"]} /> **Restaurer**, en choisissant la version souhaitée (date et heure).
 :::
 
 ### Créer un _mapping_
@@ -44,12 +46,12 @@ Après la selection du type de notices, la création d'un nouveau _mapping_ s’
 - la **bibliothèque** à laquelle le _mapping_ est attribué ;
 - l'**identifiant du parent** (uniquement pour les _mappings_ MARC et CSV).
 
-L'utilisateur ajoute autant de **Règles de _mapping_** que necessaire depuis le bouton <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle** située en fin de tableau.
+L'utilisateur ajoute autant de **Règles de _mapping_** que nécessaire depuis le bouton <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle** située en fin de tableau.
 
 
 ### Modifier un _mapping_
 
-Après la selection du type de notice et du _mapping_ à modifier, l'utilisateur peut ajouter une nouvelle règle depuis l'icône <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle** située en fin de tableau, ou éditer une règle existante.
+Après la selection du type de notice et du _mapping_ à modifier, l'utilisateur peut ajouter une nouvelle règle depuis l'icône <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle** située en fin de tableau, ou éditer une règle existante. Chaque règle de mapping est éditable depuis les trois icônes situées à droite de la ligne.
 
 - <Icon icon={["fa", "pen-to-square"]} /> **Modifier** une règle de _mapping_ ;
 - <Icon icon={["fa", "copy"]} /> **Dupliquer** une règle de _mapping_ ;
@@ -67,7 +69,7 @@ Après la selection du type de notice, l'import s’effectue depuis l'icône <Ic
 L'import d'un _mapping_ ouvre une boîte de dialogue qui propose à l'utilisateur de selectionner un **Fichier à téléverser**.
 
 :::warning Format des _mappings_
-Les _mappings_ à importer doivent être dans un format `json` valide, et ne contenir que des propriétés renseignées dans les **Types de propriétés personnalisées**, parametrables depuis le menu applicatif <Icon icon={["fa", "gear"]} /> **Administration**.
+Les _mappings_ à importer doivent être dans un format `json` valide, et ne contenir que des propriétés préalablement renseignées dans les **Types de propriétés personnalisées**, paramétrables depuis le menu applicatif <Icon icon={["fa", "gear"]} /> **Administration**.
 
 [**Configuration des propriétés personalisées**](/docs/administrateur/Configurations/proprietes) <Icon icon={["fa", "arrow-up-right-from-square"]} />.
 :::
