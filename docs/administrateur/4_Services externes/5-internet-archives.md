@@ -37,7 +37,7 @@ Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Configurations 
 
 Cliquer sur <Icon icon={["fa", "square-plus"]} /> pour créer une **nouvelle configuration**.
 
-**Renseignez les informations suivantes :**
+**Renseigner les informations suivantes :**
 
 | **Libellé** | **Commentaires** | **Détails** |
 |-------------|------------------|-------------|

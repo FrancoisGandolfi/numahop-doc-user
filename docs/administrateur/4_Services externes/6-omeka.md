@@ -32,7 +32,7 @@ Se référer à [Gestion des profils](docs/administrateur/1_Groupes%20&%20utilis
 
 ### Choix de la version d'Omeka
 
-Pour configurer une sortie Omeka Classic ou Omeka S dans Numahop, aller dans <Icon icon={["fa", "square-plus"]} />  **Administration** > **Services externes** > **Configurations Omeka**
+Pour configurer une sortie Omeka Classic ou Omeka S dans Numahop, aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** > **Configurations Omeka**
 
 Dans la partie de gauche cochez la case correspondante à votre Omeka :
 - Omeka pour Omeka Classic
@@ -48,14 +48,14 @@ Les champs suivants sont à remplir :
 |---------|--------------|---------|
 |Libellé         |  Permet de de distinguer les différentes configurations si nécessaire (par exemple pour distinguer une configuration de l’export vers une base de test et une base en production)             |🔴 Obligatoire         |
 |OmekaS         |Choisir le bouton *oui* pour un Omeka S et *non* pour un Omeka Classic              |🔵 Facultatif         |
-|Active         | oui/non             | 🔵 Facultatif        |
+|Active         | Oui/non             | 🔵 Facultatif        |
 |Bibliothèque         |L'établissement auquel est rattaché la sortie Omeka à partir de la liste des bibliothèques créées dans Numahop              | 🔴 Obligatoire        |
-|Serveur de stockage         |l’adresse du serveur de l’instance Omeka              |🔴 Obligatoire         |
+|Serveur de stockage         |L’adresse du serveur de l’instance Omeka              |🔴 Obligatoire         |
 |Port         |              |Le port du serveur         |🔴 Obligatoire
 |Adresse de dépôt         | Indiquer le dossier dans lequel devront être déposés les fichiers exportés depuis NumaHOP sur le serveur Omeka.             | 🔵 Facultatif        |
-|Login         | identifiant pour se connecter au serveur d'Omeka pour déposer les fichiers             |🔵 Facultatif         |
-|Mot de passe         | mot de passerpour se connecter au serveur d'Omeka pour déposer les fichiers               | 🔵 Facultatif        |
-|Connexion SFTP         | choisir le bouton *oui* pour une connexion SFTP et *non* pour une connexion FTP            | 🔵 Facultatif        |
+|Login         | Identifiant pour se connecter au serveur d'Omeka pour déposer les fichiers             |🔵 Facultatif         |
+|Mot de passe         | Mot de passerpour se connecter au serveur d'Omeka pour déposer les fichiers               | 🔵 Facultatif        |
+|Connexion SFTP         | Choisir le bouton *oui* pour une connexion SFTP et *non* pour une connexion FTP            | 🔵 Facultatif        |
 |Url d'accès Omeka         | L’URL d’accès au logiciel Omeka             | 🔵 Facultatif        |
 |Email         |Indiquer l’adresse mail qui recevra les fichiers de données CSV générés par NumaHOP et nécessaires à l’importation des unités documentaires dans Omeka             |🔵 Facultatif         |
 

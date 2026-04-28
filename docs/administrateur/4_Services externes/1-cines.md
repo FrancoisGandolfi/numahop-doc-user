@@ -19,7 +19,7 @@ Cette interface permet de régler les paramétrages du CINES :
 
 ## Renseignements globaux
 
-AlleR dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** >  **Configurations CINES**.
+Aller dans <Icon icon={["fa", "gear"]} /> **Administration** > **Services externes** >  **Configurations CINES**.
 
 Pour verser au CINES, il convient de renseigner les champs suivants en cliquant sur <Icon icon={["fa", "pen-to-square"]} /> :  
 
