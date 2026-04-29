@@ -105,7 +105,7 @@ Si la propriété doit s’intégrer dans **Description du document**, cliquer d
 La configuration de la propriété s’ouvre. Dans la barre supérieure, on voit le rattachement de la
 propriété à la catégorie.
 
-Remplir ensuite la grille et cliquer sur <Icon icon={["fa", "floppy-disk"]} />Enregistrer.
+Remplir ensuite la grille et cliquer sur <Icon icon={["fa", "floppy-disk"]} />**Enregistrer**.
 
 La nouvelle propriété apparaît dans la liste des propriétés du constat.
 
