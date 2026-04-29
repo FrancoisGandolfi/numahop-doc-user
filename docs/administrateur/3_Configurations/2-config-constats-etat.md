@@ -44,13 +44,9 @@ tenu des différentes typologies de documents qui seront concernés.
 Une fois le template créé, il faut qu’il soit enregistré dans le menu
 « Template » de l’interface NumaHop. 
 
-:::info  Indiquer au prestataire qui assure votre support que des
-modifications ont été apportées au template. 
+:::info  Indiquer au prestataire qui assure votre support que des modifications ont été apportées au template. 
 De manière à ce que les techniciens puissent enregistrer ce template comme modèle dans la base.
-
-Il est également possible de transmettre une signature de
-l’institution pour intégrer celle-ci au template, de manière à sortir de
-NumaHop des constats d’état signés et validés par l’institution.
+Il est également possible de transmettre une signature de l’institution pour intégrer celle-ci au template, de manière à sortir de NumaHop des constats d’état signés et validés par l’institution.
 :::
 
 ###### Les modifications communes
@@ -74,26 +70,20 @@ supprimer ou en rajouter une en cliquant sur le <Icon icon={["fa", "square-plus"
 
 En cas de partage d’un serveur NumaHop par plusieurs établissements, un
 encart permet de procéder à des modifications strictement locales,
-c’est-à-dire uniquement visibles pour l’établissement concerné.
-
-Il s’agit de l’encart du milieu, intitulé au nom de l’institution.
+c’est-à-dire uniquement visibles pour l’établissement concerné. Il s’agit de l’encart du milieu, intitulé au nom de l’institution.
 
 Chaque institution peut donc décider de rendre cette propriété active et
 existante dans le constat d’état : en cliquant sur NON, la
 propriété ne s’affichera pas dans le constat d’état. 
 De la même façon, un établissement peut choisir de la rendre obligatoire ou non.
 
-Enfin, **commentaire** permet d’apposer un champ en texte libre en plus des valeurs à assigner à la propriété.
+Enfin, **Commentaire** permet d’apposer un champ en texte libre en plus des valeurs à assigner à la propriété.
 
-Ne pas oublier de cliquer sur le bouton <Icon icon={["fa", "floppy-disk"]} />Enregistrer une fois les
+Ne pas oublier de cliquer sur le bouton <Icon icon={["fa", "floppy-disk"]} />**Enregistrer** une fois les
 modifications terminées.
 
-##### Changer une propriété de place
+#### Changer une propriété de place
 
-:::caution Une fois une propriété enregistrée dans sa catégorie, il n’est plus
-possible de la déplacer dans une autre. Dans ce cas, il faut la
-supprimer et la recréer dans la catégorie souhaitée.
-:::
 
 Il est possible de changer de place une propriété au sein d'une catégorie. 
 Pour cela, il faut changer l’ordre des propriétés de la catégorie.
@@ -101,6 +91,10 @@ Pour cela, il faut changer l’ordre des propriétés de la catégorie.
 Pour faire passer une propriété d'un rang à un autre, indiquer sa position dans le champ
 **ordre**.
 Attention, il faudra alors penser à modifier aussi le rang des propriétés adjacentes, ce n’est pas automatique.
+
+:::caution Une fois une propriété enregistrée dans une catégorie, il n’est plus possible de la déplacer dans une autre catégorie. 
+Dans ce cas, il faut la supprimer et la recréer dans la catégorie souhaitée.
+:::
 
 #### Ajouter une propriété
 
@@ -118,11 +112,8 @@ La nouvelle propriété apparaît dans la liste des propriétés du constat.
 #### Supprimer une propriété
 
 Dans la liste des propriétés affichées dans le panneau de configuration
-du constat, cliquer sur la propriété à supprimer et sur <Icon icon={["fa", "trash-can"]} /> en haut à droite :
-
-Une fenêtre s’affiche pour demander confirmation, cliquer sur **Supprimer** :
-La propriété disparait de la liste.
-
+du constat, cliquer sur la propriété à supprimer et sur <Icon icon={["fa", "trash-can"]} /> en haut à droite.
+Une fenêtre s’affiche pour demander confirmation, cliquer sur **Supprimer** : la propriété disparait de la liste.
 
 
 ## Gestion des champs des constats d’état par bibliothèque
