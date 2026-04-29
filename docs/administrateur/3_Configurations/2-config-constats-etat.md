@@ -7,7 +7,7 @@ description: Configuration des constats d'état
 
 import Icon from '@site/src/components/Icon';
 
-## <Icon icon={["fa", "list-check"]} /> Configuration des constats d'état
+## Configuration des constats d'état
 
 ### Le template de constat d'état dans NumaHOP
 
@@ -45,9 +45,8 @@ Une fois le template créé, il faut qu’il soit enregistré dans le menu
 « Template » de l’interface NumaHop. 
 
 :::info  Indiquer au prestataire qui assure votre support que des
-modifications ont été apportées au template, de manière à ce que les
-techniciens puissent enregistrer ce template comme modèle dans la base,
-et l’appliquer pour les lots à venir.
+modifications ont été apportées au template. 
+De manière à ce que les techniciens puissent enregistrer ce template comme modèle dans la base.
 
 Il est également possible de transmettre une signature de
 l’institution pour intégrer celle-ci au template, de manière à sortir de
@@ -80,15 +79,13 @@ c’est-à-dire uniquement visibles pour l’établissement concerné.
 Il s’agit de l’encart du milieu, intitulé au nom de l’institution.
 
 Chaque institution peut donc décider de rendre cette propriété active et
-existante dans le constat d’état (**création**). En cliquant sur non, la
-propriété ne s’affichera pas dans le constat d’état. De la même façon,
-un établissement peut choisir de la rendre obligatoire ou non
-(**obligatoire**).
+existante dans le constat d’état : en cliquant sur NON, la
+propriété ne s’affichera pas dans le constat d’état. 
+De la même façon, un établissement peut choisir de la rendre obligatoire ou non.
 
-Enfin, **commentaire** permet d’apposer un champ de commentaire en texte
-libre en plus des valeurs à assigner à la propriété.
+Enfin, **commentaire** permet d’apposer un champ en texte libre en plus des valeurs à assigner à la propriété.
 
-Ne pas oublier de cliquer sur le bouton <Icon icon={["fa", "loppy-disk"]} />fEnregistrer une fois les
+Ne pas oublier de cliquer sur le bouton <Icon icon={["fa", "floppy-disk"]} />Enregistrer une fois les
 modifications terminées.
 
 ##### Changer une propriété de place
@@ -114,7 +111,7 @@ Si la propriété doit s’intégrer dans **Description du document**, cliquer d
 La configuration de la propriété s’ouvre. Dans la barre supérieure, on voit le rattachement de la
 propriété à la catégorie.
 
-Remplir ensuite la grille et cliquer sur <Icon icon={["fa", "loppy-disk"]} />Enregistrer.
+Remplir ensuite la grille et cliquer sur <Icon icon={["fa", "floppy-disk"]} />Enregistrer.
 
 La nouvelle propriété apparaît dans la liste des propriétés du constat.
 
@@ -127,21 +124,14 @@ Une fenêtre s’affiche pour demander confirmation, cliquer sur **Supprimer** 
 La propriété disparait de la liste.
 
 
----
 
----
-title: Gestion des champs des constats d’état
----
-
-# Gestion des champs des constats d’état par bibliothèque
+## Gestion des champs des constats d’état par bibliothèque
 
 Il est possible de gérer les champs des constats d’état par bibliothèque. Les champs sont classés par catégorie.
 
----
+### Catégories et champs disponibles
 
-## Catégories et champs disponibles
-
-### Description du document
+#### Description du document
 - Cahiers
 - Conditionnement de conservation
 - Corps d’ouvrage
@@ -153,11 +143,11 @@ Il est possible de gérer les champs des constats d’état par bibliothèque. L
 - Sens de lecture
 - Type de documents
 
-### Numérotation
+#### Numérotation
 - Numérotation
 - Autres pièces
 
-### Reliure
+#### Reliure
 - État de la reliure
   - Angles d’ouvertures
   - Autres informations
@@ -180,12 +170,10 @@ Il est possible de gérer les champs des constats d’état par bibliothèque. L
   - État général
   - Points de vigilance
 
----
-
-## Paramétrage des champs par bibliothèque
+### Paramétrage des champs par bibliothèque
 
 Chaque bibliothèque peut décider pour chaque champ s’il :
-- Est **obligatoire** ou non.
+- Est **obligatoire** ou non
 - Nécessite l’affichage d’une **zone de commentaires complémentaire** ou non.
 - S’affiche **par défaut** à la création d’un constat d’état ou non.
 - Est affiché pour les types de constat d’état suivants :
