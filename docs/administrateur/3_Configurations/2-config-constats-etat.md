@@ -18,7 +18,7 @@ partageant un même serveur.
 
 #### Ouvrir la configuration du template
 
-Dans le menu <Icon icon={["fa", "gear"]} />Administration, puis dans l’encart
+Dans le menu <Icon icon={["fa", "gear"]} />**Administration**, puis dans l’encart
 **Configuration** cliquer sur **Constats d’état**  :
 
 La liste des propriétés apparaît. Les différentes propriétés (en minuscules) sont réparties par catégories (en majuscules), que l’on
@@ -53,7 +53,7 @@ Il est également possible de transmettre une signature de l’institution pour 
 
 Cliquer sur la propriété à modifier. Cela ouvre ses détails à droite.
 
-Pour entrer en mode édition, cliquer sur le petit bouton <Icon icon={["fa", "pen-to-square"]} />Modifier en
+Pour entrer en mode édition, cliquer sur le petit bouton <Icon icon={["fa", "pen-to-square"]} />**Modifier** en
 haut à droite. Il est également possible de cliquer sur un des champs en
 bleu pour ouvrir la propriété en mode édition :
 
@@ -89,7 +89,7 @@ Il est possible de changer de place une propriété au sein d'une catégorie.
 Pour cela, il faut changer l’ordre des propriétés de la catégorie.
 
 Pour faire passer une propriété d'un rang à un autre, indiquer sa position dans le champ
-**ordre**.
+**Ordre**.
 Attention, il faudra alors penser à modifier aussi le rang des propriétés adjacentes, ce n’est pas automatique.
 
 :::caution Une fois une propriété enregistrée dans une catégorie, il n’est plus possible de la déplacer dans une autre catégorie. 
@@ -164,9 +164,9 @@ Il est possible de gérer les champs des constats d’état par bibliothèque. L
 ### Paramétrage des champs par bibliothèque
 
 Chaque bibliothèque peut décider pour chaque champ s’il :
-- Est **obligatoire** ou non
-- Nécessite l’affichage d’une **zone de commentaires complémentaire** ou non.
-- S’affiche **par défaut** à la création d’un constat d’état ou non.
+- Est **Obligatoire** ou non
+- Nécessite l’affichage d’une **Zone de commentaires complémentaire** ou non.
+- S’affiche **Par défaut** à la création d’un constat d’état ou non.
 - Est affiché pour les types de constat d’état suivants :
   - Multifeuillet
   - Monofeuillet
