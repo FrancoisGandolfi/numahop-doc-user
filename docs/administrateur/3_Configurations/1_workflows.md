@@ -60,14 +60,15 @@ NumaHOP fonctionne avec des <Icon icon={["fa", "chart-diagram"]} />**workflows**
 
 Une chaîne d’actions qui se répartissent du début à la fin d’un <Icon icon={["fa", "book"]} />**projet**.
 Le workflow comporte toutes les étapes d’un projet de numérisation à partir de son initialisation jusqu’à sa clôture, en passant par les constats d’état, la livraison des fichiers, le contrôle qualité, la validation des documents et des notices, puis l’archivage et la diffusion des documents.
-Chaque étape est reliée à un groupe <Icon icon={["fa", "user"]} /> **d'utilisateurs**.
+Chaque étape est reliée à un <Icon icon={["fa", "users-gear"]} />**groupe d'utilisateurs**.
 
 Le workflow reflète la manière de travailler de l’établissement. Il est possible de créer plusieurs workflows, pour s’adapter aux spécificités d’un projet ou à la typologie de documents.
 
 :::caution Le **workflow** s’applique au **lot**, et donc à tous les **trains** et **UD** du lot.
-Un lot ne peut donc pas :
+Un lot ne peut donc pas :  
 - contenir des UD qu’il faut archiver au CINES et d’autres non
-- contenir des UD pour lesquelles il faut faire un constat d’état et d’autres non
+- contenir des UD pour lesquelles il faut faire un constat d’état et d’autres non  
+
 Toutes les UD du lot seront traitées dans la même chaîne, seront contrôlées de la même façon, et seront diffusées au même endroit.
 :::
 
@@ -77,7 +78,7 @@ Dans le menu <Icon icon={["fa", "gear"]} />**Administration**, l'encart **Worflo
 
 ##### Les groupes utilisateurs
 
-Chaque étape du workflow devant être reliée à un groupe <Icon icon={["fa", "user"]} /> **d'utilisateurs**, il convient de créer ces groupes et d’y associer les utilisateurs concernés.
+Chaque étape du workflow devant être reliée à un <Icon icon={["fa", "users-gear"]} />**groupe d'utilisateurs**, il convient de créer ces groupes et d’y associer les utilisateurs concernés.
 
 Il peut y avoir autant de groupes que d’étapes dans le workflow, si chaque étape incombe à des personnes différentes. C’est le plus  
 simple, mais ce n’est pas une obligation.
@@ -86,7 +87,7 @@ simple, mais ce n’est pas une obligation.
 - Cliquer sur un groupe dans la liste alphabétique pour afficher ses détails et le modifier (en cliquant sur <Icon icon={["fa", "pen-to-square"]} /> en haut à droite)
 - Cliquer sur le bouton <Icon icon={["fa", "square-plus"]} /> pour en créer un
 
-Dans l’encart qui s’affiche, la partie supérieure présente les informations générales du groupe : donner un nom au groupe (obligatoire), une description (facultatif) et le rattacher à une bibliothèque (obligatoire).
+Dans l’encart qui s’affiche, la partie supérieure présente les informations générales du groupe : donner un **Nom** au groupe (obligatoire), une **Description** (facultatif) et le rattacher à une **Bibliothèque** (obligatoire).
 
 En-dessous apparaît l’encart des noms des utilisateurs : cliquer dans la barre « Commencez à taper… » pour faire apparaître la liste déroulante des utilisateurs enregistrés. Sélectionner les personnes devant figurer dans le groupe. Le nom s’implémente dans l’encart.
 Ajouter successivement tous les utilisateurs à intégrer au groupe, puis cliquer sur <Icon icon={["fa", "floppy-disk"]} />**Enregistrer**.
@@ -111,7 +112,7 @@ D’autre part, le workflow par défaut comporte toutes les étapes prévues par
 
 Appuyer sur le bouton <Icon icon={["fa", "square-plus"]} /> à côté de la barre de recherche.
 
-Remplir les données d’usage : Nom (obligatoire), Description (facultatif), Bibliothèque (obligatoire). Choisir de rendre actif ou non le workflow en cochant la case correspondante.
+Remplir les données d’usage : **Nom** (obligatoire), **Description** (facultatif), **Bibliothèque** (obligatoire). Choisir de rendre actif ou non le workflow en cochant la case correspondante.
 
 Toutes les étapes du workflow apparaissent dans la partie inférieure sous forme de logigramme :
 - En vert : l’étape d’initialisation
