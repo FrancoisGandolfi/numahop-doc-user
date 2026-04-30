@@ -7,286 +7,137 @@ description: Configuration des worflows
 
 import Icon from '@site/src/components/Icon';
 
-# <Icon icon={["fa", "chart-diagram"]} /> Configuration des workflows
+## <Icon icon={["fa", "chart-diagram"]} /> Configuration des workflows
 
-#### Le déroulé d'un projet dans NumaHOP
+### Le déroulé d'un projet dans NumaHOP
 
-Un projet correspond à un ensemble de lots réunis dans une cohérence.
-
-Exemple de projet : une reprise de données, des projets ponctuels de
-numérisation en interne, ou une année de numérisation courante (par
+Un <Icon icon={["fa", "book"]} />**projet** correspond à un ensemble de lots réunis dans une cohérence.
+*Exemples de projet* : une reprise de données, des projets ponctuels de numérisation en interne, ou une année de numérisation courante (par
 exemple « Numérisation 2022 »).
 
-Il peut contenir un ou plusieurs lots. Un lot est un ensemble de
-documents eux aussi regroupés dans une cohérence.
+Il peut contenir un ou plusieurs <Icon icon={["fa", "boxes-stacked"]} />**lots**. Un lot est un ensemble de documents eux aussi regroupés dans une cohérence.
+*Exemple de lot* : 36 manuscrits anciens ; un fonds d’archives ; 45 périodiques reliés ; 300 photos.
 
-Exemple de lot : 36 manuscrits anciens ; un fonds d’archives ; 45
-périodiques reliés ; 300 photos.
+Un lot peut être découpé en <Icon icon={["fa", "box"]} />**trains**. Cela permet notamment de livrer les documents par paquets sur NumaHOP.
+*Exemples de train* : au lieu de livrer les 27 000 pages des 45 périodiques d’un coup, le lot sera divisé en 3 trains : PER 1 à PER 15, PER 16 à PER 30 et PER 31 à PER 45.
+Cela permet d’effectuer les tâches au fur et à mesure, et de planifier le travail en le découpant.
 
-Un lot peut être découpé en trains. Cela permet notamment de livrer les
-documents par paquets sur NumaHOP.
+Enfin, le lot contient des <Icon icon={["fa", "file"]} />**unités documentaires ou UD**. Une UD, c’est l’association d’informations identitaires (libellé, cote, rattachement au projet et au lot), d’une notice, de fichiers images, et éventuellement d’un constat d’état.
 
-Exemple de train : Au lieu de livrer les 27 000 pages des 45 périodiques
-d’un coup, le lot sera divisé en 3 trains : PER 1 à PER 15, PER 16 à PER
-30 et PER 31 à PER 45.
+NumaHOP fonctionne avec des <Icon icon={["fa", "chart-diagram"]} />**workflows**, dans lesquels chaque étape de la chaîne de traitement est reliée à un groupe d’utilisateurs.
 
-Cela permet d’effectuer les tâches au fur et à mesure, et de planifier
-le travail en le découpant.
+### Qu'est-ce qu'un workflow ?
 
-Enfin, le lot contient des unités documentaires. Une UD, c’est
-l’association d’informations identitaires (libellé, cote, rattachement
-au projet et au lot), d’une notice, de fichiers images, et
-éventuellement d’un constat d’état.
+Une chaîne d’actions qui se répartissent du début à la fin d’un <Icon icon={["fa", "book"]} />**projet**.
+Le workflow comporte toutes les étapes d’un projet de numérisation à partir de son initialisation jusqu’à sa clôture, en passant par les constats d’état, la livraison des fichiers, le contrôle qualité, la validation des documents et des notices, puis l’archivage et la diffusion des documents.
+Chaque étape est reliée à un groupe <Icon icon={["fa", "user"]} /> **d'utilisateurs**.
 
-NumaHOP fonctionne avec des workflows, dans lesquels chaque étape de la
-chaîne de traitement est reliée à un groupe d’utilisateurs.
+Le workflow reflète la manière de travailler de l’établissement. Il est possible de créer plusieurs workflows, pour s’adapter aux spécificités d’un projet ou à la typologie de documents.
 
-Le workflow s’applique au lot, et donc à tous les trains et UD du lot.
-
-Un lot ne peut donc pas, par exemple, contenir des UD qu’il faut
-archiver au CINES et d’autres non. Il ne peut pas non plus contenir des
-UD pour lesquelles il faut faire un constat d’état et d’autres non.
-Toutes les UD du lot seront traitées dans la même chaîne, seront
-contrôlées de la même façon, et seront diffusées au même endroit.
-
-##### Qu'est-ce qu'un workflow ?
-
-Une chaîne d’actions qui se répartissent du début à la fin d’un projet.
-Il s’applique au lot, et à toutes les UD du lot.
-
-Le workflow comporte toutes les étapes d’un projet de numérisation en
-partant de son initialisation jusqu’à sa clôture, en passant par les
-constats d’état, la livraison des fichiers, le contrôle qualité, la
-validation des documents et des notices puis l’archivage et la diffusion
-des documents.
-
-Chaque étape est reliée à un groupe utilisateurs.
-
-Le workflow reflète la manière de travailler de l’établissement. Il est
-possible de créer plusieurs workflows, pour s’adapter aux spécificités
-d’un projet, ou à la typologie de documents.
+:::caution Le <Icon icon={["fa", "chart-diagram"]} />**workflow** s’applique au <Icon icon={["fa", "boxes-stacked"]} />**lots**, et donc à tous les <Icon icon={["fa", "box"]} />**trains** et <Icon icon={["fa", "file"]} />**UD** du lot.
+Un lot ne peut donc pas :
+- contenir des UD qu’il faut archiver au CINES et d’autres non
+- contenir des UD pour lesquelles il faut faire un constat d’état et d’autres non
+Toutes les UD du lot seront traitées dans la même chaîne, seront contrôlées de la même façon, et seront diffusées au même endroit.
+:::
 
 #### L'administration des workflows
 
- 
+Dans le menu <Icon icon={["fa", "gear"]} />**Administration**, l'encart **Worflow** propose deux volets :
 
- 
+##### Les groupes utilisateurs
 
- 
+Chaque étape du workflow devant être reliée à un groupe <Icon icon={["fa", "user"]} /> **d'utilisateurs**, il convient de créer ces groupes et d’y associer les utilisateurs concernés.
 
-Elle comprend deux volets :
-
-Dans le menu « Administration », Encart « Worflow » :
-
-##### La gestion des groupes utilisateurs
-
-Chaque étape du workflow devant être reliée à un groupe  
-d’utilisateurs, il convient de créer ces groupes et d’y associer les  
-utilisateurs concernés.
-
-Il peut y avoir autant de groupes que d’étapes dans le  
-workflow, si chaque étape incombe à des personnes différentes. C’est le
-plus  
+Il peut y avoir autant de groupes que d’étapes dans le workflow, si chaque étape incombe à des personnes différentes. C’est le plus  
 simple, mais ce n’est pas une obligation.
 
-Cliquer sur « Gestion des groupes » affiche la  
-liste des groupes de workflow existants. Cliquer sur un groupe pour
-afficher  
-ses détails et le modifier. Cliquer sur le bouton + pour en créer un.
+- Cliquer sur **Gestion des groupes** affiche la liste des groupes de workflow existants (on peut <Icon icon={["fa", "magnifying-glass"]} />rechercher dans la liste grâce à la barre de recherche)
+- Cliquer sur un groupe dans la liste alphabétique pour afficher ses détails et le modifier (en cliquant sur <Icon icon={["fa", "pen-to-square"]} /> en haut à droite)
+- Cliquer sur le bouton <Icon icon={["fa", "square-plus"]} /> pour en créer un
 
-[<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-2.png"
-class="alignnone wp-image-663 size-full" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-2.png 507w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-2-300x249.png 300w"
-sizes="(max-width: 507px) 100vw, 507px" width="507" height="421" />](https://www.numahop.fr/wp-content/uploads/2022/11/workflow-2.png)
+Dans l’encart qui s’affiche, la partie supérieure présente les informations générales du groupe :
+|-----------------------------------|-----------------|
+| Nom                               | 🔴 Obligatoire  |
+| Description                       | 🔵 Facultatif   |
+| Bibliothèque                      | 🔴 Obligatoire  |
 
-Dans l’encart qui s’affiche, nommer le groupe utilisateurs
-(obligatoire), ajouter une description (facultatif), et indiquer la
-bibliothèque de rattachement :
+En-dessous apparaît l’encart des noms des utilisateurs : cliquer dans la barre « Commencez à taper… » pour faire apparaître la liste déroulante des utilisateurs enregistrés. Sélectionner les personnes devant figurer dans le groupe. Le nom s’implémente dans l’encart.
+Ajouter successivement tous les utilisateurs à intégrer au groupe, puis cliquer sur <Icon icon={["fa", "floppy-disk"]} />**Enregistrer**.
 
-En-dessous apparaît l’encart des noms des utilisateurs.
+:::caution Seuls les utilisateurs ayant un compte NumaHOP apparaîtront dans la liste.
+Si un usager n’y figure pas, il faudra d’abord lui créer un compte utilisateur.
+:::
 
-Attention, seuls les utilisateurs ayant un compte NumaHOP apparaîtront
-dans la liste. Si un usager n’y figure pas, il faudra d’abord lui créer
-un compte utilisateur.
+Une fois le groupe créé, il apparaît dans la liste des groupes de workflow trouvés, classés par ordre alphabétique.
 
-Cliquer dans la barre « Commencez à taper… » pour faire apparaître la
-liste déroulante des utilisateurs enregistrés. Sélectionner les
-personnes devant figurer dans le groupe. Le nom s’implémente dans
-l’encart : 
+#### Les modèles de workflow
 
-<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-5.png"
-class="alignnone wp-image-666 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-5.png 791w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-5-300x47.png 300w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-5-768x119.png 768w"
-sizes="(max-width: 791px) 100vw, 791px" width="791" height="123" />
+Cette entrée se présente de la même manière que les autres : la liste à gauche (si des modèles ont déjà été créés) et les détails à droite quand on clique sur un modèle.
+La liste est rangée par ordre alphabétique, cliquer sur un modèle de workflow dans la liste affiche ses détails et permet d’entrer en mode édition pour le modifier.
 
- 
+Il est possible de créer plusieurs workflows, selon les projets, ou encore la typologie de documents.
+Par exemple, une reprise de données d’un passif ayant déjà été archivé au CINES n’aura pas besoin d’intégrer l’archivage dans son workflow. Cette étape sera donc rendue « non requise ».
+Certains projets peuvent requérir un contrôle qualité en deux étapes (pré-rejet et pré-validation, puis validation finale).
+D’autre part, le workflow par défaut comporte toutes les étapes prévues par NumaHOP, dont la diffusion Omeka ou Internet Archive ; des étapes peut-être non pertinentes pour certains établissements.
 
-Ajouter les utilisateurs ainsi de suite puis cliquer sur « Enregistrer
-».
+##### Créer un workflow
 
-<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-6.png"
-class="alignnone size-full wp-image-667" loading="lazy" decoding="async"
-width="219" height="50" />
+Appuyer sur le bouton <Icon icon={["fa", "square-plus"]} /> à côté de la barre de recherche.
 
-Une fois le groupe créé, il apparaît dans la liste des groupes de
-workflow trouvés, classés par ordre alphabétique.
+Remplir les données d’usage : 
+|-----------------------------------|-----------------|
+| Nom                               | 🔴 Obligatoire  |
+| Description                       | 🔵 Facultatif   |
+| Bibliothèque                      | 🔴 Obligatoire  |
 
- 
+Choisir de rendre actif ou non le workflow en cochant la case correspondante.
 
-##### La création de modèles de workflow
+Toutes les étapes du workflow apparaissent dans la partie inférieure sous forme de logigramme.
 
-Cette entrée se présente de la même manière que les autres : la liste à
-gauche (si des modèles ont déjà été créés), et les détails à droite
-quand on clique sur un modèle.
+:::tip En vert : l’étape d’initialisation:::
 
-La liste est rangée par ordre alphabétique, et un bouton + dans la barre
-de menu permet d’en créer un.
+:::info En bleu : les étapes non requises:::
 
-Cliquer sur un modèle de workflow affiche ses détails, et permet
-d’entrer en mode édition pour le modifier.
+:::caution En orange : les étapes requises. 
+La croix dans ces cases indique qu’il manque des informations à renseigner:::
 
-Il est possible de créer plusieurs workflows, selon les projets, ou
-encore la typologie de documents.
+En gris : les étapes automatiques réalisées par NumaHOP.
 
-Par exemple, une reprise de données d’un passif ayant déjà été archivé
-au CINES n’aura pas besoin d’intégrer dans son workflow l’archivage.
-Cette étape sera donc rendue « non requise ».
+:::danger En rouge : l’étape finale:::
 
-Certains projets peuvent requérir un contrôle qualité en deux étapes
-(pré-rejet et pré-validation, puis validation finale).
-
-D’autre part, le workflow par défaut comporte toutes les étapes prévues
-par NumaHOP, dont la diffusion Omeka ou Internet Archive ; des étapes
-peut-être non pertinentes pour certains établissements.
-
-[<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-7.png"
-class="alignnone wp-image-668 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-7.png 855w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-7-300x141.png 300w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-7-768x360.png 768w"
-sizes="(max-width: 855px) 100vw, 855px" width="855" height="401" />](https://www.numahop.fr/wp-content/uploads/2022/11/workflow-7.png)
-
-#### Créer un workflow
-
-Appuyer sur le bouton + sur l’interface des modèles de workflow.
-
-Remplir les données d’usage : nom, description et bibliothèque. Choisir
-de rendre actif ou non le workflow.
-
- 
-
- 
-
- 
-
-##### Créer un nouveau workflow
-
- 
-
- 
-
- 
-
- 
-
-Un modèle de workflow est affichéci-contre, avec toutes les étapes sous
-forme de logigramme.
-
-En vert : l’étape d’initialisation,
-
-En bleu : les étapes non requises,
-
-En orange : les étapes requises. La croix dans ces cases indique qu’il
-manque des informations à renseigner,
-
-En gris : les étapes automatiques réalisées par NumaHOP,
-
-En rouge : l’étape finale.
-
-Pour paramétrer le workflow, on peut intervenir sur les cases bleues et
-orange.
+Pour paramétrer le workflow, on peut intervenir sur les cases bleues et orange.
 
 ##### Renseigner les étapes obligatoires
 
-Il s’agit des 4 étapes en orange dans le modèle qui s’affiche par
-défaut, comportant une croix. Elles sont obligatoires et forcément
-requises :
-
-<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-10.png"
-class="alignnone size-full wp-image-671" loading="lazy" decoding="async"
-width="159" height="67" />
-
-Il s’agit des étapes suivantes :        
-
-Cliquer sur une étape, par exemple, « Livraison des documents
-numérisés ». Une fenêtre s’ouvre :
-
-[<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-11.png"
-class="alignnone wp-image-672 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-11.png 819w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-11-300x115.png 300w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-11-768x295.png 768w"
-sizes="(max-width: 819px) 100vw, 819px" width="819" height="315" />](https://www.numahop.fr/wp-content/uploads/2022/11/workflow-11.png)
-
-Indiquer le groupe responsable et cliquer sur OK.
-
-On voit que l’étape est validée par la coche : <img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-12.png"
-class="alignnone size-full wp-image-673" loading="lazy" decoding="async"
-width="151" height="72" />
+Il s’agit des 4 étapes en orange dans le modèle qui s’affiche par défaut, comportant une croix <Icon icon={["fa", "xmark"]} /> .
+Elles sont obligatoires et forcément requises : 
+- Livraison des documents numérisé
+- Contrôle qualité
+- Validation du document
+- Validation de la notice du document
+   
+Cliquer sur une étape, par exemple, « Livraison des documents numérisés ». Une fenêtre s’ouvre : indiquer le groupe responsable et cliquer sur OK.
+On voit que l’étape est validée par la coche <Icon icon={["fa", "check"]} />
 
 Procéder de même pour les autres étapes.
 
 ##### Personnaliser son workflow
 
-Le reste des étapes est en bleu, donc des étapes non requises par
-défaut. Mais si elles sont requises dans le circuit tel que décidé par
+Le reste des étapes est en bleu, donc des étapes non requises par défaut. Mais si elles sont requises dans le circuit tel que décidé par
 l’établissement, il est possible de les rendre obligatoires.
-
-Pour cela, cliquer sur l’étape concernée. Par exemple, la réalisation et
-la validation du constat d’état par la bibliothèque.
-
-Dans la fenêtre qui s’ouvre, choisir le groupe responsable dans la liste
-déroulante, et sélectionner « étape requise » dans la liste déroulante
-associée au type d’étape.
-
-[<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-13.png"
-class="alignnone wp-image-674 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-13.png 819w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-13-300x114.png 300w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-13-768x293.png 768w"
-sizes="(max-width: 819px) 100vw, 819px" width="819" height="312" />](https://www.numahop.fr/wp-content/uploads/2022/11/workflow-13.png)
-
-Cliquer sur OK pour enregistrer. L’étape passe en orange avec une
-coche :<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-14.png"
-class="size-full wp-image-675 aligncenter" loading="lazy"
-decoding="async" width="157" height="83" />
+Pour cela, cliquer sur l’étape concernée. Par exemple, la réalisation et la validation du constat d’état par la bibliothèque.
+Dans la fenêtre qui s’ouvre, choisir le groupe responsable dans la liste déroulante, et sélectionner « étape requise » dans la liste déroulante associée au type d’étape.
 
 Procéder ainsi pour toutes les étapes concernées.
 
-Une fois le workflow paramétré, cliquer sur Enregistrer.
-
-<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-6.png"
-class="alignnone size-full wp-image-667" loading="lazy" decoding="async"
-width="219" height="50" />
+Une fois le workflow paramétré, cliquer sur <Icon icon={["fa", "floppy-disk"]} />**Enregistrer**.
 
 #### Le workflow dans un projet et un lot
 
-Le workflow s’applique au lot. C’est dans la création de celui-ci que le
-workflow sera choisi (voir « [créer un
-lot](https://www.numahop.fr/2022/10/17/creer-un-lot/)« ) :
+Le workflow s’applique au <Icon icon={["fa", "boxes-stacked"]} />**lots**. C’est dans la création de celui-ci que le workflow sera choisi (voir [créer un lot]docs/utilisateur/3-gestion-lots.md)
 
-<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-15.png"
-class="alignnone wp-image-676 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-15.png 709w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-15-300x214.png 300w"
-sizes="(max-width: 709px) 100vw, 709px" width="709" height="505" />
-
-Cela signifie que toutes les Unités Documentaires de ce lot auront le
-même workflow.
+Cela signifie que toutes les Unités Documentaires de ce lot auront le même workflow.
 
 #### Démarrer le workflow
 
