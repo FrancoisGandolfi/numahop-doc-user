@@ -115,10 +115,11 @@ Pour paramétrer le workflow, on peut intervenir sur les cases bleues et orange.
 
 Il s’agit des 4 étapes en orange dans le modèle qui s’affiche par défaut, comportant une croix <Icon icon={["fa", "xmark"]} /> .
 Elles sont obligatoires et forcément requises : 
-- Livraison des documents numérisé
+- Livraison des documents numérisés
 - Contrôle qualité
 - Validation du document
 - Validation de la notice du document
+
    
 Cliquer sur une étape, par exemple, « Livraison des documents numérisés ». Une fenêtre s’ouvre : indiquer le groupe responsable et cliquer sur OK.
 On voit que l’étape est validée par la coche <Icon icon={["fa", "check"]} />
@@ -138,7 +139,7 @@ Une fois le workflow paramétré, cliquer sur <Icon icon={["fa", "floppy-disk"]}
 
 #### Le workflow dans un projet et un lot
 
-Le workflow s’applique au <Icon icon={["fa", "boxes-stacked"]} />**lots**. C’est dans la création de celui-ci que le workflow sera choisi (voir [créer un lot]docs/utilisateur/3-gestion-lots.md)
+Le workflow s’applique au <Icon icon={["fa", "boxes-stacked"]} />**lot**. C’est dans la création de celui-ci que le workflow sera choisi (voir [créer un lot](docs/utilisateur/3-gestion-lots.md)
 
 Cela signifie que toutes les Unités Documentaires de ce lot auront le même workflow.
 
