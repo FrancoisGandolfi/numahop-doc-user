@@ -11,6 +11,32 @@ import Icon from '@site/src/components/Icon';
 
 ### Le déroulé d'un projet dans NumaHOP
 
+```mermaid
+flowchart TD
+    A[Projet Numérisation 2026] --> B1[Lot Manuscrits]
+    A --> B2[Lot Archives]
+    A --> B3[Lot Périodiques]
+
+    B1 --> C1[Train Notes de cours]
+    B1 --> C2[Train Registres]
+    B2 --> C3[Train Lettres]
+    B2 --> C4[Train Photographies]
+    B3 --> C5[Train Revue littéraire]
+    B3 --> C4[Train Bulletin des anciens élèves]
+
+    C1 --> D1[UD1]
+    C1 --> D2[UD2]
+    C1 --> D3[UD3]
+    C2 --> D4[UD4]
+    C2 --> D5[UD5]
+    C3 --> D6[UD6]
+    C3 --> D7[UD7]
+    C4 --> D8[UD8]
+    C4 --> D9[UD9]
+    C5 --> D10[UD10]
+```
+
+
 Un <Icon icon={["fa", "book"]} />**projet** correspond à un ensemble de lots réunis dans une cohérence.
 
 *Exemples de projet* : une reprise de données, des projets ponctuels de numérisation en interne, ou une année de numérisation courante (par
@@ -201,6 +227,5 @@ C’est par défaut la liste de toutes les <Icon icon={["fa", "file"]} />**unit�
 
 Cliquer sur l’onglet **Lots** dans la barre de menu pour afficher la liste des lots du projet. 
 Repérer le lot pour lequel démarrer le workflow et cliquer sur le bouton <Icon icon={["fa", "square-check"]} />**Démarrer le workflow** à droite. Une fenêtre de confirmation s’ouvre, cliquer sur **Confirmer**.
-
 
 ```
