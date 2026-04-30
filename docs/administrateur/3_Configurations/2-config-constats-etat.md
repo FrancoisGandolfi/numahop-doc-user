@@ -7,7 +7,7 @@ description: Configuration des constats d'état
 
 import Icon from '@site/src/components/Icon';
 
-## Configuration des constats d'état
+## <Icon icon={["fa", "file-lines"]} />Configuration des constats d'état
 
 ### Le template de constat d'état dans NumaHOP
 
