@@ -12,21 +12,25 @@ import Icon from '@site/src/components/Icon';
 ### Le déroulé d'un projet dans NumaHOP
 
 Un <Icon icon={["fa", "book"]} />**projet** correspond à un ensemble de lots réunis dans une cohérence.
+
 *Exemples de projet* : une reprise de données, des projets ponctuels de numérisation en interne, ou une année de numérisation courante (par
 exemple « Numérisation 2022 »).
 
 Il peut contenir un ou plusieurs <Icon icon={["fa", "boxes-stacked"]} />**lots**. Un lot est un ensemble de documents eux aussi regroupés dans une cohérence.
+
 *Exemple de lot* : 36 manuscrits anciens ; un fonds d’archives ; 45 périodiques reliés ; 300 photos.
 
 Un lot peut être découpé en <Icon icon={["fa", "box"]} />**trains**. Cela permet notamment de livrer les documents par paquets sur NumaHOP.
-*Exemples de train* : au lieu de livrer les 27 000 pages des 45 périodiques d’un coup, le lot sera divisé en 3 trains : PER 1 à PER 15, PER 16 à PER 30 et PER 31 à PER 45.
+
+*Exemple de train* : au lieu de livrer les 27 000 pages des 45 périodiques d’un coup, le lot sera divisé en 3 trains : PER 1 à PER 15, PER 16 à PER 30 et PER 31 à PER 45.
+
 Cela permet d’effectuer les tâches au fur et à mesure, et de planifier le travail en le découpant.
 
 Enfin, le lot contient des <Icon icon={["fa", "file"]} />**unités documentaires ou UD**. Une UD, c’est l’association d’informations identitaires (libellé, cote, rattachement au projet et au lot), d’une notice, de fichiers images, et éventuellement d’un constat d’état.
 
 NumaHOP fonctionne avec des <Icon icon={["fa", "chart-diagram"]} />**workflows**, dans lesquels chaque étape de la chaîne de traitement est reliée à un groupe d’utilisateurs.
 
-### Qu'est-ce qu'un workflow ?
+### Qu'est-ce qu'un <Icon icon={["fa", "chart-diagram"]} />workflow ?
 
 Une chaîne d’actions qui se répartissent du début à la fin d’un <Icon icon={["fa", "book"]} />**projet**.
 Le workflow comporte toutes les étapes d’un projet de numérisation à partir de son initialisation jusqu’à sa clôture, en passant par les constats d’état, la livraison des fichiers, le contrôle qualité, la validation des documents et des notices, puis l’archivage et la diffusion des documents.
@@ -34,7 +38,7 @@ Chaque étape est reliée à un groupe <Icon icon={["fa", "user"]} /> **d'utilis
 
 Le workflow reflète la manière de travailler de l’établissement. Il est possible de créer plusieurs workflows, pour s’adapter aux spécificités d’un projet ou à la typologie de documents.
 
-:::caution Le <Icon icon={["fa", "chart-diagram"]} />**workflow** s’applique au <Icon icon={["fa", "boxes-stacked"]} />**lots**, et donc à tous les <Icon icon={["fa", "box"]} />**trains** et <Icon icon={["fa", "file"]} />**UD** du lot.
+:::caution Le **workflow** s’applique au **lot**, et donc à tous les **trains** et **UD** du lot.
 Un lot ne peut donc pas :
 - contenir des UD qu’il faut archiver au CINES et d’autres non
 - contenir des UD pour lesquelles il faut faire un constat d’état et d’autres non
@@ -56,11 +60,7 @@ simple, mais ce n’est pas une obligation.
 - Cliquer sur un groupe dans la liste alphabétique pour afficher ses détails et le modifier (en cliquant sur <Icon icon={["fa", "pen-to-square"]} /> en haut à droite)
 - Cliquer sur le bouton <Icon icon={["fa", "square-plus"]} /> pour en créer un
 
-Dans l’encart qui s’affiche, la partie supérieure présente les informations générales du groupe :
-|-----------------------------------|-----------------|
-| Nom                               | 🔴 Obligatoire  |
-| Description                       | 🔵 Facultatif   |
-| Bibliothèque                      | 🔴 Obligatoire  |
+Dans l’encart qui s’affiche, la partie supérieure présente les informations générales du groupe : donner un nom au groupe (obligatoire), une description (facultatif) et le rattacher à une bibliothèque (obligatoire).
 
 En-dessous apparaît l’encart des noms des utilisateurs : cliquer dans la barre « Commencez à taper… » pour faire apparaître la liste déroulante des utilisateurs enregistrés. Sélectionner les personnes devant figurer dans le groupe. Le nom s’implémente dans l’encart.
 Ajouter successivement tous les utilisateurs à intégrer au groupe, puis cliquer sur <Icon icon={["fa", "floppy-disk"]} />**Enregistrer**.
@@ -71,7 +71,7 @@ Si un usager n’y figure pas, il faudra d’abord lui créer un compte utilisat
 
 Une fois le groupe créé, il apparaît dans la liste des groupes de workflow trouvés, classés par ordre alphabétique.
 
-#### Les modèles de workflow
+##### Les modèles de workflow
 
 Cette entrée se présente de la même manière que les autres : la liste à gauche (si des modèles ont déjà été créés) et les détails à droite quand on clique sur un modèle.
 La liste est rangée par ordre alphabétique, cliquer sur un modèle de workflow dans la liste affiche ses détails et permet d’entrer en mode édition pour le modifier.
@@ -85,26 +85,24 @@ D’autre part, le workflow par défaut comporte toutes les étapes prévues par
 
 Appuyer sur le bouton <Icon icon={["fa", "square-plus"]} /> à côté de la barre de recherche.
 
-Remplir les données d’usage : 
-|-----------------------------------|-----------------|
-| Nom                               | 🔴 Obligatoire  |
-| Description                       | 🔵 Facultatif   |
-| Bibliothèque                      | 🔴 Obligatoire  |
-
-Choisir de rendre actif ou non le workflow en cochant la case correspondante.
+Remplir les données d’usage : Nom (obligatoire), Description (facultatif), Bibliothèque (obligatoire). Choisir de rendre actif ou non le workflow en cochant la case correspondante.
 
 Toutes les étapes du workflow apparaissent dans la partie inférieure sous forme de logigramme.
 
-:::tip En vert : l’étape d’initialisation:::
+:::tip En vert : l’étape d’initialisation
+:::
 
-:::info En bleu : les étapes non requises:::
+:::info En bleu : les étapes non requises
+:::
 
 :::caution En orange : les étapes requises. 
-La croix dans ces cases indique qu’il manque des informations à renseigner:::
+La croix dans ces cases indique qu’il manque des informations à renseigner
+:::
 
 En gris : les étapes automatiques réalisées par NumaHOP.
 
-:::danger En rouge : l’étape finale:::
+:::danger En rouge : l’étape finale
+:::
 
 Pour paramétrer le workflow, on peut intervenir sur les cases bleues et orange.
 
