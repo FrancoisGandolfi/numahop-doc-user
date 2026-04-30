@@ -41,15 +41,15 @@ flowchart TD
 
 
 
-Un <Icon icon={["fa", "book"]} />**projet** correspond à un ensemble de lots réunis dans une cohérence.<br>
+Un <Icon icon={["fa", "book"]} />**projet** correspond à un ensemble de lots réunis dans une cohérence.  
 *Exemples de projet* : une reprise de données, des projets ponctuels de numérisation en interne, ou une année de numérisation courante (par
 exemple « Numérisation 2022 »).
 
-Il peut contenir un ou plusieurs <Icon icon={["fa", "boxes-stacked"]} />**lots**. Un lot est un ensemble de documents eux aussi regroupés dans une cohérence.<br>
+Il peut contenir un ou plusieurs <Icon icon={["fa", "boxes-stacked"]} />**lots**. Un lot est un ensemble de documents eux aussi regroupés dans une cohérence.  
 *Exemple de lot* : 36 manuscrits anciens ; un fonds d’archives ; 45 périodiques reliés ; 300 photos.
 
-Un lot peut être découpé en <Icon icon={["fa", "box"]} />**trains**. Cela permet notamment de livrer les documents par paquets sur NumaHOP.<br>
-*Exemple de train* : au lieu de livrer les 27 000 pages des 45 périodiques d’un coup, le lot sera divisé en 3 trains : PER 1 à PER 15, PER 16 à PER 30 et PER 31 à PER 45.<br>
+Un lot peut être découpé en <Icon icon={["fa", "box"]} />**trains**. Cela permet notamment de livrer les documents par paquets sur NumaHOP.  
+*Exemple de train* : au lieu de livrer les 27 000 pages des 45 périodiques d’un coup, le lot sera divisé en 3 trains : PER 1 à PER 15, PER 16 à PER 30 et PER 31 à PER 45.  
 Cela permet d’effectuer les tâches au fur et à mesure, et de planifier le travail en le découpant.
 
 Enfin, le lot contient des <Icon icon={["fa", "file"]} />**unités documentaires ou UD**. Une UD, c’est l’association d’informations identitaires (libellé, cote, rattachement au projet et au lot), d’une notice, de fichiers images, et éventuellement d’un constat d’état.
