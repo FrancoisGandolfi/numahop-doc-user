@@ -92,17 +92,22 @@ Toutes les étapes du workflow apparaissent dans la partie inférieure sous form
 :::tip En vert : l’étape d’initialisation
 :::
 
+
 :::info En bleu : les étapes non requises
 :::
+
 
 :::caution En orange : les étapes requises. 
 La croix dans ces cases indique qu’il manque des informations à renseigner
 :::
 
+
 En gris : les étapes automatiques réalisées par NumaHOP.
+
 
 :::danger En rouge : l’étape finale
 :::
+
 
 Pour paramétrer le workflow, on peut intervenir sur les cases bleues et orange.
 
