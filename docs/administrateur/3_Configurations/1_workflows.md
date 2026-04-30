@@ -87,122 +87,12 @@ Appuyer sur le bouton <Icon icon={["fa", "square-plus"]} /> à côté de la bar
 
 Remplir les données d’usage : Nom (obligatoire), Description (facultatif), Bibliothèque (obligatoire). Choisir de rendre actif ou non le workflow en cochant la case correspondante.
 
-Toutes les étapes du workflow apparaissent dans la partie inférieure sous forme de logigramme.
-
-:::tip En vert : l’étape d’initialisation
-:::
-
-
-:::info En bleu : les étapes non requises
-:::
-
-
-:::caution En orange : les étapes requises. 
-La croix dans ces cases indique qu’il manque des informations à renseigner
-:::
-
-
-En gris : les étapes automatiques réalisées par NumaHOP.
-
-
-:::danger En rouge : l’étape finale
-:::
-
-
-Pour paramétrer le workflow, on peut intervenir sur les cases bleues et orange.
-
-##### Renseigner les étapes obligatoires
-
-Il s’agit des 4 étapes en orange dans le modèle qui s’affiche par défaut, comportant une croix <Icon icon={["fa", "xmark"]} /> .
-Elles sont obligatoires et forcément requises : 
-- Livraison des documents numérisés
-- Contrôle qualité
-- Validation du document
-- Validation de la notice du document
-
-   
-Cliquer sur une étape, par exemple, « Livraison des documents numérisés ». Une fenêtre s’ouvre : indiquer le groupe responsable et cliquer sur OK.
-On voit que l’étape est validée par la coche <Icon icon={["fa", "check"]} />
-
-Procéder de même pour les autres étapes.
-
-##### Personnaliser son workflow
-
-Le reste des étapes est en bleu, donc des étapes non requises par défaut. Mais si elles sont requises dans le circuit tel que décidé par
-l’établissement, il est possible de les rendre obligatoires.
-Pour cela, cliquer sur l’étape concernée. Par exemple, la réalisation et la validation du constat d’état par la bibliothèque.
-Dans la fenêtre qui s’ouvre, choisir le groupe responsable dans la liste déroulante, et sélectionner « étape requise » dans la liste déroulante associée au type d’étape.
-
-Procéder ainsi pour toutes les étapes concernées.
-
-Une fois le workflow paramétré, cliquer sur <Icon icon={["fa", "floppy-disk"]} />**Enregistrer**.
-
-#### Le workflow dans un projet et un lot
-
-Le workflow s’applique au <Icon icon={["fa", "boxes-stacked"]} />**lot**. C’est dans la création de celui-ci que le workflow sera choisi (voir [créer un lot](docs/utilisateur/3-gestion-lots.md)
-
-Cela signifie que toutes les Unités Documentaires de ce lot auront le même workflow.
-
-#### Démarrer le workflow
-
-Avant de commencer un lot, ne pas oublier de démarrer le workflow.
-
-Pour cela, dans le menu « Projets », cliquer sur Projets :
-
-<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-16.png"
-class="alignnone wp-image-677 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-16.png 281w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-16-277x300.png 277w"
-sizes="(max-width: 281px) 100vw, 281px" width="281" height="304" />
-
-La liste des projets en cours s’affiche. Cliquer sur le projet concerné
-par le lot pour lequel il faut démarrer le workflow :
-
-<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-17.png"
-class="alignnone wp-image-678 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-17.png 488w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-17-300x170.png 300w"
-sizes="(max-width: 488px) 100vw, 488px" width="488" height="276" />
-
-Les détails du projet s’affichent à droite :
-
-<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-18.png"
-class="alignnone wp-image-679 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-18.png 1218w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-18-300x155.png 300w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-18-1024x529.png 1024w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-18-768x397.png 768w"
-sizes="(max-width: 1218px) 100vw, 1218px" width="1218" height="629" />
-
-Cliquer sur le bouton « détails » en haut à droite.
-
-C’est par défaut la liste de toutes les unités documentaires du lot qui
-s’affiche.
-
-Cliquer sur l’onglet Lots dans la barre de menu pour afficher les lots :
-
-[<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-19.png"
-class="alignnone wp-image-680 size-full" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-19.png 859w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-19-300x175.png 300w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-19-768x449.png 768w"
-sizes="(max-width: 859px) 100vw, 859px" width="859" height="502" />](https://www.numahop.fr/wp-content/uploads/2022/11/workflow-19.png)
-
-La liste des lots du projet apparaît.
-
-Repérer le lot pour lequel démarrer le workflow et cliquer sur le bouton
-« démarrer le workflow à droite » :
-
-[<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-20.png"
-class="aligncenter wp-image-681 size-full" loading="lazy"
-decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-20.png 818w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-20-300x123.png 300w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-20-768x315.png 768w"
-sizes="(max-width: 818px) 100vw, 818px" width="818" height="336" />](https://www.numahop.fr/wp-content/uploads/2022/11/workflow-20.png)
-
-La fenêtre suivante s’ouvre, cliquer sur « Confirmer » :  [<img
-src="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-21.png"
-class="alignnone wp-image-682" loading="lazy" decoding="async"
-srcset="https://www.numahop.fr/wp-content/uploads/2022/11/workflow-21.png 556w, https://www.numahop.fr/wp-content/uploads/2022/11/workflow-21-300x93.png 300w"
-sizes="(max-width: 488px) 100vw, 488px" width="488" height="151" />](https://www.numahop.fr/wp-content/uploads/2022/11/workflow-21.png)
-
+Toutes les étapes du workflow apparaissent dans la partie inférieure sous forme de logigramme :
+- En vert : l’étape d’initialisation
+- En bleu : les étapes non requises
+- En orange : les étapes requises 
+- En gris : les étapes automatiques réalisées par NumaHOP.
+- En rouge : l’étape finale
 
 ```mermaid
 flowchart TD
@@ -262,4 +152,55 @@ flowchart TD
     R --> U
     S --> U
     T --> U
+
+```
+Pour paramétrer le workflow, on peut intervenir sur les cases en bleues et orange.
+
+##### Renseigner les étapes obligatoires
+
+Il s’agit des 4 étapes en orange dans le modèle qui s’affiche par défaut, comportant une croix <Icon icon={["fa", "xmark"]} /> .
+Elles sont obligatoires et forcément requises : 
+- Livraison des documents numérisés
+- Contrôle qualité
+- Validation du document
+- Validation de la notice du document
+
+   
+Cliquer sur une étape, par exemple, « Livraison des documents numérisés ». Une fenêtre s’ouvre : indiquer le groupe responsable et cliquer sur OK.
+On voit que l’étape est validée par la coche <Icon icon={["fa", "check"]} />
+
+Procéder de même pour les autres étapes.
+
+##### Personnaliser son workflow
+
+Le reste des étapes est en bleu, donc des étapes non requises par défaut. Mais si elles sont requises dans le circuit tel que décidé par
+l’établissement, il est possible de les rendre obligatoires.
+Pour cela, cliquer sur l’étape concernée. Par exemple, la réalisation et la validation du constat d’état par la bibliothèque.
+Dans la fenêtre qui s’ouvre, choisir le groupe responsable dans la liste déroulante, et sélectionner « étape requise » dans la liste déroulante associée au type d’étape.
+
+Procéder ainsi pour toutes les étapes concernées.
+
+Une fois le workflow paramétré, cliquer sur <Icon icon={["fa", "floppy-disk"]} />**Enregistrer**.
+
+#### Le workflow dans un projet et un lot
+
+Le workflow s’applique au <Icon icon={["fa", "boxes-stacked"]} />**lot**. C’est dans la création de celui-ci que le workflow sera choisi (voir [Créer un lot](docs/utilisateur/3-gestion-lots.md)).
+
+Cela signifie que toutes les Unités Documentaires de ce lot auront le même workflow.
+
+#### Démarrer le workflow
+
+Avant de commencer un <Icon icon={["fa", "boxes-stacked"]} />**lot**, ne pas oublier de démarrer le workflow.
+
+Pour cela, dans le menu <Icon icon={["fa", "book"]} />**Projets**, cliquer sur Projets : la liste des projets en cours s’affiche. 
+Cliquer sur le projet concerné par le lot pour lequel il faut démarrer le workflow :
+
+Les détails du projet s’affichent à droite : cliquer sur le bouton <Icon icon={["fa", "table-list"]} />**Détails** en haut à droite.
+
+C’est par défaut la liste de toutes les <Icon icon={["fa", "file"]} />**unités documentaires** du lot qui s’affiche.
+
+Cliquer sur l’onglet **Lots** dans la barre de menu pour afficher la liste des lots du projet. 
+Repérer le lot pour lequel démarrer le workflow et cliquer sur le bouton <Icon icon={["fa", "square-check"]} />**Démarrer le workflow** à droite. Une fenêtre de confirmation s’ouvre, cliquer sur **Confirmer**.
+
+
 ```
