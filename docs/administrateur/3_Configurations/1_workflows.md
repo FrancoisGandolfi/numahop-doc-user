@@ -13,27 +13,28 @@ import Icon from '@site/src/components/Icon';
 
 ```mermaid
 flowchart TD
-    A[Projet Numérisation 2026] --> B1[Lot Manuscrits]
-    A --> B2[Lot Archives]
-    A --> B3[Lot Périodiques]
+    A["**Projet**<br>Numérisation 2026"] --> B1["**Lot**<br>Manuscrits"]
+    A --> B2["**Lot**<br>Archives"]
+    A --> B3["**Lot**<br>Périodiques"]
 
-    B1 --> C1[Train Notes de cours]
-    B1 --> C2[Train Registres]
-    B2 --> C3[Train Lettres]
-    B2 --> C4[Train Photographies]
-    B3 --> C5[Train Revue littéraire]
-    B3 --> C4[Train Bulletin des anciens élèves]
+    B1 --> C1["**Train**<br>Notes de cours"]
+    B1 --> C2["**Train**<br>Registres"]
+    B2 --> C3["**Train**<br>Lettres"]
+    B2 --> C4["**Train**<br>Photographies"]
+    B3 --> C5["**Train**<br>Revue littéraire"]
+    B3 --> C6["**Train**<br>Bulletin des anciens élèves"]
 
-    C1 --> D1[UD1]
-    C1 --> D2[UD2]
-    C1 --> D3[UD3]
-    C2 --> D4[UD4]
-    C2 --> D5[UD5]
-    C3 --> D6[UD6]
-    C3 --> D7[UD7]
-    C4 --> D8[UD8]
-    C4 --> D9[UD9]
-    C5 --> D10[UD10]
+    C1 --> D1["**UD**"]
+    C1 --> D2["**UD**"]
+    C1 --> D3["**UD**"]
+    C2 --> D4["**UD**"]
+    C2 --> D5["**UD**"]
+    C3 --> D6["**UD**"]
+    C3 --> D7["**UD**"]
+    C4 --> D8["**UD**"]
+    C4 --> D9["**UD**"]
+    C5 --> D10["**UD**"]
+    C5 --> D11["**UD**"]
 ```
 
 
