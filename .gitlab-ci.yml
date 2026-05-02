@@ -1,14 +1,104 @@
-# Configuration pour déployer un site Docusaurus sur GitLab Pages
-image: node:latest
+# .gitlab-ci.yml — Pipeline Docusaurus robuste
 
+stages:
+  - install
+  - validate
+  - build
+  - deploy
+
+variables:
+  NODE_VERSION: "20"
+  PUBLIC_URL: "/$CI_PROJECT_NAME"
+
+default:
+  image: node:${NODE_VERSION}-alpine
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - node_modules/
+    policy: pull
+
+# ─── Install ────────────────────────────────────────────────────────────────
+
+install:
+  stage: install
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - node_modules/
+    policy: pull-push          # Seul ce job écrit dans le cache
+  script:
+    - npm ci --prefer-offline
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 hour
+
+# ─── Validate ───────────────────────────────────────────────────────────────
+
+lint:
+  stage: validate
+  script:
+    - npm run lint             # Ajoute "lint": "eslint src/" dans package.json
+  allow_failure: false
+
+audit:
+  stage: validate
+  script:
+    - npm audit --audit-level=high
+  allow_failure: true          # Avertissement, pas bloquant
+
+typecheck:
+  stage: validate
+  script:
+    - npm run typecheck        # "typecheck": "tsc --noEmit"
+  allow_failure: false
+
+# ─── Build ──────────────────────────────────────────────────────────────────
+
+build:
+  stage: build
+  script:
+    - npm run build
+    - mv build public          # Docusaurus génère dans build/
+  artifacts:
+    paths:
+      - public/
+    expire_in: 1 week
+  rules:
+    - if: $CI_COMMIT_BRANCH    # Toutes les branches buildent
+
+# ─── Deploy ─────────────────────────────────────────────────────────────────
+
+# Job réservé GitLab Pages (doit s'appeler "pages")
 pages:
   stage: deploy
   script:
-    - npm install
-    - npm run build
-    - mv build public
+    - echo "Deploying to GitLab Pages…"
   artifacts:
     paths:
-      - public
+      - public/
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment:
+    name: production
+    url: https://$CI_PROJECT_NAMESPACE.gitlab.io/$CI_PROJECT_NAME
+
+# Preview sur les MR/branches feature (artifacts téléchargeables)
+preview:
+  stage: deploy
+  script:
+    - echo "Preview available in artifacts"
+  artifacts:
+    paths:
+      - public/
+    expire_in: 3 days
+    expose_as: "Site preview"
+  rules:
+    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+  environment:
+    name: preview/$CI_COMMIT_REF_SLUG
