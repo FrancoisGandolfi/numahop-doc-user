@@ -1,104 +1,36 @@
-# .gitlab-ci.yml — Pipeline Docusaurus robuste
+# .gitlab-ci.yml
 
 stages:
-  - install
-  - validate
   - build
   - deploy
 
-variables:
-  NODE_VERSION: "20"
-  PUBLIC_URL: "/$CI_PROJECT_NAME"
-
 default:
-  image: node:${NODE_VERSION}-alpine
-  cache:
-    key:
-      files:
-        - package-lock.json
-    paths:
-      - node_modules/
-    policy: pull
+  image: node:20-alpine
 
-# ─── Install ────────────────────────────────────────────────────────────────
-
-install:
-  stage: install
-  cache:
-    key:
-      files:
-        - package-lock.json
-    paths:
-      - node_modules/
-    policy: pull-push          # Seul ce job écrit dans le cache
-  script:
-    - npm ci --prefer-offline
-  artifacts:
-    paths:
-      - node_modules/
-    expire_in: 1 hour
-
-# ─── Validate ───────────────────────────────────────────────────────────────
-
-#lint:
-#  stage: validate
-#  script:
-#    - npm run lint             # Ajoute "lint": "eslint src/" dans package.json
-#  allow_failure: false
-
-audit:
-  stage: validate
-  script:
-    - npm audit --audit-level=high
-  allow_failure: true          # Avertissement, pas bloquant
-
-#typecheck:
-#  stage: validate
-#  script:
-#    - npm run typecheck        # "typecheck": "tsc --noEmit"
-#  allow_failure: false
-
-# ─── Build ──────────────────────────────────────────────────────────────────
+cache:
+  key:
+    files:
+      - package-lock.json   # cache invalidé UNIQUEMENT si les dépendances changent
+  paths:
+    - node_modules/
 
 build:
   stage: build
   script:
+    - npm ci --prefer-offline   # utilise le cache, ne retélécharge pas si déjà là
     - npm run build
-    - mv build public          # Docusaurus génère dans build/
+    - mv build public
   artifacts:
     paths:
       - public/
-    expire_in: 1 week
-  rules:
-    - if: $CI_COMMIT_BRANCH    # Toutes les branches buildent
+    expire_in: 3 days
 
-# ─── Deploy ─────────────────────────────────────────────────────────────────
-
-# Job réservé GitLab Pages (doit s'appeler "pages")
 pages:
   stage: deploy
   script:
-    - echo "Deploying to GitLab Pages…"
+    - echo "Deploying…"
   artifacts:
     paths:
       - public/
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-  environment:
-    name: production
-    url: https://$CI_PROJECT_NAMESPACE.gitlab.io/$CI_PROJECT_NAME
-
-# Preview sur les MR/branches feature (artifacts téléchargeables)
-preview:
-  stage: deploy
-  script:
-    - echo "Preview available in artifacts"
-  artifacts:
-    paths:
-      - public/
-    expire_in: 3 days
-    expose_as: "Site preview"
-  rules:
-    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
-  environment:
-    name: preview/$CI_COMMIT_REF_SLUG
