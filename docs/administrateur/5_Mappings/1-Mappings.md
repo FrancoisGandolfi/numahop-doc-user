@@ -14,17 +14,17 @@ Les _mappings_ sont des **fichiers de configuration des correspondances** entre 
 Ils sont employés au moment de l’**import de notices** dans l’application NumaHop, et permettent leur conversion vers le standard interopérable **Dublin Core**.
 
 Trois types de mappings sont proposés :
-- Mapping des **notices MARC** ;
-- Mapping des **notices EAD** ;
-- Mapping des **notices CSV**.
+- Mapping des **notices MARC**, à partir de fichiers XML-MARC, JSON-MARC, ou ISO-2709 ;
+- Mapping des **notices EAD**, à partir de fichiers XML-EAD ;
+- Mapping des **notices CSV**, à partir de fichiers tabulés CSV.
 
 ## Edition des _mappings_
 
-L'édition des _mappings_ s’effectue depuis le menu applicatif <Icon icon={["fa", "gear"]} /> **Administration**, puis dans l'encard consacré. L'utilisateur peut configurer autant de _mappings_ que necessaire pour chaque bibliothèque.
+L'édition des _mappings_ s’effectue depuis le menu applicatif <Icon icon={["fa", "gear"]} /> **Administration**, puis dans l'encart consacré. L'utilisateur peut configurer autant de _mappings_ que nécessaire pour chaque bibliothèque.
 
-Pour chaque type de mapping, il est possible de :
-- <Icon icon={["fa", "square-plus"]} /> **Créer** un nouveau mapping personnalisé ;
-- <Icon icon={["fa", "upload"]} /> **Importer** un nouveau mapping (uniquement pour les mappings MARC et EAD) ;
+Pour chaque type de _mapping_, il est possible de :
+- <Icon icon={["fa", "square-plus"]} /> **Créer** un nouveau _mapping_ personnalisé ;
+- <Icon icon={["fa", "upload"]} /> **Importer** un nouveau _mapping_ (uniquement pour les _mappings_ MARC et EAD) ;
 - <Icon icon={["fa", "floppy-disk"]} /> **Sauvegarder** un _mapping_ en cours d'édition ;
 - <Icon icon={["fa", "reply"]} /> **Annuler** les dernières modifications apportées à un _mapping_ ;
 - <Icon icon={["fa", "clock-rotate-left"]} /> **Restaurer** la version antérieure d'un _mapping_ existant ;
@@ -35,7 +35,7 @@ Pour chaque type de mapping, il est possible de :
 :::warning Sauvegarde
 Lorsqu’une règle est modifiée, la ligne apparaît en jaune tant que le _mapping_ n’a pas été enregistré. L'enregistrement du _mapping_ et des modifications s'effectue depuis l'icône <Icon icon={["fa", "floppy-disk"]} /> **Sauvegarder**, située en haut à droite de l'écran.
 - Tant que le mapping n’a pas été enregistré, il est possible d'annuler les dernières modifications grâce au bouton <Icon icon={["fa", "reply"]} /> **Annuler** ;
-- lorsque le _mapping_ a été enregistré, il est possible de restaurer une version antérieure grâce à l'icône <Icon icon={["fa", "clock-rotate-left"]} /> **Restaurer**, en choisissant la version souhaitée (date et heure).
+- Lorsque le _mapping_ a été enregistré, il est possible de restaurer une version antérieure grâce à l'icône <Icon icon={["fa", "clock-rotate-left"]} /> **Restaurer**, en choisissant la version souhaitée (date et heure).
 :::
 
 ### Créer un _mapping_
