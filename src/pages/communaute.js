@@ -166,16 +166,14 @@ const CommunautePage = () => {
               de développement de nouvelles
               fonctionnalités au sein du logiciel libre
               NumaHop.</p>
-            <p>Elle œuvre à partager les pratiques et à
-              renforcer les dynamiques de mutualisation,
-              en menant des actions de formation, de
-              traduction, et de documentation, ainsi que
-              de développement de nouvelles
-              fonctionnalités au sein du logiciel libre
-              NumaHop.</p>
             <p>L'association est composée de membres institutionnels
               et de prestataires privés, tous engagés dans la
               préservation et la valorisation du patrimoine culturel numérique.</p>
+            <p>Le Bureau de l'association, élu pour deux ans lors des assemblées générales, 
+              se réuni régulièrement pour 
+              coordonner ces actions à l'échelle nationale et internationale, 
+              avec pour objectif d'assurer l'évolution du logiciel, et sa 
+              promotion aurpès des professionnels du secteur.</p>
             <a href="docs/statuts">Les statuts de l'association NumaHop <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
 
           </div>

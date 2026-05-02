@@ -103,44 +103,15 @@ const config = {
             to: 'blog',
             sidebarId: 'workSidebar',
             label: '@NumaWork',
-            position: 'left'
-          },
-          {
             position: 'left',
-            label: 'Documentation',
-            items: [
-              {
-                type: 'docSidebar',
-                sidebarId: 'introSidebar',
-                label: 'Présentation du logiciel',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'adminSidebar',
-                label: 'Accès administrateur',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'userSidebar',
-                label: 'Accès utilisateur',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'prestaSidebar',
-                label: 'Accès prestataire',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'glossaireSidebar',
-                label: 'Glossaire',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'pratiquesSidebar',
-                label: 'Cas pratiques',
-              }
-            ]
           },
+          // --- NOUVEAU : Un seul bouton "Documentation" ---
+          {
+            to: '/docs/introduction', // ou '/docs' si tu veux une page d'accueil
+            label: 'Documentation',
+            position: 'left',
+          },
+          // --------------------------------------------
           {
             type: 'search',
             position: 'right',
