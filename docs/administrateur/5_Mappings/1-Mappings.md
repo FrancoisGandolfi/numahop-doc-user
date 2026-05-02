@@ -1,6 +1,6 @@
 ---
-title: Mappings
-sidebar_label: Mappings
+title: Généralités
+sidebar_label: Généralités
 sidebar_position: 1
 description: Gestion des mappings
 ---

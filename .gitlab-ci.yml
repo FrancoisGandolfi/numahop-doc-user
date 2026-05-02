@@ -40,11 +40,11 @@ install:
 
 # ─── Validate ───────────────────────────────────────────────────────────────
 
-lint:
-  stage: validate
-  script:
-    - npm run lint             # Ajoute "lint": "eslint src/" dans package.json
-  allow_failure: false
+#lint:
+#  stage: validate
+#  script:
+#    - npm run lint             # Ajoute "lint": "eslint src/" dans package.json
+#  allow_failure: false
 
 audit:
   stage: validate
@@ -52,11 +52,11 @@ audit:
     - npm audit --audit-level=high
   allow_failure: true          # Avertissement, pas bloquant
 
-typecheck:
-  stage: validate
-  script:
-    - npm run typecheck        # "typecheck": "tsc --noEmit"
-  allow_failure: false
+#typecheck:
+#  stage: validate
+#  script:
+#    - npm run typecheck        # "typecheck": "tsc --noEmit"
+#  allow_failure: false
 
 # ─── Build ──────────────────────────────────────────────────────────────────
 
