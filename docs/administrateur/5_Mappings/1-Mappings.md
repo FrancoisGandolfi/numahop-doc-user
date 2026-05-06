@@ -102,9 +102,9 @@ La création ou l'édition d'une règle de _mapping_ s'effectue depuis une boît
 | _Notice bibliographique_ | Champ de la notice bibliographique NumaHop dans laquelle envoyer la donnée, à choisir dans une liste fermée non éditable. | Titre de la notice, SIGB, SUDOC, Calames, Document électronique | 🔵 Facultatif |
 | _Règle par défaut_ | Indique si cette règle est appliquée par défaut. | Case à cocher | 🔴 Obligatoire |
 | **Règle** | Formule `Groovy` de la règle à appliquer | `` | 🔴 Obligatoire |
-| <Icon icon={["fa", "pen-to-square"]} /> _Initialisation de la règle_ | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | 🔵 Facultatif |
+| <Icon icon={["fa", "gear"]} /> _Initialisation de la règle_ | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | 🔵 Facultatif |
 | **Condition d'application** | Condition spécifique pour déclencher l'application de la règle. | Si le champ est vide, Si la date > 2020 | 🔵 Facultatif |
-| <Icon icon={["fa", "pen-to-square"]} /> _Initialisation de la condition_ | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | 🔵 Facultatif |
+| <Icon icon={["fa", "gear"]} /> _Initialisation de la condition_ | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | 🔵 Facultatif |
 
 L’ordre des règles est celle de leur prise en compte lors de l'import dans NumaHop, et peut être modifié à l’aide des flèches <Icon icon={["fa", "angle-down"]} /> et <Icon icon={["fa", "angle-up"]} /> situées à gauche de chaque règle de _mapping_.
 
