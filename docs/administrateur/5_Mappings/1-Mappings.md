@@ -89,22 +89,24 @@ Après la selection du type de notice et du _mapping_, l'export s’effectue dep
 
 ## Edition des les règles d'un _mapping_
 
-La création ou l'édition d'une règle de _mapping_ s'effectue depuis une boîte de dialogue accessible depuis les icônes <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle**, située en fin de tableau, ou <Icon icon={["fa", "pen-to-square"]} /> **Modifier**, située sur la ligne de la règle de _mapping_.
+La création ou l'édition d'une règle de _mapping_ s'effectue depuis une boîte de dialogue accessible depuis la liste des règles.
+
+- avec l'icône <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle** en fin de tableau ;
+- avec l'icône <Icon icon={["fa", "pen-to-square"]} /> **Modifier** sur la ligne de la règle.
 
 | **Champ** | **Description** | **Valeur** | **Statut** |
 | --- | --- | --- | --- |
-| **Champs** | Propriétée Dublin Core, de l'Unité documentaire ou de la notice bibliographique à laquelle la règne doit s'appliquer.  | --- | Obligatoire |
-| **Dublin Core** | Propriété Dublin Core dans laquelle envoyer la métadonnée documentaire, à choisir parmi les types de propriétés par défaut, ou préalablement renségnées dans le sous-menu **Types de propriété personaliés**. | dc:title, dc:creator | Facultatif |
-| **Unité documentaire** | Champ de l'unité documentaire NumaHop dans laquelle envoyer la donnée, à choisir dans une liste fermée non éditable. | PGCN Id, Libellé, Type, Droits | Facultatif |
-| **Notice bibliographique** | Champ de la notice bibliographique NumaHop dans laquelle envoyer la donnée, à choisir dans une liste fermée non éditable. | Titre de la notice, SIGB, SUDOC, Calames, Document électronique | Facultatif |
-| **Règle par défaut** | Indique si cette règle est appliquée par défaut. | Case à cocher | Obligatoire |
-| **Règle** | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | Obligatoire |
-| **Initialisation de la règle** | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | Facultatif |
-| **Condition d'application** | Condition spécifique pour déclencher l'application de la règle. | Si le champ est vide, Si la date > 2020 | Facultatif |
-| **Initialisation de la condition** | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | Facultatif |
+| **Champs** | Propriétée Dublin Core, de l'Unité documentaire ou de la notice bibliographique à laquelle la règne doit s'appliquer.  |  | 🔴 Obligatoire |
+| _Dublin Core_ | Propriété Dublin Core dans laquelle envoyer la métadonnée documentaire, à choisir parmi les types de propriétés par défaut, ou préalablement renségnées dans le sous-menu **Types de propriété personaliés**. | dc:title, dc:creator | 🔵 Facultatif |
+| _Unité documentaire_ | Champ de l'unité documentaire NumaHop dans laquelle envoyer la donnée, à choisir dans une liste fermée non éditable. | PGCN Id, Libellé, Type, Droits | 🔵 Facultatif |
+| _Notice bibliographique_ | Champ de la notice bibliographique NumaHop dans laquelle envoyer la donnée, à choisir dans une liste fermée non éditable. | Titre de la notice, SIGB, SUDOC, Calames, Document électronique | 🔵 Facultatif |
+| _Règle par défaut_ | Indique si cette règle est appliquée par défaut. | Case à cocher | 🔴 Obligatoire |
+| **Règle** | Formule `Groovy` de la règle à appliquer | `` | 🔴 Obligatoire |
+| <Icon icon={["fa", "pen-to-square"]} /> _Initialisation de la règle_ | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | 🔵 Facultatif |
+| **Condition d'application** | Condition spécifique pour déclencher l'application de la règle. | Si le champ est vide, Si la date > 2020 | 🔵 Facultatif |
+| <Icon icon={["fa", "pen-to-square"]} /> _Initialisation de la condition_ | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | 🔵 Facultatif |
 
 L’ordre des règles est celle de leur prise en compte lors de l'import dans NumaHop, et peut être modifié à l’aide des flèches <Icon icon={["fa", "angle-down"]} /> et <Icon icon={["fa", "angle-up"]} /> situées à gauche de chaque règle de _mapping_.
-
 
 
 ### Syntaxe des expressions
