@@ -91,17 +91,19 @@ Après la selection du type de notice et du _mapping_, l'export s’effectue dep
 
 La création ou l'édition d'une règle de _mapping_ s'effectue depuis une boîte de dialogue accessible depuis les icônes <Icon icon={["fa", "square-plus"]} /> **Ajouter une règle**, située en fin de tableau, ou <Icon icon={["fa", "pen-to-square"]} /> **Modifier**, située sur la ligne de la règle de _mapping_.
 
-| Champ | Description | Exemple de valeur | Statut |
+| **Champ** | **Description** | **Valeur** | **Statut** |
 | --- | --- | --- | --- |
-| **Unité documentaire** | Type d'unité documentaire concernée par la règle. | Livre, Article, Thèse | Facultatif |
-| Règle par défaut | Indique si cette règle est appliquée par défaut. | Oui / Non | Obligatoire |
-| Règle | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | Obligatoire |
-| Notice bibl. | Type de notice bibliographique concernée par la règle. | Monographie, Périodique | Facultatif |
-| Dublin Core | Type de métadonnée Dublin Core à laquelle la règle s'applique. | dc:title, dc:creator | Obligatoire |
-| Condition d'application | Condition spécifique pour déclencher l'application de la règle. | Si le champ est vide, Si la date > 2020 | Facultatif |
+| **Champs** | Propriétée Dublin Core, de l'Unité documentaire ou de la notice bibliographique à laquelle la règne doit s'appliquer.  | --- | Obligatoire |
+| **Dublin Core** | Propriété Dublin Core dans laquelle envoyer la métadonnée documentaire, à choisir parmi les types de propriétés par défaut, ou préalablement renségnées dans le sous-menu **Types de propriété personaliés**. | dc:title, dc:creator | Facultatif |
+| **Unité documentaire** | Champ de l'unité documentaire NumaHop dans laquelle envoyer la donnée, à choisir dans une liste fermée non éditable. | PGCN Id, Libellé, Type, Droits | Facultatif |
+| **Notice bibliographique** | Champ de la notice bibliographique NumaHop dans laquelle envoyer la donnée, à choisir dans une liste fermée non éditable. | Titre de la notice, SIGB, SUDOC, Calames, Document électronique | Facultatif |
+| **Règle par défaut** | Indique si cette règle est appliquée par défaut. | Case à cocher | Obligatoire |
+| **Règle** | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | Obligatoire |
+| **Initialisation de la règle** | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | Facultatif |
+| **Condition d'application** | Condition spécifique pour déclencher l'application de la règle. | Si le champ est vide, Si la date > 2020 | Facultatif |
+| **Initialisation de la condition** | Description de la règle à appliquer (transformation, validation, etc.). | Capitaliser le titre | Facultatif |
 
 L’ordre des règles est celle de leur prise en compte lors de l'import dans NumaHop, et peut être modifié à l’aide des flèches <Icon icon={["fa", "angle-down"]} /> et <Icon icon={["fa", "angle-up"]} /> situées à gauche de chaque règle de _mapping_.
-
 
 
 
