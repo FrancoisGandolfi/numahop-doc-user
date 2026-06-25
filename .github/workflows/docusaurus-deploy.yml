@@ -8,9 +8,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # Permet d'écrire dans le dépôt (nécessaire pour gh-pages)
-      pages: write      # Permet de déployer sur GitHub Pages
-      id-token: write   # Permet de générer un token pour le déploiement
+      contents: write
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout code
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24  # Utilise Node 24 (version actuelle par défaut)
+          node-version: 24
           cache: 'npm'
 
       - name: Install dependencies
