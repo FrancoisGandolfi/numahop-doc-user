@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>NumaHop Blog</title>
-        <link>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog</link>
+        <link>https://francoisgandolfi.github.io/numahop-doc-user/en/blog</link>
         <description>NumaHop Blog</description>
         <lastBuildDate>Thu, 23 Apr 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Release NumaHop 26.03]]></title>
-            <link>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/release-2603</link>
-            <guid>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/release-2603</guid>
+            <link>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/release-2603</link>
+            <guid>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/release-2603</guid>
             <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[BibLibre a le plaisir d'annoncer la disponibilité de la version NumaHop 26.03, dont Adrien Derobert-Mazure, développeur, a assuré le rôle de release manager.]]></description>
             <content:encoded><![CDATA[<p>BibLibre a le plaisir d'annoncer la disponibilité de la version <strong>NumaHop 26.03</strong>, dont Adrien Derobert-Mazure, développeur, a assuré le rôle de <em>release manager</em>.</p>
@@ -24,14 +24,14 @@ Cette nouvelle organisation vise à faciliter les contributions et s’inscrit d
 <p> <a href="https://numahop.github.io/Documentation/" target="_blank" rel="noopener noreferrer" class="">La documentation developpeur en ligne</a></p>
 <p>Plusieurs améliorations ont été apportées à la chaîne de développement et à l’infrastructure, afin de simplifier les processus, renforcer la maintenabilité et faciliter les contributions futures. Cette version inclut également des corrections de bugs et quelques ajustements fonctionnels.</p>
 <p>Il s’agit donc d’une <strong>version de transition</strong>, centrée sur la consolidation des fondations du projet et la préparation des prochaines évolutions.</p>
-<p><svg data-prefix="fas" data-icon="download" class="svg-inline--fa fa-download fa-1x" role="img" viewBox="0 0 448 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 210.7-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7 256 32zM64 320c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-46.9 0-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320 64 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg> <a href="https://fgandolfi.gitlab.io/numahop-doc-user/en/assets/files/release-2603-cfbe7616e7b5a8cbbb1b25bf30e59be7.pdf" target="_blank" class="">Télécharger le détail de la release 26.03</a></p>]]></content:encoded>
+<p><svg data-prefix="fas" data-icon="download" class="svg-inline--fa fa-download fa-1x" role="img" viewBox="0 0 448 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 210.7-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7 256 32zM64 320c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-46.9 0-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320 64 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg> <a href="https://francoisgandolfi.github.io/numahop-doc-user/en/assets/files/release-2603-cfbe7616e7b5a8cbbb1b25bf30e59be7.pdf" target="_blank" class="">Télécharger le détail de la release 26.03</a></p>]]></content:encoded>
             <category>Release</category>
             <category>Biblibre</category>
         </item>
         <item>
             <title><![CDATA[Journées professionnelles 2026]]></title>
-            <link>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/journees-2026</link>
-            <guid>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/journees-2026</guid>
+            <link>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/journees-2026</link>
+            <guid>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/journees-2026</guid>
             <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Les journées professionnelles NumaHop, qui célèbreront les 10 ans du logiciel libre, auront lieu sur le Campus Condorcet le 19 Novembre 2026 !]]></description>
             <content:encoded><![CDATA[<p>Les journées professionnelles NumaHop, qui célèbreront les 10 ans du logiciel libre, auront lieu sur le Campus Condorcet le 19 Novembre 2026 !</p>
@@ -41,20 +41,20 @@ Cette nouvelle organisation vise à faciliter les contributions et s’inscrit d
         </item>
         <item>
             <title><![CDATA[Journées professionnelles 2024]]></title>
-            <link>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/journees-2024</link>
-            <guid>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/journees-2024</guid>
+            <link>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/journees-2024</link>
+            <guid>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/journees-2024</guid>
             <pubDate>Fri, 22 Nov 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Les journées NumaHOP 2024 ont été organisées conjointement avec l’association des usagers franophones d’Omeka, et ont eu lieu du 20 au 22 novembre à l’ENS de Lyon.]]></description>
             <content:encoded><![CDATA[<p>Les journées NumaHOP 2024 ont été organisées conjointement avec l’association des usagers franophones d’Omeka, et ont eu lieu du 20 au 22 novembre à l’ENS de Lyon.</p>
 <p><svg data-prefix="fas" data-icon="signs-post" class="svg-inline--fa fa-signs-post fa-1x" role="img" viewBox="0 0 512 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M256.4 0c-17.7 0-32 14.3-32 32l0 32-160 0c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l160 0 0 64-153.4 0c-4.2 0-8.3 1.7-11.3 4.7l-48 48c-6.2 6.2-6.2 16.4 0 22.6l48 48c3 3 7.1 4.7 11.3 4.7l153.4 0 0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96 160 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-160 0 0-64 153.4 0c4.2 0 8.3-1.7 11.3-4.7l48-48c6.2-6.2 6.2-16.4 0-22.6l-48-48c-3-3-7.1-4.7-11.3-4.7l-153.4 0 0-32c0-17.7-14.3-32-32-32z"></path></svg> L'affiche des journées communes</p>
-<p><img decoding="async" loading="lazy" alt="Affiche Journées 2024" src="https://fgandolfi.gitlab.io/numahop-doc-user/en/assets/images/journees-2024-762f8b2436c3620f98f552614127bd05.png" width="1587" height="2245" class="img_ev3q"></p>]]></content:encoded>
+<p><img decoding="async" loading="lazy" alt="Affiche Journées 2024" src="https://francoisgandolfi.github.io/numahop-doc-user/en/assets/images/journees-2024-762f8b2436c3620f98f552614127bd05.png" width="1587" height="2245" class="img_ev3q"></p>]]></content:encoded>
             <category>Journées professionnelles</category>
             <category>ENS de Lyon</category>
         </item>
         <item>
             <title><![CDATA[Ouvroir 2 NumaHop]]></title>
-            <link>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/ouvroir2</link>
-            <guid>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/ouvroir2</guid>
+            <link>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/ouvroir2</link>
+            <guid>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/ouvroir2</guid>
             <pubDate>Sat, 01 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[L’Ouvroir 2 NumaHOP est un projet financé par le GIS Collex-Persée. Depuis mai 2022, une cheffe de projet a été recrutée au sein des équipes de l’UAR Persée pour travailler sur ce projet.]]></description>
             <content:encoded><![CDATA[<p>L’Ouvroir 2 NumaHOP est un projet financé par le GIS Collex-Persée. Depuis mai 2022, une cheffe de projet a été recrutée au sein des équipes de l’UAR Persée pour travailler sur ce projet.</p>
@@ -68,8 +68,8 @@ Cette nouvelle organisation vise à faciliter les contributions et s’inscrit d
         </item>
         <item>
             <title><![CDATA[Journées professionnelles 2022]]></title>
-            <link>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/journees-2022</link>
-            <guid>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/journees-2022</guid>
+            <link>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/journees-2022</link>
+            <guid>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/journees-2022</guid>
             <pubDate>Thu, 24 Nov 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[La journée profesionnelle NumaHOP 2022 s’est tenue à l’Université Paris Saclay  le 24 novembre. Au programme : présentations, échanges, et ateliers pour comprendre le fonctionnement de la communauté utilisateurs.]]></description>
             <content:encoded><![CDATA[<p>La journée profesionnelle NumaHOP 2022 s’est tenue à l’Université Paris Saclay  le 24 novembre. Au programme : présentations, échanges, et ateliers pour comprendre le fonctionnement de la communauté utilisateurs.</p>
@@ -90,14 +90,14 @@ Cette nouvelle organisation vise à faciliter les contributions et s’inscrit d
 <li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=1K0FoVjaHh0&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=8" target="_blank" rel="noopener noreferrer" class="">NumaHOP et les archives</a>, par Victor Beillard (Sorbonne Université), Olesea Dubois (Bibliothèque Sciences Po Paris), Nathalie Pilet (BULAC).</li>
 <li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=bbteyljxWSA&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=9" target="_blank" rel="noopener noreferrer" class="">Projet Collex Ouvroir 2 NumaHOP : un point d’étape</a>, par Sarah Gauthé (Persée).</li>
 </ul>
-<p><img decoding="async" loading="lazy" alt="Affiche Journées 2024" src="https://fgandolfi.gitlab.io/numahop-doc-user/en/assets/images/journees-2022-b213a9e44b490f13d3c8fa4d1cbe2ccb.png" width="596" height="842" class="img_ev3q"></p>]]></content:encoded>
+<p><img decoding="async" loading="lazy" alt="Affiche Journées 2024" src="https://francoisgandolfi.github.io/numahop-doc-user/en/assets/images/journees-2022-b213a9e44b490f13d3c8fa4d1cbe2ccb.png" width="596" height="842" class="img_ev3q"></p>]]></content:encoded>
             <category>Journées professionnelles</category>
             <category>Université Paris Saclay</category>
         </item>
         <item>
             <title><![CDATA[Un premier article pour NumaHop !]]></title>
-            <link>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/article-2020</link>
-            <guid>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/article-2020</guid>
+            <link>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/article-2020</link>
+            <guid>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/article-2020</guid>
             <pubDate>Sun, 11 Oct 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Olesea Dubois, Fanny Mion-Mouton et Pauline Rivière, "NumaHOP, une plateforme de gestion de contenus numérisés", Arabesques, 99, 2020.]]></description>
             <content:encoded><![CDATA[<p>Olesea Dubois, Fanny Mion-Mouton et Pauline Rivière, "NumaHOP, une plateforme de gestion de contenus numérisés", Arabesques, 99, 2020.</p>
@@ -108,8 +108,8 @@ Cette nouvelle organisation vise à faciliter les contributions et s’inscrit d
         </item>
         <item>
             <title><![CDATA[Journées professionnelles 2019]]></title>
-            <link>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/journees-2019</link>
-            <guid>https://fgandolfi.gitlab.io/numahop-doc-user/en/blog/journees-2019</guid>
+            <link>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/journees-2019</link>
+            <guid>https://francoisgandolfi.github.io/numahop-doc-user/en/blog/journees-2019</guid>
             <pubDate>Tue, 08 Oct 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[La première journée profesionnelle NumaHOP s’est tenue à la BULAC (Paris) dans l’auditorium du Pôle Langues et Civilisation le 18 octobre 2019. Y étaient programmées des présentations, des échanges, des ateliers pour présenter le progiciel.]]></description>
             <content:encoded><![CDATA[<p>La première journée profesionnelle NumaHOP s’est tenue à la BULAC (Paris) dans l’auditorium du Pôle Langues et Civilisation le 18 octobre 2019. Y étaient programmées des présentations, des échanges, des ateliers pour présenter le progiciel.</p>
