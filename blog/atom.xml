@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://fgandolfi.gitlab.io/numahop-doc-user/blog</id>
+    <title>NumaHop Blog</title>
+    <updated>2026-04-23T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://fgandolfi.gitlab.io/numahop-doc-user/blog"/>
+    <subtitle>NumaHop Blog</subtitle>
+    <icon>https://fgandolfi.gitlab.io/numahop-doc-user/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Release NumaHop 26.03]]></title>
+        <id>https://fgandolfi.gitlab.io/numahop-doc-user/blog/release-2603</id>
+        <link href="https://fgandolfi.gitlab.io/numahop-doc-user/blog/release-2603"/>
+        <updated>2026-04-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[BibLibre a le plaisir d'annoncer la disponibilité de la version NumaHop 26.03, dont Adrien Derobert-Mazure, développeur, a assuré le rôle de release manager.]]></summary>
+        <content type="html"><![CDATA[<p>BibLibre a le plaisir d'annoncer la disponibilité de la version <strong>NumaHop 26.03</strong>, dont Adrien Derobert-Mazure, développeur, a assuré le rôle de <em>release manager</em>.</p>
+<p>Cette version marque une étape importante dans l’évolution du logiciel. Elle n’introduit pas de changements majeurs visibles côté interface utilisateur, mais pose des bases essentielles pour les développements à venir.</p>
+<p><svg data-prefix="fas" data-icon="code-pull-request" class="svg-inline--fa fa-code-pull-request fa-1x" role="img" viewBox="0 0 512 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M328 24c0-9.7-5.8-18.5-14.8-22.2S293.9 .2 287 7L231 63c-9.4 9.4-9.4 24.6 0 33.9l56 56c6.9 6.9 17.2 8.9 26.2 5.2S328 145.7 328 136l0-24 24 0c17.7 0 32 14.3 32 32l0 214.7c-28.3 12.3-48 40.5-48 73.3 0 44.2 35.8 80 80 80s80-35.8 80-80c0-32.8-19.7-61-48-73.3L448 144c0-53-43-96-96-96l-24 0 0-24zM72 80a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm56 73.3c28.3-12.3 48-40.5 48-73.3 0-44.2-35.8-80-80-80S16 35.8 16 80c0 32.8 19.7 61 48 73.3l0 205.3c-28.3 12.3-48 40.5-48 73.3 0 44.2 35.8 80 80 80s80-35.8 80-80c0-32.8-19.7-61-48-73.3l0-205.3zM72 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm344-24a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg> <a href="https://github.com/NumaHOP/NumaHOP/releases/tag/v26.03" target="_blank" rel="noopener noreferrer" class="">La version 26.03 sur GitHub</a></p>
+<p>Désormais, NumaHOP adopte un versionnage calendaire, avec deux versions publiées chaque année, en mars et en septembre. Ce changement vise à rendre le projet plus lisible et plus prévisible pour l’ensemble de la communauté.</p>
+<p> <a href="https://github.com/NumaHOP" target="_blank" rel="noopener noreferrer" class="">Le dépôt GitHub communautaire</a></p>
+<p>La <strong>documentation</strong> évolue, et sera désormais centralisée et gérée sur <strong>GitHub</strong>.
+Cette nouvelle organisation vise à faciliter les contributions et s’inscrit dans une dynamique collaborative. Elle est actuellement disponible en anglais, dans une logique d’internationalisation, et proposera prochainement une solution de traduction. Elle continuera également à s’enrichir progressivement pour couvrir les attentes des différents publics (développeurs, utilisateurs, administrateurs).</p>
+<p> <a href="https://numahop.github.io/Documentation/" target="_blank" rel="noopener noreferrer" class="">La documentation developpeur en ligne</a></p>
+<p>Plusieurs améliorations ont été apportées à la chaîne de développement et à l’infrastructure, afin de simplifier les processus, renforcer la maintenabilité et faciliter les contributions futures. Cette version inclut également des corrections de bugs et quelques ajustements fonctionnels.</p>
+<p>Il s’agit donc d’une <strong>version de transition</strong>, centrée sur la consolidation des fondations du projet et la préparation des prochaines évolutions.</p>
+<p><svg data-prefix="fas" data-icon="download" class="svg-inline--fa fa-download fa-1x" role="img" viewBox="0 0 448 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 210.7-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7 256 32zM64 320c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-46.9 0-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320 64 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg> <a href="https://fgandolfi.gitlab.io/numahop-doc-user/assets/files/release-2603-cfbe7616e7b5a8cbbb1b25bf30e59be7.pdf" target="_blank" class="">Télécharger le détail de la release 26.03</a></p>]]></content>
+        <author>
+            <name>Séverine Queune</name>
+        </author>
+        <author>
+            <name>Adrien Derobert-Mazure</name>
+        </author>
+        <category label="Release" term="Release"/>
+        <category label="Biblibre" term="Biblibre"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Journées professionnelles 2026]]></title>
+        <id>https://fgandolfi.gitlab.io/numahop-doc-user/blog/journees-2026</id>
+        <link href="https://fgandolfi.gitlab.io/numahop-doc-user/blog/journees-2026"/>
+        <updated>2026-02-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Les journées professionnelles NumaHop, qui célèbreront les 10 ans du logiciel libre, auront lieu sur le Campus Condorcet le 19 Novembre 2026 !]]></summary>
+        <content type="html"><![CDATA[<p>Les journées professionnelles NumaHop, qui célèbreront les 10 ans du logiciel libre, auront lieu sur le Campus Condorcet le 19 Novembre 2026 !</p>
+<p><svg data-prefix="fas" data-icon="comment" class="svg-inline--fa fa-comment fa-1x" role="img" viewBox="0 0 512 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M512 240c0 132.5-114.6 240-256 240-37.1 0-72.3-7.4-104.1-20.7L33.5 510.1c-9.4 4-20.2 1.7-27.1-5.8S-2 485.8 2.8 476.8l48.8-92.2C19.2 344.3 0 294.3 0 240 0 107.5 114.6 0 256 0S512 107.5 512 240z"></path></svg> Assistez et participez !</p>]]></content>
+        <author>
+            <name>François Gandolfi</name>
+        </author>
+        <category label="Journées professionnelles" term="Journées professionnelles"/>
+        <category label="Humathèque Condorcet" term="Humathèque Condorcet"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Journées professionnelles 2024]]></title>
+        <id>https://fgandolfi.gitlab.io/numahop-doc-user/blog/journees-2024</id>
+        <link href="https://fgandolfi.gitlab.io/numahop-doc-user/blog/journees-2024"/>
+        <updated>2024-11-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Les journées NumaHOP 2024 ont été organisées conjointement avec l’association des usagers franophones d’Omeka, et ont eu lieu du 20 au 22 novembre à l’ENS de Lyon.]]></summary>
+        <content type="html"><![CDATA[<p>Les journées NumaHOP 2024 ont été organisées conjointement avec l’association des usagers franophones d’Omeka, et ont eu lieu du 20 au 22 novembre à l’ENS de Lyon.</p>
+<p><svg data-prefix="fas" data-icon="signs-post" class="svg-inline--fa fa-signs-post fa-1x" role="img" viewBox="0 0 512 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M256.4 0c-17.7 0-32 14.3-32 32l0 32-160 0c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l160 0 0 64-153.4 0c-4.2 0-8.3 1.7-11.3 4.7l-48 48c-6.2 6.2-6.2 16.4 0 22.6l48 48c3 3 7.1 4.7 11.3 4.7l153.4 0 0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96 160 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-160 0 0-64 153.4 0c4.2 0 8.3-1.7 11.3-4.7l48-48c6.2-6.2 6.2-16.4 0-22.6l-48-48c-3-3-7.1-4.7-11.3-4.7l-153.4 0 0-32c0-17.7-14.3-32-32-32z"></path></svg> L'affiche des journées communes</p>
+<p><img decoding="async" loading="lazy" alt="Affiche Journées 2024" src="https://fgandolfi.gitlab.io/numahop-doc-user/assets/images/journees-2024-762f8b2436c3620f98f552614127bd05.png" width="1587" height="2245" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Vincent Tardif</name>
+        </author>
+        <category label="Journées professionnelles" term="Journées professionnelles"/>
+        <category label="ENS de Lyon" term="ENS de Lyon"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ouvroir 2 NumaHop]]></title>
+        <id>https://fgandolfi.gitlab.io/numahop-doc-user/blog/ouvroir2</id>
+        <link href="https://fgandolfi.gitlab.io/numahop-doc-user/blog/ouvroir2"/>
+        <updated>2023-04-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[L’Ouvroir 2 NumaHOP est un projet financé par le GIS Collex-Persée. Depuis mai 2022, une cheffe de projet a été recrutée au sein des équipes de l’UAR Persée pour travailler sur ce projet.]]></summary>
+        <content type="html"><![CDATA[<p>L’Ouvroir 2 NumaHOP est un projet financé par le GIS Collex-Persée. Depuis mai 2022, une cheffe de projet a été recrutée au sein des équipes de l’UAR Persée pour travailler sur ce projet.</p>
+<p><svg data-prefix="fas" data-icon="display" class="svg-inline--fa fa-display fa-1x" role="img" viewBox="0 0 512 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M448 96l0 256-384 0 0-256 384 0zM64 32C28.7 32 0 60.7 0 96L0 352c0 35.3 28.7 64 64 64l144 0-16 48-72 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l272 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-72 0-16-48 144 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L64 32z"></path></svg> <a href="https://www-test-collex.inist.fr/projet/louvroir-numahop-2/" target="_blank" rel="noopener noreferrer" class="">L'Ouvroir NumaHop 2 : Automatiser, fluidifier, collaborer et HOP !</a></p>
+<p>L’Ouvroir 2 NumaHOP a pour objectif de développer l’utilisation de NumaHOP au sein de la communauté en s’appuyant sur les retours des établissements utilisateurs. Pour amplifier l’utilisation de NumaHOP, l’Ouvroir vise à proposer une documentation d’aide à l’installation et à la prise en main et à travailler sur une solution d’hébergement de la plateforme. Pour ce faire, deux axes de travail ont été déterminés :</p>
+<ul>
+<li class="">Faciliter la mise en œuvre de NumaHop grâce à un site web réunissant l’ensemble des ressources techniques et documentaires nécessaires à l’installation et la prise en main du progiciel par les équipes locales.</li>
+<li class="">Etudier les conditions de l’ouverture d’une instance mutualisée de NumaHOP tenant compte des conditions techniques, matérielles, humaines et économiques pour sa réalisation, ainsi que des scénarios de gouvernance pour la future plateforme.</li>
+</ul>]]></content>
+        <author>
+            <name>Sarah Gauthé</name>
+        </author>
+        <category label="CollEx-Persée" term="CollEx-Persée"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Journées professionnelles 2022]]></title>
+        <id>https://fgandolfi.gitlab.io/numahop-doc-user/blog/journees-2022</id>
+        <link href="https://fgandolfi.gitlab.io/numahop-doc-user/blog/journees-2022"/>
+        <updated>2022-11-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[La journée profesionnelle NumaHOP 2022 s’est tenue à l’Université Paris Saclay  le 24 novembre. Au programme : présentations, échanges, et ateliers pour comprendre le fonctionnement de la communauté utilisateurs.]]></summary>
+        <content type="html"><![CDATA[<p>La journée profesionnelle NumaHOP 2022 s’est tenue à l’Université Paris Saclay  le 24 novembre. Au programme : présentations, échanges, et ateliers pour comprendre le fonctionnement de la communauté utilisateurs.</p>
+<p><svg data-prefix="fas" data-icon="circle-play" class="svg-inline--fa fa-circle-play fa-1x" role="img" viewBox="0 0 512 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"></path></svg> Retrouvez toutes les interventions en vidéo !</p>
+<p><svg data-prefix="fas" data-icon="signs-post" class="svg-inline--fa fa-signs-post fa-1x" role="img" viewBox="0 0 512 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M256.4 0c-17.7 0-32 14.3-32 32l0 32-160 0c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l160 0 0 64-153.4 0c-4.2 0-8.3 1.7-11.3 4.7l-48 48c-6.2 6.2-6.2 16.4 0 22.6l48 48c3 3 7.1 4.7 11.3 4.7l153.4 0 0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96 160 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-160 0 0-64 153.4 0c4.2 0 8.3-1.7 11.3-4.7l48-48c6.2-6.2 6.2-16.4 0-22.6l-48-48c-3-3-7.1-4.7-11.3-4.7l-153.4 0 0-32c0-17.7-14.3-32-32-32z"></path></svg> Le programme de la journée</p>
+<ul>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=2MfVb5qzHew&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2" target="_blank" rel="noopener noreferrer" class="">"NumaHOP en 2022"</a>, allocution d’Hervé Dole, vice président chargé de la culture à l’Université Paris Saclay.</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=m5lVzfwx9CI&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=2" target="_blank" rel="noopener noreferrer" class="">Retour d’expériences : les nouveaux utilisateurs de NumaHOP</a>, par Christophe Coignard (ENS de Paris), Laurence Gandois, Oriane Boissel (Université Paris Saclay) et Solenne Coutagne (Muséum national d’Histoire Naturelle). Echange animé par Sarah Gauthé (Persée).</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=64OCk8ckFwU&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=3" target="_blank" rel="noopener noreferrer" class="">NumaHOP et ses usages : tour d’horizon et détournements</a>, par François-Xavier Boffy (Université Lyon 1), Sylvie Sallé et Oriane Boissel (Université Paris Saclay), Pierre-Marie Bartoli (INHA). Echange animé par Palmira de Sousa (Campus Condorcet).</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> Présentations flash:<!-- -->
+<ul>
+<li class=""><a href="https://www.youtube.com/watch?v=0tLllZGQx3s&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=4" target="_blank" rel="noopener noreferrer" class="">Le connecteur Limb Gallery</a>, par Adeline Batailler (Sorbonne Université).</li>
+<li class=""><a href="https://www.youtube.com/watch?v=N__NvJb5OT0&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=6" target="_blank" rel="noopener noreferrer" class="">Le connecteur Omeka</a>, par Pauline Rivière (Bibliothèque Sainte Geneviève) et Olesea Dubois (Bibliothèque de Sciences Po Paris)</li>
+<li class=""><a href="https://www.youtube.com/watch?v=IDaoqkvYk4o&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=5" target="_blank" rel="noopener noreferrer" class="">PDF océrisés versus non océrisés</a>, par Adeline Batailler (Sorbonne Université).</li>
+</ul>
+</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=JRLUKbGO7RE&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=7" target="_blank" rel="noopener noreferrer" class="">Présentation générale de NumaHOP</a>, par Laurence Gandois (Université Paris Saclay) et Pauline Rivière (Bibliothèque Sainte Geneviève).</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=1K0FoVjaHh0&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=8" target="_blank" rel="noopener noreferrer" class="">NumaHOP et les archives</a>, par Victor Beillard (Sorbonne Université), Olesea Dubois (Bibliothèque Sciences Po Paris), Nathalie Pilet (BULAC).</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=bbteyljxWSA&amp;list=PLJFDLbH_mXeccEFt6RUI8PdUzV4NXGuP2&amp;index=9" target="_blank" rel="noopener noreferrer" class="">Projet Collex Ouvroir 2 NumaHOP : un point d’étape</a>, par Sarah Gauthé (Persée).</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Affiche Journées 2024" src="https://fgandolfi.gitlab.io/numahop-doc-user/assets/images/journees-2022-b213a9e44b490f13d3c8fa4d1cbe2ccb.png" width="596" height="842" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Oriane Boissel</name>
+        </author>
+        <category label="Journées professionnelles" term="Journées professionnelles"/>
+        <category label="Université Paris Saclay" term="Université Paris Saclay"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Un premier article pour NumaHop !]]></title>
+        <id>https://fgandolfi.gitlab.io/numahop-doc-user/blog/article-2020</id>
+        <link href="https://fgandolfi.gitlab.io/numahop-doc-user/blog/article-2020"/>
+        <updated>2020-10-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Olesea Dubois, Fanny Mion-Mouton et Pauline Rivière, "NumaHOP, une plateforme de gestion de contenus numérisés", Arabesques, 99, 2020.]]></summary>
+        <content type="html"><![CDATA[<p>Olesea Dubois, Fanny Mion-Mouton et Pauline Rivière, "NumaHOP, une plateforme de gestion de contenus numérisés", Arabesques, 99, 2020.</p>
+<p><svg data-prefix="fas" data-icon="arrow-up-right-from-square" class="svg-inline--fa fa-arrow-up-right-from-square fa-1x" role="img" viewBox="0 0 512 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"></path></svg>  Retrouvez l'article sur <a href="https://dx.doi.org/10.35562/arabesques.2239" target="_blank" rel="noopener noreferrer" class="">Arabesques</a> !</p>]]></content>
+        <author>
+            <name>Olesea Dubois</name>
+        </author>
+        <author>
+            <name>Pauline Rivière</name>
+        </author>
+        <category label="Publication" term="Publication"/>
+        <category label="Bibliothèque Sainte Geneviève" term="Bibliothèque Sainte Geneviève"/>
+        <category label="Sciences Po Paris" term="Sciences Po Paris"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Journées professionnelles 2019]]></title>
+        <id>https://fgandolfi.gitlab.io/numahop-doc-user/blog/journees-2019</id>
+        <link href="https://fgandolfi.gitlab.io/numahop-doc-user/blog/journees-2019"/>
+        <updated>2019-10-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[La première journée profesionnelle NumaHOP s’est tenue à la BULAC (Paris) dans l’auditorium du Pôle Langues et Civilisation le 18 octobre 2019. Y étaient programmées des présentations, des échanges, des ateliers pour présenter le progiciel.]]></summary>
+        <content type="html"><![CDATA[<p>La première journée profesionnelle NumaHOP s’est tenue à la BULAC (Paris) dans l’auditorium du Pôle Langues et Civilisation le 18 octobre 2019. Y étaient programmées des présentations, des échanges, des ateliers pour présenter le progiciel.</p>
+<p><svg data-prefix="fas" data-icon="circle-play" class="svg-inline--fa fa-circle-play fa-1x" role="img" viewBox="0 0 512 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"></path></svg>  Retrouvez toutes les interventions en vidéo !</p>
+<ul>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=9iVJMFaQ7MA&amp;t=9s" target="_blank" rel="noopener noreferrer" class="">Pourquoi une journée NumaHOP ?</a> Allocution de François Cavalier, directeur de la bibliothèques de Sciences Po Paris et Marie-Lise Tsagouria, directeur de la BULAC.</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=V-5Ux7l9rJk&amp;t=1s" target="_blank" rel="noopener noreferrer" class="">Qu’est-ce qu’un logiciel libre ?</a> avec Cécile Gobbo, responsable du pôle Flux et Données à la BULAC et Nocpmas Legrand, administrateur technique du système d’information documentaire à la BULAC.</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=DbvXiuVewg0&amp;t=3s" target="_blank" rel="noopener noreferrer" class="">Retour d’expériences</a>, par Cécilia Piccioli, chargée des traitements de conservation à la BULAC, Pauline Bougon, chargée de numérisation à la direction des ressources et de l’information scientifique à Sciences Po Paris, Pauline Rivière, chef de projet numérisation à la bibliothèque Sainte-Geneviève. Séance animée par Fanny Mion-Mouton, responsable adjointe du pôle Flux et Données à la BULAC et responsable de l’équipe signalement et exposition des données à la BULAC.</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=t_IByhWNyS4" target="_blank" rel="noopener noreferrer" class="">Regards des opérateurs nationaux</a>, par Thomas Ledoux, chargé de la coordination projets DSI à la Bibliothèque nationale de France, Alexia de Casanove, département Archivage et Diffusion du CINES, Alain Colas, directeur du GIS Collex-Persée, Viviane Boulétreau, responsable du pôle informatique de Persée. Echange animé par François Cavalier, directeur de la bibliothèque de Sciences Po Paris.</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=bc5OQxKiEwg" target="_blank" rel="noopener noreferrer" class="">Installer NumaHOP : quelles options pour mon établissement ?</a> Loïc Charlery, responsable des infrastructures de la bibliothèque Sainte-Geneviève, Olivier Pouchard, responsable du service études et développements à Sciences Po Paris, Christophe Paris, chef de l’équipe informatique à la BULAC. Echange animé par Stéphane Auzanneau, directeur de la DSI à Sciences Po Paris.</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> [Progilone : quelles possibilités d’hébergement ?] présenté par Anne Dupiat, chef de projet Progilone.</li>
+<li class=""><svg data-prefix="fas" data-icon="video" class="svg-inline--fa fa-video fa-1x" role="img" viewBox="0 0 576 512" aria-hidden="true" color="#fc063b"><path fill="currentColor" d="M96 64c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L96 64zM464 336l73.5 58.8c4.2 3.4 9.4 5.2 14.8 5.2 13.1 0 23.7-10.6 23.7-23.7l0-240.6c0-13.1-10.6-23.7-23.7-23.7-5.4 0-10.6 1.8-14.8 5.2L464 176 464 336z"></path></svg> <a href="https://www.youtube.com/watch?v=HTCkc5uaOFc" target="_blank" rel="noopener noreferrer" class="">Et la suite : comment structurer une communauté NumaHOP ?</a>, par François Cavalier, directeur de la bibliothèque de Sciences Po Paris, Marie-Lise Tsagouria, directeur de la BULAC et Claire Sonnefraud, responsable du département de la conservation à la bibliothèque Sainte-Geneviève.</li>
+</ul>]]></content>
+        <author>
+            <name>Nathalie Pilet</name>
+        </author>
+        <category label="Journées professionnelles" term="Journées professionnelles"/>
+        <category label="Université Paris Saclay" term="Université Paris Saclay"/>
+    </entry>
+</feed>
