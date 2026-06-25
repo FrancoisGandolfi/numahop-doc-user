@@ -2,11 +2,16 @@ name: Build and Deploy Docusaurus
 
 on:
   push:
-    branches: [ main ] # Remplace par ta branche par défaut
+    branches: [ main ] # ou ta branche par défaut
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # Permet d'écrire dans le dépôt (nécessaire pour gh-pages)
+      pages: write      # Permet de déployer sur GitHub Pages
+      id-token: write   # Permet de générer un token pour le déploiement
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -14,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24  # Utilise Node 24 (version actuelle par défaut)
           cache: 'npm'
 
       - name: Install dependencies
@@ -29,3 +34,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           keep_files: false
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
